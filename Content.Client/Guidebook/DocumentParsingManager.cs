@@ -5,6 +5,7 @@ using Content.Shared.Guidebook;
 using Pidgin;
 using Robust.Client.UserInterface;
 using Robust.Shared.ContentPack;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Reflection;
 using Robust.Shared.Sandboxing;
@@ -21,6 +22,7 @@ public sealed partial class DocumentParsingManager
     [Dependency] private IPrototypeManager _prototype = default!;
     [Dependency] private IReflectionManager _reflectionManager = default!;
     [Dependency] private IResourceManager _resourceManager = default!;
+    [Dependency] private ILocalizationManager _localization = default!;
     [Dependency] private ISandboxHelper _sandboxHelper = default!;
 
     private readonly Dictionary<string, Parser<char, Control>> _tagControlParsers = new();
@@ -56,14 +58,27 @@ public sealed partial class DocumentParsingManager
         if (!_prototype.Resolve(entryId, out var entry))
             return false;
 
-        using var file = _resourceManager.ContentFileReadText(entry.Text);
+        using var file = _resourceManager.ContentFileReadText(GetLocalizedTextPath(entry.Text));
         return TryAddMarkup(control, file.ReadToEnd());
     }
 
     public bool TryAddMarkup(Control control, GuideEntry entry)
     {
-        using var file = _resourceManager.ContentFileReadText(entry.Text);
+        using var file = _resourceManager.ContentFileReadText(GetLocalizedTextPath(entry.Text));
         return TryAddMarkup(control, file.ReadToEnd());
+    }
+
+    private ResPath GetLocalizedTextPath(ResPath original)
+    {
+        const string guidebookRoot = "/ServerInfo/Guidebook/";
+        var culture = _localization.DefaultCulture?.Name;
+        var path = original.ToString();
+
+        if (culture == null || culture == "en-US" || !path.StartsWith(guidebookRoot, StringComparison.Ordinal))
+            return original;
+
+        var localized = new ResPath($"{guidebookRoot}{culture}/{path[guidebookRoot.Length..]}");
+        return _resourceManager.ContentFileExists(localized) ? localized : original;
     }
 
     public bool TryAddMarkup(Control control, string text)
