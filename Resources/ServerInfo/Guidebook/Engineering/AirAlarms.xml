@@ -67,11 +67,12 @@ Um verbundene Geräte schnell zu steuern, verfügt der Atmosphärenalarm über v
 * Füllen: [textlink="Luftauslässe" link="AirVent"] werden aktiviert und auf den maximalen Druck von [color=orange][protodata="GasVentPump" comp="GasVentPump" member="MaxPressure"/] kPa[/color] eingestellt. [textlink="Luftwäscher" link="AirScrubber"] werden deaktiviert.
 * Panik: [textlink="Luftauslässe" link="AirVent"] werden deaktiviert und [textlink="Luftwäscher" link="AirScrubber"] in den Absaugmodus versetzt.
 
-Atmosphärenalarme wechseln abhängig vom Status des überwachten Bereichs automatisch zwischen den Modi **Filterung** und **Filterung (Weit)**.
+  Atmosphärenalarme wechseln abhängig vom Status des überwachten Bereichs automatisch zwischen den Modi [bold]Filterung[/bold] und [bold]Filterung (Weit)[/bold].
 
-* Erreicht der Bereich den Status [color=red]Gefahr[/color] oder höher, wechselt der Atmosphärenalarm zu **Filterung (Weit)**.
-* Befindet sich der Bereich im Status [color=green]Normal[/color] oder [color=yellow]Warnung[/color], wechselt der Atmosphärenalarm zu **Filterung**.
+  * Erreicht der Bereich den Status [color=red]Gefahr[/color] oder höher, wechselt der Atmosphärenalarm zu [bold]Filterung (Weit)[/bold].
+  * Befindet sich der Bereich im Status [color=green]Normal[/color] oder [color=yellow]Warnung[/color], wechselt der Atmosphärenalarm zu [bold]Filterung[/bold].
 
 Dieses Verhalten kann über das Kontrollkästchen „Auto“ im unteren Bereich des Atmosphärenalarm-Menüs deaktiviert werden.
 
-Weitere Hinweise zum Beheben von [textlink="Druckverlusten" link="Spacing"] und [textlink="Bränden" link="Fires"] findest du in den entsprechenden Leitfäden. </Document>
+Weitere Hinweise zum Beheben von [textlink="Druckverlusten" link="Spacing"] und [textlink="Bränden" link="Fires"] findest du in den entsprechenden Leitfäden.
+</Document>
