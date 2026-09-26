@@ -1,0 +1,1 @@
+station-event-kudzu-growth-start-announcement = Achtung, Crew! An Bord wurde ein biologischer Eindringling der Klasse 2 entdeckt, der eine potenziell erhebliche Beeinträchtigung der Crewproduktivität verursacht. Seine umgehende Beseitigung wird empfohlen.

@@ -1,0 +1,1 @@
+station-event-greytide-virus-start-announcement = Gr3y.T1d3-Virus in den sicheren Verschlüsselungsroutinen der Stationsverriegelungen entdeckt. Gefahrenstufe { $severity }. Unterstützung durch die Stations-KI wird empfohlen.
