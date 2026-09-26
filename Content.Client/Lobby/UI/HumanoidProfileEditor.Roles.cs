@@ -3,12 +3,14 @@ using System.Numerics;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
 using Content.Shared.Clothing;
+using Content.Shared.Humanoid;
 using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
+using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client.Lobby.UI;
@@ -62,7 +64,8 @@ public sealed partial class HumanoidProfileEditor
 
         _loadoutWindow = new LoadoutWindow(Profile, roleLoadout, roleLoadoutProto, _playerManager.LocalSession, collection)
         {
-            Title = Loc.GetString("loadout-window-title-loadout", ("job", $"{jobProto?.LocalizedName}")),
+            Title = Loc.GetString("loadout-window-title-loadout",
+                ("job", jobProto?.GetLocalizedName(Profile?.Sex ?? Sex.Male) ?? string.Empty)),
         };
 
         // Refresh the buttons etc.
@@ -72,7 +75,7 @@ public sealed partial class HumanoidProfileEditor
         _loadoutWindow.OnNameChanged += name =>
         {
             roleLoadout.EntityName = name;
-            Profile = Profile.WithLoadout(roleLoadout);
+            Profile = Profile?.WithLoadout(roleLoadout);
             SetDirty();
         };
 
@@ -208,7 +211,8 @@ public sealed partial class HumanoidProfileEditor
                 };
                 var jobIcon = _prototypeManager.Index(job.Icon);
                 icon.Texture = _sprite.Frame0(jobIcon.Icon);
-                selector.Setup(items, job.LocalizedName, 200, job.LocalizedDescription, icon, job.Guides);
+                selector.Setup(items, job.GetLocalizedName(Profile?.Sex ?? Sex.Male), 200,
+                    job.LocalizedDescription, icon, job.Guides);
 
                 if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
                 {

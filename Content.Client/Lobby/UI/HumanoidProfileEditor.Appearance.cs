@@ -47,6 +47,13 @@ public sealed partial class HumanoidProfileEditor
             return;
         }
 
+        PronounsButton.Clear();
+        PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-male-text"), (int)Gender.Male);
+        PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-female-text"), (int)Gender.Female);
+        PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-neuter-text"), (int)Gender.Neuter);
+        // Existing neutral characters keep their pronouns until their owner changes them.
+        if (Profile.Gender == Gender.Epicene)
+            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-legacy-text"), (int)Gender.Epicene);
         PronounsButton.SelectId((int)Profile.Gender);
     }
 
@@ -76,6 +83,11 @@ public sealed partial class HumanoidProfileEditor
         {
             sexes.Add(Sex.Unsexed);
         }
+
+        // Existing sexless characters retain their choice. For species with both
+        // bodies available, new selections only offer male and female.
+        if (sexes.Contains(Sex.Male) && sexes.Contains(Sex.Female) && Profile.Sex != Sex.Unsexed)
+            sexes.Remove(Sex.Unsexed);
 
         // add button for each sex
         foreach (var sex in sexes)
@@ -233,27 +245,14 @@ public sealed partial class HumanoidProfileEditor
     private void SetSex(Sex newSex)
     {
         Profile = Profile?.WithSex(newSex);
-        // for convenience, default to most common gender when new sex is selected
-        switch (newSex)
-        {
-            case Sex.Male:
-                Profile = Profile?.WithGender(Gender.Male);
-                break;
-            case Sex.Female:
-                Profile = Profile?.WithGender(Gender.Female);
-                break;
-            default:
-                Profile = Profile?.WithGender(Gender.Epicene);
-                break;
-        }
-
         // this does the same as above but for voice
         if (_prototypeManager.TryIndex(Profile?.Species, out var prototype))
             SetVoice(prototype.DefaultSoundsBySex[(int)newSex]);
 
-        UpdateGenderControls();
+        UpdateSexControls();
         UpdateVoiceControls();
         _markingsModel.SetOrganSexes(newSex);
+        RefreshJobs();
         ReloadPreview();
     }
 

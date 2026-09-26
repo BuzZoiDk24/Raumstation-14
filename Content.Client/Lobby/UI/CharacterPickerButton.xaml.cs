@@ -44,7 +44,7 @@ public sealed partial class CharacterPickerButton : ContainerButton
         var highPriorityJob = profile.JobPriorities.SingleOrDefault(p => p.Value == JobPriority.High).Key;
         if (highPriorityJob != default)
         {
-            var jobName = prototypeManager.Index(highPriorityJob).LocalizedName;
+            var jobName = prototypeManager.Index(highPriorityJob).GetLocalizedName(profile.Sex);
             description = $"{description}\n{jobName}";
         }
 

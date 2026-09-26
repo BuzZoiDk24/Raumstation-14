@@ -1,8 +1,10 @@
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Access;
 using Content.Shared.Guidebook;
+using Content.Shared.Humanoid;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.StatusIcon;
+using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Roles;
@@ -34,6 +36,20 @@ public sealed partial class JobPrototype : IPrototype
 
     [ViewVariables(VVAccess.ReadOnly)]
     public string LocalizedName => Loc.GetString(Name);
+
+    /// <summary>
+    /// Uses a gender-specific translation when one exists; otherwise keeps the default job title.
+    /// The body choice selects the job title; pronouns are independent.
+    /// </summary>
+    public string GetLocalizedName(Sex sex)
+    {
+        if (sex == Sex.Female &&
+            IoCManager.Resolve<ILocalizationManager>().TryGetString($"{Name}-female", out var name) &&
+            name != null)
+            return name;
+
+        return LocalizedName;
+    }
 
     /// <summary>
     /// The name of this job as displayed to players.
