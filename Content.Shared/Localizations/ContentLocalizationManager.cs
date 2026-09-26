@@ -10,7 +10,7 @@ namespace Content.Shared.Localizations
         [Dependency] private ILocalizationManager _loc = default!;
 
         // If you want to change your codebase's language, do it here.
-        private const string Culture = "en-US";
+        private const string Culture = "de-DE";
 
         /// <summary>
         /// Custom format strings used for parsing and displaying minutes:seconds timespans.
@@ -47,9 +47,13 @@ namespace Content.Shared.Localizations
              * This ensures the english translations continue to work as expected when fallbacks are needed.
              */
             var cultureEn = new CultureInfo("en-US");
-
+            _loc.LoadCulture(cultureEn);
             _loc.AddFunction(cultureEn, "MAKEPLURAL", FormatMakePlural);
             _loc.AddFunction(cultureEn, "MANY", FormatMany);
+
+			var cultureDe = new CultureInfo("de-DE");
+			_loc.AddFunction(cultureDe, "MAKEPLURAL", FormatMakePluralDe);
+			_loc.AddFunction(cultureDe, "MANY", FormatManyDe);
         }
 
         private ILocValue FormatMany(LocArgs args)
@@ -106,6 +110,51 @@ namespace Content.Shared.Localizations
                     return new LocValueString($"{firstWord}s {split[1]}");
             }
         }
+
+		private ILocValue FormatManyDe(LocArgs args)
+		{
+			var text = ((LocValueString) args.Args[0]).Value;
+			var count = ((LocValueNumber) args.Args[1]).Value;
+
+			if (Math.Abs(count - 1) < 0.0001f)
+				return new LocValueString(FormatSingularDe(text));
+
+			return new LocValueString(FormatPluralDe(text));
+		}
+
+		private ILocValue FormatMakePluralDe(LocArgs args)
+		{
+			var text = ((LocValueString) args.Args[0]).Value;
+			return new LocValueString(FormatPluralDe(text));
+		}
+
+		private static string FormatSingularDe(string text)
+		{
+			return text switch
+			{
+				"second" => "Sekunde",
+				"minute" => "Minute",
+				"hour" => "Stunde",
+				"day" => "Tag",
+				"mole" => "Mol",
+				"unit" => "Einheit",
+				_ => text
+			};
+		}
+
+		private static string FormatPluralDe(string text)
+		{
+			return text switch
+			{
+				"second" => "Sekunden",
+				"minute" => "Minuten",
+				"hour" => "Stunden",
+				"day" => "Tage",
+				"mole" => "Mol",
+				"unit" => "Einheiten",
+				_ => text
+			};
+		}
 
         // TODO: allow fluent to take in lists of strings so this can be a format function like it should be.
         /// <summary>

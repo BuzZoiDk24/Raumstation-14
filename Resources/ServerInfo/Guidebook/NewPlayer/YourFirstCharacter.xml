@@ -1,54 +1,65 @@
 <Document>
-# The Captains and the Clowns
-This is a guide for editing your character's appearance. Make sure you read Character Creation first.
-Upon creating your character, you may be intimidated by your vast range of options.
+# Die Captains und die Clowns
 
-It's okay to make your first character [color=#a4885c]randomized[/color] and roll with it, even experienced players do it.
-Making your first character doesn't have to be precise, either. You can [color=#a4885c]wing it[/color] and see what happens.
+Dies ist ein Leitfaden zum Anpassen des Aussehens deines Charakters. Stelle sicher, dass du zuerst den Leitfaden zur Charaktererstellung gelesen hast.
 
-If you'd like to be [color=#a4885c]methodical[/color], though, creating a character is easy to do one step at a time.
+Wenn du deinen Charakter erstellst, könnten dich die vielen verfügbaren Optionen zunächst einschüchtern.
 
-## Choosing a Species
-Most species have minor differences, which you can read about under the [color=#a4885c]Species[/color] entry.
-However, you may find that it's easier to make your first character as a human, moth, dwarf or reptilian.
+Es ist völlig in Ordnung, deinen ersten Charakter [color=#a4885c]zufällig generieren zu lassen[/color] und einfach damit zu spielen – selbst erfahrene Spieler machen das gelegentlich.
+Dein erster Charakter muss auch nicht bis ins kleinste Detail ausgearbeitet sein. Du kannst einfach [color=#a4885c]nach Gefühl vorgehen[/color] und schauen, was dabei herauskommt.
 
-This shouldn't discourage you from getting creative with your character, though.
+Wenn du lieber [color=#a4885c]systematisch[/color] vorgehen möchtest, lässt sich ein Charakter problemlos Schritt für Schritt erstellen.
 
-This guide will assume you are creating a human, but the process is similar across all species.
+## Eine Spezies wählen
 
-## Minor Characteristics
-These include:
-- Age (18-29 for young, 30-59 for middle-aged, 60+ for old)
-- Sex (your sprite, as seen by toggling "Show clothing")
-- Pronouns (what the game will refer to you as)
-- Skin color (may be a slider or RGB depending on species)
-- Eye color (RGB)
-- Hair color (RGB)
+Die meisten Spezies unterscheiden sich nur geringfügig voneinander. Mehr dazu findest du im Abschnitt [color=#a4885c]Spezies[/color].
+Für deinen ersten Charakter könnte es jedoch einfacher sein, einen Menschen, eine Motte, einen Zwerg oder einen Reptilianer zu wählen.
 
-These are minor changes and have little effect on gameplay. This is what players will read when they [color=#a4885c]examine you[/color]. ("young man")
+Das sollte dich allerdings nicht davon abhalten, kreativ zu werden.
 
-## Hair and Facial Hair
-Again, you may be intimidated by the vast range of options. That's okay.
+Dieser Leitfaden geht davon aus, dass du einen Menschen erstellst, der Ablauf ist jedoch bei allen Spezies ähnlich.
 
-[color=#a4885c]Take your time with it.[/color] You can skim or click through each of the options and find which one you like.
-Sometimes it's easier to set your desired hair color before looking at the options.
+## Grundlegende Merkmale
 
-If you really can't decide, some popular haircut options include Floorlength Bedhead, Modern, Business, CIA or simply bald.
-Alternatively, [color=#a4885c]randomize[/color] a separate character and see what kind of haircuts they're rocking with. Surprise yourself.
+Dazu gehören:
 
-Don't feel obligated to use any of these, though.
+- Alter (18–29 für jung, 30–59 für mittelalt, 60+ für alt)
+- Geschlecht (dein Sprite, sichtbar über „Kleidung anzeigen“)
+- Pronomen (wie das Spiel auf deinen Charakter Bezug nimmt)
+- Hautfarbe (je nach Spezies als Regler oder RGB-Auswahl)
+- Augenfarbe (RGB)
+- Haarfarbe (RGB)
 
-## Markings
-Markings range from [color=#a4885c]scars and snouts[/color] to [color=#a4885c]tattoos and tails[/color].
-Think of them like [color=#a4885c]accessories[/color] that are a part of your body, for giving your character some extra flair and uniqueness. They cannot be changed during the round.
+Diese Merkmale haben nur geringe Auswirkungen auf das Gameplay. Sie bestimmen unter anderem, was andere Spieler sehen, wenn sie dich [color=#a4885c]untersuchen[/color]. („junger Mann“)
 
-Some species have more marking options than others. Humans are more limited in terms of markings than moths or reptilians.
+## Haare und Gesichtsbehaarung
 
-You can have a set number of markings in each '[color=#a4885c]category[/color]', as seen at the top. For example, reptilians can have one chest marking but two markings on the top of their heads.
-These are [color=#a4885c]cosmetic[/color] and have no effect on gameplay.
+Auch hier könnte dich die große Auswahl zunächst überwältigen. Das ist völlig normal.
 
-## How to stand out
-Memorable characters are usually remembered for their personality, their deeds and their [color=#a4885c]robustness[/color], but that doesn't mean you have to be some sort of hotshot.
+[color=#a4885c]Nimm dir Zeit.[/color] Du kannst die Optionen in Ruhe durchsehen und herausfinden, was dir gefällt.
+Oft hilft es, zuerst die gewünschte Haarfarbe festzulegen und danach die Frisur auszuwählen.
 
-Don't sweat having a big, flashy and memorable character. Make your own story that you'll be remembered for.
+Falls du dich gar nicht entscheiden kannst, gehören „Floorlength Bedhead“, „Modern“, „Business“, „CIA“ oder einfach eine Glatze zu beliebten Frisuren.
+Alternativ kannst du einen separaten Charakter [color=#a4885c]zufällig generieren[/color] lassen und dir ansehen, welche Frisuren dabei entstehen. Lass dich überraschen.
+
+Du musst jedoch keine dieser Optionen verwenden.
+
+## Markierungen
+
+Markierungen reichen von [color=#a4885c]Narben und Schnauzen[/color] bis hin zu [color=#a4885c]Tätowierungen und Schwänzen[/color].
+Betrachte sie als [color=#a4885c]Accessoires[/color], die Teil deines Körpers sind und deinem Charakter zusätzliche Individualität verleihen. Während einer Runde können sie nicht verändert werden.
+
+Einige Spezies verfügen über mehr Markierungsoptionen als andere. Menschen haben beispielsweise weniger Auswahl als Motten oder Reptilianer.
+
+Du kannst pro '[color=#a4885c]Kategorie[/color]' eine bestimmte Anzahl an Markierungen auswählen, wie oben angezeigt. Reptilianer können beispielsweise eine Brustmarkierung, aber zwei Markierungen am Kopf besitzen.
+
+Diese Markierungen sind rein [color=#a4885c]kosmetisch[/color] und haben keinerlei Einfluss auf das Gameplay.
+
+## Wie man auffällt
+
+Denkwürdige Charaktere bleiben meist wegen ihrer Persönlichkeit, ihrer Taten und ihrer [color=#a4885c]Robustheit[/color] in Erinnerung. Das bedeutet jedoch nicht, dass du irgendein Held oder Überflieger sein musst.
+
+Mach dir keinen Stress, einen besonders auffälligen oder spektakulären Charakter zu erschaffen.
+
+Schreibe deine eigene Geschichte – die Menschen werden sich daran erinnern.
 </Document>

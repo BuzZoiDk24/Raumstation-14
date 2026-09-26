@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: BaseFlatpack
-  name: base flatpack
-  description: A flatpack used for constructing something.
+  name: Basis-Bausatz
+  description: Ein Bausatz zum Bau verschiedener Konstruktionen.
   categories:
   - HideSpawnMenu
   components:
@@ -39,8 +39,8 @@
 - type: entity
   parent: BaseFlatpack
   id: SolarAssemblyFlatpack
-  name: solar assembly flatpack
-  description: A flatpack used for constructing a solar assembly.
+  name: Solarpanel-Bausatz
+  description: Ein Bausatz zum Bau eines Solarpanels.
   components:
   - type: Flatpack
     entity: SolarAssembly
@@ -53,8 +53,8 @@
 - type: entity
   parent: BaseFlatpack
   id: AmeControllerFlatpack
-  name: AME controller flatpack
-  description: A flatpack used for constructing the terminal that controls the antimatter engine.
+  name: AME-Controller-Bausatz
+  description: Ein Bausatz zum Bau des Steuergeräts der Antimaterie-Engine.
   components:
   - type: Sprite
     layers:
@@ -73,8 +73,8 @@
 - type: entity
   parent: BaseFlatpack
   id: AmePartFlatpack
-  name: AME flatpack
-  description: A flatpack used for constructing an antimatter engine reactor.
+  name: AME-Bausatz
+  description: Ein Bausatz zum Bau eines Antimaterie-Engine-Reaktors.
   components:
   - type: Sprite
     layers:
@@ -93,8 +93,8 @@
 - type: entity
   parent: BaseFlatpack
   id: SingularityGeneratorFlatpack
-  name: singularity generator flatpack
-  description: A flatpack used for constructing a singularity generator.
+  name: Singularitätsgenerator-Bausatz
+  description: Ein Bausatz zum Bau eines Singularitätsgenerators.
   components:
   - type: Flatpack
     entity: SingularityGenerator
@@ -109,8 +109,8 @@
 - type: entity
   parent: BaseFlatpack
   id: RadiationCollectorFlatpack
-  name: radiation collector flatpack
-  description: A flatpack used for constructing a radiation collector.
+  name: Strahlungskollektor-Bausatz
+  description: Ein Bausatz zum Bau eines Strahlungskollektors.
   components:
   - type: Flatpack
     entity: RadiationCollectorNoTank
@@ -125,8 +125,8 @@
 - type: entity
   parent: BaseFlatpack
   id: ContainmentFieldGeneratorFlatpack
-  name: containment field generator flatpack
-  description: A flatpack used for constructing a containment field generator.
+  name: Eindämmungsfeldgenerator-Bausatz
+  description: Ein Bausatz zum Bau eines Eindämmungsfeldgenerators.
   components:
   - type: Flatpack
     entity: ContainmentFieldGenerator
@@ -141,8 +141,8 @@
 - type: entity
   parent: BaseFlatpack
   id: EmitterFlatpack
-  name: emitter flatpack
-  description: A flatpack used for constructing an emitter.
+  name: Emitter-Bausatz
+  description: Ein Bausatz zum Bau eines Emitters.
   components:
   - type: Flatpack
     entity: Emitter
@@ -157,8 +157,8 @@
 - type: entity
   parent: BaseFlatpack
   id: TeslaGeneratorFlatpack
-  name: tesla generator flatpack
-  description: A flatpack used for constructing a tesla generator.
+  name: Tesla-Generator-Bausatz
+  description: Ein Bausatz zum Bau eines Tesla-Generators.
   components:
   - type: Flatpack
     entity: TeslaGenerator
@@ -173,8 +173,8 @@
 - type: entity
   parent: BaseFlatpack
   id: TeslaCoilFlatpack
-  name: tesla coil flatpack
-  description: A flatpack used for constructing a tesla coil.
+  name: Tesla-Spulen-Bausatz
+  description: Ein Bausatz zum Bau einer Tesla-Spule.
   components:
   - type: Flatpack
     entity: TeslaCoil
@@ -189,8 +189,8 @@
 - type: entity
   parent: BaseFlatpack
   id: TeslaGroundingRodFlatpack
-  name: grounding rod flatpack
-  description: A flatpack used for constructing a grounding rod.
+  name: Erdungsstab-Bausatz
+  description: Ein Bausatz zum Bau eines Erdungsstabs.
   components:
   - type: Flatpack
     entity: TeslaGroundingRod
@@ -205,8 +205,8 @@
 - type: entity
   parent: BaseFlatpack
   id: GyroscopeFlatpack
-  name: gyroscope flatpack
-  description: A flatpack used for constructing a gyroscope.
+  name: Gyroskop-Bausatz
+  description: Ein Bausatz zum Bau eines Gyroskops.
   components:
   - type: Flatpack
     entity: Gyroscope
@@ -220,8 +220,8 @@
 - type: entity
   parent: BaseFlatpack
   id: ThrusterFlatpack
-  name: thruster flatpack
-  description: A flatpack used for constructing a thruster.
+  name: Triebwerks-Bausatz
+  description: Ein Bausatz zum Bau eines Triebwerks.
   components:
   - type: Flatpack
     entity: Thruster
@@ -235,8 +235,8 @@
 - type: entity
   parent: BaseFlatpack
   id: SpaceHeaterFlatpack
-  name: space heater flatpack
-  description: A flatpack used for constructing a space heater.
+  name: Raumheizer-Bausatz
+  description: Ein Bausatz zum Bau eines Raumheizers.
   components:
   - type: Flatpack
     entity: SpaceHeaterAnchored
@@ -244,8 +244,8 @@
 - type: entity
   parent: BaseFlatpack
   id: FaxMachineFlatpack
-  name: fax machine flatpack
-  description: A flatpack used for constructing a fax machine.
+  name: Faxgeräte-Bausatz
+  description: Ein Bausatz zum Bau eines Faxgeräts.
   components:
   - type: Sprite
     layers:
@@ -256,8 +256,8 @@
 - type: entity
   parent: BaseFlatpack
   id: CrewMonitoringServerFlatpack
-  name: crew monitoring server flatpack
-  description: A flatpack used for constructing a crew monitoring server.
+  name: Crewüberwachungsserver-Bausatz
+  description: Ein Bausatz zum Bau eines Crewüberwachungsservers.
   components:
   - type: Flatpack
     entity: CrewMonitoringServer
@@ -265,8 +265,8 @@
 - type: entity
   parent: BaseFlatpack
   id: CrewMonitoringComputerFlatpack
-  name: crew monitoring computer flatpack
-  description: A flatpack used for constructing a crew monitoring console.
+  name: Crewüberwachungskonsolen-Bausatz
+  description: Ein Bausatz zum Bau einer Crewüberwachungskonsole.
   components:
   - type: Flatpack
     entity: ComputerCrewMonitoring
@@ -274,8 +274,8 @@
 - type: entity
   parent: BaseFlatpack
   id: HydroponicsTrayFlatpack
-  name: hydroponics tray flatpack
-  description: A flatpack used for constructing a hydroponics tray.
+  name: Hydrokulturbecken-Bausatz
+  description: Ein Bausatz zum Bau eines Hydrokulturbeckens.
   components:
   - type: Flatpack
     entity: hydroponicsTray
@@ -290,8 +290,8 @@
 - type: entity
   parent: [ BaseFlatpack, BaseSyndicateContraband ]
   id: SyndicateMicrowaveFlatpack
-  name: donk co. microwave flatpack
-  description: A flatpack used for constructing a microwave too hot for Nanotrasen to handle.
+  name: Donk Co.-Mikrowellen-Bausatz
+  description: Ein Bausatz zum Bau einer Mikrowelle, die selbst für NanoTrasen zu heiß ist.
   components:
   - type: Item
     size: Normal

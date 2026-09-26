@@ -74,7 +74,7 @@
 - type: entity
   parent: BaseAction
   id: ActionScream
-  name: Scream
+  name: Schreien
   description: AAAAAAAAAAAAAAAAAAAAAAAAA
   components:
   - type: Action
@@ -90,8 +90,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionTurnUndead
-  name: Turn Undead
-  description: Succumb to your infection and become a zombie.
+  name: Werde untot
+  description: Gib deiner Infektion nach und werde zu einem Zombie.
   components:
   - type: Action
   - type: Sprite
@@ -103,8 +103,8 @@
 - type: entity
   parent: BaseToggleAction
   id: ActionToggleLight
-  name: Toggle Light
-  description: Turn the light on and off.
+  name: Licht umschalten
+  description: Schalte das Licht ein und aus.
   components:
   - type: Action
     useDelay: 1
@@ -120,8 +120,8 @@
 - type: entity
   parent: BaseAction
   id: ActionOpenStorageImplant
-  name: Toggle Storage Implant
-  description: Opens or closes the storage implant embedded under your skin
+  name: Lagerimplantat umschalten
+  description: Öffnet oder schließt das unter deiner Haut verborgene Lagerimplantat.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -137,8 +137,8 @@
 - type: entity
   parent: [BaseSuicideAction, BaseImplantAction]
   id: ActionActivateMicroBomb
-  name: Activate Microbomb
-  description: Activates your internal microbomb, completely destroying you and your equipment
+  name: Mikrobombe aktivieren
+  description: Aktiviert deine interne Mikrobombe und vernichtet dich mitsamt deiner Ausrüstung vollständig.
   components:
   - type: DangerousAction
   - type: Action
@@ -152,8 +152,8 @@
 - type: entity
   parent: [BaseSuicideAction, BaseImplantAction]
   id: ActionActivateDeathAcidifier
-  name: Activate Death-Acidifier
-  description: Activates your death-acidifier, completely melting you and your equipment
+  name: Todessäure-Aktivator aktivieren
+  description: Aktiviert deinen Todessäure-Aktivator und zersetzt dich mitsamt deiner Ausrüstung vollständig.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -166,8 +166,8 @@
 - type: entity
   parent: BaseImplantAction
   id: ActionActivateFreedomImplant
-  name: Break Free
-  description: Activating your freedom implant will free you from any hand restraints
+  name: Befreien
+  description: Die Aktivierung deines Freiheitsimplantats befreit dich von sämtlichen Handfesseln.
   components:
   - type: LimitedCharges
     maxCharges: 3
@@ -184,8 +184,8 @@
 - type: entity
   parent: BaseAction
   id: ActionOpenUplinkImplant
-  name: Open Uplink
-  description: Opens the syndicate uplink embedded under your skin
+  name: Uplink öffnen
+  description: Öffnet den unter deiner Haut verborgenen Syndikats-Uplink.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -200,8 +200,8 @@
 - type: entity
   parent: BaseImplantAction
   id: ActionActivateEmpImplant
-  name: Activate EMP
-  description: Triggers a small EMP pulse around you
+  name: EMP auslösen
+  description: Löst einen kleinen EMP-Impuls um dich herum aus.
   components:
   - type: LimitedCharges
     maxCharges: 3
@@ -220,7 +220,7 @@
   parent: BaseImplantAction
   id: ActionActivateScramImplant
   name: SCRAM!
-  description: Randomly teleports you within a large distance.
+  description: Teleportiert dich zufällig an einen weit entfernten Ort.
   components:
   - type: LimitedCharges
     maxCharges: 2
@@ -238,8 +238,8 @@
 - type: entity
   parent: BaseImplantAction
   id: ActionActivateDnaScramblerImplant
-  name: Scramble DNA
-  description:  Randomly changes your name and appearance.
+  name: DNA manipulieren
+  description: Verändert zufällig dein Aussehen und deinen Namen.
   components:
   - type: ConfirmableAction
     popup: dna-scrambler-action-popup
@@ -257,8 +257,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleSuitPiece
-  name: Toggle Suit Piece
-  description: Remember to equip the important pieces of your suit before going into action.
+  name: Anzugsteil umschalten
+  description: Vergiss nicht, die wichtigen Teile deines Anzugs auszurüsten, bevor du in den Einsatz gehst.
   components:
   - type: Action
     itemIconStyle: BigItem
@@ -269,8 +269,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionCombatModeToggle
-  name: "[color=red]Combat Mode[/color]"
-  description: Enter combat mode
+  name: "[color=red]Kampfmodus[/color]"
+  description: Aktiviert den Kampfmodus.
   components:
   - type: Action
     priority: -100
@@ -295,8 +295,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangeVoiceMask
-  name: Set name
-  description: Change the name others hear to something else.
+  name: Name festlegen
+  description: Ändert den Namen, den andere beim Sprechen von dir hören.
   components:
   - type: Action
   - type: Sprite
@@ -309,8 +309,8 @@
 - type: entity
   parent: BaseAction
   id: ActionShootWater
-  name: Spray water!
-  description: Spray water towards your enemies.
+  name: Wasser sprühen!
+  description: Versprüht Wasser auf deine Feinde.
   components:
   - type: Action
   - type: Sprite
@@ -323,8 +323,8 @@
 - type: entity
   parent: BaseAction
   id: ActionVendingThrow
-  name: Dispense Item
-  description: Randomly dispense an item from your stock.
+  name: Gegenstand auswerfen
+  description: Wirft zufällig einen Gegenstand aus deinem Vorrat aus.
   components:
   - type: Action
     useDelay: 30
@@ -334,8 +334,8 @@
 - type: entity
   parent: BaseToggleAction
   id: ActionToggleBlock
-  name: Block
-  description: Raise or lower your shield.
+  name: Blocken
+  description: Hebt oder senkt deinen Schild.
   components:
   - type: Action
   - type: Sprite
@@ -350,8 +350,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionClearNetworkLinkOverlays
-  name: Clear network link overlays
-  description: Clear network link overlays.
+  name: Netzwerkverbindungen ausblenden
+  description: Blendet alle Netzwerkverbindungs-Overlays aus.
   components:
   - type: Action
     clientExclusive: true
@@ -366,8 +366,8 @@
 - type: entity
   parent: BaseAction
   id: ActionAnimalLayEgg
-  name: Lay egg
-  description: Uses hunger to lay an egg.
+  name: Ei legen
+  description: Verbraucht Hunger, um ein Ei zu legen.
   components:
   - type: Action
     useDelay: 60
@@ -381,8 +381,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionSleep
-  name: Sleep
-  description: Go to sleep.
+  name: Schlafen
+  description: Gehe schlafen.
   components:
   - type: Action
   - type: Sprite
@@ -395,8 +395,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionWake
-  name: Wake up
-  description: Stop sleeping.
+  name: Aufwachen
+  description: Beendet den Schlaf.
   components:
   - type: Action
     startDelay: true
@@ -411,8 +411,8 @@
 - type: entity
   parent: BaseImplantAction
   id: ActionActivateHonkImplant
-  name: Honk
-  description: Activates your honking implant, which will produce the signature sound of the clown.
+  name: Hupen
+  description: Aktiviert dein Hupimplantat und erzeugt den unverwechselbaren Klang eines Clowns.
   components:
   - type: Action
     useDelay: 1
@@ -424,8 +424,8 @@
 - type: entity
   parent: BaseAction
   id: ActionFireStarter
-  name: Ignite
-  description: Ignites enemies in a radius around you.
+  name: Entzünden
+  description: Setzt Gegner in einem Umkreis um dich herum in Brand.
   components:
   - type: Action
     priority: -1
@@ -439,8 +439,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionToggleEyes
-  name: Open/Close eyes
-  description: Close your eyes to protect your peepers, or open your eyes to enjoy the pretty lights.
+  name: Augen öffnen/schließen
+  description: Schließe deine Augen zum Schutz oder öffne sie, um die Welt zu betrachten.
   components:
   - type: Action
     useDelay: 1 # so u cant give yourself and observers eyestrain by rapidly spamming the action
@@ -457,8 +457,8 @@
 - type: entity
   parent: BaseToggleAction
   id: ActionToggleWagging
-  name: Wagging Tail
-  description: Start or stop wagging your tail.
+  name: Schwanzwedeln
+  description: Beginne oder höre auf, mit deinem Schwanz zu wedeln.
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -472,8 +472,8 @@
 - type: entity
   parent: BaseAction
   id: FakeMindShieldToggleAction
-  name: '[color=green]Toggle Fake Mindshield[/color]'
-  description: Turn the Fake Mindshield implant's transmission on/off
+  name: '[color=green]Gefälschten Mindshield umschalten[/color]'
+  description: Schaltet die Übertragung des gefälschten Mindshield-Implantats ein oder aus.
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -496,8 +496,8 @@
 - type: entity
   parent: BaseToggleAction
   id: ActionToggleParamedicSiren
-  name: Toggle Paramedic Siren
-  description: Toggles the paramedic siren on and off.
+  name: Sanitätssirene umschalten
+  description: Schaltet die Sanitätssirene ein oder aus.
   components:
   - type: Action
     useDelay: 1
@@ -537,8 +537,8 @@
 - type: entity
   parent: BaseAction
   id: ActionGravityJump
-  name: Jump
-  description: Activating the advanced propulsion system, you propel yourself a short distance in the direction of your gaze.
+  name: Antriebsschub
+  description: Aktiviert das fortschrittliche Antriebssystem und katapultiert dich ein kurzes Stück in Blickrichtung.
   components:
   - type: Action
     useDelay: 8
@@ -564,8 +564,8 @@
 - type: entity
   parent: BaseAction
   id: ActionVulpkaninGravityJump
-  name: Leap
-  description: Use your agile legs to leap a short distance. Be careful not to bump into anything!
+  name: Sprung
+  description: Nutze deine flinken Beine, um einen kurzen Sprung auszuführen. Pass auf, dass du nirgendwo dagegenstößt!
   components:
   - type: Action
     useDelay: 12
@@ -579,8 +579,8 @@
 - type: entity
   parent: BaseToggleAction
   id: ActionToggleRootable
-  name: Rootable
-  description: Begin or stop being rooted to the floor.
+  name: Verwurzeln
+  description: Verwurzle dich im Boden oder löse deine Wurzeln wieder.
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -591,8 +591,8 @@
 
 - type: entity
   id: ActionChameleonController
-  name: Control clothing
-  description: Change your entire outfit fast!
+  name: Outfit ändern
+  description: Ändere dein gesamtes Outfit blitzschnell!
   components:
   - type: Action
     priority: -20
@@ -607,8 +607,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionIntrinsicStore
-  name: Store
-  description: Opens the store
+  name: Shop
+  description: Öffnet den Shop.
   components:
   - type: Action
   - type: Sprite

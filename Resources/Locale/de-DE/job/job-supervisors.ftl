@@ -1,0 +1,16 @@
+﻿job-supervisors-centcom = das Zentralkommando
+job-supervisors-captain = der Kapitän
+job-supervisors-hop = der Personalchef
+job-supervisors-hos = der Sicherheitschef
+job-supervisors-ce = der Chefingenieur
+job-supervisors-cmo = der Leitende Mediziner
+job-supervisors-rd = der Forschungsdirektor
+job-supervisors-qm = der Quartiermeister
+job-supervisors-service = Köche, Botaniker, der Barkeeper und der Personalchef
+job-supervisors-engineering = Stationsingenieure, Atmosphärentechniker und der Chefingenieur
+job-supervisors-medicine = Ärzte, Notfallsanitäter, Chemiker und der Leitende Mediziner
+job-supervisors-security = Sicherheitsoffiziere, der Wachleiter und der Sicherheitschef
+job-supervisors-science = Wissenschaftler und der Forschungsdirektor
+job-supervisors-hire = die Person, die dich eingestellt hat
+job-supervisors-everyone = absolut jeder
+job-supervisors-nobody = niemand

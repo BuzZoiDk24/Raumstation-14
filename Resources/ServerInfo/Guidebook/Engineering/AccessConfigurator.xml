@@ -1,50 +1,57 @@
 <Document>
-  # Access Configurator
-  The access configurator is a tool used to specify what type of personnel may use certain devices.
+  # Zugangskonfigurator
+
+Der Zugangskonfigurator ist ein Werkzeug, mit dem festgelegt werden kann, welches Personal bestimmte Geräte verwenden darf.
 
   <Box>
-	  <GuideEntityEmbed Entity="AccessConfigurator" Caption="access configurator"/>
+	  <GuideEntityEmbed Entity="AccessConfigurator" Caption="Zugangskonfigurator"/>
   </Box>
 
-  Configurable devices can include airlocks, secure crates and lockers, as well as access restricted machines.
-  Note: Airlocks can have their accesses configured by the [color=#a4885c]Network Configurator[/color] (or multitool), for convenience.
+Konfigurierbare Geräte umfassen Luftschleusen, gesicherte Kisten und Spinde sowie Maschinen mit Zugangsbeschränkung.
+Hinweis: Luftschleusen können der Einfachheit halber auch mit dem [color=#a4885c]Netzwerkkonfigurator[/color] (oder einem Multitool) konfiguriert werden.
 
-  ## Where to find Access Configurators
-  Each station is equipped with up to two access configurators. The first is in the possession of the Chief Engineer, while the second can be found with the Head of Personnel.
+## Wo man Zugangskonfiguratoren findet
 
-  ## How to use the access configurator
-  To modify a device using the access configurator:
-  - First, use the access configurator on the chosen device to link them together. This will automatically open the configurator UI.
-  - Next, insert an ID card into the access configurator.
-  - Set the access requirements of the connected device. What requirements can be added or removed will depend upon the access privileges of the inserted ID card.
-  - Any changes made will be applied [color=#a4885c]immediately[/color] - simply eject the ID card from the access configurator and close the UI when you are done.
+Jede Station verfügt über bis zu zwei Zugangskonfiguratoren. Der erste befindet sich im Besitz des Chefingenieurs, während der zweite beim Personalchef zu finden ist.
 
-  ## Restrictions on changing access
-  As a safety precaution, the inserted ID must possess [bold]all[/bold] of the access requirements that are currently active on the connected device in order to modify it.
+## Verwendung des Zugangskonfigurators
 
-  For example, a device which can be accessed by both 'Science' and 'Medical' personnel can only by modified using an ID card that has access to [color=#a4885c]both[/color] of these departments.
-  The access configurator will warn the user if the inserted ID card does not have sufficient privileges to modify a device.
+So änderst du die Zugangsberechtigungen eines Geräts:
 
-  A device with no access requirements set, like a public access airlock, can be modified using any valid station ID card.
+* Verwende zunächst den Zugangskonfigurator auf dem gewünschten Gerät, um beide miteinander zu verbinden. Dadurch wird die Benutzeroberfläche des Konfigurators automatisch geöffnet.
+* Lege anschließend eine ID-Karte in den Zugangskonfigurator ein.
+* Passe die Zugangsberechtigungen des verbundenen Geräts an. Welche Berechtigungen hinzugefügt oder entfernt werden können, hängt von den Zugriffsrechten der eingelegten ID-Karte ab.
+* Alle Änderungen werden [color=#a4885c]sofort[/color] übernommen. Wirf die ID-Karte einfach aus dem Zugangskonfigurator aus und schließe die Benutzeroberfläche, sobald du fertig bist.
 
-  ## Repairing access-broken ID card readers
-  Syndicate agents may attempt to hack access-restricted devices through the use of an [color=#a4885c]Authentication Disruptor[/color].
-  This nefarious tool will completely short out any ID card readers that are attached to the device, making it all-access.
+## Einschränkungen beim Ändern von Zugriffsrechten
+
+Aus Sicherheitsgründen muss die eingelegte ID-Karte [bold]alle[/bold] aktuell aktiven Zugangsberechtigungen des verbundenen Geräts besitzen, damit diese geändert werden können.
+
+Ein Gerät, das beispielsweise sowohl für die Wissenschaft als auch für die Medizin zugänglich ist, kann nur mit einer ID-Karte geändert werden, die Zugriff auf [color=#a4885c]beide[/color] Abteilungen besitzt.
+Der Zugangskonfigurator warnt den Benutzer, wenn die eingelegte ID-Karte nicht über ausreichende Berechtigungen verfügt, um das Gerät zu ändern.
+
+Ein Gerät ohne gesetzte Zugangsberechtigungen, beispielsweise eine öffentliche Luftschleuse, kann mit jeder gültigen Stations-ID-Karte geändert werden.
+
+## Reparatur beschädigter ID-Kartenleser
+
+Syndikatsagenten können versuchen, zugangsbeschränkte Geräte mit einem [color=#a4885c]Authentifizierungsstörer[/color] zu manipulieren.
+Dieses hinterhältige Werkzeug setzt sämtliche am Gerät angeschlossenen ID-Kartenleser außer Betrieb und macht das Gerät dadurch für alle zugänglich.
 
   <Box>
     <GuideEntityEmbed Entity="AccessBreaker"/>
   </Box>
 
-  To repair the damage, you'll commonly need to partially deconstruct the device and reconstruct it.
-  This will reset the access requirements to defaults, allowing you to reconfigure the device as needed.
+Um den Schaden zu beheben, muss das Gerät in der Regel teilweise zerlegt und anschließend wieder zusammengebaut werden.
+Dadurch werden die Zugangsberechtigungen auf die Standardwerte zurückgesetzt und das Gerät kann anschließend erneut nach Bedarf konfiguriert werden.
 
-  ## Repairing access-broken Airlocks
-  Airlocks can be repaired multiple ways if their access requirements have been tampered with.
+## Reparatur manipulierter Luftschleusen
 
-  If you have an Access Configurator, you can use a [color=#a4885c]Screwdriver[/color] to remove the airlock's maintenance panel, and then use the Access Configurator to reconfigure the airlock's access requirements.
-  No partial deconstruction is needed.
+Wurden die Zugangsberechtigungen einer Luftschleuse verändert, gibt es mehrere Möglichkeiten, sie zu reparieren.
 
-  If you don't have an Access Configurator, you can still fix the airlock by partially deconstructing it until you remove the door electronics, and then reconstructing it.
-  This will reset the airlock to the default access requirements it had at the start of the shift.
+Besitzt du einen Zugangskonfigurator, kannst du zunächst mit einem [color=#a4885c]Schraubendreher[/color] die Wartungsklappe der Luftschleuse öffnen und anschließend mit dem Zugangskonfigurator die Zugangsberechtigungen der Luftschleuse neu konfigurieren.
+Eine teilweise Demontage ist dafür nicht erforderlich.
+
+Falls du keinen Zugangskonfigurator besitzt, kannst du die Luftschleuse trotzdem reparieren, indem du sie teilweise zerlegst, bis du die Türelektronik entfernt hast, und sie anschließend wieder zusammenbaust.
+Dadurch werden die Zugangsberechtigungen der Luftschleuse auf die Standardwerte zurückgesetzt, die sie zu Beginn der Schicht besaß.
 
 </Document>
