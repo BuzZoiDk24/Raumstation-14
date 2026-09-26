@@ -1,78 +1,65 @@
 ﻿<Document>
-  # Atmosphärenalarm
-
-Der Atmosphärenalarm ist ein Gerät zur zentralen Überwachung und Steuerung aller relevanten Atmosphärengeräte, die mit ihm verbunden sind.
+  # Air Alarms
+  The Air Alarm is a device that enables central monitoring and control over all relevant Atmos devices linked to it.
 
   <Box>
     <GuideEntityEmbed Entity="AirAlarm"/>
   </Box>
 
-Mithilfe des Atmosphärenalarms kann die Atmosphäre eines bestimmten Bereichs schnell und effizient geregelt werden.
+  Using the Air Alarm, Atmos can quickly and efficiently manage the atmosphere in a given area.
 
-In den meisten Räumen befindet sich ein Atmosphärenalarm an der Wand, über den sich mehrere Geräte dieses Raums zentral steuern lassen.
+  A room will often have an Air Alarm mounted on the wall, for quick control over multiple devices in that room.
 
-Wie Geräte miteinander verbunden werden, erfährst du im Leitfaden [textlink="Verbindungen" link="Networking"].
+  You can see how to link devices in the [textlink="Link" link="Networking"] guide.
 
-## Benutzeroberfläche
+  ## User Interface
+  Interacting with an Air Alarm will bring up a menu with 3 sections:
+  - Top: The current status of the air alarm. This includes the current pressure and temperature of the area the air alarm is monitoring.
+  - Middle: Lists of linked [textlink="Air Vents" link="AirVent"] and [textlink="Air Scrubbers" link="AirScrubber"], as well as all sensors reporting back to the air alarm.
+  - Bottom: Buttons to control air alarm operating modes, as well as the ability to toggle the automatic changing of modes.
 
-Beim Benutzen eines Atmosphärenalarms öffnet sich ein Menü mit drei Bereichen:
+  ## Alarm Status
+  Air alarms quickly communicate the status of the area they are monitoring through the color of the light on the device:
+  - [color=green]Normal[/color]: The area is safe to breathe in.
+  - [color=yellow]Warning[/color]: The area is starting to deviate from the desired atmosphere, and is becoming unsafe.
+  - [color=red]Danger[/color]: The area is no longer safe, internals and/or hardsuits are required.
 
-* Oben: Der aktuelle Status des Atmosphärenalarms. Hier werden unter anderem der aktuelle Luftdruck und die Temperatur des überwachten Bereichs angezeigt.
-* Mitte: Listen der verbundenen [textlink="Luftauslässe" link="AirVent"] und [textlink="Luftwäscher" link="AirScrubber"] sowie aller Sensoren, die ihre Messwerte an den Atmosphärenalarm übermitteln.
-* Unten: Schaltflächen zur Auswahl des Betriebsmodus sowie die Möglichkeit, den automatischen Moduswechsel ein- oder auszuschalten.
+  Air alarms will automatically drop (close) linked [textlink="firelocks" link="FireAndGasControl"] when the [color=Red]Danger[/color] status is reached.
+  These [textlink="firelocks" link="FireAndGasControl"] will automatically raise (open) when the status returns to [color=green]Normal[/color].
 
-## Alarmstatus
+  Air alarms have [textlink="signal" link="Networking"] outputs for each of the three statuses, which can be used to trigger other [textlink="signal" link="Networking"] devices when the status changes.
 
-Atmosphärenalarme zeigen den Zustand des überwachten Bereichs anhand der Farbe ihrer Statusleuchte an:
+  ## Sensors
+  All [textlink="Air Vents" link="AirVent"] and [textlink="Air Scrubbers" link="AirScrubber"] have a built-in sensor, which reports back to the air alarm.
+  These sensors can be adjusted in the [bold]Sensors[/bold] tab of the air alarm menu.
 
-* [color=green]Normal[/color]: Die Atmosphäre ist sicher zum Atmen.
-* [color=yellow]Warnung[/color]: Die Atmosphäre weicht zunehmend von den Sollwerten ab und wird unsicher.
-* [color=red]Gefahr[/color]: Der Bereich ist nicht mehr sicher. Internals und/oder ein Hardsuit sind erforderlich.
+  An air alarm's status is directly determined by the thresholds on each sensor.
+  If a sensor reports a pressure, temperature, or gas composition outside the set thresholds, the air alarm will change its status accordingly.
 
-Atmosphärenalarme schließen automatisch alle verbundenen [textlink="Brandschutztüren" link="FireAndGasControl"], sobald der Status [color=red]Gefahr[/color] erreicht wird.
+  These thresholds can be adjusted and disabled as needed.
+  For example, if you are monitoring a room that naturally has a low temperature (such as a freezer) or a high temperature (such as a burn chamber), you can adjust the temperature thresholds to match the expected values.
 
-Diese [textlink="Brandschutztüren" link="FireAndGasControl"] öffnen sich automatisch wieder, sobald der Status auf [color=green]Normal[/color] zurückkehrt.
-
-Atmosphärenalarme besitzen für jeden der drei Statuszustände [textlink="Signal"-Ausgänge link="Networking"], mit denen andere [textlink="Signal"-Geräte link="Networking"] beim Statuswechsel ausgelöst werden können.
-
-## Sensoren
-
-Alle [textlink="Luftauslässe" link="AirVent"] und [textlink="Luftwäscher" link="AirScrubber"] verfügen über einen integrierten Sensor, der seine Messwerte an den Atmosphärenalarm übermittelt.
-
-Diese Sensoren können im Reiter [bold]Sensoren[/bold] des Atmosphärenalarm-Menüs angepasst werden.
-
-Der Status eines Atmosphärenalarms wird direkt durch die Grenzwerte der einzelnen Sensoren bestimmt.
-
-Meldet ein Sensor einen Luftdruck, eine Temperatur oder eine Gaszusammensetzung außerhalb der festgelegten Grenzwerte, ändert der Atmosphärenalarm seinen Status entsprechend.
-
-Die Grenzwerte können bei Bedarf angepasst oder deaktiviert werden.
-
-Überwachst du beispielsweise einen Raum mit dauerhaft niedriger Temperatur (etwa einen Gefrierraum) oder hoher Temperatur (beispielsweise eine Brennkammer), kannst du die Temperaturgrenzwerte entsprechend anpassen.
-
-Ein Luftsensor kann außerdem gebaut und mit einem Atmosphärenalarm [textlink="verbunden" link="Networking"] werden.
+  An air sensor can also be constructed and [textlink="linked" link="Networking"] to an air alarm.
 
   <Box>
     <GuideEntityEmbed Entity="AirSensor"/>
   </Box>
 
-Das ist besonders nützlich, um Bereiche zu überwachen, in denen sich weder ein Luftauslass noch ein Luftwäscher befindet.
+  This is useful for monitoring areas that you don't have an air vent or scrubber in already.
 
-## Betriebsmodi
+  ## Operating Modes
+  To control connected devices quickly, air alarms feature operating modes, which quickly changes the behavior of all linked devices to achieve a desired effect.
+  - None: Disables all devices linked to the air alarm.
+  - Filtering: [textlink="Air Vents" link="AirVent"] will be enabled with their external bound set to standard atmospheric pressure. [textlink="Air Scrubbers" link="AirScrubber"] will be enabled and scrub all waste gasses normally.
+  - Filtering (Wide): Same as Filtering, but all linked [textlink="Air Scrubbers" link="AirScrubber"] will enable their WideNet mode.
+  - Fill: [textlink="Air Vents" link="AirVent"] will be enabled with their external bound set to max pressure, [color=orange][protodata="GasVentPump" comp="GasVentPump" member="MaxPressure"/] kPa[/color]. [textlink="Air Scrubbers" link="AirScrubber"] will be disabled.
+  - Panic: [textlink="Air Vents" link="AirVent"] will be disabled, and [textlink="Air Scrubbers" link="AirScrubber"] will be set to siphon mode.
 
-Um verbundene Geräte schnell zu steuern, verfügt der Atmosphärenalarm über verschiedene Betriebsmodi, die das Verhalten aller verbundenen Geräte anpassen.
+  Air alarms will automatically switch between the Filtering and Filtering (Wide) modes based on the current status of the area they are monitoring.
+  - If the area reaches [color=red]Danger[/color] status or above, the air alarm will switch to Filtering (Wide) mode.
+  - If the area reaches [color=green]Normal[/color] or [color=yellow]Warning[/color] status, the air alarm will switch to Filtering mode.
 
-* Keine: Deaktiviert alle mit dem Atmosphärenalarm verbundenen Geräte.
-* Filterung: [textlink="Luftauslässe" link="AirVent"] werden aktiviert und auf den normalen Atmosphärendruck eingestellt. [textlink="Luftwäscher" link="AirScrubber"] werden aktiviert und filtern Abgase wie gewohnt heraus.
-* Filterung (Weit): Wie Filterung, jedoch wird bei allen verbundenen [textlink="Luftwäschern" link="AirScrubber"] zusätzlich der WideNet-Modus aktiviert.
-* Füllen: [textlink="Luftauslässe" link="AirVent"] werden aktiviert und auf den maximalen Druck von [color=orange][protodata="GasVentPump" comp="GasVentPump" member="MaxPressure"/] kPa[/color] eingestellt. [textlink="Luftwäscher" link="AirScrubber"] werden deaktiviert.
-* Panik: [textlink="Luftauslässe" link="AirVent"] werden deaktiviert und [textlink="Luftwäscher" link="AirScrubber"] in den Absaugmodus versetzt.
+  This behavior can be disabled by toggling the "Auto" box in the bottom section of the air alarm menu.
 
-  Atmosphärenalarme wechseln abhängig vom Status des überwachten Bereichs automatisch zwischen den Modi [bold]Filterung[/bold] und [bold]Filterung (Weit)[/bold].
-
-  * Erreicht der Bereich den Status [color=red]Gefahr[/color] oder höher, wechselt der Atmosphärenalarm zu [bold]Filterung (Weit)[/bold].
-  * Befindet sich der Bereich im Status [color=green]Normal[/color] oder [color=yellow]Warnung[/color], wechselt der Atmosphärenalarm zu [bold]Filterung[/bold].
-
-Dieses Verhalten kann über das Kontrollkästchen „Auto“ im unteren Bereich des Atmosphärenalarm-Menüs deaktiviert werden.
-
-Weitere Hinweise zum Beheben von [textlink="Druckverlusten" link="Spacing"] und [textlink="Bränden" link="Fires"] findest du in den entsprechenden Leitfäden.
+  Relevant tips on how to fix [textlink="spacing" link="Spacing"] and [textlink="fires" link="Fires"] can be found in the relevant guides.
 </Document>
