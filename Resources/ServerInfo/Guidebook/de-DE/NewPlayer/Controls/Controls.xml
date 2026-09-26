@@ -1,0 +1,141 @@
+<Document>
+  # Steuerung
+
+  <Box>Du kannst deine Tastenbelegungen jederzeit hier ändern:</Box>
+  <Box Orientation="Vertical"><CommandButton Text="ui-options-tab-controls" Command="options 2"/></Box>
+
+  ## Benutzeroberfläche
+  Oben links findest du alle [bold]Menüschaltflächen[/bold] mit ihren jeweiligen Tastenkürzeln.
+  Schau sie dir an und mache dich mit ihren Funktionen vertraut, insbesondere mit dem Emote-Menü.
+  Besonders wichtig: Die Schaltfläche [color=red]Adminhilfe[/color] ([italic]AHelp[/italic]) wird [color=red][bold]rot[/bold][/color], wenn ein Administrator versucht, dich zu kontaktieren.
+
+  ### Aktionsleiste
+  Unter den Menüschaltflächen befindet sich die [bold]Aktionsleiste[/bold]. Sie zeigt allgemeine sowie ausrüstungsabhängige [color=cyan]Aktionen[/color] an, die dein Charakter ausführen kann.
+  Fahre mit der Maus über die Symbole, um ihre Funktion zu erfahren.
+
+  Gleichzeitig dient sie als [bold]Hotbar[/bold]: Du kannst die Aktionen über die entsprechenden [color=yellow][bold]Zahlentasten[/bold][/color] deiner Tastatur ausführen.
+  Die Reihenfolge kannst du ändern, indem du Symbole per [bold]Drag-and-Drop[/bold] verschiebst. Symbole lassen sich vorübergehend entfernen, indem du sie aus der Leiste herausziehst.
+
+  ### Statusleiste
+  Unter dem Chatfenster auf der rechten Seite befindet sich die [bold]Statusleiste[/bold], die die Zustände deines Charakters anzeigt.
+  Wie bei der Aktionsleiste kannst du mit der Maus über die Symbole fahren, um ihre Bedeutung zu erfahren.
+
+  Einige dieser Symbole können außerdem angeklickt werden.
+  Falls dein Charakter jemals [color=orangered]Feuer fängt[/color], erscheint ein Flammensymbol.
+  Klicke darauf mit [color=yellow][bold][keybind="Use"][/bold][/color], um dich [color=cyan]fallen zu lassen und zu rollen[/color].
+  Dasselbe gilt für das [color=cyan]Befreien aus Handschellen[/color], falls du einer Fesselung entkommen musst.
+
+  ### Inventarleiste
+  Am unteren Bildschirmrand findest du die [bold]Inventarleiste[/bold], die alle Symbole für Ausrüstung und Aufbewahrung enthält. Von links nach rechts:
+  - [color=cyan]Kleidungsinventar[/color] (unten links) — geöffnet mit [color=yellow][bold][keybind="OpenInventoryMenu"][/bold][/color] — enthält Plätze für Augen, Kopf, Hals, Gesicht, Ohren, Körper, Außenausrüstung, Hände und Schuhe,
+  - [bold]PDA-Steckplatz[/bold] — für einen PDA mit Ausweis und Stift,
+  - [bold]Gürtelplatz[/bold] — für Werkzeuggürtel und Jetpacks,
+  - [bold]Rückenplatz[/bold] — normalerweise für Umhängetaschen, Rucksäcke und Seesäcke, kann aber auch mittelgroße bis große Waffen sowie große Sauerstofftanks aufnehmen.
+  - [bold]Handplätze[/bold] — können als Übergabeplätze betrachtet werden,
+  - [bold]Taschenplätze[/bold] — praktisch für kleine Gegenstände mit schnellem Zugriff,
+  - [bold]Anzuglagerplatz[/bold] — nur nutzbar, wenn du einen Raumanzug, Hardsuit oder eine Rüstung trägst.
+  Gedacht für Sauerstofftanks und Jetpacks, kann aber auch Waffen aufnehmen.
+
+  [italic]Hinweis: Nicht-humanoide Spezies können leicht abweichende Inventarplätze besitzen.[/italic]
+
+  ## Bewegung
+  Um deinen Charakter zu bewegen, benutze [color=yellow][bold][keybind="MoveUp"][keybind="MoveLeft"][keybind="MoveDown"][keybind="MoveRight"][/bold][/color].
+
+  Getragene Gegenstände und Zustände beeinflussen deine Bewegungsgeschwindigkeit. Du kannst außerdem [color=yellow][bold][keybind="Walk"][/bold][/color] gedrückt halten, um [color=cyan]zu gehen[/color].
+  Dadurch bewegst du dich langsamer und verringerst die Gefahr, auf rutschigen Oberflächen wie Bananenschalen oder verschütteten Flüssigkeiten auszurutschen und hinzufallen.
+  \n[italic]Hinweis: Gehen kann im Steuerungsmenü auch auf einen [bolditalic]Umschalter[/bolditalic] gelegt werden.[/italic]
+
+  ### Weltraumspaziergänge
+  Wenn du dich in [color=#EB2D3A]Schwerelosigkeit[/color] befindest, kannst du dich weiterhin bewegen, allerdings mit deutlich geringerer Reibung, solange du dich in Reichweite einer Struktur befindest.
+
+  Falls du vollständig von der Station abtreibst und im [color=#EB2D3A]Weltraum[/color] landest, musst du die Gesetze der Bewegung nutzen, etwa indem du Gegenstände in die entgegengesetzte Richtung [bold]wirfst[/bold].
+
+  ## Hände
+  Deine Hände werden durch die [bold]Handplätze[/bold] am unteren Bildschirmrand dargestellt.
+  - Eine deiner Hände ist immer die [color=cyan]aktive Hand[/color].
+  - Wechsle die aktive Hand mit [color=yellow][bold][keybind="SwapHands"][/bold][/color].
+  - Nimm Gegenstände mit [color=yellow][bold][keybind="Use"][/bold][/color] in deine aktive, leere Hand auf.
+  - Verwende [color=yellow][bold][keybind="Use"][/bold][/color], um einen gehaltenen Gegenstand abzulegen oder mit ihm zu interagieren.
+  - Achte darauf, welche Hand aktiv ist, damit du nicht versehentlich den falschen Gegenstand benutzt.
+
+  [bold]Gegenstände können nicht per Drag-and-Drop zwischen Inventaren verschoben werden.[/bold]
+
+  ### Fallenlassen und Werfen
+  Nutze [color=yellow][bold][keybind="Drop"][/bold][/color], um einen Gegenstand aus deiner Hand innerhalb deiner Reichweite fallen zu lassen.
+  \n[color=cyan]Wirf[/color] Gegenstände auf deinen Mauszeiger mit [color=yellow][bold][keybind="ThrowItemInHand"][/bold][/color].
+
+  ### Ziehen und Schieben
+  Du kannst bewegliche [bold]Entitäten[/bold] ziehen, solange du mindestens eine freie Hand hast.
+  - Starte das Ziehen mit [color=yellow][bold][keybind="TryPullObject"][/bold][/color].
+  - Schiebe gezogene Entitäten mit [color=yellow][bold][keybind="MovePulledObject"][/bold][/color].
+  - Zum Loslassen drücke [color=yellow][bold][keybind="ReleasePulledObject"][/bold][/color].
+
+  ## Interaktionen
+  Das Spiel verfügt über sechs Arten kontextabhängiger Interaktionen.
+
+  ### Standard- und Alternativinteraktionen
+  Ein Klick mit [color=yellow][bold][keybind="Use"][/bold][/color] führt eine Standardinteraktion aus.
+
+  Einige Gegenstände besitzen Alternativinteraktionen. Verwende dafür [color=yellow][bold][keybind="AltActivateItemInWorld"][/bold][/color], um beispielsweise Schließfächer abzuschließen oder Batterien auszuwerfen.
+
+  ### Aktivierung
+  Mit [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] kannst du Aktivierungsinteraktionen durchführen.
+  Damit lassen sich Behälter öffnen, Türen bedienen oder Waffen repetieren, selbst wenn deine Hände voll sind.
+
+  Bei Personen öffnet dies das Strip-Menü, in dem du deren Inventar einsehen kannst.
+
+  ### Verwendung in der Hand
+  Viele Gegenstände besitzen Handinteraktionen, beispielsweise Flaschen öffnen, Waffen repetieren oder Spritzen umschalten.
+
+  Verwende dafür:
+  - [color=yellow][bold][keybind="ActivateItemInHand"][/bold][/color]
+  - [color=yellow][bold][keybind="AltActivateItemInHand"][/bold][/color]
+
+  ### Klicken und Ziehen
+  Du kannst eine Entität auf eine andere anwenden, indem du sie mit [color=yellow][bold][keybind="Use"][/bold][/color] auf die andere ziehst.
+
+  Damit kannst du unter anderem Personen auf Stühle setzen, auf Tische klettern oder Flüssigkeiten umfüllen.
+
+  ### Zeigen
+  Mit [color=yellow][bold][keybind="Point"][/bold][/color] kannst du auf einen Ort oder Gegenstand zeigen.
+
+  ## Kontextmenüs
+  Klicke mit [color=yellow][bold][keybind="UIRightClick"/][/bold][/color] auf eine Entität, um das Kontextmenü zu öffnen.
+
+  ### Untersuchen
+  Falls du dir bei einem Objekt oder Lebewesen unsicher bist, untersuche es mit [color=yellow][bold][keybind="ExamineEntity"][/bold][/color].
+
+  Zusätzlich zur Beschreibung werden hilfreiche Symbole angezeigt, etwa für Guides, Werte oder Gesundheit.
+
+  ## Inventar und Kleidung
+  Alle Gegenstände können über ihren Inventarplatz an- oder abgelegt werden.
+
+  Die einfachste Möglichkeit, Kleidung anzulegen, besteht darin, sie mit [color=yellow][bold][keybind="ActivateItemInHand"][/bold][/color] in der Hand zu verwenden.
+
+  ### Gegenstandsstapel
+  Um einen Stapel zu halbieren, verwende [color=yellow][bold][keybind="AltActivateItemInWorld"][/bold][/color].
+
+  ### Rücken- und Gürtelplätze
+  Öffne Taschen und Gürtel mit [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] oder den entsprechenden Tastenkürzeln.
+
+  ### Intelligentes Ausrüsten
+  Gegenstände können schnell zwischen Hand und Inventarplätzen verschoben werden:
+
+  - [color=yellow][bold][keybind="SmartEquipBackpack"][/bold][/color]
+  - [color=yellow][bold][keybind="SmartEquipBelt"][/bold][/color]
+  - [color=yellow][bold][keybind="SmartEquipPocket1"][/bold][/color]
+  - [color=yellow][bold][keybind="SmartEquipPocket2"][/bold][/color]
+  - [color=yellow][bold][keybind="SmartEquipSuitStorage"][/bold][/color]
+
+  ### Rasterinventare organisieren
+  Gegenstände lassen sich mit [color=yellow][bold][keybind="MoveStoredItem"][/bold][/color] verschieben und mit [color=yellow][bold][keybind="RotateStoredItem"][/bold][/color] drehen.
+
+  ## Kamera
+  Zoome mit [color=yellow][bold][keybind="ZoomIn"][/bold][/color] und [color=yellow][bold][keybind="ZoomOut"][/bold][/color].
+  Setze den Zoom mit [color=yellow][bold][keybind="ResetZoom"][/bold][/color] zurück.
+
+  \nDrehe die Kamera mit [color=yellow][bold][keybind="CameraRotateLeft"][/bold][/color] und [color=yellow][bold][keybind="CameraRotateRight"][/bold][/color].
+
+  \n[italic]Hinweis: Karten sind normalerweise für die Standardausrichtung der Kamera ausgelegt.[/italic]
+
+</Document>

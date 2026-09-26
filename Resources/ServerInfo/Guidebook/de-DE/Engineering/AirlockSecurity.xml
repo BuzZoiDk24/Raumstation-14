@@ -1,0 +1,48 @@
+<Document>
+  # Luftschleusen-Aufrüstungen
+
+Es kommt nicht selten vor, dass besonders einfallsreiche Personen versuchen, eine Luftschleuse zu umgehen, indem sie ihre interne Verkabelung manipulieren.
+
+Glücklicherweise können Luftschleusen mit verschiedenen Sicherheitsmaßnahmen ausgestattet werden, um unbefugten Zutritt deutlich zu erschweren.
+
+## Luftschleusen mit mittlerer Sicherheitsstufe
+
+Die einfachste Form des Einbruchschutzes besteht darin, eine verstärkte Stahlverkleidung anzubringen, welche den Zugriff auf die interne Verkabelung der Luftschleuse verhindert.
+
+Für die Aufrüstung einer normalen Luftschleuse auf eine Luftschleuse mit mittlerer Sicherheitsstufe werden folgende Materialien benötigt: <Box HorizontalAlignment="Stretch"> <Box> <GuideEntityEmbed Entity="SheetSteel" Caption="2 Stahlplatten"/> </Box> <Box> <GuideEntityEmbed Entity="Screwdriver" Caption="Schraubendreher"/> </Box> <Box> <GuideEntityEmbed Entity="Welder" Caption="Schweißgerät"/> </Box> </Box>
+
+So rüstest du eine normale Luftschleuse auf:
+
+* Verwende den Schraubendreher, um die Wartungsklappe der Luftschleuse zu öffnen.
+* Bringe die Stahlplatten an der Luftschleuse an.
+* Verschweiße die Stahlplatten.
+* Schließe die Wartungsklappe mit dem Schraubendreher.
+
+## Luftschleusen mit hoher Sicherheitsstufe
+
+Für Luftschleusen, die zu besonders sensiblen Bereichen der Raumstation führen, empfiehlt sich ein stärkerer Schutz. Luftschleusen mit hoher Sicherheitsstufe verfügen über eine verbesserte Panzerung zum Schutz ihrer internen Verkabelung.
+
+Für die Aufrüstung einer Luftschleuse mit mittlerer Sicherheitsstufe auf eine Luftschleuse mit hoher Sicherheitsstufe werden folgende Materialien benötigt: <Box HorizontalAlignment="Stretch"> <Box> <GuideEntityEmbed Entity="SheetPlasteel" Caption="2 Plasteelplatten"/> </Box> <Box> <GuideEntityEmbed Entity="Screwdriver" Caption="Schraubendreher"/> </Box> <Box> <GuideEntityEmbed Entity="Welder" Caption="Schweißgerät"/> </Box> </Box>
+
+So rüstest du eine Luftschleuse mit mittlerer Sicherheitsstufe auf:
+
+* Verwende den Schraubendreher, um die Wartungsklappe der Luftschleuse zu öffnen.
+* Bringe die Plasteelplatten an der Luftschleuse an.
+* Verschweiße die Plasteelplatten.
+* Schließe die Wartungsklappe mit dem Schraubendreher.
+
+## Luftschleusen mit maximaler Sicherheitsstufe
+
+Optional kann eine Luftschleuse mit hoher Sicherheitsstufe zu einer Luftschleuse mit maximaler Sicherheitsstufe aufgerüstet werden. Diese besitzt zusätzlich zu ihrer verstärkten Panzerung ein elektrisch geladenes Drahtgeflecht, das unbefugten Personen beim Manipulationsversuch einen Stromschlag versetzen kann.
+
+Für die Aufrüstung einer Luftschleuse mit hoher Sicherheitsstufe auf eine Luftschleuse mit maximaler Sicherheitsstufe werden folgende Materialien benötigt: <Box HorizontalAlignment="Stretch"> <Box> <GuideEntityEmbed Entity="SheetPlasteel" Caption="2 Plasteelplatten"/> </Box> <Box> <GuideEntityEmbed Entity="PartRodMetal" Caption="2 Metallstangen"/> </Box> <Box> <GuideEntityEmbed Entity="Screwdriver" Caption="Schraubendreher"/> </Box> <Box> <GuideEntityEmbed Entity="Welder" Caption="Schweißgerät"/> </Box> </Box>
+
+So rüstest du eine Luftschleuse mit hoher Sicherheitsstufe auf:
+
+* Verwende den Schraubendreher, um die Wartungsklappe der Luftschleuse zu öffnen.
+* Bringe die Plasteelplatten an der Luftschleuse an.
+* Verschweiße die Plasteelplatten.
+* Bringe die Metallstangen an der Luftschleuse an.
+* Schließe die Wartungsklappe mit dem Schraubendreher.
+
+</Document>

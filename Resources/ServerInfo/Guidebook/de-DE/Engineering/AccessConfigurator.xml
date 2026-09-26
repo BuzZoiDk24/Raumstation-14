@@ -1,0 +1,57 @@
+<Document>
+  # Zugangskonfigurator
+
+Der Zugangskonfigurator ist ein Werkzeug, mit dem festgelegt werden kann, welches Personal bestimmte Geräte verwenden darf.
+
+  <Box>
+	  <GuideEntityEmbed Entity="AccessConfigurator" Caption="Zugangskonfigurator"/>
+  </Box>
+
+Konfigurierbare Geräte umfassen Luftschleusen, gesicherte Kisten und Spinde sowie Maschinen mit Zugangsbeschränkung.
+Hinweis: Luftschleusen können der Einfachheit halber auch mit dem [color=#a4885c]Netzwerkkonfigurator[/color] (oder einem Multitool) konfiguriert werden.
+
+## Wo man Zugangskonfiguratoren findet
+
+Jede Station verfügt über bis zu zwei Zugangskonfiguratoren. Der erste befindet sich im Besitz des Chefingenieurs, während der zweite beim Personalchef zu finden ist.
+
+## Verwendung des Zugangskonfigurators
+
+So änderst du die Zugangsberechtigungen eines Geräts:
+
+* Verwende zunächst den Zugangskonfigurator auf dem gewünschten Gerät, um beide miteinander zu verbinden. Dadurch wird die Benutzeroberfläche des Konfigurators automatisch geöffnet.
+* Lege anschließend eine ID-Karte in den Zugangskonfigurator ein.
+* Passe die Zugangsberechtigungen des verbundenen Geräts an. Welche Berechtigungen hinzugefügt oder entfernt werden können, hängt von den Zugriffsrechten der eingelegten ID-Karte ab.
+* Alle Änderungen werden [color=#a4885c]sofort[/color] übernommen. Wirf die ID-Karte einfach aus dem Zugangskonfigurator aus und schließe die Benutzeroberfläche, sobald du fertig bist.
+
+## Einschränkungen beim Ändern von Zugriffsrechten
+
+Aus Sicherheitsgründen muss die eingelegte ID-Karte [bold]alle[/bold] aktuell aktiven Zugangsberechtigungen des verbundenen Geräts besitzen, damit diese geändert werden können.
+
+Ein Gerät, das beispielsweise sowohl für die Wissenschaft als auch für die Medizin zugänglich ist, kann nur mit einer ID-Karte geändert werden, die Zugriff auf [color=#a4885c]beide[/color] Abteilungen besitzt.
+Der Zugangskonfigurator warnt den Benutzer, wenn die eingelegte ID-Karte nicht über ausreichende Berechtigungen verfügt, um das Gerät zu ändern.
+
+Ein Gerät ohne gesetzte Zugangsberechtigungen, beispielsweise eine öffentliche Luftschleuse, kann mit jeder gültigen Stations-ID-Karte geändert werden.
+
+## Reparatur beschädigter ID-Kartenleser
+
+Syndikatsagenten können versuchen, zugangsbeschränkte Geräte mit einem [color=#a4885c]Authentifizierungsstörer[/color] zu manipulieren.
+Dieses hinterhältige Werkzeug setzt sämtliche am Gerät angeschlossenen ID-Kartenleser außer Betrieb und macht das Gerät dadurch für alle zugänglich.
+
+  <Box>
+    <GuideEntityEmbed Entity="AccessBreaker"/>
+  </Box>
+
+Um den Schaden zu beheben, muss das Gerät in der Regel teilweise zerlegt und anschließend wieder zusammengebaut werden.
+Dadurch werden die Zugangsberechtigungen auf die Standardwerte zurückgesetzt und das Gerät kann anschließend erneut nach Bedarf konfiguriert werden.
+
+## Reparatur manipulierter Luftschleusen
+
+Wurden die Zugangsberechtigungen einer Luftschleuse verändert, gibt es mehrere Möglichkeiten, sie zu reparieren.
+
+Besitzt du einen Zugangskonfigurator, kannst du zunächst mit einem [color=#a4885c]Schraubendreher[/color] die Wartungsklappe der Luftschleuse öffnen und anschließend mit dem Zugangskonfigurator die Zugangsberechtigungen der Luftschleuse neu konfigurieren.
+Eine teilweise Demontage ist dafür nicht erforderlich.
+
+Falls du keinen Zugangskonfigurator besitzt, kannst du die Luftschleuse trotzdem reparieren, indem du sie teilweise zerlegst, bis du die Türelektronik entfernt hast, und sie anschließend wieder zusammenbaust.
+Dadurch werden die Zugangsberechtigungen der Luftschleuse auf die Standardwerte zurückgesetzt, die sie zu Beginn der Schicht besaß.
+
+</Document>

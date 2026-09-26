@@ -1,0 +1,58 @@
+﻿<Document>
+# Station und Schichten
+
+Jede Runde in SS14 ist eine [bold]eigenständige Schicht[/bold], die auf einer von vielen verschiedenen Raumstationen stattfindet.
+
+Eine Runde dauert in der Regel [color=cyan]45 bis 90 Minuten[/color], du kannst jedoch jederzeit während einer laufenden Runde beitreten oder sie verlassen.
+
+## Shuttle-Terminal
+
+Wenn du einer bereits laufenden Schicht beitrittst, erscheinst du in der Regel am [color=lime]Shuttle-Terminal[/color].
+Dort kannst du dir etwas zu trinken holen, dich mit anderen Spielern unterhalten und auf das Shuttle warten, das dich zur Station bringt.
+
+Die Bildschirme an den Wänden zeigen die voraussichtliche Ankunftszeit des Shuttles an.
+Sobald es eintrifft, geh einfach an Bord, um zur Station transportiert zu werden.
+
+Bleib unbedingt innerhalb des Terminals und stelle dich nicht in die Landezone des Shuttles. [color=#EB2D3A][bold]Ankommende Shuttles können dich zerquetschen![/bold][/color]
+
+## Orientierung
+
+Jede Station verfügt über zahlreiche Bereiche, die du besuchen kannst.
+Dazu gehören sowohl die verschiedenen Abteilungen, in denen gearbeitet wird, als auch Gemeinschaftsbereiche zum Entspannen und Unterhalten.
+
+<Box>
+  <GuideEntityEmbed Entity="StationMap"/>
+  <GuideEntityEmbed Entity="SignDirectionalDorms" Caption="Wegweiser"/>
+  <GuideEntityEmbed Entity="SignBridge" Caption="Bereichsschilder"/>
+</Box>
+
+[color=cyan]Stationskarten[/color] geben dir einen Überblick über die gesamte Station. Farbige Markierungen kennzeichnen wichtige Bereiche.
+Normale [color=cyan]Schilder[/color] an den Wänden weisen dir den Weg zu den verschiedenen Abteilungen.
+
+## Die Station verlassen
+
+Am Ende einer Schicht [color=gray](sofern sie nicht in einer [color=red][bold]nuklearen Katastrophe[/bold][/color] endet)[/color] verlässt du die Station mit dem [color=lime]Evakuierungsshuttle[/color].
+
+Sobald es gerufen wurde, wird eine Stationsdurchsage abgespielt, die die Crew informiert und seine [color=cyan]Ankunft in 10 Minuten[/color] ankündigt.
+
+Nach seiner Ankunft musst du das Shuttle erreichen, an Bord gehen und die Reise zum [bold]Zentralkommando[/bold] überstehen.
+
+Die Runde endet offiziell erst, wenn du das [bold]Zentralkommando[/bold] erreicht hast.
+
+<Box>
+  <GuideEntityEmbed Entity="CryogenicSleepUnit"/>
+</Box>
+
+Falls du eine Runde vorzeitig verlassen musst, kannst du dafür eine [color=lime]Kryoschlafkammer[/color] benutzen.
+
+Steige einfach hinein und verlasse anschließend das Spiel. Deine Ausrüstung wird sicher verwahrt und kann weder gestohlen noch missbraucht werden.
+
+## Weitere Informationen
+
+Du lernst gerade die Steuerung? [textlink="Klicke hier, um mehr über die Steuerung zu erfahren." link="Controls"]
+
+Du weißt nicht, wie ein Beruf funktioniert? [textlink="Klicke hier, um zur Übersicht der Abteilungen zu gelangen." link="Jobs"]
+
+Du stirbst ständig? [textlink="Klicke hier, um den Überlebensleitfaden zu öffnen." link="Survival"]
+
+</Document>

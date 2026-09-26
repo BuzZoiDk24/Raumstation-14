@@ -1,0 +1,153 @@
+﻿<Document>
+  # Luftschleusen
+
+Luftschleusen dienen dazu, den Zugang zu verschiedenen Bereichen der Station zu kontrollieren.
+
+  <Box>
+    <GuideEntityEmbed Entity="Airlock" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockGlass" Caption=""/>
+  </Box>
+
+Luftschleusen können mit einer leeren Hand über [color=yellow][bold][keybind="Use"][/bold][/color], bei vollen Händen über [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] oder einfach durch Anlaufen geöffnet werden.
+
+Eine Luftschleuse öffnet sich jedoch nur, wenn du eine ID-Karte mit der erforderlichen Zugangsberechtigung besitzt.
+Die ID-Karte muss sich entweder in deiner Hand oder im ID-Steckplatz befinden.
+Falls du mehrere ID-Karten bei dir trägst, werden beim Öffnungsversuch alle überprüft.
+Dasselbe gilt für ID-Karten, die sich in einem PDA befinden.
+
+Die zum Öffnen erforderlichen Zugangsberechtigungen können mit einem Zugangskonfigurator oder durch die Bearbeitung der Türelektronik mittels Multitool (nach teilweiser Demontage der Luftschleuse) geändert werden.
+
+  <Box>
+    <GuideEntityEmbed Entity="AccessConfigurator" Caption=""/>
+    <GuideEntityEmbed Entity="Multitool" Caption=""/>
+    <GuideEntityEmbed Entity="DoorElectronics" Caption=""/>
+  </Box>
+
+Luftschleusen verhindern den Gasaustausch und können daher genutzt werden, um Bereiche bei einem [textlink="Hüllenbruch" link="Spacing"] oder einem [textlink="Brand" link="Fires"] abzuriegeln.
+Außerdem speichern sie auch im geschlossenen Zustand Gas auf ihrem Feld. Sei daher vorsichtig, wenn du sie während oder nach einem Gasaustritt öffnest.
+
+## Verriegelung und Notfallzugang
+
+Luftschleusen können verriegelt werden, sodass sie weder geöffnet noch von Hand aufgehebelt werden können. In diesem Zustand leuchten die Anzeigen oben an der Tür rot.
+
+Luftschleusen können außerdem auf **Notfallzugang** gestellt werden. In diesem Modus kann sie jeder unabhängig von seiner Zugangsberechtigung öffnen. Dies wird durch blinkende gelbe Anzeigen an der Oberseite der Tür signalisiert.
+
+## Fernsteuerung
+
+Luftschleusen können aus der Ferne gesteuert werden – entweder durch die Stations-KI oder mithilfe einer Türfernbedienung.
+
+  <Box>
+    <GuideEntityEmbed Entity="PlayerStationAiEmpty" Caption=""/>
+  </Box>
+  <Box>
+    [color=#999999][italic]Die Stations-KI kann sämtliche Luftschleusen der Station fernsteuern.[italic][/color]
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="DoorRemoteEngineering" Caption=""/>
+    <GuideEntityEmbed Entity="DoorRemoteCommand" Caption=""/>
+    <GuideEntityEmbed Entity="DoorRemoteMedical" Caption=""/>
+    <GuideEntityEmbed Entity="DoorRemoteService" Caption=""/>
+    <GuideEntityEmbed Entity="DoorRemoteSecurity" Caption=""/>
+    <GuideEntityEmbed Entity="DoorRemoteResearch" Caption=""/>
+  </Box>
+  <Box>
+    [color=#999999][italic]Praktische Türfernbedienungen – mit nahezu grenzenloser Macht.[italic][/color]
+  </Box>
+
+Abteilungsleiter erhalten in der Regel eine Türfernbedienung für ihre jeweilige Abteilung.
+
+Mit diesen Fernbedienungen können sie Türen öffnen, schließen, verriegeln und den Notfallzugang aktivieren.
+
+## Verbindungen
+
+Luftschleusen können über das [textlink="Verbindungssystem" link="Networking"] mit anderen Geräten verbunden werden.
+Dadurch lassen sich beispielsweise echte Schleusen zum Weltraum oder miteinander gekoppelte Luftschleusen realisieren.
+
+## Design
+
+Luftschleusen gibt es in verschiedenen Designs passend zu den einzelnen Abteilungen. Das Design verrät häufig auch, welche Zugangsberechtigung erforderlich ist.
+
+  <Box>
+    <GuideEntityEmbed Entity="Airlock" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockCargo" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockCommand" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockEngineering" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockMedical" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockScience" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockSecurity" Caption=""/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="AirlockGlass" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockCargoGlass" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockCommandGlass" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockEngineeringGlass" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockMedicalGlass" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockScienceGlass" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockSecurityGlass" Caption=""/>
+  </Box>
+
+Luftschleusen können mit einem Sprühlackierer umlackiert werden.
+
+  <Box>
+    <GuideEntityEmbed Entity="SprayPainter" Caption=""/>
+  </Box>
+
+## Verkabelung
+
+Hinter der Wartungsklappe einer Luftschleuse befindet sich ihre interne Verkabelung. Die Wartungsklappe lässt sich mit einem Schraubendreher öffnen.
+
+Jede Leitung steuert einen bestimmten Teil der Funktionalität der Luftschleuse.
+Je nachdem, ob eine Leitung gepulst, durchtrennt oder repariert wird, verändert sich das Verhalten der Luftschleuse.
+
+Die Anzeigen neben den Leitungen geben ihren Zustand an:
+
+* Dauerhaft leuchtend: Das System arbeitet normal.
+* Blinkend: Das System weist eine Störung auf oder verhält sich nicht wie vorgesehen.
+* Aus: Das System wird nicht mit Strom versorgt.
+
+Nachfolgend sind alle Leitungen und ihre Funktionen aufgeführt:
+
+[color=#a4885c]Bolzenleitung (BOLT)[/color]
+
+* [color=yellow]Leitung pulsen[/color]: Verriegelt oder entriegelt die Tür.
+* [color=red]Leitung durchtrennen[/color]: Verriegelt die Tür dauerhaft.
+* [color=green]Leitung reparieren[/color]: Keine Wirkung.
+
+[color=#a4885c]Stromleitung (POWR)[/color]
+
+* [color=yellow]Leitung pulsen[/color]: Unterbricht die Stromversorgung der Tür für kurze Zeit.
+* [color=red]Leitung durchtrennen[/color]: Unterbricht die Stromversorgung vollständig, wenn beide Stromleitungen getrennt sind. Ist nur eine getrennt, entsteht ein Kurzschluss, der Personen ohne isolierte Handschuhe einen Stromschlag versetzt.
+* [color=green]Leitung reparieren[/color]: Stellt entweder die Stromversorgung wieder her oder beendet den Kurzschluss.
+
+[color=#a4885c]Protokollleitung (LOG)[/color]
+
+* [color=yellow]Leitung pulsen[/color]: Deaktiviert die Türprotokollierung vorübergehend.
+* [color=red]Leitung durchtrennen[/color]: Deaktiviert die Türprotokollierung.
+* [color=green]Leitung reparieren[/color]: Aktiviert die Türprotokollierung wieder.
+
+[color=#a4885c]Verriegelungsanzeige (BLIT)[/color]
+
+* [color=yellow]Leitung pulsen[/color]: Schaltet die Anzeige vorübergehend aus oder wieder ein.
+* [color=red]Leitung durchtrennen[/color]: Verhindert, dass die Verriegelungsanzeige leuchtet.
+* [color=green]Leitung reparieren[/color]: Aktiviert die Anzeige wieder.
+
+[color=#a4885c]Timeranzeige (TIMR)[/color]
+
+* [color=yellow]Leitung pulsen[/color]: Verkürzt den Türtimer vorübergehend.
+* [color=red]Leitung durchtrennen[/color]: Deaktiviert den Timer. Die Tür schließt, sobald dies sicher möglich ist.
+* [color=green]Leitung reparieren[/color]: Aktiviert den Timer wieder.
+
+[color=#a4885c]Sicherheitsleitung (SAFE)[/color]
+
+* [color=yellow]Leitung pulsen[/color]: Deaktiviert das Sicherheitssystem vorübergehend.
+* [color=red]Leitung durchtrennen[/color]: Deaktiviert das Sicherheitssystem vollständig. Die Tür schließt auch dann, wenn sich ein Hindernis im Weg befindet.
+* [color=green]Leitung reparieren[/color]: Aktiviert das Sicherheitssystem wieder.
+
+[color=#a4885c]KI-Zugangsleitung (AIA)[/color]
+
+* [color=yellow]Leitung pulsen[/color]: Keine Wirkung.
+* [color=red]Leitung durchtrennen[/color]: Entzieht der KI die Kontrolle über die Tür.
+* [color=green]Leitung reparieren[/color]: Erlaubt der KI wieder den Zugriff auf die Tür.
+
+</Document>

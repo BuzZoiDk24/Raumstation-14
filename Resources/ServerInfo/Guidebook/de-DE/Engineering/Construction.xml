@@ -1,0 +1,24 @@
+<Document>
+  # Konstruktion
+
+  <Box>
+    <GuideEntityEmbed Entity="Bed" Caption=""/>
+    <GuideEntityEmbed Entity="TableReinforced" Caption=""/>
+    <GuideEntityEmbed Entity="WeaponImprovisedPneumaticCannon" Caption=""/>
+    <GuideEntityEmbed Entity="Chair" Caption=""/>
+  </Box>
+
+Über das **Konstruktionsmenü** kannst du im Spiel Objekte herstellen und bauen.
+Es lässt sich mit [color=yellow][bold][keybind="OpenCraftingMenu"][/bold][/color] öffnen.
+
+Beim Platzieren von Objekten, die am Raster ausgerichtet werden, kannst du [color=yellow][bold][keybind="EditorLinePlace"][/bold][/color] gedrückt halten, um eine ganze Reihe auf einmal zu platzieren, oder [color=yellow][bold][keybind="EditorGridPlace"][/bold][/color], um gleich ein ganzes Raster zu platzieren.
+
+Wenn du Objekte mit vielen Zutaten herstellst, musst du nicht alle Materialien gleichzeitig in der Hand halten. Du kannst sie einfach auf den Boden, in deinen Rucksack oder auf einen Tisch in deiner Nähe legen – sie werden beim Herstellen automatisch verwendet.
+
+Beim Platzieren einer **Bauvorschau** kannst du [color=yellow][bold][keybind="EditorRotateObject"][/bold][/color] drücken, um sie im Uhrzeigersinn zu drehen.
+
+Falls das Bauteil gespiegelt werden kann (zum Beispiel **Gasmischer** oder **Gasfilter**), kannst du mit [color=yellow][bold][keybind="EditorFlipObject"][/bold][/color] die Bauvorschau spiegeln.
+
+Bereits gebaute Objekte kannst du ebenfalls mit [color=yellow][bold][keybind="RotateObjectClockwise"][/bold][/color] bzw. [color=yellow][bold][keybind="RotateObjectCounterclockwise"][/bold][/color] im oder gegen den Uhrzeigersinn drehen, solange sie **nicht verankert** (also nicht festgeschraubt) sind.
+
+</Document>
