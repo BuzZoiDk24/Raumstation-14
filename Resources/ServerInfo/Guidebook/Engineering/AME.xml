@@ -1,30 +1,26 @@
 <Document>
-  # Antimaterie-Engine (AME)
+  # Antimatter Engine (AME)
+  The Antimatter Engine is a short-term support generator for the station, providing a sizable chunk of power for a limited time.
 
-  Die Antimaterie-Engine (AME) ist ein Generator zur kurzfristigen Unterstützung der Energieversorgung der Station. Sie liefert für begrenzte Zeit eine beträchtliche Menge Strom.
+  It's mainly used to assist engineers in starting up bigger engines like the [textlink="Singularity Engine" link="SingularityEngine"] or [textlink="Tesla Engine" link="TeslaEngine"], by supplementing the station's [textlink="batteries" link="PowerStorage"] with partial power to extend their runtime.
 
-  Sie wird hauptsächlich verwendet, um Ingenieuren beim Start größerer Energiequellen wie der [textlink="Singularitäts-Engine" link="SingularityEngine"] oder der [textlink="Tesla-Engine" link="TeslaEngine"] zu helfen. Dazu versorgt sie die [textlink="Stationsbatterien" link="PowerStorage"] teilweise mit Energie und verlängert so deren Laufzeit.
-
-  ## Aufbau
-
-  <Box>Benötigte Komponenten:</Box>
+  ## Construction
+  <Box>Required parts:</Box>
   <Box>
-    <GuideEntityEmbed Entity="AmeController"/>
-    <GuideEntityEmbed Entity="AmePartFlatpack"/>
-    <GuideEntityEmbed Entity="AmeJar"/>
+  <GuideEntityEmbed Entity="AmeController"/>
+  <GuideEntityEmbed Entity="AmePartFlatpack"/>
+  <GuideEntityEmbed Entity="AmeJar"/>
   </Box>
 
-  Der AME-Controller ist der Teil der AME, der über eine [textlink="HV-Verbindung" link="VoltageNetworks"] Strom in das Stationsnetz einspeist.
+  The AME Controller is the part of the AME that outputs power to the station's grid through an [textlink="HV connection" link="VoltageNetworks"].
+  Because of this, you'll want to start your AME construction with the controller on top of an [color=orange]HV wire[/color].
 
-  Daher solltest du den Aufbau deiner AME beginnen, indem du den Controller auf einer [color=orange]HV-Leitung[/color] platzierst.
+  Most stations have exposed [color=orange]HV wiring[/color] or designated spots to wrench an AME controller, so that it connects to the grid.
 
-  Die meisten Stationen verfügen über freiliegende [color=orange]HV-Leitungen[/color] oder speziell vorgesehene Stellen, an denen ein AME-Controller festgeschraubt werden kann, damit er mit dem Stromnetz verbunden wird.
+  AME shielding is the physical structure that makes the antimatter engine. It's made by converting AME flatpacks into shielding using a multitool.
 
-  Die AME-Abschirmung bildet die physische Struktur der Antimaterie-Engine. Sie wird hergestellt, indem AME-Bausätze mit einem Multitool in Abschirmungen umgewandelt werden.
-
-  Um eine AME zu errichten, solltest du zunächst ein 3×3 großes oder größeres Quadrat aus AME-Bausätzen platzieren. Achte dabei darauf, möglichst viele „Zentrumsteile“ zu erzeugen, die auf allen acht Seiten von weiteren Abschirmungen umgeben sind.
-
-  Je mehr Zentrumsteile vorhanden sind, desto mehr Kerne besitzt deine AME und desto mehr Energie kann sie sicher erzeugen.
+  To construct an AME, start putting down a 3x3 or larger square of AME flatpacks in preparation for construction, making sure to maximize the number of "center" pieces that are surrounded on all eight sides.
+  The greater amount of center pieces, the more cores your AME will have, and the more power it will be able to output safely.
 
   <Box>
     <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
@@ -42,7 +38,7 @@
     <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
   </Box>
 
-  Sobald dies abgeschlossen ist, kannst du jeden AME-Bausatz mit einem Multitool in eine Abschirmung umwandeln. Dadurch sollte eine vollständige AME-Konfiguration entstehen.
+  Once this is done, you can use a multitool to convert each AME flatpack into shielding, which should form a finished AME configuration.
 
   <GuideEntityEmbed Entity="AmeController" Caption=""/>
   <Box>
@@ -61,21 +57,20 @@
     <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
   </Box>
   <Box>
-    [color=#999999][italic]Beispiel für einen Aufbau mit einem Kern[/italic][/color]
+    [color=#999999][italic]An example of a one core setup[italic][/color]
   </Box>
 
-  ## Betrieb
+  ## Operation
+  To start the AME, insert a fuel jar into the AME controller, and set the safe injection rate.
 
-  Um die AME zu starten, setze einen Brennstoffbehälter in den AME-Controller ein und stelle die sichere Einspeiserate ein.
+  The safe injection rate is the point where the AME can safely run without overheating, while maximizing power output.
 
-  Die sichere Einspeiserate ist der Wert, bei dem die AME ihre maximale Leistung erzeugen kann, ohne zu überhitzen.
+  This rate is always twice the core count.
 
-  Dieser Wert entspricht immer dem Doppelten der Kernanzahl.
+  For example, an AME with one core will have a safe injection rate of 2. With two cores, the safe injection rate would be 4, and so on.
 
-  Beispielsweise besitzt eine AME mit einem Kern eine sichere Einspeiserate von 2. Bei zwei Kernen beträgt die sichere Einspeiserate 4 und so weiter.
+  Any more than this ratio will eventually result in the engine [color=#ff0000]overheating[/color] and, shortly afterwards, [color=#ff0000]exploding[/color].
 
-  Wird dieser Wert überschritten, wird die Engine schließlich [color=#ff0000]überhitzen[/color] und kurz darauf [color=#ff0000]explodieren[/color].
-
-  Der AME-Controller zeigt sowohl die aktuell in das Stromnetz eingespeiste Leistung als auch die theoretisch maximal verfügbare Leistung an.
+  The AME controller will [textlink="report" link="InspectingPower"] on both the amount of power it is providing to the grid, and the theoretical maximum power it could provide if demanded.
 
 </Document>

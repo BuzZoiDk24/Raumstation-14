@@ -1,16 +1,14 @@
 ﻿<Document>
-  # Gaseinlass
-
-Der Gaseinlass ist ein spezieller Gasauslass, der Gase aktiv in die Atmosphäre des Bereichs abgibt, in den er mündet.
-
+  #Air Injector
+  The air injector is a special vent that forces gasses into the atmosphere it's exposed to.
   <Box>
     <GuideEntityEmbed Entity="GasOutletInjector"/>
   </Box>
+  It is primarily used to force gasses into high-pressure rooms like the station's [textlink="gas storage rooms" link="GasMiningAndStorage"] or a burn chamber.
 
-Er wird hauptsächlich verwendet, um Gase in Bereiche mit hohem Druck einzuleiten, beispielsweise in die [textlink="Gasspeicherräume" link="GasMiningAndStorage"] der Station oder in eine Brennkammer.
+  The air injector does not require [textlink="power" link="Power"] to function.
 
-Der Gaseinlass benötigt keine [textlink="Stromversorgung" link="Power"], um zu funktionieren.
+  The air injector will inject gasses into the atmosphere it's exposed to until the atmosphere reaches [color=orange][protodata="GasOutletInjector" comp="GasOutletInjector" member="MaxPressure"/] kPa[/color].
 
-Der Gaseinlass gibt so lange Gas in die Umgebung ab, bis dort ein Druck von [color=orange][protodata="GasOutletInjector" comp="GasOutletInjector" member="MaxPressure"/] kPa[/color] erreicht ist.
-
-Die Fördergeschwindigkeit des Gaseinlasses ist proportional zur Gasmenge, die sich in ihm befindet. </Document>
+  The air injector's speed is proportional to the amount of gas in the injector.
+</Document>

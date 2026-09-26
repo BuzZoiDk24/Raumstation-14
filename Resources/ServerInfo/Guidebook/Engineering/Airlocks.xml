@@ -1,21 +1,20 @@
 ﻿<Document>
-  # Luftschleusen
-
-Luftschleusen dienen dazu, den Zugang zu verschiedenen Bereichen der Station zu kontrollieren.
+  # Airlocks
+  Airlocks are used to control access to different areas of the station.
 
   <Box>
     <GuideEntityEmbed Entity="Airlock" Caption=""/>
     <GuideEntityEmbed Entity="AirlockGlass" Caption=""/>
   </Box>
 
-Luftschleusen können mit einer leeren Hand über [color=yellow][bold][keybind="Use"][/bold][/color], bei vollen Händen über [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] oder einfach durch Anlaufen geöffnet werden.
+  Airlocks can be opened using either [color=yellow][bold][keybind="Use"][/bold][/color] with an empty hand, [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] if hands are full, or by colliding with the airlock.
 
-Eine Luftschleuse öffnet sich jedoch nur, wenn du eine ID-Karte mit der erforderlichen Zugangsberechtigung besitzt.
-Die ID-Karte muss sich entweder in deiner Hand oder im ID-Steckplatz befinden.
-Falls du mehrere ID-Karten bei dir trägst, werden beim Öffnungsversuch alle überprüft.
-Dasselbe gilt für ID-Karten, die sich in einem PDA befinden.
+  Airlocks will only open if you have an ID card with the correct access level.
+  The ID card must be in your hand or in your ID slot.
+  In the case of having multiple IDs, the airlock will check them all when you try to open it.
+  This behavior is also the same for IDs in a PDA.
 
-Die zum Öffnen erforderlichen Zugangsberechtigungen können mit einem Zugangskonfigurator oder durch die Bearbeitung der Türelektronik mittels Multitool (nach teilweiser Demontage der Luftschleuse) geändert werden.
+  The access level required to open the door can be modified using an Access Configurator, or by using a Multitool on the door electronics for the airlock (which requires deconstruction).
 
   <Box>
     <GuideEntityEmbed Entity="AccessConfigurator" Caption=""/>
@@ -23,24 +22,21 @@ Die zum Öffnen erforderlichen Zugangsberechtigungen können mit einem Zugangsko
     <GuideEntityEmbed Entity="DoorElectronics" Caption=""/>
   </Box>
 
-Luftschleusen verhindern den Gasaustausch und können daher genutzt werden, um Bereiche bei einem [textlink="Hüllenbruch" link="Spacing"] oder einem [textlink="Brand" link="Fires"] abzuriegeln.
-Außerdem speichern sie auch im geschlossenen Zustand Gas auf ihrem Feld. Sei daher vorsichtig, wenn du sie während oder nach einem Gasaustritt öffnest.
+  Airlocks block gas flow, so they can be used to seal off areas in case of a [textlink="hull breach" link="Spacing"] or a [textlink="fire." link="Fires"]
+  They also store gas on their tile, even when closed, so be careful when opening them during or after a gas leak.
 
-## Verriegelung und Notfallzugang
+  ## Bolting and Emergency Access
+  Airlocks can be bolted to prevent them from being opened or pried open by hand. When this occurs, the airlock will display red lights on the top of the door.
 
-Luftschleusen können verriegelt werden, sodass sie weder geöffnet noch von Hand aufgehebelt werden können. In diesem Zustand leuchten die Anzeigen oben an der Tür rot.
+  Airlocks can also be set to emergency access. In this mode, anyone can open the airlock, regardless of access level. When this occurs, the airlock will display flashing yellow lights on the top of the door.
 
-Luftschleusen können außerdem auf **Notfallzugang** gestellt werden. In diesem Modus kann sie jeder unabhängig von seiner Zugangsberechtigung öffnen. Dies wird durch blinkende gelbe Anzeigen an der Oberseite der Tür signalisiert.
-
-## Fernsteuerung
-
-Luftschleusen können aus der Ferne gesteuert werden – entweder durch die Stations-KI oder mithilfe einer Türfernbedienung.
-
+  ## Remote Control
+  Airlocks can be controlled remotely, either by the station AI or by using a Door Remote.
   <Box>
     <GuideEntityEmbed Entity="PlayerStationAiEmpty" Caption=""/>
   </Box>
   <Box>
-    [color=#999999][italic]Die Stations-KI kann sämtliche Luftschleusen der Station fernsteuern.[italic][/color]
+    [color=#999999][italic]The Station AI, which has remote control over all airlocks[italic][/color]
   </Box>
 
   <Box>
@@ -52,21 +48,20 @@ Luftschleusen können aus der Ferne gesteuert werden – entweder durch die Stat
     <GuideEntityEmbed Entity="DoorRemoteResearch" Caption=""/>
   </Box>
   <Box>
-    [color=#999999][italic]Praktische Türfernbedienungen – mit nahezu grenzenloser Macht.[italic][/color]
+    [color=#999999][italic]Precious door remotes. With unlimited power...[italic][/color]
   </Box>
 
-Abteilungsleiter erhalten in der Regel eine Türfernbedienung für ihre jeweilige Abteilung.
 
-Mit diesen Fernbedienungen können sie Türen öffnen, schließen, verriegeln und den Notfallzugang aktivieren.
+  Department heads usually get door remotes for their respective department.
 
-## Verbindungen
+  They can open, close, bolt, and set to emergency access using these remotes.
 
-Luftschleusen können über das [textlink="Verbindungssystem" link="Networking"] mit anderen Geräten verbunden werden.
-Dadurch lassen sich beispielsweise echte Schleusen zum Weltraum oder miteinander gekoppelte Luftschleusen realisieren.
+  ## Linking
+  Airlocks can be linked using the [textlink="Link" link="Networking"] system to other devices.
+  This allows for proper station airlocks to space, or to link multiple airlocks together.
 
-## Design
-
-Luftschleusen gibt es in verschiedenen Designs passend zu den einzelnen Abteilungen. Das Design verrät häufig auch, welche Zugangsberechtigung erforderlich ist.
+  ## Styling
+  Airlocks can come in different styles to match station departments. The department style commonly reflects the required access level.
 
   <Box>
     <GuideEntityEmbed Entity="Airlock" Caption=""/>
@@ -87,67 +82,56 @@ Luftschleusen gibt es in verschiedenen Designs passend zu den einzelnen Abteilun
     <GuideEntityEmbed Entity="AirlockSecurityGlass" Caption=""/>
   </Box>
 
-Luftschleusen können mit einem Sprühlackierer umlackiert werden.
-
+  Airlocks can be repainted using a spray painter.
   <Box>
     <GuideEntityEmbed Entity="SprayPainter" Caption=""/>
   </Box>
 
-## Verkabelung
+  ## Wiring
+  Airlocks have internal wiring under their maintenance panel, which can be opened using a screwdriver.
+  Each wire controls some aspect of the airlock's functionality.
+  When you either pulse, cut, or mend the wire, it will affect the airlock in different ways.
 
-Hinter der Wartungsklappe einer Luftschleuse befindet sich ihre interne Verkabelung. Die Wartungsklappe lässt sich mit einem Schraubendreher öffnen.
+  The lights next to the wires will indicate the status of the wire:
+  - A steady light indicates that the system is functioning as normal.
+  - A flashing light indicates that the system is malfunctioning. It is either not working or is behaving not as intended.
+  - No light indicates that the system is not powered.
 
-Jede Leitung steuert einen bestimmten Teil der Funktionalität der Luftschleuse.
-Je nachdem, ob eine Leitung gepulst, durchtrennt oder repariert wird, verändert sich das Verhalten der Luftschleuse.
+  Below is a list of the wires and their functions:
 
-Die Anzeigen neben den Leitungen geben ihren Zustand an:
+  [color=#a4885c]Bolt Wire (BOLT)[/color]
+  - [color=yellow]Pulse the wire[/color]: Bolts or unbolts the door.
+  - [color=red]Cut the wire[/color]: Bolts the door.
+  - [color=green]Mend the wire[/color]: Does nothing.
 
-* Dauerhaft leuchtend: Das System arbeitet normal.
-* Blinkend: Das System weist eine Störung auf oder verhält sich nicht wie vorgesehen.
-* Aus: Das System wird nicht mit Strom versorgt.
+  [color=#a4885c]Power Wire (POWR)[/color]
+  - [color=yellow]Pulse the wire[/color]: Cuts power to the door for a short time.
+  - [color=red]Cut the wire[/color]: Either cuts power to the door if both power wires are cut, or causes a short circuit if only one is cut, shocking people without insulated gloves.
+  - [color=green]Mend the wire[/color]: Either restores power to the door if both power wires are cut, or stops the short circuit if only one is cut.
 
-Nachfolgend sind alle Leitungen und ihre Funktionen aufgeführt:
+  [color=#a4885c]Log Wire (LOG)[/color]
+  - [color=yellow]Pulse the wire[/color]: Temporary disables door logging.
+  - [color=red]Cut the wire[/color]: Disables door logging.
+  - [color=green]Mend the wire[/color]: Re-enables door logging.
 
-[color=#a4885c]Bolzenleitung (BOLT)[/color]
+  [color=#a4885c]Bolt Light (BLIT)[/color]
+  - [color=yellow]Pulse the wire[/color]: Turns the system off temporarily, or turns it back on.
+  - [color=red]Cut the wire[/color]: Prevents the bolt light from turning on, which communicates if the door is bolted or not.
+  - [color=green]Mend the wire[/color]: Turns the system back on.
 
-* [color=yellow]Leitung pulsen[/color]: Verriegelt oder entriegelt die Tür.
-* [color=red]Leitung durchtrennen[/color]: Verriegelt die Tür dauerhaft.
-* [color=green]Leitung reparieren[/color]: Keine Wirkung.
+  [color=#a4885c]Timer Light (TIMR)[/color]
+  - [color=yellow]Pulse the wire[/color]: Reduces the door timer temporarily.
+  - [color=red]Cut the wire[/color]: Disables the timer. The door will close as soon as it is safe to do so.
+  - [color=green]Mend the wire[/color]: Re-enables the timer.
 
-[color=#a4885c]Stromleitung (POWR)[/color]
+  [color=#a4885c]Safety Light (SAFE)[/color]
+  - [color=yellow]Pulse the wire[/color]: Disables the safety system temporarily.
+  - [color=red]Cut the wire[/color]: Disables the safety system. The door will close even if there is an obstruction.
+  - [color=green]Mend the wire[/color]: Re-enables the safety system.
 
-* [color=yellow]Leitung pulsen[/color]: Unterbricht die Stromversorgung der Tür für kurze Zeit.
-* [color=red]Leitung durchtrennen[/color]: Unterbricht die Stromversorgung vollständig, wenn beide Stromleitungen getrennt sind. Ist nur eine getrennt, entsteht ein Kurzschluss, der Personen ohne isolierte Handschuhe einen Stromschlag versetzt.
-* [color=green]Leitung reparieren[/color]: Stellt entweder die Stromversorgung wieder her oder beendet den Kurzschluss.
-
-[color=#a4885c]Protokollleitung (LOG)[/color]
-
-* [color=yellow]Leitung pulsen[/color]: Deaktiviert die Türprotokollierung vorübergehend.
-* [color=red]Leitung durchtrennen[/color]: Deaktiviert die Türprotokollierung.
-* [color=green]Leitung reparieren[/color]: Aktiviert die Türprotokollierung wieder.
-
-[color=#a4885c]Verriegelungsanzeige (BLIT)[/color]
-
-* [color=yellow]Leitung pulsen[/color]: Schaltet die Anzeige vorübergehend aus oder wieder ein.
-* [color=red]Leitung durchtrennen[/color]: Verhindert, dass die Verriegelungsanzeige leuchtet.
-* [color=green]Leitung reparieren[/color]: Aktiviert die Anzeige wieder.
-
-[color=#a4885c]Timeranzeige (TIMR)[/color]
-
-* [color=yellow]Leitung pulsen[/color]: Verkürzt den Türtimer vorübergehend.
-* [color=red]Leitung durchtrennen[/color]: Deaktiviert den Timer. Die Tür schließt, sobald dies sicher möglich ist.
-* [color=green]Leitung reparieren[/color]: Aktiviert den Timer wieder.
-
-[color=#a4885c]Sicherheitsleitung (SAFE)[/color]
-
-* [color=yellow]Leitung pulsen[/color]: Deaktiviert das Sicherheitssystem vorübergehend.
-* [color=red]Leitung durchtrennen[/color]: Deaktiviert das Sicherheitssystem vollständig. Die Tür schließt auch dann, wenn sich ein Hindernis im Weg befindet.
-* [color=green]Leitung reparieren[/color]: Aktiviert das Sicherheitssystem wieder.
-
-[color=#a4885c]KI-Zugangsleitung (AIA)[/color]
-
-* [color=yellow]Leitung pulsen[/color]: Keine Wirkung.
-* [color=red]Leitung durchtrennen[/color]: Entzieht der KI die Kontrolle über die Tür.
-* [color=green]Leitung reparieren[/color]: Erlaubt der KI wieder den Zugriff auf die Tür.
+  [color=#a4885c]AI Access Light (AIA)[/color]
+  - [color=yellow]Pulse the wire[/color]: Does nothing.
+  - [color=red]Cut the wire[/color]: Disables AI access. The AI can no longer control the door.
+  - [color=green]Mend the wire[/color]: Re-enables AI access.
 
 </Document>
