@@ -54,6 +54,7 @@ namespace Content.Shared.Localizations
 			var cultureDe = new CultureInfo("de-DE");
 			_loc.AddFunction(cultureDe, "MAKEPLURAL", FormatMakePluralDe);
 			_loc.AddFunction(cultureDe, "MANY", FormatManyDe);
+            _loc.AddFunction(cultureDe, "DE-ARTICLE", FormatGermanArticle);
         }
 
         private ILocValue FormatMany(LocArgs args)
@@ -314,6 +315,51 @@ namespace Content.Shared.Localizations
                 time = timeArg;
             }
             return new LocValueString(FormatPlaytime(time));
+        }
+
+        private static ILocValue FormatGermanArticle(LocArgs args)
+        {
+            if (args.Args.Count < 2)
+                return new LocValueString("");
+
+            var genus = ((LocValueString) args.Args[0]).Value.ToLowerInvariant();
+            var grammaticalCase = ((LocValueString) args.Args[1]).Value.ToLowerInvariant();
+
+            var number = args.Args.Count >= 3
+                ? ((LocValueString) args.Args[2]).Value.ToLowerInvariant()
+                : "singular";
+
+            if (number == "plural")
+            {
+                return grammaticalCase switch
+                {
+                    "nominative" => new LocValueString("die"),
+                    "accusative" => new LocValueString("die"),
+                    "dative" => new LocValueString("den"),
+                    "genitive" => new LocValueString("der"),
+                    _ => new LocValueString("")
+                };
+            }
+
+            return (genus, grammaticalCase) switch
+            {
+                ("masculine", "nominative") => new LocValueString("der"),
+                ("masculine", "accusative") => new LocValueString("den"),
+                ("masculine", "dative") => new LocValueString("dem"),
+                ("masculine", "genitive") => new LocValueString("des"),
+
+                ("feminine", "nominative") => new LocValueString("die"),
+                ("feminine", "accusative") => new LocValueString("die"),
+                ("feminine", "dative") => new LocValueString("der"),
+                ("feminine", "genitive") => new LocValueString("der"),
+
+                ("neuter", "nominative") => new LocValueString("das"),
+                ("neuter", "accusative") => new LocValueString("das"),
+                ("neuter", "dative") => new LocValueString("dem"),
+                ("neuter", "genitive") => new LocValueString("des"),
+
+                _ => new LocValueString("")
+            };
         }
     }
 }
