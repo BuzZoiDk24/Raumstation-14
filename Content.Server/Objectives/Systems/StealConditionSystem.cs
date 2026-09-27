@@ -73,15 +73,32 @@ public sealed partial class StealConditionSystem : EntitySystem
     private void OnAfterAssign(Entity<StealConditionComponent> condition, ref ObjectiveAfterAssignEvent args)
     {
         var group = ProtoMan.Index(condition.Comp.StealGroup);
-        string localizedName = Loc.GetString(group.Name);
+        // The target is a group, not a specific entity. Read grammar from its
+        // localized name so every acceptable item shares the same wording.
+        var localizedName = Loc.GetString(group.Name);
+        var gender = Loc.GetString($"{group.Name}.gender");
+        var number = Loc.GetString($"{group.Name}.number");
+        var objectName = Loc.GetString($"{group.Name}.object");
+        var subjectName = Loc.GetString($"{group.Name}.subject");
 
         var title = condition.Comp.OwnerText == null
-            ? Loc.GetString(condition.Comp.ObjectiveNoOwnerText, ("itemName", localizedName))
-            : Loc.GetString(condition.Comp.ObjectiveText, ("owner", Loc.GetString(condition.Comp.OwnerText)), ("itemName", localizedName));
+            ? Loc.GetString(condition.Comp.ObjectiveNoOwnerText,
+                ("itemName", localizedName), ("itemGender", gender),
+                ("itemNumber", number), ("itemObject", objectName))
+            : Loc.GetString(condition.Comp.ObjectiveText,
+                ("owner", Loc.GetString(condition.Comp.OwnerText)),
+                ("itemName", localizedName), ("itemGender", gender),
+                ("itemNumber", number), ("itemObject", objectName));
 
         var description = condition.Comp.CollectionSize > 1
-            ? Loc.GetString(condition.Comp.DescriptionMultiplyText, ("itemName", localizedName), ("count", condition.Comp.CollectionSize))
-            : Loc.GetString(condition.Comp.DescriptionText, ("itemName", localizedName));
+            ? Loc.GetString(condition.Comp.DescriptionMultiplyText,
+                ("itemName", localizedName),
+                ("itemPlural", Loc.GetString($"{group.Name}.plural")),
+                ("count", condition.Comp.CollectionSize))
+            : Loc.GetString(condition.Comp.DescriptionText,
+                ("itemName", localizedName), ("itemGender", gender),
+                ("itemNumber", number), ("itemObject", objectName),
+                ("itemSubject", subjectName));
 
         _metaData.SetEntityName(condition.Owner, title, args.Meta);
         _metaData.SetEntityDescription(condition.Owner, description, args.Meta);

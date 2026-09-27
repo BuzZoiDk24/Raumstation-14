@@ -1,1 +1,1 @@
-objective-condition-supercrit-anomalies-title = Cause {$count} anomalies to go supercritical
+objective-condition-supercrit-anomalies-title = Bringe {$count} Anomalien in einen überkritischen Zustand.
