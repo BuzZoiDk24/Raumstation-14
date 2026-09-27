@@ -38,8 +38,8 @@ public sealed partial class JobPrototype : IPrototype
     public string LocalizedName => Loc.GetString(Name);
 
     /// <summary>
-    /// Uses the selected pronouns for the job title. For "es" and legacy neutral
-    /// pronouns, the body choice selects the grammatical form.
+    /// Uses feminine job titles for "sie". For "divers" and "es", the body
+    /// choice selects the grammatical form.
     /// </summary>
     public string GetLocalizedName(Gender pronouns, Sex sex)
     {
@@ -54,7 +54,7 @@ public sealed partial class JobPrototype : IPrototype
         return LocalizedName;
     }
 
-    public string GetLocalizedName(Sex sex) => GetLocalizedName(Gender.Epicene, sex);
+    public string GetLocalizedName(Sex sex) => GetLocalizedName(Gender.Neuter, sex);
 
     /// <summary>
     /// The name of this job as displayed to players.

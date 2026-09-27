@@ -50,10 +50,8 @@ public sealed partial class HumanoidProfileEditor
         PronounsButton.Clear();
         PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-male-text"), (int)Gender.Male);
         PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-female-text"), (int)Gender.Female);
+        PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-epicene-text"), (int)Gender.Epicene);
         PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-neuter-text"), (int)Gender.Neuter);
-        // Existing neutral characters keep their pronouns until their owner changes them.
-        if (Profile.Gender == Gender.Epicene)
-            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-legacy-text"), (int)Gender.Epicene);
         PronounsButton.SelectId((int)Profile.Gender);
     }
 
