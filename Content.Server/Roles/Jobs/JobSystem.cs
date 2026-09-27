@@ -1,8 +1,10 @@
-using System.Globalization;
 using Content.Server.Chat.Managers;
+using Content.Server.Preferences.Managers;
+using Content.Shared.Humanoid;
 using Content.Shared.Mind;
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
+using Robust.Shared.Enums;
 using Robust.Shared.Player;
 
 namespace Content.Server.Roles.Jobs;
@@ -14,6 +16,7 @@ public sealed partial class JobSystem : SharedJobSystem
 {
     [Dependency] private IChatManager _chat = default!;
     [Dependency] private ISharedPlayerManager _player = default!;
+    [Dependency] private IServerPreferencesManager _serverPreferences = default!;
     [Dependency] private RoleSystem _roles = default!;
 
     public override void Initialize()
@@ -48,13 +51,16 @@ public sealed partial class JobSystem : SharedJobSystem
         if (!MindTryGetJob(mindId, out var prototype))
             return;
 
+        var profile = _serverPreferences.GetPreferencesOrNull(session.UserId)?.SelectedCharacter;
+        var jobName = prototype.GetLocalizedName(profile?.Gender ?? Gender.Male, profile?.Sex ?? Sex.Male);
+
         _chat.DispatchServerMessage(session, Loc.GetString("job-greet-introduce-job-name",
-            ("jobName", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(prototype.LocalizedName))));
+            ("jobName", jobName)));
 
         if (prototype.RequireAdminNotify)
             _chat.DispatchServerMessage(session, Loc.GetString("job-greet-important-disconnect-admin-notify"));
 
-        _chat.DispatchServerMessage(session, Loc.GetString("job-greet-supervisors-warning", ("jobName", prototype.LocalizedName), ("supervisors", Loc.GetString(prototype.Supervisors))));
+        _chat.DispatchServerMessage(session, Loc.GetString("job-greet-supervisors-warning", ("jobName", jobName), ("supervisors", Loc.GetString(prototype.Supervisors))));
     }
 
     public void MindAddJob(EntityUid mindId, string jobPrototypeId)

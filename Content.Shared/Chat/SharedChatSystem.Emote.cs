@@ -12,6 +12,18 @@ public abstract partial class SharedChatSystem
     [Dependency] private HumanoidProfileSystem _humanoidProfiles = default!;
 
     private FrozenDictionary<string, EmotePrototype> _wordEmoteDict = FrozenDictionary<string, EmotePrototype>.Empty;
+    private static readonly Dictionary<string, string> GermanEmoteVerbs = new()
+    {
+        ["schreit"] = "Scream", ["lacht"] = "Laugh", ["hupt"] = "Honk",
+        ["seufzt"] = "Sigh", ["pfeift"] = "Whistle", ["weint"] = "Crying",
+        ["quetscht"] = "Squish", ["zirpt"] = "Chitter", ["quietscht"] = "Squeak",
+        ["klickt"] = "Click", ["bellt"] = "Bark", ["knurrt"] = "Snarl",
+        ["winselt"] = "Whine", ["heult"] = "Howl", ["grollt"] = "Growl",
+        ["klatscht"] = "Clap", ["schnippt"] = "Snap", ["klopft"] = "Thump",
+        ["salutiert"] = "Salute", ["keucht"] = "Gasp", ["summt"] = "Buzz",
+        ["zwitschert"] = "Chirp", ["piept"] = "Beep", ["klingelt"] = "Chime",
+        ["pingt"] = "Ping",
+    };
 
     private void CacheEmotes()
     {
@@ -31,9 +43,32 @@ public abstract partial class SharedChatSystem
 
                 dict.Add(lowerWord, emote);
             }
+
+            // The prototype triggers are English. Keep those and also accept the localized menu name.
+            var localizedName = Loc.GetString(emote.Name).ToLowerInvariant();
+            dict.TryAdd(localizedName, emote);
+
+            foreach (var (word, emoteId) in GermanEmoteVerbs)
+            {
+                if (emote.ID == emoteId)
+                    dict.TryAdd(word, emote);
+            }
         }
 
         _wordEmoteDict = dict.ToFrozenDictionary();
+    }
+
+    /// <summary>
+    /// Replaces an emote command with its localized message after its emote event has been accepted.
+    /// </summary>
+    protected string LocalizeEmoteChatInput(EntityUid source, string action)
+    {
+        var word = TrimPunctuation(action.ToLowerInvariant());
+        if (!_wordEmoteDict.TryGetValue(word, out var emote) || emote.ChatMessages.Count == 0)
+            return action;
+
+        var bodySex = _humanoidProfiles.GetBodySex(source)?.ToString().ToLowerInvariant() ?? "unsexed";
+        return Loc.GetString(Random.Pick(emote.ChatMessages), ("entity", source), ("bodySex", bodySex));
     }
 
     /// <summary>

@@ -265,6 +265,7 @@ public sealed partial class HumanoidProfileEditor
     private void SetGender(Gender newGender)
     {
         Profile = Profile?.WithGender(newGender);
+        RefreshJobs();
         ReloadPreview();
     }
 

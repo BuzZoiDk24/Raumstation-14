@@ -38,18 +38,23 @@ public sealed partial class JobPrototype : IPrototype
     public string LocalizedName => Loc.GetString(Name);
 
     /// <summary>
-    /// Uses a gender-specific translation when one exists; otherwise keeps the default job title.
-    /// The body choice selects the job title; pronouns are independent.
+    /// Uses the selected pronouns for the job title. For "es" and legacy neutral
+    /// pronouns, the body choice selects the grammatical form.
     /// </summary>
-    public string GetLocalizedName(Sex sex)
+    public string GetLocalizedName(Gender pronouns, Sex sex)
     {
-        if (sex == Sex.Female &&
+        var feminine = pronouns == Gender.Female ||
+                       (pronouns != Gender.Male && sex == Sex.Female);
+
+        if (feminine &&
             IoCManager.Resolve<ILocalizationManager>().TryGetString($"{Name}-female", out var name) &&
             name != null)
             return name;
 
         return LocalizedName;
     }
+
+    public string GetLocalizedName(Sex sex) => GetLocalizedName(Gender.Epicene, sex);
 
     /// <summary>
     /// The name of this job as displayed to players.

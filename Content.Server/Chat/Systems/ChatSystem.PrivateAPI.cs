@@ -191,15 +191,18 @@ public sealed partial class ChatSystem
         var ent = Identity.Entity(source, EntityManager);
         string name = FormattedMessage.EscapeText(nameOverride ?? Name(ent));
 
+        if (checkEmote &&
+            !TryEmoteChatInput(source, action))
+            return;
+
+        if (checkEmote)
+            action = LocalizeEmoteChatInput(source, action);
+
         // Emotes use Identity.Name, since it doesn't actually involve your voice at all.
         var wrappedMessage = Loc.GetString("chat-manager-entity-me-wrap-message",
             ("entityName", name),
             ("entity", ent),
             ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
-
-        if (checkEmote &&
-            !TryEmoteChatInput(source, action))
-            return;
 
         SendInVoiceRange(ChatChannel.Emotes, action, wrappedMessage, source, range, author);
         if (!hideLog)

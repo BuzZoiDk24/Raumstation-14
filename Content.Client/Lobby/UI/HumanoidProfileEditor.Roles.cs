@@ -65,7 +65,7 @@ public sealed partial class HumanoidProfileEditor
         _loadoutWindow = new LoadoutWindow(Profile, roleLoadout, roleLoadoutProto, _playerManager.LocalSession, collection)
         {
             Title = Loc.GetString("loadout-window-title-loadout",
-                ("job", jobProto?.GetLocalizedName(Profile?.Sex ?? Sex.Male) ?? string.Empty)),
+                ("job", jobProto?.GetLocalizedName(Profile.Gender, Profile.Sex) ?? string.Empty)),
         };
 
         // Refresh the buttons etc.
@@ -211,7 +211,7 @@ public sealed partial class HumanoidProfileEditor
                 };
                 var jobIcon = _prototypeManager.Index(job.Icon);
                 icon.Texture = _sprite.Frame0(jobIcon.Icon);
-                selector.Setup(items, job.GetLocalizedName(Profile?.Sex ?? Sex.Male), 200,
+                selector.Setup(items, job.GetLocalizedName(Profile?.Gender ?? Gender.Male, Profile?.Sex ?? Sex.Male), 200,
                     job.LocalizedDescription, icon, job.Guides);
 
                 if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))

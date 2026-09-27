@@ -171,7 +171,7 @@ public sealed partial class StationRecordsSystem : EntitySystem
         {
             Name = name,
             Age = age,
-            JobTitle = jobPrototype.LocalizedName,
+            JobTitle = jobPrototype.GetLocalizedName(profile.Gender, profile.Sex),
             JobIcon = jobPrototype.Icon,
             JobPrototype = jobId,
             Species = species,
