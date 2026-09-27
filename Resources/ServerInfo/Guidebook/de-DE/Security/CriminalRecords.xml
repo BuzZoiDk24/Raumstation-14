@@ -1,40 +1,40 @@
 ﻿<Document>
-  # Criminal Records
-  The criminal records console is accessible in every station's security department, it serves the purpose of tracking and managing the criminal history and status of anybody part of the crew manifest.
+  # Strafregister
+  Das Strafregisterterminal steht in der Sicherheitsabteilung jeder Station. Hier kannst du den Sicherheitsstatus und die Einträge zu allen Personen im Crewverzeichnis nachsehen und verwalten.
 
   <Box>
   <GuideEntityEmbed Entity="ComputerCriminalRecords"/>
   </Box>
 
-  Anyone can open the console's UI, but only those with Security access can modify anything.
+  Das Terminal können alle öffnen. Einträge ändern dürfen nur Personen mit Sicherheitszugang.
 
-  The UI is composed by the following elements:
-  - A search bar that has a filter next to it that lets you filter the crewmembers by their names, fingerprints or DNA.
+  Die Oberfläche besteht aus folgenden Bereichen:
+  - Eine Suchleiste mit einem Filter, über den du nach Namen, Fingerabdrücken oder DNA suchen kannst.
 
-  - A list of all the crewmembers in the manifest, selecting one of the entries will make the criminal records of a crewmember appear. The list is filtered by the search bar so make sure it's empty if you want an overall overview!
+  - Eine Liste aller Personen im Crewverzeichnis. Wählst du jemanden aus, erscheint der zugehörige Eintrag. Für einen Überblick über die gesamte Crew musst du das Suchfeld leeren.
 
-  - The criminal records themselves
+  - Die Strafregistereinträge selbst.
 
-  - The filter button below the crew list can be used to show only wanted, detained, or paroled crew.
-  In the record section you can:
-    - See security-related information about a crewmember like their name, fingerprints and DNA.
+  - Mit dem Filter unter der Crewliste kannst du dir zum Beispiel nur gesuchte, festgenommene oder auf Bewährung entlassene Personen anzeigen lassen.
+  Im Eintrag kannst du:
+    - Angaben wie Name, Fingerabdrücke und DNA nachsehen.
 
-    - Change the security status between [color=gray]None[/color], [color=yellow]Wanted[/color] and [color=red]Detained[/color]. When setting it to Wanted you will be asked to write a reason.
+    - Den Sicherheitsstatus ändern, etwa zwischen [color=gray]Kein Eintrag[/color], [color=yellow]Gesucht[/color] und [color=red]Festgenommen[/color]. Wenn du jemanden als gesucht einträgst, musst du einen Grund angeben.
 
-    - If they are wanted, you can see the reason given below the status dropdown.
+    - Bei gesuchten Personen den Grund unter der Statusauswahl nachlesen.
 
-    - Once someone has been arrested, update their status on the console so everyone knows they no longer need to be captured.
+    - Nach einer Festnahme den Status aktualisieren, damit niemand weiter nach der Person sucht.
 
-    - After they've done their time, release them and update their status to None so nobody thinks they are an escaped convict.
+    - Nach Verbüßung der Strafe die Person freilassen und den Status zurücksetzen, damit niemand sie für flüchtig hält.
 
-    - Open the Crime History window to check or modify it.
+    - Den Verlauf der Straftaten öffnen, einsehen und bearbeiten.
 
-  The Crime History window lists someone's crimes and can be modified in multiple ways:
-    - Automatically, just by setting someone's status to arrested. The reason will be added to "ARRESTED:" so it's easy to see the automated entries.
+  Im Verlauf stehen die eingetragenen Straftaten. Du kannst ihn auf verschiedene Arten ändern:
+    - Automatisch, indem du jemanden als festgenommen einträgst. Der Grund erscheint dann bei einem Eintrag mit „ARRESTED:“; so erkennst du automatisch erzeugte Einträge.
 
-    - Adding a new line by clicking "Add" and writing something in the input box. When adding a record, remember to mention their crime and sentence, the console will automatically insert the shift's time so you don't need to!
+    - Manuell: Klicke auf „Add“ und trage eine Straftat samt Strafe ein. Die Schichtzeit ergänzt das Terminal von selbst.
 
-    - Select a line of unwanted history and click "Delete" to remove it. Excellent for keeping records clean from the clown's stolen ID antics.
+    - Wähle einen unerwünschten Eintrag aus und klicke auf „Delete“. Praktisch, falls der Clown wieder mit einer gestohlenen ID Unfug getrieben hat.
 
-  Now you can be the desk jockey you've always wanted to be.
+  Jetzt kannst du dich endlich dem Papierkram widmen, von dem du immer geträumt hast.
 </Document>

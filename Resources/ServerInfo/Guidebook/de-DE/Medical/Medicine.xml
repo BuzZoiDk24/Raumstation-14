@@ -1,8 +1,8 @@
 <Document>
 
-# Core Medications
+# Wichtige Medikamente
 
-These medications are almost always useful to medbay in one way or another.
+Diese Medikamente sind in der Krankenstation fast immer nützlich.
 
 <GuideReagentEmbed Reagent="Bicaridine"/>
 <GuideReagentEmbed Reagent="Kelotane"/>
@@ -13,9 +13,9 @@ These medications are almost always useful to medbay in one way or another.
 <GuideReagentEmbed Reagent="DexalinPlus"/>
 <GuideReagentEmbed Reagent="Iron"/>
 
-# Specialty Medications
+# Medikamente für besondere Fälle
 
-These medications tend to have specific use cases.
+Diese Medikamente brauchst du meist für bestimmte Behandlungen.
 
 <GuideReagentEmbed Reagent="Cryoxadone"/>
 <GuideReagentEmbed Reagent="Epinephrine"/>
@@ -27,9 +27,9 @@ These medications tend to have specific use cases.
 <GuideReagentEmbed Reagent="Ambuzol"/>
 <GuideReagentEmbed Reagent="Oculine"/>
 
-# All Medications
+# Alle Medikamente
 
-This is a list of -all- medications available, including ones previously listed.
+Hier findest du alle verfügbaren Medikamente, auch die bereits genannten.
 
 <GuideReagentGroupEmbed Group="Medicine"/>
 

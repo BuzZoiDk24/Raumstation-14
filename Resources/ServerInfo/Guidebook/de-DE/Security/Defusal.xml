@@ -1,16 +1,16 @@
 ﻿<Document>
-  # Large Bomb Defusal
-  So, you found a large bomb and it's beeping. These bombs take a long time to detonate and punch a big hole into the hull. Just keep reading, and nobody will explode.
+  # Große Bomben entschärfen
+  Du hast eine große Bombe gefunden, und sie piept. Bis zur Explosion dauert es eine Weile, aber dann reißt sie ein gewaltiges Loch in die Außenhülle. Lies weiter, damit am Ende niemand in die Luft fliegt.
 
-  ## Gear
-  You require two essential tools to perform defusal, however, a multitool is extremely helpful in terms of identifying wires.
+  ## Ausrüstung
+  Zum Entschärfen brauchst du zwei Werkzeuge. Ein Multitool hilft dir außerdem sehr dabei, die Drähte zu erkennen.
   <Box>
     <GuideEntityEmbed Entity="Wirecutter"/>
     <GuideEntityEmbed Entity="Screwdriver"/>
     <GuideEntityEmbed Entity="Multitool"/>
   </Box>
 
-  For protective equipment, a [color=yellow]bomb suit[/color] or any other protective equipment can assist you in not blowing into gibs.
+  Ein [color=yellow]Bombenschutzanzug[/color] oder andere Schutzausrüstung erhöht deine Chancen, die Explosion am Stück zu überstehen.
   <Box>
     <GuideEntityEmbed Entity="ClothingHeadHelmetBombSuit"/>
     <GuideEntityEmbed Entity="ClothingOuterSuitBomb"/>
@@ -18,56 +18,56 @@
     <GuideEntityEmbed Entity="ClothingOuterHardsuitAtmos"/>
   </Box>
 
-  ## Hardbombs
-  Listed below are the two common types of bombs you will encounter while defusing. A training bomb will only provide minor hull damage and generally not kill you. A syndicate bomb however will punch a big hole into the hull, and gib you if you are not wearing protective gear.
+  ## Bombentypen
+  Beim Entschärfen begegnest du meist diesen beiden Bomben. Eine Übungsbombe beschädigt die Hülle nur leicht und tötet dich normalerweise nicht. Eine Syndikatsbombe dagegen reißt ein großes Loch in die Hülle und zerfetzt dich ohne Schutzausrüstung.
   <Box>
     <GuideEntityEmbed Entity="SyndicateBomb"/>
     <GuideEntityEmbed Entity="TrainingBomb"/>
   </Box>
 
-  ## Arming
-  To arm a bomb, you can either [color=yellow]right click[/color] and click [color=yellow]Begin countdown[/click], or [color=yellow]alt-click[/color] the bomb. It will begin beeping.
+  ## Aktivieren
+  Zum Aktivieren kannst du die Bombe mit der [color=yellow]rechten Maustaste[/color] anklicken und [color=yellow]Countdown starten[/color] auswählen. Alternativ genügt ein [color=yellow]Alt-Klick[/color]. Danach beginnt sie zu piepen.
 
-  ## Time
-  A bomb has a limited time, at a minimum of [protodata="SyndicateBomb" comp="TimerTrigger" member="ShortestDelayOption"/] seconds and a maximum of [protodata="SyndicateBomb" comp="TimerTrigger" member="LongestDelayOption"/] seconds. You can view the timer by examining it, unless the Proceed wire is cut. Once the timer hits zero, the bomb will detonate.
+  ## Zeit
+  Der Timer lässt dir mindestens [protodata="SyndicateBomb" comp="TimerTrigger" member="ShortestDelayOption"/] und höchstens [protodata="SyndicateBomb" comp="TimerTrigger" member="LongestDelayOption"/] Sekunden. Solange der PRCD-Draht intakt ist, kannst du die verbleibende Zeit durch Untersuchen der Bombe sehen. Bei null explodiert sie.
 
-  ## Bolts
-  By default, once armed, a bomb will bolt itself to the ground. You must find the BOLT wire and cut it to disable the bolts, after which you can unwrench it and throw it into space.
+  ## Befestigung
+  Eine aktivierte Bombe verankert sich normalerweise im Boden. Finde den BOLT-Draht und durchtrenne ihn, um die Verankerung zu lösen. Danach kannst du die Bombe mit einem Schraubenschlüssel abschrauben und ins All werfen.
 
-  ## Wires
-  You must access the wiring in order to defuse a bomb. You can use a [color=yellow]screwdriver[/color] to open the access panel. Inside, you will find many types of wires. In a standard syndicate bomb, there are around [color=yellow]10 wires[/color], 3 are dummy wires, [color=red]3 will cause a detonation[/color], and the rest that weren't mentioned can be found below (alongside BOOM wires). With each wire, you can do 3 actions. You can:
-  - [color=yellow]Pulse the wire[/color] with a multitool, this can help you safely identify most wires.
-  - [color=red]Cut the wire[/color] with a wirecutter, this can trigger various effects, be cautious of cutting without reason!
-  - [color=green]Mend the wire[/color] with a wirecutter, this can restore some functionality of the bomb if it isn't disposable.
+  ## Drähte
+  Zum Entschärfen musst du an die Verdrahtung. Öffne die Abdeckung mit einem [color=yellow]Schraubendreher[/color]. Im Inneren findest du mehrere Drahttypen. Eine gewöhnliche Syndikatsbombe hat ungefähr [color=yellow]10 Drähte[/color]: Drei sind Attrappen, [color=red]drei können die Bombe auslösen[/color], und die übrigen sind unten beschrieben. Mit jedem Draht kannst du drei Dinge tun:
+  - Mit einem Multitool einen [color=yellow]Impuls geben[/color]. So lassen sich die meisten Drähte gefahrlos erkennen.
+  - Mit einem Seitenschneider den Draht [color=red]durchtrennen[/color]. Das kann unterschiedliche Folgen haben. Schneide nicht auf gut Glück!
+  - Mit einem Seitenschneider den Draht [color=green]wieder verbinden[/color]. Bei einer wiederverwendbaren Bombe kannst du damit manche Funktionen wiederherstellen.
 
-  Onward for the types of wires.
+  Jetzt zu den einzelnen Drähten.
 
-  ## Wire Types
-  [color=#a4885c]Activation Wire (LIVE)[/color]
-  - [color=yellow]Pulse the wire[/color]: Pulsing the wire will make the wire chirp and delay the bomb by 30 seconds.
-  - [color=red]Cut the wire[/color]: Cutting the wire will defuse the bomb if active, otherwise, will begin the timer.
-  - [color=green]Mend the wire[/color]: Nothing.
+  ## Drahttypen
+  [color=#a4885c]Aktivierungsdraht (LIVE)[/color]
+  - [color=yellow]Impuls[/color]: Der Draht piept und verzögert die Bombe um 30 Sekunden.
+  - [color=red]Durchtrennen[/color]: Entschärft eine aktive Bombe. Ist sie noch nicht aktiv, startet stattdessen der Timer.
+  - [color=green]Verbinden[/color]: Keine Wirkung.
 
-  [color=#a4885c]Proceed Wire (PRCD)[/color]
-  - [color=yellow]Pulse the wire[/color]: Pulsing the wire will forward the time by 15 seconds.
-  - [color=red]Cut the wire[/color]: Cutting the wire will disable the timer display on examine.
-  - [color=green]Mend the wire[/color]: Nothing.
+  [color=#a4885c]Fortsetzungsdraht (PRCD)[/color]
+  - [color=yellow]Impuls[/color]: Stellt den Timer um 15 Sekunden vor.
+  - [color=red]Durchtrennen[/color]: Die Restzeit wird beim Untersuchen nicht mehr angezeigt.
+  - [color=green]Verbinden[/color]: Keine Wirkung.
 
-  [color=#a4885c]Delay Wire (DLAY)[/color]
-  - [color=yellow]Pulse the wire[/color]: Pulsing the delay wire will delay the bomb by 30 seconds.
-  - [color=red]Cut the wire[/color]: Nothing.
-  - [color=green]Mend the wire[/color]: Nothing.
+  [color=#a4885c]Verzögerungsdraht (DLAY)[/color]
+  - [color=yellow]Impuls[/color]: Verzögert die Bombe um 30 Sekunden.
+  - [color=red]Durchtrennen[/color]: Keine Wirkung.
+  - [color=green]Verbinden[/color]: Keine Wirkung.
 
-  [color=#a4885c]Boom Wire (BOOM)[/color]
-  - [color=yellow]Pulse the wire[/color]: [color=red]The bomb will explode if armed![/color]
-  - [color=red]Cut the wire[/color]: [color=red]The bomb will explode if armed![/color] Otherwise, will disable the bomb.
-  - [color=green]Mend the wire[/color]: Re-enables the bomb if disabled previously.
+  [color=#a4885c]Zünddraht (BOOM)[/color]
+  - [color=yellow]Impuls[/color]: [color=red]Eine aktive Bombe explodiert![/color]
+  - [color=red]Durchtrennen[/color]: [color=red]Eine aktive Bombe explodiert![/color] Eine inaktive Bombe wird dadurch deaktiviert.
+  - [color=green]Verbinden[/color]: Aktiviert eine zuvor deaktivierte Bombe wieder.
 
-  [color=#a4885c]Bolt Wire (BOLT)[/color]
-  - [color=yellow]Pulse the wire[/color]: Pulsing the wire will make the bolts spin.
-  - [color=red]Cut the wire[/color]: Cutting the wire will disable the bolts, throw it into space!
-  - [color=green]Mend the wire[/color]: Mending the wire will re-enable the bolts.
+  [color=#a4885c]Verankerungsdraht (BOLT)[/color]
+  - [color=yellow]Impuls[/color]: Die Bolzen drehen sich.
+  - [color=red]Durchtrennen[/color]: Löst die Verankerung. Wirf die Bombe ins All!
+  - [color=green]Verbinden[/color]: Stellt die Verankerung wieder her.
 
-  [color=#a4885c]Dummy Wire[/color]
-  - Dummy wires don't do anything. You can pulse, cut, and mend them freely without affecting the bomb at all.
+  [color=#a4885c]Blinddraht[/color]
+  - Blinddrähte bewirken nichts. Du kannst ihnen Impulse geben, sie durchtrennen und wieder verbinden, ohne die Bombe zu beeinflussen.
 </Document>

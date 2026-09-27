@@ -1,46 +1,46 @@
 <Document>
-  # Forensics
+  # Spurensicherung
 
-  There are a lot of tools to help you gather and examine the evidence at your disposal
+  Dir stehen viele Hilfsmittel zur Verfügung, um Spuren zu sichern und Beweise auszuwerten.
 
   # LogProbe
 
-  This little add-on to your PDA is incredibly useful, just install the cartridge and your PDA will acquire the ability to scan anything with access (like airlocks) and see who has used them recently.
+  Dieses kleine Zusatzprogramm für deinen PDA ist ungemein nützlich: Setze das Modul ein, und dein PDA kann bei zugangsgesicherten Geräten wie Luftschleusen auslesen, wer sie zuletzt benutzt hat.
 
-  You can normally find it inside the detective locker. After inserting it on your PDA, go to the programs tab and the log probe application should be there, to use the application you just have to interact with anything that requires access with your PDA while the application is open and the information will be instantly displayed in it.
+  Das Modul liegt normalerweise im Spind der Detektei. Sobald du es in deinen PDA eingesetzt hast, findest du LogProbe unter den Programmen. Öffne die Anwendung und benutze den PDA an einem Gerät mit Zugangskontrolle. Die gespeicherten Informationen erscheinen sofort in der Anwendung.
 
-  It should be noted that the name shown in the application is not to be trusted 100% of the time since it gets the name from the identification card of whoever used the thing we are scanning, so if for example someone opened an airlock with no card the application would display "Unknown" as the name.
+  Verlass dich allerdings nicht blind auf den angezeigten Namen: Er stammt von der ID-Karte, mit der das Gerät benutzt wurde. Öffnet jemand eine Luftschleuse ohne Karte, zeigt LogProbe als Namen „Unbekannt“ an.
 
   <Box>
     <GuideEntityEmbed Entity="LockerDetective"/>
     <GuideEntityEmbed Entity="LogProbeCartridge"/>
   </Box>
 
-  # DNA and Fingerprints
+  # DNA und Fingerabdrücke
 
-  ## How to get someone’s DNA?
+  ## Wie komme ich an die DNA einer Person?
 
-  You can scan blood puddles, vomit, glasses, bottles, cans and other liquid containers using the [color=#a4885c]forensic scanner[/color] to get DNA of any person.
+  Mit dem [color=#a4885c]Spurenscanner[/color] kannst du Blutlachen, Erbrochenes, Gläser, Flaschen, Dosen und andere Flüssigkeitsbehälter auf DNA untersuchen.
   <Box>
     <GuideEntityEmbed Entity="ForensicScanner"/>
   </Box>
-  So be careful before fighting with someone.
+  Überleg dir also gut, welche Spuren du bei einer Schlägerei hinterlässt.
 
-   That same forensic scanner can also get fingerprint information about who touched pretty much any object. If the possible perpetrator was using gloves, then your scanner will print out which fibers were left on the crime scene.
+  Der Scanner findet auch Fingerabdrücke auf fast allen Gegenständen. Hat eine verdächtige Person Handschuhe getragen, zeigt er dir stattdessen die am Tatort hinterlassenen Fasern an.
 
-  ## I got DNA. How do I recognize whose it is?
+  ## Ich habe DNA gefunden. Wem gehört sie?
 
-  You can print the forensic information of the object you scanned so you never miss it. Now with the paper containing DNA you can simply find a [color=#a4885c]Station Records Computer[/color] and look for a person whose DNA matches. Same applies to finding whose fingerprint it is.
+  Drucke die Untersuchungsergebnisse aus, damit du sie zur Hand hast. Vergleiche die DNA auf dem Ausdruck mit den Einträgen im [color=#a4885c]Stationsregister[/color]. Dort kannst du ebenso nach passenden Fingerabdrücken suchen.
 
-  ## Taking Fingerprints
-  It is also possible to take someone's fingerprints while on scene if you make them take off their gloves and apply a forensic pad to their fingers. No need to run back to [color=#a4885c]Station Records Computer[/color] to check if the butler did it!
+  ## Fingerabdrücke direkt nehmen
+  Du kannst auch vor Ort die Fingerabdrücke einer Person nehmen: Lass die Handschuhe ausziehen und benutze ein Fingerabdruckkissen. Dann musst du nicht erst zum [color=#a4885c]Stationsregister[/color] zurücklaufen, um zu prüfen, ob es der Butler war!
 
   <GuideEntityEmbed Entity="ForensicPad"/>
 
-  ## Fibers
-  Whenever people wearing gloves touch anything on the station, they are bound to leave behind some fibers. This complicates things, but nothing is unsolvable for a real detective.
+  ## Fasern
+  Wer mit Handschuhen etwas anfasst, hinterlässt oft Fasern. Das macht die Ermittlungen schwieriger, aber eine gute Spürnase lässt sich davon nicht aufhalten.
 
-  There are up to [color=red]26[/color] different types of fibers possible. Can that stop you from solving the case?
+  Es gibt bis zu [color=red]26[/color] verschiedene Faserarten. Findest du trotzdem heraus, wer es war?
 
   <Box>
     <GuideEntityEmbed Entity="ComputerStationRecords"/>

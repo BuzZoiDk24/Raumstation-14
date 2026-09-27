@@ -1,21 +1,21 @@
 <Document>
-  # Cargo Bounties
-  While [textlink="Cargo" link="Cargo"] can make [color=cyan]spesos[color] selling just about anything, more spesos can be made by fulfilling [color=cyan]bounties[/color] found through the Cargo Bounty Computer.
+  # Versorgungsaufträge
+  Die [textlink="Versorgung" link="Cargo"] kann mit dem Verkauf fast beliebiger Dinge [color=cyan]Spesos[/color] verdienen. Noch mehr bringt es, die [color=cyan]Aufträge[/color] am Terminal für Versorgungsaufträge zu erfüllen.
 
-  ## Starting Bounties
+  ## Aufträge annehmen
 
   <Box>
     <GuideEntityEmbed Entity="ComputerCargoBounty"/>
     <GuideEntityEmbed Entity="PaperCargoBountyManifest"/>
   </Box>
 
-  To start a bounty, open the bounty screen by interacting with the [color=cyan]Cargo Bounty Computer[/color]. The Cargo Bounty Computer maintains a list of all the current bounties and lets you either print out a label or skip it.
+  Benutze das [color=cyan]Terminal für Versorgungsaufträge[/color], um die verfügbaren Aufträge zu sehen. Dort kannst du zu einem Auftrag ein Manifest drucken oder ihn überspringen.
 
-  - Printing the label gives you a [color=cyan]Bounty Manifest[/color] listing the goods that need to be acquired. You can print out infinite Bounty Manifests, so ensure you are not repeating the same work as another Cargo Technician.
+  - Auf dem [color=cyan]Auftragsmanifest[/color] steht, welche Waren benötigt werden. Du kannst beliebig viele Kopien drucken. Sprich dich mit den anderen aus der Versorgung ab, damit ihr nicht denselben Auftrag doppelt bearbeitet.
 
-  - Skipping a bounty replaces that bounty with a new one, as there can only be six active bounties at any time. Skipping has a 15-minute cooldown and voids that bounty, which may anger other Cargo Technicians working on it.
+  - Wenn du einen Auftrag überspringst, erscheint ein neuer an seiner Stelle. Gleichzeitig können höchstens sechs Aufträge aktiv sein. Danach musst du 15 Minuten warten, bevor du wieder einen Auftrag überspringen kannst. Der übersprungene Auftrag verfällt – das dürfte allen missfallen, die schon daran arbeiten.
 
-  ## Fulfilling Bounties
+  ## Aufträge erfüllen
 
   <Box>
     <GuideEntityEmbed Entity="PaperCargoBountyManifest"/>
@@ -23,13 +23,13 @@
     <GuideEntityEmbed Entity="AppraisalTool"/>
   </Box>
 
-  With the [color=cyan]Bounty Manifest[/color], it is now up to you to collect the required goods, but most departments will give you what you need if you ask for it with a Bounty Manifest.
+  Besorge die Waren auf dem [color=cyan]Auftragsmanifest[/color]. Mit dem Manifest in der Hand geben dir andere Abteilungen oft, was du benötigst.
 
-  Once you have collected the goods, return to the cargo bay and put the goods inside an empty [color=cyan]Crate[/color]. After everything is in the crate, close it, and then apply the Bounty Manifest to it.
+  Bring alles ins Frachtlager und pack die Waren in eine leere [color=cyan]Kiste[/color]. Schließe die Kiste und bring das Auftragsmanifest daran an.
 
-  To verify the completion of a bounty, use the [color=cyan]Appraisal Tool[/color] on it. It should show a confirmation that the bounty has been completed.
+  Prüfe die Kiste mit dem [color=cyan]Schätzgerät[/color]. Es bestätigt dir, ob der Auftrag vollständig ist.
 
-  ## Selling Bounties
+  ## Aufträge verkaufen
 
   <Box>
     <GuideEntityEmbed Entity="PaperCargoBountyManifest"/>
@@ -37,9 +37,9 @@
     <GuideEntityEmbed Entity="CargoPalletSell"/>
   </Box>
 
-  Once you have verified that you have completed the bounty, follow the same steps as selling anything else.
+  Sobald der Auftrag als vollständig bestätigt wurde, verkaufst du die Kiste wie andere Waren auch.
 
-  Just transport it to the [color=cyan]Trading Station[/color], sell it, and you are done!
+  Bring sie zur [color=cyan]Handelsstation[/color] und verkaufe sie. Fertig!
 
-  When you return, there should be a new bounty to take its place.
+  Bei deiner Rückkehr sollte ein neuer Auftrag verfügbar sein.
 </Document>
