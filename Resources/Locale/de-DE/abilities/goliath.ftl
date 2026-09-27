@@ -1,1 +1,1 @@
-tentacle-ability-use-popup = {CAPITALIZE(THE($entity))} gräbt Tentakel in den Boden!
+tentacle-ability-use-popup = { CAPITALIZE(DE-ARTICLE("masculine", "nominative")) } { CAPITALIZE($entity) } gräbt seine Tentakel in den Boden!

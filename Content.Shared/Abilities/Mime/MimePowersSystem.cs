@@ -3,6 +3,7 @@ using Content.Shared.Actions;
 using Content.Shared.Actions.Events;
 using Content.Shared.Alert;
 using Content.Shared.Coordinates.Helpers;
+using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Maps;
 using Content.Shared.Paper;
@@ -25,6 +26,7 @@ public sealed partial class MimePowersSystem : EntitySystem
     [Dependency] private StatusEffectsSystem _statusEffects = default!;
     [Dependency] private TurfSystem _turf = default!;
     [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private HumanoidProfileSystem _humanoidProfiles = default!;
     [Dependency] private IGameTiming _timing = default!;
 
     public override void Initialize()
@@ -107,7 +109,8 @@ public sealed partial class MimePowersSystem : EntitySystem
         }
 
         var messageSelf = Loc.GetString("mime-invisible-wall-popup-self", ("mime", Identity.Entity(ent.Owner, EntityManager)));
-        var messageOthers = Loc.GetString("mime-invisible-wall-popup-others", ("mime", Identity.Entity(ent.Owner, EntityManager)));
+        var bodySex = _humanoidProfiles.GetBodySex(ent.Owner)?.ToString().ToLowerInvariant() ?? "unsexed";
+        var messageOthers = Loc.GetString("mime-invisible-wall-popup-others", ("bodySex", bodySex));
         _popupSystem.PopupEntity(messageSelf, messageOthers, ent, ent);
 
         // Make sure we set the invisible wall to despawn properly

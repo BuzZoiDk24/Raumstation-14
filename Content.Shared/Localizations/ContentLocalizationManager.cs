@@ -55,6 +55,7 @@ namespace Content.Shared.Localizations
 			_loc.AddFunction(cultureDe, "MAKEPLURAL", FormatMakePluralDe);
 			_loc.AddFunction(cultureDe, "MANY", FormatManyDe);
             _loc.AddFunction(cultureDe, "DE-ARTICLE", FormatGermanArticle);
+            _loc.AddFunction(cultureDe, "DE-POSS-ADJ", FormatGermanPossessiveAdjective);
         }
 
         private ILocValue FormatMany(LocArgs args)
@@ -360,6 +361,40 @@ namespace Content.Shared.Localizations
 
                 _ => new LocValueString("")
             };
+        }
+
+        /// <summary>
+        /// Inflects sein/ihr for the noun. With es (or a legacy neutral profile),
+        /// the selected body determines the possessive stem.
+        /// </summary>
+        private static ILocValue FormatGermanPossessiveAdjective(LocArgs args)
+        {
+            if (args.Args.Count < 4)
+                return new LocValueString("");
+
+            var pronouns = ((LocValueString) args.Args[0]).Value.ToLowerInvariant();
+            var bodySex = ((LocValueString) args.Args[1]).Value.ToLowerInvariant();
+            var grammaticalCase = ((LocValueString) args.Args[2]).Value.ToLowerInvariant();
+            var nounGender = ((LocValueString) args.Args[3]).Value.ToLowerInvariant();
+
+            var stem = pronouns == "female" || (pronouns != "male" && bodySex == "female")
+                ? "ihr"
+                : "sein";
+
+            var ending = (grammaticalCase, nounGender) switch
+            {
+                ("nominative", "feminine" or "plural") => "e",
+                ("accusative", "masculine") => "en",
+                ("accusative", "feminine" or "plural") => "e",
+                ("dative", "masculine" or "neuter") => "em",
+                ("dative", "feminine") => "er",
+                ("dative", "plural") => "en",
+                ("genitive", "masculine" or "neuter") => "es",
+                ("genitive", "feminine" or "plural") => "er",
+                _ => ""
+            };
+
+            return new LocValueString(stem + ending);
         }
     }
 }

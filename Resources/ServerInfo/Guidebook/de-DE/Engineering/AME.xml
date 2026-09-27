@@ -22,7 +22,7 @@
 
   Die AME-Abschirmung bildet die physische Struktur der Antimaterie-Engine. Sie wird hergestellt, indem AME-Bausätze mit einem Multitool in Abschirmungen umgewandelt werden.
 
-  Um eine AME zu errichten, solltest du zunächst ein 3×3 großes oder größeres Quadrat aus AME-Bausätzen platzieren. Achte dabei darauf, möglichst viele „Zentrumsteile“ zu erzeugen, die auf allen acht Seiten von weiteren Abschirmungen umgeben sind.
+  Um eine AME zu errichten, platziere die AME-Bausätze zunächst in einem Quadrat von mindestens 3×3 Feldern. Achte darauf, dass möglichst viele Teile von acht benachbarten Abschirmungen umgeben sind.
 
   Je mehr Zentrumsteile vorhanden sind, desto mehr Kerne besitzt deine AME und desto mehr Energie kann sie sicher erzeugen.
 
@@ -74,7 +74,7 @@
 
   Beispielsweise besitzt eine AME mit einem Kern eine sichere Einspeiserate von 2. Bei zwei Kernen beträgt die sichere Einspeiserate 4 und so weiter.
 
-  Wird dieser Wert überschritten, wird die Engine schließlich [color=#ff0000]überhitzen[/color] und kurz darauf [color=#ff0000]explodieren[/color].
+  Überschreitest du diesen Wert, [color=#ff0000]überhitzt[/color] die AME schließlich und [color=#ff0000]explodiert[/color] kurz darauf.
 
   Der AME-Controller zeigt sowohl die aktuell in das Stromnetz eingespeiste Leistung als auch die theoretisch maximal verfügbare Leistung an.
 

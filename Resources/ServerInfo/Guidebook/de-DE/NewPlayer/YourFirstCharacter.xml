@@ -1,5 +1,5 @@
 <Document>
-# Die Captains und die Clowns
+# Die Kapitäne und die Clowns
 
 Dies ist ein Leitfaden zum Anpassen des Aussehens deines Charakters. Stelle sicher, dass du zuerst den Leitfaden zur Charaktererstellung gelesen hast.
 
@@ -23,14 +23,14 @@ Dieser Leitfaden geht davon aus, dass du einen Menschen erstellst, der Ablauf is
 
 Dazu gehören:
 
-- Alter (18–29 für jung, 30–59 für mittelalt, 60+ für alt)
-- Geschlecht (dein Sprite, sichtbar über „Kleidung anzeigen“)
+- Alter (18–29: jung, 30–59: mittleren Alters, ab 60: alt)
+- Körper (dein Sprite, sichtbar über „Kleidung anzeigen“)
 - Pronomen (wie das Spiel auf deinen Charakter Bezug nimmt)
 - Hautfarbe (je nach Spezies als Regler oder RGB-Auswahl)
 - Augenfarbe (RGB)
 - Haarfarbe (RGB)
 
-Diese Merkmale haben nur geringe Auswirkungen auf das Gameplay. Sie bestimmen unter anderem, was andere Spieler sehen, wenn sie dich [color=#a4885c]untersuchen[/color]. („junger Mann“)
+Diese Merkmale haben nur geringe Auswirkungen auf das Gameplay. Sie bestimmen unter anderem, was andere Spieler sehen, wenn sie dich [color=#a4885c]untersuchen[/color]. („Er ist jung und gehört zur Spezies Mensch.“)
 
 ## Haare und Gesichtsbehaarung
 

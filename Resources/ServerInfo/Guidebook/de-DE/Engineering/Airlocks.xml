@@ -40,7 +40,7 @@ Luftschleusen können aus der Ferne gesteuert werden – entweder durch die Stat
     <GuideEntityEmbed Entity="PlayerStationAiEmpty" Caption=""/>
   </Box>
   <Box>
-    [color=#999999][italic]Die Stations-KI kann sämtliche Luftschleusen der Station fernsteuern.[italic][/color]
+    [color=#999999][italic]Die Stations-KI kann sämtliche Luftschleusen der Station fernsteuern.[/italic][/color]
   </Box>
 
   <Box>

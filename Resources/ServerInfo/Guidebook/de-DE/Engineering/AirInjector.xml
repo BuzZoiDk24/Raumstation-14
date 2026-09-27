@@ -13,4 +13,5 @@ Der Gaseinlass benötigt keine [textlink="Stromversorgung" link="Power"], um zu 
 
 Der Gaseinlass gibt so lange Gas in die Umgebung ab, bis dort ein Druck von [color=orange][protodata="GasOutletInjector" comp="GasOutletInjector" member="MaxPressure"/] kPa[/color] erreicht ist.
 
-Die Fördergeschwindigkeit des Gaseinlasses ist proportional zur Gasmenge, die sich in ihm befindet. </Document>
+Die Fördergeschwindigkeit des Gaseinlasses ist proportional zur Gasmenge, die sich in ihm befindet.
+</Document>

@@ -1,5 +1,6 @@
 using System.Collections.Frozen;
 using Content.Shared.Chat.Prototypes;
+using Content.Shared.Humanoid;
 using Content.Shared.Speech;
 using Robust.Shared.Audio;
 using Robust.Shared.Random;
@@ -8,6 +9,8 @@ namespace Content.Shared.Chat;
 
 public abstract partial class SharedChatSystem
 {
+    [Dependency] private HumanoidProfileSystem _humanoidProfiles = default!;
+
     private FrozenDictionary<string, EmotePrototype> _wordEmoteDict = FrozenDictionary<string, EmotePrototype>.Empty;
 
     private void CacheEmotes()
@@ -96,7 +99,8 @@ public abstract partial class SharedChatSystem
         if (didEmote && emote.ChatMessages.Count != 0)
         {
             // not all emotes are loc'd, but for the ones that are we pass in entity
-            var action = Loc.GetString(Random.Pick(emote.ChatMessages), ("entity", source));
+            var bodySex = _humanoidProfiles.GetBodySex(source)?.ToString().ToLowerInvariant() ?? "unsexed";
+            var action = Loc.GetString(Random.Pick(emote.ChatMessages), ("entity", source), ("bodySex", bodySex));
             SendEntityEmote(source, action, range, nameOverride, hideLog: hideLog, checkEmote: false, ignoreActionBlocker: ignoreActionBlocker);
         }
 

@@ -7,7 +7,7 @@ game-ticker-unknown-role = Unbekannt
 game-ticker-delay-start = Der Rundenstart wurde um {$seconds} Sekunden verschoben.
 game-ticker-pause-start = Der Rundenstart wurde pausiert.
 game-ticker-pause-start-resumed = Der Countdown zum Rundenstart wurde fortgesetzt.
-game-ticker-player-join-game-message = Willkommen bei Raumstation 14! Falls du zum ersten Mal spielst, lies unbedingt die Spielregeln und scheue dich nicht, in LOOC (lokalem OOC) oder OOC um Hilfe zu bitten.
+game-ticker-player-join-game-message = Willkommen auf Raumstation 14! Falls du zum ersten Mal spielst, lies unbedingt die Spielregeln und scheue dich nicht, in LOOC (lokalem OOC) oder OOC um Hilfe zu bitten.
 game-ticker-get-info-text = Hallo und willkommen bei [color=white]Space Station 14![/color]
                             Die aktuelle Runde ist: [color=white]#{$roundId}[/color]
                             Aktuelle Spielerzahl: [color=white]{$playerCount}[/color]
@@ -16,10 +16,7 @@ game-ticker-get-info-text = Hallo und willkommen bei [color=white]Space Station 
                             >[color=yellow]{$desc}[/color]
 game-ticker-get-info-preround-text = Hallo und willkommen bei [color=white]Space Station 14![/color]
                             Die aktuelle Runde ist: [color=white]#{$roundId}[/color]
-                            Aktuelle Spielerzahl: [color=white]{$playerCount}[/color] ([color=white]{$readyCount}[/color] {$readyCount ->
-                                [one] is
-                                *[other] are
-                            } ready)
+                            Aktuelle Spielerzahl: [color=white]{$playerCount}[/color] (davon [color=white]{$readyCount}[/color] bereit)
                             Aktuelle Karte: [color=white]{$mapName}[/color]
                             Aktueller Spielmodus: [color=white]{$gmTitle}[/color]
                             >[color=yellow]{$desc}[/color]

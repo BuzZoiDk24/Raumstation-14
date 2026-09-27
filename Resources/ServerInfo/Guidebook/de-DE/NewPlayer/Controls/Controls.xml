@@ -65,9 +65,9 @@
   \n[color=cyan]Wirf[/color] Gegenstände auf deinen Mauszeiger mit [color=yellow][bold][keybind="ThrowItemInHand"][/bold][/color].
 
   ### Ziehen und Schieben
-  Du kannst bewegliche [bold]Entitäten[/bold] ziehen, solange du mindestens eine freie Hand hast.
+  Du kannst [bold]bewegliche Gegenstände und Lebewesen[/bold] ziehen, solange du mindestens eine Hand frei hast.
   - Starte das Ziehen mit [color=yellow][bold][keybind="TryPullObject"][/bold][/color].
-  - Schiebe gezogene Entitäten mit [color=yellow][bold][keybind="MovePulledObject"][/bold][/color].
+  - Schiebe das, was du ziehst, mit [color=yellow][bold][keybind="MovePulledObject"][/bold][/color] in Richtung Mauszeiger.
   - Zum Loslassen drücke [color=yellow][bold][keybind="ReleasePulledObject"][/bold][/color].
 
   ## Interaktionen
@@ -92,7 +92,7 @@
   - [color=yellow][bold][keybind="AltActivateItemInHand"][/bold][/color]
 
   ### Klicken und Ziehen
-  Du kannst eine Entität auf eine andere anwenden, indem du sie mit [color=yellow][bold][keybind="Use"][/bold][/color] auf die andere ziehst.
+  Ziehe mit [color=yellow][bold][keybind="Use"][/bold][/color] einen Gegenstand oder ein Lebewesen auf ein anderes Ziel. Je nach Kombination löst das eine andere Aktion aus.
 
   Damit kannst du unter anderem Personen auf Stühle setzen, auf Tische klettern oder Flüssigkeiten umfüllen.
 
@@ -100,7 +100,7 @@
   Mit [color=yellow][bold][keybind="Point"][/bold][/color] kannst du auf einen Ort oder Gegenstand zeigen.
 
   ## Kontextmenüs
-  Klicke mit [color=yellow][bold][keybind="UIRightClick"/][/bold][/color] auf eine Entität, um das Kontextmenü zu öffnen.
+  Klicke mit [color=yellow][bold][keybind="UIRightClick"/][/bold][/color] auf einen Gegenstand oder ein Lebewesen, um das Kontextmenü zu öffnen.
 
   ### Untersuchen
   Falls du dir bei einem Objekt oder Lebewesen unsicher bist, untersuche es mit [color=yellow][bold][keybind="ExamineEntity"][/bold][/color].

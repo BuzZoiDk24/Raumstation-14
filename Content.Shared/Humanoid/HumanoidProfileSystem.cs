@@ -3,6 +3,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Preferences;
 using Robust.Shared.GameObjects.Components.Localization;
+using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Humanoid;
@@ -37,6 +38,14 @@ public sealed partial class HumanoidProfileSystem : EntitySystem
         {
             _grammar.SetGender((ent, grammar), profile.Gender);
         }
+    }
+
+    /// <summary>
+    /// Returns the selected body sex for German possessive forms, independently of pronouns.
+    /// </summary>
+    public Sex? GetBodySex(EntityUid uid)
+    {
+        return TryComp<HumanoidProfileComponent>(uid, out var profile) ? profile.Sex : null;
     }
 
     private void OnExamined(Entity<HumanoidProfileComponent> ent, ref ExaminedEvent args)

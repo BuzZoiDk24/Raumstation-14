@@ -1,2 +1,7 @@
 humanoid-appearance-component-unknown-species = Person
-humanoid-appearance-component-examine = { CAPITALIZE(SUBJECT($user)) } { CONJUGATE-BE($user) } { INDEFINITE($age) } { $age } { $species }.
+humanoid-appearance-component-examine = { GENDER($user) ->
+    [male] Er
+    [female] Sie
+    [neuter] Es
+   *[epicene] Die Person
+} ist { $age } und gehört zur Spezies { CAPITALIZE($species) }.
