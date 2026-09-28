@@ -1,18 +1,18 @@
 <Document>
-# Cryogenics
-Cryogenics can be a bit daunting to understand, but hopefully, quick run through of this diagram, you'll learn how to work it! So, let's go over what each part does:
+# Kryotechnik
+Die Kryotechnik wirkt auf den ersten Blick kompliziert. Dieses Schema zeigt dir, wie die Anlage arbeitet:
 
-- Air in: Air comes in here through the distro or an air tank, giving those inside something to breathe, and the freezer something to chill.
-- Gas pump: Limits the network pressure, so those in the tube aren't crushed.
-- Freezer: Chills the air, and by extension, patients in the tube, so Cryoxadone can activate.
-- Gas filters: Removes waste gas (Carbon Dioxide and Nitrous Oxide) from the loop.
-- Air out: Waste gasses go here, either into a storage tank, or into the waste network.
+- Zuluft: Luft gelangt über das Stationsnetz oder einen Tank in den Kreislauf. Sie versorgt die Person in der Kapsel mit Atemluft und liefert Gas zum Kühlen.
+- Gaspumpe: Sie begrenzt den Druck im Kreislauf, damit die Person in der Kapsel nicht zerquetscht wird.
+- Kühlaggregat: Es kühlt die Luft und damit die Person in der Kapsel, sodass Cryoxadone wirken kann.
+- Gasfilter: Sie entfernen Kohlendioxid und Lachgas aus dem Kreislauf.
+- Abluft: Verbrauchte Gase strömen in einen Speichertank oder in das Abluftnetz.
 <Box>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="0"/>
-<GuideEntityEmbed Entity="CryoPod" Caption="cryo pod" Rotation="0"/>
+<GuideEntityEmbed Entity="CryoPod" Caption="Kryokapsel" Rotation="0"/>
 <GuideEntityEmbed Entity="GasThermoMachineFreezerEnabled" Rotation="0"/>
 </Box>
 <Box>
@@ -24,24 +24,23 @@ Cryogenics can be a bit daunting to understand, but hopefully, quick run through
 <GuideEntityEmbed Entity="GasPipeTJunction" Rotation="270"/>
 </Box>
 <Box>
-<GuideEntityEmbed Entity="GasPort" Caption="air out" Rotation="90"/>
+<GuideEntityEmbed Entity="GasPort" Caption="Abluft" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeTJunction" Rotation="180"/>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="270"/>
-<GuideEntityEmbed Entity="GasPort" Caption="air in" Rotation="90"/>
+<GuideEntityEmbed Entity="GasPort" Caption="Zuluft" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPressurePump" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="270"/>
 </Box>
 
-Not every network will look like this, but hopefully, it's enough to give you the basic gist of how it's functioning.
+Nicht jede Anlage sieht genau so aus. Das Schema zeigt aber, wie die Teile zusammenarbeiten.
 
-An important thing to note, winter clothing (and hardsuits) will make cryogenic treatment less, or completely ineffective. Be sure to remove cold preventative clothing before placing people in the pod.
+Winterkleidung und Hardsuits schwächen die Kryobehandlung oder verhindern sie ganz. Zieh der Person kälteisolierende Kleidung aus, bevor du sie in die Kapsel legst.
 
-## Using the Pod
-Once things have been set up, you're going to require a specific medication, Cryoxadone. Cryoxadone heals all damage types when a patient is chilled, and can either be pre-administered (with a pill), or loaded into the cell directly with a beaker. Do note, patients won't begin to heal until they've chilled to the appropriate temperature, it may be worthwhile to wait a bit before placing a beaker inside.
+## Die Kapsel benutzen
+Für die Behandlung brauchst du Cryoxadone. Es heilt alle Schadensarten, solange die Person ausreichend heruntergekühlt ist. Du kannst es vorher als Pille verabreichen oder einen Becher mit Cryoxadone direkt in die Kapsel stellen. Die Heilung beginnt erst bei der nötigen Temperatur. Deshalb kann es sinnvoll sein, mit dem Becher etwas zu warten.
 
-## Additional Information:
-
-The standard pressure for a gas pump is 100.325 kpa. Cryoxadone works at under 170K, but it is standard practice to set the freezer to 100K for faster freezing.
+## Weitere Hinweise
+Der übliche Pumpendruck beträgt 100,325 kPa. Cryoxadone wirkt unterhalb von 170 K. Für eine schnellere Kühlung wird das Kühlaggregat gewöhnlich auf 100 K gestellt.
 
 <GuideReagentEmbed Reagent="Aloxadone"/>
 <GuideReagentEmbed Reagent="Arcryox"/>

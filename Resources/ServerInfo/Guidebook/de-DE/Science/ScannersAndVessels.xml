@@ -1,24 +1,24 @@
 <Document>
-## Anomaly Scanner
+## Anomaliescanner
 
-The Anomaly Scanner is used to gather various information on anomalies. They can be found inside the lockers in the science department.
+Mit dem Anomaliescanner untersuchst du Anomalien. Du findest ihn in den Schränken der Forschungsabteilung.
 
 <Box>
 <GuideEntityEmbed Entity="AnomalyScanner"/>
 </Box>
 
-Scanning an anomaly shows the severity, general stability, approximate point output, reactions with particle types, and time until the next pulse. The reaction types, specifically, can be used in conjunction with the A.P.E. to manipulate anomalies.
+Ein Scan zeigt die Gefährlichkeit, den Stabilitätsverlauf, die ungefähre Ausbeute an Forschungspunkten, die Reaktion auf verschiedene Partikelarten und die Zeit bis zum nächsten Puls. Mit den Angaben zu den Partikeln kannst du die Anomalie über einen A.P.E. gezielt beeinflussen.
 
-## Anomaly Vessel
+## Anomaliegefäß
 
-The anomaly vessel is a machine that generates points from anomalies. Use the anomaly scanner on an empty vessel, and the anomaly that was last scanned will be synced with the vessel.
+Ein Anomaliegefäß erzeugt Forschungspunkte aus einer Anomalie. Benutze den Scanner an einem leeren Gefäß, um es mit der zuletzt gescannten Anomalie zu verbinden.
 
 <Box>
 <GuideEntityEmbed Entity="MachineAnomalyVessel"/>
 </Box>
 
-The amount of points a vessel generates per second is based on the severity, stability, and health of an anomaly. The higher each of these values, the higher the point output will be.
+Wie viele Punkte das Gefäß pro Sekunde erzeugt, hängt von Gefährlichkeit, Stabilität und Gesundheit der Anomalie ab. Je höher die Werte, desto größer die Ausbeute.
 
-Be careful: if an anomaly goes [color=#a4885c]supercritical[/color], the vessel it is linked to will explode. This may damage the station and nearby equipment.
+Vorsicht: Wird eine verbundene Anomalie [color=#a4885c]überkritisch[/color], explodiert das Gefäß. Dabei können die Station und Geräte in der Nähe beschädigt werden.
 
 </Document>

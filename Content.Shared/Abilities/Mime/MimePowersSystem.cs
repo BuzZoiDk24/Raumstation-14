@@ -10,6 +10,7 @@ using Content.Shared.Paper;
 using Content.Shared.Physics;
 using Content.Shared.StatusEffectNew;
 using Robust.Shared.Containers;
+using Robust.Shared.Enums;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -109,8 +110,14 @@ public sealed partial class MimePowersSystem : EntitySystem
         }
 
         var messageSelf = Loc.GetString("mime-invisible-wall-popup-self", ("mime", Identity.Entity(ent.Owner, EntityManager)));
-        var bodySex = _humanoidProfiles.GetBodySex(ent.Owner)?.ToString().ToLowerInvariant() ?? "unsexed";
-        var messageOthers = Loc.GetString("mime-invisible-wall-popup-others", ("bodySex", bodySex));
+        var bodySex = _humanoidProfiles.GetBodySex(ent.Owner);
+        var pronouns = _humanoidProfiles.GetPronouns(ent.Owner);
+        // Match the feminine job title chosen in JobPrototype.GetLocalizedName.
+        var feminine = pronouns == Gender.Female ||
+                       (pronouns != Gender.Male && bodySex == Sex.Female);
+        var messageOthers = Loc.GetString("mime-invisible-wall-popup-others",
+            ("mime", Identity.Entity(ent.Owner, EntityManager)),
+            ("jobGender", feminine ? "female" : "male"));
         _popupSystem.PopupEntity(messageSelf, messageOthers, ent, ent);
 
         // Make sure we set the invisible wall to despawn properly

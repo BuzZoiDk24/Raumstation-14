@@ -83,6 +83,8 @@ namespace Content.Client.LateJoin
             _jobButtons.Clear();
             _jobCategories.Clear();
 
+            var selectedProfile = _preferencesManager.Preferences?.SelectedCharacter as HumanoidCharacterProfile;
+
             if (!_gameTicker.DisallowedLateJoin && _gameTicker.StationNames.Count == 0)
                 _sawmill.Warning("No stations exist, nothing to display in late-join GUI");
 
@@ -241,7 +243,11 @@ namespace Content.Client.LateJoin
                             Margin = new Thickness(5f, 0, 0, 0)
                         };
 
-                        var jobButton = new JobButton(jobLabel, prototype.ID, prototype.LocalizedName, value);
+                        var jobButton = new JobButton(jobLabel, prototype.ID,
+                            selectedProfile != null
+                                ? prototype.GetLocalizedName(selectedProfile.Gender, selectedProfile.Sex)
+                                : prototype.LocalizedName,
+                            value);
 
                         var jobSelector = new BoxContainer
                         {
@@ -265,7 +271,7 @@ namespace Content.Client.LateJoin
 
                         jobButton.OnPressed += _ => SelectedId.Invoke((id, jobButton.JobId));
 
-                        if (!_jobRequirements.IsAllowed(prototype, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
+                        if (!_jobRequirements.IsAllowed(prototype, selectedProfile, out var reason))
                         {
                             jobButton.Disabled = true;
 

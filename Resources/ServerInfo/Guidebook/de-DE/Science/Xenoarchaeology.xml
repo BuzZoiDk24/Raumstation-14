@@ -1,51 +1,51 @@
 <Document>
-  # Xenoarchaeology
+  # Xenoarchäologie
 
-  Xenoarchaeology is a branch of Science focused on researching alien [bold]artifacts[/bold].
+  Die Xenoarchäologie ist ein Teil der Forschung und widmet sich fremdartigen [bold]Artefakten[/bold].
 
-  Unlocking their secrets grants research points and reveals strange, potentially useful, or dangerous effects.
+  Wer ihre Geheimnisse lüftet, gewinnt Forschungspunkte. Manchmal zeigen sich dabei nützliche, seltsame oder gefährliche Wirkungen.
 
-  At round start, Science usually has one or two artifacts in the lab. More can be:
-  - Ordered from [color=orange]Cargo[/color]
-  - Found by [color=orange]Salvage[/color]
-  - Assembled from [bold]fragments[/bold]
-  - Appear during certain station events
+  Zu Rundenbeginn liegen meist ein oder zwei Artefakte im Forschungslabor. Weitere kannst du:
+  - bei der [color=orange]Versorgung[/color] bestellen,
+  - von der [color=orange]Bergung[/color] finden lassen,
+  - aus [bold]Fragmenten[/bold] zusammensetzen oder
+  - während bestimmter Ereignisse auf der Station entdecken.
 
-  ## Artifacts
+  ## Artefakte
   <Box>
     <GuideEntityEmbed Entity="ComplexXenoArtifact" Caption=""/>
     <GuideEntityEmbed Entity="ComplexXenoArtifactItem" Caption=""/>
   </Box>
 
-  Artifacts contain [bold]nodes[/bold] arranged in [bold]layers[/bold].
-  - Unlocking a node unlocks connected nodes on upper layers.
-  - Each node has [bold]triggers[/bold], actions that must be performed near the artifact to unlock a node.
-  - When a node is unlocked, its [bold]effect[/bold] will trigger, and the node becomes [bold][color=plum]Active[/color][/bold].
-  - Each node has [bold]durability[/bold]: the number of times it can be manually activated after being unlocked.
-  - Higher nodes are harder to reach but give more [bold]research points[/bold].
-  - Unlocking all nodes provides no special bonus, but every node yields research points.
+  Artefakte enthalten [bold]Knoten[/bold], die in [bold]Schichten[/bold] angeordnet sind.
+  - Wenn du einen Knoten freischaltest, werden verbundene Knoten in höheren Schichten zugänglich.
+  - Jeder Knoten hat [bold]Auslöser[/bold]: Handlungen oder Bedingungen in der Nähe des Artefakts, mit denen du ihn freischaltest.
+  - Beim Freischalten tritt seine [bold]Wirkung[/bold] ein. Danach gilt der Knoten als [bold][color=plum]aktiv[/color][/bold].
+  - Jeder Knoten hat eine [bold]Haltbarkeit[/bold]. Sie gibt an, wie oft du ihn nach dem Freischalten manuell aktivieren kannst.
+  - Höhere Knoten sind schwerer zu erreichen, bringen aber mehr [bold]Forschungspunkte[/bold].
+  - Für das Freischalten aller Knoten gibt es keinen eigenen Bonus. Punkte erhältst du für jeden einzelnen Knoten.
 
-  ## Equipment
+  ## Ausrüstung
   <Box>
-    <GuideEntityEmbed Entity="MachineArtifactAnalyzer" Caption="Analyzer"/>
-    <GuideEntityEmbed Entity="ComputerAnalysisConsole" Caption="Analysis Console"/>
-    <GuideEntityEmbed Entity="NodeScanner" Caption="Node Scanner"/>
+    <GuideEntityEmbed Entity="MachineArtifactAnalyzer" Caption="Artefaktanalysator"/>
+    <GuideEntityEmbed Entity="ComputerAnalysisConsole" Caption="Analysekonsole"/>
+    <GuideEntityEmbed Entity="NodeScanner" Caption="Knotenscanner"/>
   </Box>
-  - [bold]Artifact Analyzer:[/bold] Stationary device that scans artifacts, sending data to the Console.
-  - [bold][textlink="Analysis Console:" link="AnalysisConsole"][/bold] Stationary device that is used to display the node tree. Must be linked to an Analyzer with a multitool.
-  - [bold]Node Scanner:[/bold] Small hand-held device that can show the ID of the node currently being activated and whether the artifact is ready to trigger, letting scientist have minimal required knowledge for operating inside chamber near artifact and far without direct access to console.
+  - [bold]Artefaktanalysator:[/bold] Scannt Artefakte und sendet die Daten an die Konsole.
+  - [bold][textlink="Analysekonsole:" link="AnalysisConsole"][/bold] Zeigt den Knotenbaum an. Verbinde sie mit einem Multitool mit dem Analysator.
+  - [bold]Knotenscanner:[/bold] Zeigt die Kennung des gerade ausgelösten Knotens und an, ob das Artefakt zur Auslösung bereit ist. So kannst du auch in der Kammer arbeiten, ohne ständig zur Konsole zurückzumüssen.
 
   <Box>
-    <GuideEntityEmbed Entity="CrateArtifactContainer" Caption="Artifact Container"/>
-    <GuideEntityEmbed Entity="HandheldArtifactContainer" Caption="Handheld Container"/>
+    <GuideEntityEmbed Entity="CrateArtifactContainer" Caption="Artefaktbehälter"/>
+    <GuideEntityEmbed Entity="HandheldArtifactContainer" Caption="Tragbarer Behälter"/>
   </Box>
-  - [bold]Artifact Containers:[/bold] Safely store and transports artifacts and prevent nodes from triggering.
+  - [bold]Artefaktbehälter:[/bold] Darin lassen sich Artefakte sicher aufbewahren und transportieren, ohne Knoten auszulösen.
   <Box>
-    <GuideEntityEmbed Entity="MachineArtifactCrusher" Caption="Crusher"/>
+    <GuideEntityEmbed Entity="MachineArtifactCrusher" Caption="Zerkleinerer"/>
   </Box>
-  - [bold]Artifact Crusher:[/bold] Crushes artifacts into fragments. Four fragments can be rebuilt into a new artifact.
+  - [bold]Artefaktzerkleinerer:[/bold] Zerlegt Artefakte in Fragmente. Aus vier Fragmenten kannst du ein neues Artefakt herstellen.
   <Box>
-    <GuideEntityEmbed Entity="ArtifactFragment" Caption="Artifact Fragment"/>
+    <GuideEntityEmbed Entity="ArtifactFragment" Caption="Artefaktfragment"/>
   </Box>
-  - [bold]Artifact Fragment:[/bold] Pieces of destroyed artifacts. Four fragments can be rebuilt into a new artifact using the craft menu.
+  - [bold]Artefaktfragment:[/bold] Ein Stück eines zerstörten Artefakts. Im Herstellungsmenü kannst du vier Fragmente zu einem neuen Artefakt zusammensetzen.
 </Document>

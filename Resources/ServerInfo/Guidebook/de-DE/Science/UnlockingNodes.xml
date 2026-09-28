@@ -1,48 +1,48 @@
 <Document>
-  # Unlocking Nodes
+  # Knoten freischalten
   <Box>
     <GuideEntityEmbed Entity="ComplexXenoArtifact" Caption=""/>
     <GuideEntityEmbed Entity="ComplexXenoArtifactItem" Caption=""/>
   </Box>
 
-  To activate and unlock nodes on an artifact, you should:
-  - Check a node on the [bold]Analysis Console[/bold] to check its triggers and effects.
-  - Perform the [bold]triggers[/bold] listed in the console. Some require direct interaction with the artifact, while others may only need the correct environment or a specific action performed nearby.
-  - Once a trigger is successfully performed, the artifact will respond with the message: [italic]"It begins to shift in strange ways..."[/italic]. The [bold]Node Scanner[/bold] will then indicate which specific nodes are being triggered.
+  So aktivierst und entsperrst du die Knoten eines Artefakts:
+  - Sieh dir an der [bold]Analysekonsole[/bold] die Auslöser und Wirkungen des Knotens an.
+  - Erfülle die angezeigten [bold]Auslöser[/bold]. Manche erfordern eine direkte Handlung am Artefakt, für andere genügt die passende Umgebung oder eine Handlung in seiner Nähe.
+  - Sobald ein Auslöser anspricht, erscheint die Meldung: [italic]„Es beginnt, sich auf seltsame Weise zu verändern …“[/italic] Der [bold]Knotenscanner[/bold] zeigt an, welche Knoten dadurch ausgelöst werden.
 
-  Artifacts enter an unlocking state after the first trigger is met. During this state, any remaining triggers must be completed. The unlocking window initially lasts a few seconds and resets each time a new trigger is activated. This window grows longer with each additional node unlocked, giving more time to complete further triggers.
+  Nach dem ersten Auslöser beginnt eine kurze Freischaltphase. In dieser Zeit musst du alle übrigen Auslöser erfüllen. Jeder weitere Auslöser setzt die Frist zurück. Je mehr Knoten bereits freigeschaltet sind, desto länger bleibt das Zeitfenster offen.
 
-  Once all required triggers are completed successfully, the artifact will trigger it's effect and a popup will appear saying: [italic]"It slows down, visibly changed."[/italic], and the node will appear as [bold][color=plum]Active[/color][/bold] on the Console.
+  Sind alle Auslöser erfüllt, tritt die Wirkung ein. Die Meldung [italic]„Es kommt zur Ruhe und sieht nun anders aus.“[/italic] erscheint, und die Konsole zeigt den Knoten als [bold][color=plum]aktiv[/color][/bold] an.
 
-  If an artifact fails to activate, it will stop resonating and display the message: [italic]"It slows down before uneventfully stopping."[/italic] After this, it enters a cooldown period before it can be activated again.
+  Schlägt die Aktivierung fehl, verstummt das Artefakt. Es erscheint: [italic]„Die Bewegung lässt nach und hört schließlich auf.“[/italic] Danach musst du eine Abklingzeit abwarten, bevor du es erneut versuchen kannst.
 
-  The order of trigger activation [bold]does not matter[/bold] for individual nodes. [italic]However[/italic], some triggers affect multiple nodes. As a rule of thumb, start with a trigger that is unique to the node you want to unlock. Activating a trigger for a different node during this phase prevents the target node from unlocking until the artifact’s cooldown ends.
+  Die Reihenfolge der Auslöser eines Knotens [bold]spielt keine Rolle[/bold]. Manche Auslöser beeinflussen allerdings mehrere Knoten. Beginne am besten mit einem Auslöser, der nur zu deinem Zielknoten gehört. Löst du während der Freischaltphase einen anderen Knoten aus, bleibt dein Zielknoten bis zum Ende der Abklingzeit gesperrt.
 
   <GuideReagentEmbed Reagent="Artifexium"/>
 
-  ## Active Nodes
-  Once unlocked, a node is considered active. Only the highest unlocked nodes in a tree’s layer are activatable, lower nodes in the same tree cannot be triggered anymore once a higher node has been activated.
+  ## Aktive Knoten
+  Ein freigeschalteter Knoten ist aktiv. In jedem Knotenbaum lassen sich nur die höchsten bereits freigeschalteten Knoten auslösen. Sobald du einen höheren Knoten aktivierst, kannst du die darunterliegenden Knoten desselben Baums nicht mehr auslösen.
 
-  Artifacts often have multiple trees. Layer precedence applies within each tree, but different trees operate independently. This means nodes in different trees can be activated simultaneously as long as they are the highest unlocked nodes in their respective trees.
+  Artefakte haben oft mehrere Knotenbäume. Die Schichten eines Baums beeinflussen die anderen Bäume nicht. Deshalb können in verschiedenen Bäumen gleichzeitig Knoten aktiv sein, sofern sie im jeweiligen Baum die höchsten freigeschalteten Knoten sind.
 
-  [bold]Manual activation triggers all unlocked nodes at once and consumes durability.[/bold]
+  [bold]Eine manuelle Aktivierung löst alle freigeschalteten Knoten zugleich aus und verbraucht Haltbarkeit.[/bold]
 
   <GuideReagentEmbed Reagent="ArtifactGlue"/>
 
-  ## Triggers
-  Examples include:
-  - Examining the artifact
-  - Playing an instrument
-  - Damaging or throwing it
-  - Exposing it to gases (plasma, tritium, etc.)
-  - Changing pressure or temperature
-  - Using tools (screwdriver, multitool, crowbar, wrench)
-  - Splashing reagents (blood, water, ammonia, etc.)
-  - Killing something nearby
+  ## Auslöser
+  Dazu gehören zum Beispiel:
+  - das Artefakt untersuchen,
+  - ein Instrument spielen,
+  - das Artefakt beschädigen oder werfen,
+  - es Gasen wie Plasma oder Tritium aussetzen,
+  - Druck oder Temperatur verändern,
+  - Werkzeuge wie Schraubendreher, Multitool, Brecheisen oder Schraubenschlüssel benutzen,
+  - Reagenzien wie Blut, Wasser oder Ammoniak darauf spritzen oder
+  - etwas in der Nähe töten.
 
-  ## Effects
-  Effects can be:
-  - [color=green]Harmless:[/color] producing plants, animals, or junk
-  - [color=#00ccff]Helpful:[/color] charging batteries, creating instruments or money
-  - [color=red]Hazardous:[/color] anomalies, radiation, explosions, hostile fauna
+  ## Wirkungen
+  Sie können sein:
+  - [color=green]harmlos:[/color] Pflanzen, Tiere oder Schrott erscheinen,
+  - [color=#00ccff]hilfreich:[/color] Batterien werden geladen oder Instrumente und Geld entstehen,
+  - [color=red]gefährlich:[/color] Anomalien, Strahlung, Explosionen oder feindselige Kreaturen.
 </Document>

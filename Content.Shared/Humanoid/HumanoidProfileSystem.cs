@@ -48,6 +48,14 @@ public sealed partial class HumanoidProfileSystem : EntitySystem
         return TryComp<HumanoidProfileComponent>(uid, out var profile) ? profile.Sex : null;
     }
 
+    /// <summary>
+    /// Returns the selected pronouns independently of body sex.
+    /// </summary>
+    public Gender? GetPronouns(EntityUid uid)
+    {
+        return TryComp<HumanoidProfileComponent>(uid, out var profile) ? profile.Gender : null;
+    }
+
     private void OnExamined(Entity<HumanoidProfileComponent> ent, ref ExaminedEvent args)
     {
         var identity = Identity.Entity(ent, EntityManager);

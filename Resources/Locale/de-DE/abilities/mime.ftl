@@ -1,6 +1,6 @@
 mime-cant-speak = Dein Schweigegelübde hindert dich am Sprechen.
 mime-invisible-wall-popup-self = Du stößt gegen eine unsichtbare Wand!
-mime-invisible-wall-popup-others = { $bodySex ->
+mime-invisible-wall-popup-others = { $jobGender ->
     [female] { CAPITALIZE(DE-ARTICLE("feminine", "nominative")) } { job-name-mime-female }
    *[other] { CAPITALIZE(DE-ARTICLE("masculine", "nominative")) } { job-name-mime }
     } stößt gegen eine unsichtbare Wand!

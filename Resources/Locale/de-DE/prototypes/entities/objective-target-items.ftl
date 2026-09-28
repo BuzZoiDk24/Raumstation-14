@@ -1,8 +1,8 @@
 # Gegenstände, die für Dieb- und Verräterziele gezählt werden.
 
-# AltarNanotrasen
+# AltarNanoTrasen
 
-ent-AltarNanotrasen = NanoTrasen-Altar
+ent-AltarNanoTrasen = NanoTrasen-Altar
     .gender = masculine
     .desc = Ein Altar der Götter.
 
@@ -874,7 +874,7 @@ ent-NuclearBombUnanchored = Kernspaltungsbombe
 
 # NukeDisk
 
-ent-NukeDisk = nukleare Authentifizierungsdiskette
+ent-NukeDisk = Authentifizierungsdiskette
     .gender = feminine
     .desc = Mit dieser Diskette und dem passenden Code lässt sich eine Atombombe scharfstellen. Ein Hinweis von NanoTrasen lautet „DAS IST DEIN WICHTIGSTER BESITZ. PASS VERDAMMT NOCH MAL AUF DIE DISKETTE AUF!“
 

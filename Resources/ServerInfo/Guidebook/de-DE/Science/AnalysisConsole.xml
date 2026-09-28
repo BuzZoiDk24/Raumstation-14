@@ -1,22 +1,22 @@
 <Document>
-  # Analysis Console
+  # Analysekonsole
 
-  The Analysis Console is a device used to interface with artifacts. It can be used to check nodes, their triggers and effects, and extract points.
+  An der Analysekonsole untersuchst du Artefakte: Sie zeigt die Knoten, ihre Auslöser und Wirkungen an. Außerdem kannst du dort Forschungspunkte gewinnen.
 
   <Box>
-    <GuideEntityEmbed Entity="ComputerAnalysisConsole" Caption="Analysis Console"/>
+    <GuideEntityEmbed Entity="ComputerAnalysisConsole" Caption="Analysekonsole"/>
   </Box>
 
-  The console displays detailed information about each node in the artifact’s tree structure. This includes:
-  - [bold]ID:[/bold] Unique identifier for use with the Node Scanner.
-  - [bold]Class:[/bold] The layer name, nodes on the same layer share it.
+  Die Konsole zeigt zu jedem Knoten im Baum des Artefakts folgende Angaben:
+  - [bold]ID:[/bold] Die Kennung, die auch der Knotenscanner anzeigt.
+  - [bold]Klasse:[/bold] Bezeichnung der Schicht, zu der der Knoten gehört. Knoten derselben Schicht teilen sich diese Bezeichnung.
   - [bold]Status:[/bold]
-  - [italic][color=red]Locked[/color][/italic] by default.
-  - [italic][color=plum]Active[/color][/italic] when first triggered.
-  - [italic][color=lime]Unlocked[/color][/italic] if a deeper node is reached (prevents manual activations).
-  - [bold]Durability:[/bold] Number of manual activations available.
-  - [bold]Effect:[/bold] What happens when the node activates or is manually triggered.
-  - [bold]Triggers:[/bold] Required actions to unlock the node.
-  - [bold]Server:[/bold] Choose the research server where extracted points are sent.
-  - [bold]Extract Points:[/bold] Extracts points from nodes unlocked since the last extraction.
+  - [italic][color=red]Gesperrt (Locked)[/color][/italic], solange der Knoten noch nicht ausgelöst wurde.
+  - [italic][color=plum]Aktiv (Active)[/color][/italic], nachdem du ihn erstmals ausgelöst hast.
+  - [italic][color=lime]Freigeschaltet (Unlocked)[/color][/italic], sobald du einen tieferen Knoten erreichst. Dann lässt sich dieser Knoten nicht mehr manuell aktivieren.
+  - [bold]Haltbarkeit:[/bold] Wie oft du den Knoten noch manuell aktivieren kannst.
+  - [bold]Wirkung:[/bold] Was beim Auslösen oder manuellen Aktivieren geschieht.
+  - [bold]Auslöser:[/bold] Was du tun musst, um den Knoten freizuschalten.
+  - [bold]Server:[/bold] Wähle den Forschungsserver für die gewonnenen Punkte.
+  - [bold]Punkte gewinnen (Extract points):[/bold] Sammelt die Punkte der Knoten ein, die seit dem letzten Mal freigeschaltet wurden.
 </Document>

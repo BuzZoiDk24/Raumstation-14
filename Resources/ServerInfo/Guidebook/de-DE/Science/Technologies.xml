@@ -1,20 +1,20 @@
 <Document>
-# Technologies
+# Technologien
 
-All technologies have a cost and a tier requirement in order to be researched. Unlocking them adds a variety of recipes that can be printed at various lathes.
+Jede Technologie kostet Forschungspunkte und setzt eine bestimmte Technologiestufe voraus. Mit ihrer Erforschung schaltest du Baupläne für verschiedene Fertigungsmaschinen frei.
 
-The different technologies and their respective discipline are listed below.
+Hier siehst du die Technologien nach Fachgebiet geordnet.
 
-## Industrial
+## Industrie
 <GuideTechDisciplineEmbed Discipline="Industrial"/>
 
 ## Arsenal
 <GuideTechDisciplineEmbed Discipline="Arsenal"/>
 
-## Experimental
+## Experimentelles
 <GuideTechDisciplineEmbed Discipline="Experimental"/>
 
-## Civilian Services
+## Zivile Dienste
 <GuideTechDisciplineEmbed Discipline="CivilianServices"/>
 
 </Document>
