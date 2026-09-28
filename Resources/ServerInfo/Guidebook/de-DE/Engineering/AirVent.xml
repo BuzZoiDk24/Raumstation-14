@@ -32,7 +32,7 @@ Luftauslässe wechseln in den [color=red]Drucksperrmodus[/color], wenn der Druck
 Dadurch wird verhindert, dass wertvolle Gase in den Weltraum entweichen, wenn ein Raum nicht vollständig abgedichtet ist.
 Zur Anzeige dieses Zustands leuchten die Kontrollleuchten des Luftauslasses [color=yellow]gelb[/color].
 
-Die Drucksperre kann [color=green]übersteuert[/color] werden, indem du den Luftauslass mit der rechten Maustaste anklickst und **„Drucksperre aufheben“** auswählst oder an einem verbundenen [textlink="Atmosphärenalarm" link="AirAlarms"] den Modus **„Füllen“** aktivierst.
+Die Drucksperre kann [color=green]übersteuert[/color] werden, indem du den Luftauslass mit der rechten Maustaste anklickst und „Drucksperre aufheben“ auswählst oder an einem verbundenen [textlink="Atmosphärenalarm" link="AirAlarms"] den Modus „Füllen“ aktivierst.
 
 Beachte, dass Luftauslässe im [color=red]Drucksperrmodus[/color] weiterhin sehr geringe Mengen Gas verlieren.
 Die austretende Gasmenge hängt vom aktuellen Druck des angeschlossenen Rohrnetzes ab.
@@ -41,36 +41,36 @@ Die austretende Gasmenge hängt vom aktuellen Druck des angeschlossenen Rohrnetz
 
 Ist ein Luftauslass mit einem [textlink="Atmosphärenalarm" link="AirAlarms"] [textlink="verbunden" link="Networking"], stehen zusätzliche Funktionen zur Verfügung.
 
-Luftauslässe besitzen zwei Betriebsarten: **Ausblasen** und **Absaugen**.
+Luftauslässe besitzen zwei Betriebsarten: Ausblasen und Absaugen.
 
-* **Ausblasen** leitet Gase aus dem angeschlossenen Rohrnetz in die Umgebung.
-* **Absaugen** entzieht der Umgebung Luft und führt sie dem angeschlossenen Rohrnetz zu. Zur Anzeige dieses Modus leuchten die Kontrollleuchten des Luftauslasses [color=red]rot[/color].
+- Ausblasen leitet Gase aus dem angeschlossenen Rohrnetz in die Umgebung.
+- Absaugen entzieht der Umgebung Luft und führt sie dem angeschlossenen Rohrnetz zu. Zur Anzeige dieses Modus leuchten die Kontrollleuchten des Luftauslasses [color=red]rot[/color].
 
 ## Druckgrenzen
 
-Luftauslässe verfügen über ein System von Druckgrenzen, das festlegt, bis zu welchem Druck sie eine Atmosphäre befüllen oder Gase in das angeschlossene Rohrnetz fördern. Diese Grenzwerte gelten sowohl für den Modus **Ausblasen** als auch für **Absaugen**.
+Luftauslässe verfügen über ein System von Druckgrenzen, das festlegt, bis zu welchem Druck sie eine Atmosphäre befüllen oder Gase in das angeschlossene Rohrnetz fördern. Diese Grenzwerte gelten sowohl für den Modus Ausblasen als auch für Absaugen.
 
-Die Einstellung **„Druckgrenze“** besitzt vier Optionen:
+Die Einstellung „Druckgrenze“ besitzt vier Optionen:
 
-* **ExternalBound**: Der Luftauslass berücksichtigt nur die Grenzwerte unter **External Bound**.
-* **InternalBound**: Der Luftauslass berücksichtigt nur die Grenzwerte unter **Internal Bound**.
-* **Both**: Der Luftauslass berücksichtigt sowohl die externe als auch die interne Druckgrenze.
-* **NoBound**: Der Luftauslass ignoriert sämtliche Druckgrenzen.
+- ExternalBound: Der Luftauslass berücksichtigt nur die Grenzwerte unter External Bound.
+- InternalBound: Der Luftauslass berücksichtigt nur die Grenzwerte unter Internal Bound.
+- Both: Der Luftauslass berücksichtigt sowohl die externe als auch die interne Druckgrenze.
+- NoBound: Der Luftauslass ignoriert sämtliche Druckgrenzen.
 
-Befindet sich der Luftauslass im Modus **Ausblasen**:
+Befindet sich der Luftauslass im Modus Ausblasen:
 
-* Ist die externe Druckgrenze auf 101,3 kPa eingestellt, erhöht der Luftauslass den Umgebungsdruck nicht über 101,3 kPa.
-* Ist die interne Druckgrenze auf 50 kPa eingestellt, entnimmt der Luftauslass dem angeschlossenen Rohrnetz kein Gas mehr, sobald dessen Druck unter 50 kPa fällt.
+- Ist die externe Druckgrenze auf 101,3 kPa eingestellt, erhöht der Luftauslass den Umgebungsdruck nicht über 101,3 kPa.
+- Ist die interne Druckgrenze auf 50 kPa eingestellt, entnimmt der Luftauslass dem angeschlossenen Rohrnetz kein Gas mehr, sobald dessen Druck unter 50 kPa fällt.
 
-Befindet sich der Luftauslass im Modus **Absaugen**:
+Befindet sich der Luftauslass im Modus Absaugen:
 
-* Ist die externe Druckgrenze auf 101,3 kPa eingestellt, saugt der Luftauslass Gas aus der Umgebung ab, bis dort nur noch 101,3 kPa herrschen.
-* Ist die interne Druckgrenze auf 50 kPa eingestellt, fördert der Luftauslass kein weiteres Gas in das Rohrnetz, sobald dessen Druck über 50 kPa liegt.
+- Ist die externe Druckgrenze auf 101,3 kPa eingestellt, saugt der Luftauslass Gas aus der Umgebung ab, bis dort nur noch 101,3 kPa herrschen.
+- Ist die interne Druckgrenze auf 50 kPa eingestellt, fördert der Luftauslass kein weiteres Gas in das Rohrnetz, sobald dessen Druck über 50 kPa liegt.
 
 Falls das Konzept der Druckgrenzen noch unklar ist, hilft folgende Faustregel:
 
-* Die **externe Druckgrenze** ist die Grenze für die Atmosphäre außerhalb des Luftauslasses. *„Ich erhöhe den Umgebungsdruck nicht über diesen Wert und sauge ihn nicht unter diesen Wert ab.“*
-* Die **interne Druckgrenze** ist die Grenze für das angeschlossene Rohrnetz. *„Ich entnehme meinem Rohrnetz kein Gas unterhalb dieses Drucks und leite kein weiteres Gas hinein, wenn sein Druck oberhalb dieses Werts liegt.“*
-* Die Einstellung **„Druckgrenze“** bestimmt lediglich, welche dieser Grenzen berücksichtigt oder ignoriert werden.
+- Die externe Druckgrenze ist die Grenze für die Atmosphäre außerhalb des Luftauslasses. „Ich erhöhe den Umgebungsdruck nicht über diesen Wert und sauge ihn nicht unter diesen Wert ab.“
+- Die interne Druckgrenze ist die Grenze für das angeschlossene Rohrnetz. „Ich entnehme meinem Rohrnetz kein Gas unterhalb dieses Drucks und leite kein weiteres Gas hinein, wenn sein Druck oberhalb dieses Werts liegt.“
+- Die Einstellung „Druckgrenze“ bestimmt lediglich, welche dieser Grenzen berücksichtigt oder ignoriert werden.
 
 </Document>

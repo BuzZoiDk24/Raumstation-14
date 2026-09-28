@@ -30,7 +30,7 @@ Außerdem speichern sie auch im geschlossenen Zustand Gas auf ihrem Feld. Sei da
 
 Luftschleusen können verriegelt werden, sodass sie weder geöffnet noch von Hand aufgehebelt werden können. In diesem Zustand leuchten die Anzeigen oben an der Tür rot.
 
-Luftschleusen können außerdem auf **Notfallzugang** gestellt werden. In diesem Modus kann sie jeder unabhängig von seiner Zugangsberechtigung öffnen. Dies wird durch blinkende gelbe Anzeigen an der Oberseite der Tür signalisiert.
+Luftschleusen können außerdem auf Notfallzugang gestellt werden. In diesem Modus kann sie jeder unabhängig von seiner Zugangsberechtigung öffnen. Dies wird durch blinkende gelbe Anzeigen an der Oberseite der Tür signalisiert.
 
 ## Fernsteuerung
 
@@ -102,52 +102,52 @@ Je nachdem, ob eine Leitung gepulst, durchtrennt oder repariert wird, verändert
 
 Die Anzeigen neben den Leitungen geben ihren Zustand an:
 
-* Dauerhaft leuchtend: Das System arbeitet normal.
-* Blinkend: Das System weist eine Störung auf oder verhält sich nicht wie vorgesehen.
-* Aus: Das System wird nicht mit Strom versorgt.
+- Dauerhaft leuchtend: Das System arbeitet normal.
+- Blinkend: Das System weist eine Störung auf oder verhält sich nicht wie vorgesehen.
+- Aus: Das System wird nicht mit Strom versorgt.
 
 Nachfolgend sind alle Leitungen und ihre Funktionen aufgeführt:
 
 [color=#a4885c]Bolzenleitung (BOLT)[/color]
 
-* [color=yellow]Leitung pulsen[/color]: Verriegelt oder entriegelt die Tür.
-* [color=red]Leitung durchtrennen[/color]: Verriegelt die Tür dauerhaft.
-* [color=green]Leitung reparieren[/color]: Keine Wirkung.
+- [color=yellow]Leitung pulsen[/color]: Verriegelt oder entriegelt die Tür.
+- [color=red]Leitung durchtrennen[/color]: Verriegelt die Tür dauerhaft.
+- [color=green]Leitung reparieren[/color]: Keine Wirkung.
 
 [color=#a4885c]Stromleitung (POWR)[/color]
 
-* [color=yellow]Leitung pulsen[/color]: Unterbricht die Stromversorgung der Tür für kurze Zeit.
-* [color=red]Leitung durchtrennen[/color]: Unterbricht die Stromversorgung vollständig, wenn beide Stromleitungen getrennt sind. Ist nur eine getrennt, entsteht ein Kurzschluss, der Personen ohne isolierte Handschuhe einen Stromschlag versetzt.
-* [color=green]Leitung reparieren[/color]: Stellt entweder die Stromversorgung wieder her oder beendet den Kurzschluss.
+- [color=yellow]Leitung pulsen[/color]: Unterbricht die Stromversorgung der Tür für kurze Zeit.
+- [color=red]Leitung durchtrennen[/color]: Unterbricht die Stromversorgung vollständig, wenn beide Stromleitungen getrennt sind. Ist nur eine getrennt, entsteht ein Kurzschluss, der Personen ohne isolierte Handschuhe einen Stromschlag versetzt.
+- [color=green]Leitung reparieren[/color]: Stellt entweder die Stromversorgung wieder her oder beendet den Kurzschluss.
 
 [color=#a4885c]Protokollleitung (LOG)[/color]
 
-* [color=yellow]Leitung pulsen[/color]: Deaktiviert die Türprotokollierung vorübergehend.
-* [color=red]Leitung durchtrennen[/color]: Deaktiviert die Türprotokollierung.
-* [color=green]Leitung reparieren[/color]: Aktiviert die Türprotokollierung wieder.
+- [color=yellow]Leitung pulsen[/color]: Deaktiviert die Türprotokollierung vorübergehend.
+- [color=red]Leitung durchtrennen[/color]: Deaktiviert die Türprotokollierung.
+- [color=green]Leitung reparieren[/color]: Aktiviert die Türprotokollierung wieder.
 
 [color=#a4885c]Verriegelungsanzeige (BLIT)[/color]
 
-* [color=yellow]Leitung pulsen[/color]: Schaltet die Anzeige vorübergehend aus oder wieder ein.
-* [color=red]Leitung durchtrennen[/color]: Verhindert, dass die Verriegelungsanzeige leuchtet.
-* [color=green]Leitung reparieren[/color]: Aktiviert die Anzeige wieder.
+- [color=yellow]Leitung pulsen[/color]: Schaltet die Anzeige vorübergehend aus oder wieder ein.
+- [color=red]Leitung durchtrennen[/color]: Verhindert, dass die Verriegelungsanzeige leuchtet.
+- [color=green]Leitung reparieren[/color]: Aktiviert die Anzeige wieder.
 
 [color=#a4885c]Timeranzeige (TIMR)[/color]
 
-* [color=yellow]Leitung pulsen[/color]: Verkürzt den Türtimer vorübergehend.
-* [color=red]Leitung durchtrennen[/color]: Deaktiviert den Timer. Die Tür schließt, sobald dies sicher möglich ist.
-* [color=green]Leitung reparieren[/color]: Aktiviert den Timer wieder.
+- [color=yellow]Leitung pulsen[/color]: Verkürzt den Türtimer vorübergehend.
+- [color=red]Leitung durchtrennen[/color]: Deaktiviert den Timer. Die Tür schließt, sobald dies sicher möglich ist.
+- [color=green]Leitung reparieren[/color]: Aktiviert den Timer wieder.
 
 [color=#a4885c]Sicherheitsleitung (SAFE)[/color]
 
-* [color=yellow]Leitung pulsen[/color]: Deaktiviert das Sicherheitssystem vorübergehend.
-* [color=red]Leitung durchtrennen[/color]: Deaktiviert das Sicherheitssystem vollständig. Die Tür schließt auch dann, wenn sich ein Hindernis im Weg befindet.
-* [color=green]Leitung reparieren[/color]: Aktiviert das Sicherheitssystem wieder.
+- [color=yellow]Leitung pulsen[/color]: Deaktiviert das Sicherheitssystem vorübergehend.
+- [color=red]Leitung durchtrennen[/color]: Deaktiviert das Sicherheitssystem vollständig. Die Tür schließt auch dann, wenn sich ein Hindernis im Weg befindet.
+- [color=green]Leitung reparieren[/color]: Aktiviert das Sicherheitssystem wieder.
 
 [color=#a4885c]KI-Zugangsleitung (AIA)[/color]
 
-* [color=yellow]Leitung pulsen[/color]: Keine Wirkung.
-* [color=red]Leitung durchtrennen[/color]: Entzieht der KI die Kontrolle über die Tür.
-* [color=green]Leitung reparieren[/color]: Erlaubt der KI wieder den Zugriff auf die Tür.
+- [color=yellow]Leitung pulsen[/color]: Keine Wirkung.
+- [color=red]Leitung durchtrennen[/color]: Entzieht der KI die Kontrolle über die Tür.
+- [color=green]Leitung reparieren[/color]: Erlaubt der KI wieder den Zugriff auf die Tür.
 
 </Document>

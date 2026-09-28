@@ -1,8 +1,6 @@
 <Document>
-  # Power
-  Power is the lifeblood of the station.
-  Without it, the station will quickly fall into chaos.
-  Engineers are responsible for maintaining the station's power grid, ensuring that power is supplied, distributed, and all departments are satisfied.
+  # Stromversorgung
+  Strom hält die Station am Laufen. Ohne ihn bricht schnell Chaos aus. Die Technik hält das Stromnetz in Betrieb und sorgt dafür, dass alle Abteilungen versorgt werden.
 
   <Box>
     <GuideEntityEmbed Entity="SingularityGenerator" Caption=""/>
@@ -13,23 +11,20 @@
     <GuideEntityEmbed Entity="APCBasic" Caption=""/>
   </Box>
 
-  There are many different aspects to Space Station 14's power system simulation, as well as Engineering's intended gameplay.
+  Das Stromnetz ist ein wichtiger Teil von Space Station 14 und der Arbeit in der Technik.
 
-  Some important information to keep in mind includes:
-  - Station [textlink="generators" link="Generators"] are tiered and follow a hierarchy. The lower the tier, the less they are sustainable, but the easier they are to setup. The higher the tier, the more sustainable they are, but the more complex they are to setup.
-  - Space Station 14 features [textlink="voltage networks" link="VoltageNetworks"], which distribute power across the station and are stepped down in voltage by machines, so they can be used by other machines.
-  - Power [textlink="generators" link="Generators"] have [textlink="ramping" link="Ramping"], which means they take time to match the grid's demand to their supply.
+  Behalte dabei drei Dinge im Blick:
+  - Die [textlink="Generatoren" link="Generators"] der Station sind in Stufen eingeteilt. Generatoren niedriger Stufen lassen sich leichter aufbauen, halten aber weniger lange durch. Generatoren höherer Stufen sind aufwendiger, liefern dafür aber länger zuverlässig Strom.
+  - [textlink="Spannungsnetze" link="VoltageNetworks"] verteilen den Strom über die Station. Maschinen senken die Spannung für die nachgelagerten Verbraucher.
+  - [textlink="Generatoren" link="Generators"] brauchen beim [textlink="Hochfahren" link="Ramping"] Zeit, um ihre Leistung an den Bedarf im Netz anzupassen.
 
-  ## Starting Out
-  At the start of the shift, the station is running off of purely [textlink="battery" link="PowerStorage"] power.
-  This will at most last 5-10 minutes, depending on the station's power draw.
+  ## Schichtbeginn
+  Zu Schichtbeginn läuft die Station ausschließlich mit Strom aus den [textlink="Batterien" link="PowerStorage"]. Je nach Verbrauch reicht das höchstens fünf bis zehn Minuten.
 
-  To extend this, you can start up the station's [textlink="Antimatter Engine" link="AME"], or [textlink="AME." link="AME"]
-  This will extend the runtime of the station's batteries by a significant amount, giving you more time to setup the station's higher-tier [textlink="generators." link="Generators"]
-  You can extend this even further by setting up [textlink="solar panels" link="SolarPanels"], which generate power for free.
+  Starte daher die [textlink="Antimaterie-Engine" link="AME"], kurz [textlink="AME" link="AME"]. Sie verlängert die Laufzeit der Stationsbatterien erheblich und verschafft dir Zeit für den Aufbau größerer [textlink="Generatoren" link="Generators"]. Mit [textlink="Solarmodulen" link="SolarPanels"] gewinnst du darüber hinaus Strom ohne Brennstoff.
 
-  After setting up the [textlink="AME" link="AME"] and [textlink="Solars" link="SolarPanels"], you should be generating a decent amount of power.
+  Wenn die [textlink="AME" link="AME"] und die [textlink="Solarmodule" link="SolarPanels"] laufen, sollte die Station vorerst ausreichend Strom erhalten.
 
-  Now that you've bought yourself time, you can focus on setting up higher-tier [textlink="generators" link="Generators"] like the [textlink="Singularity Engine" link="SingularityEngine"], which can provide power for the rest of the shift.
+  Jetzt kannst du dich um [textlink="Generatoren" link="Generators"] höherer Stufen kümmern, etwa die [textlink="Singularitäts-Engine" link="SingularityEngine"]. Sie kann die Station für den Rest der Schicht versorgen.
 
 </Document>

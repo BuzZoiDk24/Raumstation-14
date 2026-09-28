@@ -18,10 +18,10 @@ Jede Station verfügt über bis zu zwei Zugangskonfiguratoren. Der erste befinde
 
 So änderst du die Zugangsberechtigungen eines Geräts:
 
-* Verwende zunächst den Zugangskonfigurator auf dem gewünschten Gerät, um beide miteinander zu verbinden. Dadurch wird die Benutzeroberfläche des Konfigurators automatisch geöffnet.
-* Lege anschließend eine ID-Karte in den Zugangskonfigurator ein.
-* Passe die Zugangsberechtigungen des verbundenen Geräts an. Welche Berechtigungen hinzugefügt oder entfernt werden können, hängt von den Zugriffsrechten der eingelegten ID-Karte ab.
-* Alle Änderungen werden [color=#a4885c]sofort[/color] übernommen. Wirf die ID-Karte einfach aus dem Zugangskonfigurator aus und schließe die Benutzeroberfläche, sobald du fertig bist.
+- Verwende zunächst den Zugangskonfigurator auf dem gewünschten Gerät, um beide miteinander zu verbinden. Dadurch wird die Benutzeroberfläche des Konfigurators automatisch geöffnet.
+- Lege anschließend eine ID-Karte in den Zugangskonfigurator ein.
+- Passe die Zugangsberechtigungen des verbundenen Geräts an. Welche Berechtigungen hinzugefügt oder entfernt werden können, hängt von den Zugriffsrechten der eingelegten ID-Karte ab.
+- Alle Änderungen werden [color=#a4885c]sofort[/color] übernommen. Wirf die ID-Karte einfach aus dem Zugangskonfigurator aus und schließe die Benutzeroberfläche, sobald du fertig bist.
 
 ## Einschränkungen beim Ändern von Zugriffsrechten
 

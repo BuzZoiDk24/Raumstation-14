@@ -1,18 +1,18 @@
-﻿<Document>
-  # Generators
-  Generators are devices that produce power for the station. They vary in size and power output, and each has its own unique quirks and requirements.
+<Document>
+  # Generatoren
+  Generatoren versorgen die Station mit Strom. Sie unterscheiden sich in Größe und Leistung und haben jeweils eigene Anforderungen.
 
-  Engineers are intended to setup low-tier generators like Solar Arrays and the AME at the start of the shift, to give enough time to setup higher-tier generators like the Singularity Engine for sustained power for the rest of the shift.
+  Zu Schichtbeginn sollten Ingenieure schnell verfügbare Energiequellen wie Solarmodule und die AME in Betrieb nehmen. So bleibt genug Zeit, größere Generatoren wie die Singularitäts-Engine für eine dauerhafte Versorgung aufzubauen.
 
   <Box>
     <GuideEntityEmbed Entity="SingularityGenerator" Caption=""/>
     <GuideEntityEmbed Entity="TeslaGenerator" Caption=""/>
   </Box>
   <Box>
-    ## Singularity and Tesla Engine
+    ## Singularitäts- und Tesla-Engine
   </Box>
   <Box>
-    [color=#999999][italic]Devices capable of infinite energy — and destructive potential[italic][/color]
+    [color=#999999][italic]Nahezu unbegrenzte Energie – und gewaltiges Zerstörungspotenzial[/italic][/color]
   </Box>
 
   <Box>
@@ -20,10 +20,10 @@
     <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
   </Box>
   <Box>
-    ## Antimatter Engine
+    ## Antimaterie-Engine
   </Box>
   <Box>
-    [color=#999999][italic]Short-term support generator for the station[italic][/color]
+    [color=#999999][italic]Generator zur kurzfristigen Unterstützung der Station[/italic][/color]
   </Box>
 
   <Box>
@@ -32,10 +32,10 @@
     <GuideEntityEmbed Entity="TegCirculator" Caption="" Margin="0"/>
   </Box>
   <Box>
-    ## Thermo-electric Generator
+    ## Thermoelektrischer Generator
   </Box>
   <Box>
-    [color=#999999][italic]Advanced atmospherics generator that harnesses the energy of gasses[italic][/color]
+    [color=#999999][italic]Fortgeschrittener Generator der Atmosphärentechnik, der Energie aus Gasen gewinnt[/italic][/color]
   </Box>
 
   <Box>
@@ -44,12 +44,11 @@
     <GuideEntityEmbed Entity="SolarPanel" Caption=""/>
   </Box>
   <Box>
-    ## Solar Panels
+    ## Solarmodule
   </Box>
   <Box>
-    [color=#999999][italic]Low-maintenance passive power source[italic][/color]
+    [color=#999999][italic]Wartungsarme, passive Stromquelle[/italic][/color]
   </Box>
-
 
   <Box>
     <GuideEntityEmbed Entity="PortableGeneratorJrPacman" Caption="" />
@@ -57,19 +56,19 @@
     <GuideEntityEmbed Entity="PortableGeneratorSuperPacman" Caption="" />
   </Box>
   <Box>
-    ## Portable Generators
+    ## Tragbare Generatoren
   </Box>
   <Box>
-    [color=#999999][italic]Portable generators for crew use and emergency power[italic][/color]
+    [color=#999999][italic]Für die Crew und als Notstromversorgung[/italic][/color]
   </Box>
 
   <Box>
     <GuideEntityEmbed Entity="GeneratorRTG" Caption="" />
   </Box>
   <Box>
-    ## Radioisotope Thermoelectric Generator
+    ## Radioisotopengenerator
   </Box>
   <Box>
-    [color=#999999][italic]Zero-maintenance passive power source[italic][/color]
+    [color=#999999][italic]Wartungsfreie, passive Stromquelle[/italic][/color]
   </Box>
 </Document>
