@@ -1,8 +1,8 @@
-# Examination for different levels of wiring protection
-wires-panel-component-on-examine-security-level1 = There is a steel plate preventing access to the internal wiring. Use a [color=cyan]Crowbar[/color] to remove it.
-wires-panel-component-on-examine-security-level2 = A steel plate has been welded to the inside of the [color=lightgray]maintenance panel[/color]. Use a [color=cyan]Welder[/color] to free it.
-wires-panel-component-on-examine-security-level3 = There is a plasteel plate preventing access to the internal wiring. Use a [color=cyan]Crowbar[/color] to remove it.
-wires-panel-component-on-examine-security-level4 = A plasteel plate has been welded to the inside of the [color=lightgray]maintenance panel[/color]. Use a [color=cyan]Welder[/color] to free it.
-wires-panel-component-on-examine-security-level5 = The inside of the [color=lightgray]maintenance panel[/color] is protected by a security grille. Use [color=cyan]Wirecutters[/color] to remove  it.
-wires-panel-component-on-examine-security-level6 = A plasteel plate sits within the interior of the [color=lightgray]maintenance panel[/color]. Use a [color=cyan]Crowbar[/color] to remove it.
-wires-panel-component-on-examine-security-level7 = A welded plasteel plate protects the interior of the [color=lightgray]maintenance panel[/color]. Use a [color=cyan]Welder[/color] to free it.
+# Untersuchung der Schutzstufen für die interne Verkabelung
+wires-panel-component-on-examine-security-level1 = Eine Stahlplatte versperrt den Zugang zu den Kabeln. Entferne sie mit einem [color=cyan]Brecheisen[/color].
+wires-panel-component-on-examine-security-level2 = Eine Stahlplatte ist an der Innenseite der [color=lightgray]Wartungsklappe[/color] festgeschweißt. Löse sie mit einem [color=cyan]Schweißgerät[/color].
+wires-panel-component-on-examine-security-level3 = Eine Plaststahlplatte versperrt den Zugang zu den Kabeln. Entferne sie mit einem [color=cyan]Brecheisen[/color].
+wires-panel-component-on-examine-security-level4 = Eine Plaststahlplatte ist an der Innenseite der [color=lightgray]Wartungsklappe[/color] festgeschweißt. Löse sie mit einem [color=cyan]Schweißgerät[/color].
+wires-panel-component-on-examine-security-level5 = Die Innenseite der [color=lightgray]Wartungsklappe[/color] ist durch ein Sicherheitsgitter geschützt. Entferne es mit einem [color=cyan]Seitenschneider[/color].
+wires-panel-component-on-examine-security-level6 = Im Inneren der [color=lightgray]Wartungsklappe[/color] sitzt eine Plaststahlplatte. Entferne sie mit einem [color=cyan]Brecheisen[/color].
+wires-panel-component-on-examine-security-level7 = Eine festgeschweißte Plaststahlplatte schützt die Innenseite der [color=lightgray]Wartungsklappe[/color]. Löse sie mit einem [color=cyan]Schweißgerät[/color].

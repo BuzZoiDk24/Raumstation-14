@@ -592,7 +592,7 @@ ent-SecurityCadetIDCard = Sicherheitskadett-ID-Karte
     .gender = feminine
     .desc = Mit dieser Karte erhältst du Zugang zu verschiedenen Bereichen der Station.
 
-ent-SecurityIDCard = Sicherheitsbeamter-ID-Karte
+ent-SecurityIDCard = ID-Karte des Sicherheitsoffiziers
     .gender = feminine
     .desc = Mit dieser Karte erhältst du Zugang zu verschiedenen Bereichen der Station.
 

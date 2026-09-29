@@ -122,7 +122,8 @@ public sealed partial class LockSystem : EntitySystem
         args.PushMarkup(Loc.GetString(lockComp.Locked
                 ? "lock-comp-on-examined-is-locked"
                 : "lock-comp-on-examined-is-unlocked",
-            ("entityName", Identity.Name(uid, EntityManager))));
+            ("entityName", Identity.Name(uid, EntityManager)),
+            ("entity", Identity.Entity(uid, EntityManager))));
     }
 
     /// <summary>
@@ -177,7 +178,8 @@ public sealed partial class LockSystem : EntitySystem
         if (user is { Valid: true })
         {
             _sharedPopupSystem.PopupEntity(Loc.GetString("lock-comp-do-lock-success",
-                ("entityName", Identity.Name(uid, EntityManager))), uid, user);
+                ("entityName", Identity.Name(uid, EntityManager)),
+                ("entity", Identity.Entity(uid, EntityManager))), uid, user);
         }
 
         _audio.PlayPredicted(lockComp.LockSound, uid, user);
@@ -210,7 +212,8 @@ public sealed partial class LockSystem : EntitySystem
         if (user is { Valid: true })
         {
             _sharedPopupSystem.PopupEntity(Loc.GetString("lock-comp-do-unlock-success",
-                ("entityName", Identity.Name(uid, EntityManager))), uid, user.Value);
+                ("entityName", Identity.Name(uid, EntityManager)),
+                ("entity", Identity.Entity(uid, EntityManager))), uid, user.Value);
         }
 
         _audio.PlayPredicted(lockComp.UnlockSound, uid, user);

@@ -1,64 +1,64 @@
-criminal-records-console-window-title = Criminal Records Computer
-criminal-records-console-records-list-title = Crewmembers
-criminal-records-console-select-record-info = Select a record.
-criminal-records-console-no-records = No records found!
-criminal-records-console-no-record-found = No record was found for the selected person.
-criminal-records-console-flavor-left = Arrest first! Ask questions later.
+criminal-records-console-window-title = Strafregistercomputer
+criminal-records-console-records-list-title = Besatzungsmitglieder
+criminal-records-console-select-record-info = Wähle eine Akte aus.
+criminal-records-console-no-records = Keine Akten gefunden!
+criminal-records-console-no-record-found = Für diese Person wurde keine Akte gefunden.
+criminal-records-console-flavor-left = Erst festnehmen! Fragen kannst du später.
 criminal-records-console-flavor-right = v2.1
-criminal-records-console-show-all = All
+criminal-records-console-show-all = Alle
 
 ## Status
 
 criminal-records-console-status = Status
-criminal-records-status-none = None
-criminal-records-status-wanted = Wanted
-criminal-records-status-detained = Detained
-criminal-records-status-suspected = Suspect
-criminal-records-status-discharged = Discharged
-criminal-records-status-paroled = Paroled
-criminal-records-status-hostile = Hostile
-criminal-records-status-eliminated = Eliminated
+criminal-records-status-none = Kein Eintrag
+criminal-records-status-wanted = Gesucht
+criminal-records-status-detained = In Gewahrsam
+criminal-records-status-suspected = Verdächtig
+criminal-records-status-discharged = Entlassen
+criminal-records-status-paroled = Auf Bewährung
+criminal-records-status-hostile = Feindlich
+criminal-records-status-eliminated = Eliminiert
 
-criminal-records-console-wanted-reason = Wanted Reason
-criminal-records-console-suspected-reason = Suspected Reason
-criminal-records-console-reason = Reason
-criminal-records-console-reason-placeholder = For example: {$placeholder}
+criminal-records-console-wanted-reason = Fahndungsgrund
+criminal-records-console-suspected-reason = Verdachtsgrund
+criminal-records-console-reason = Grund
+criminal-records-console-reason-placeholder = Zum Beispiel: {$placeholder}
 
-## Crime History
+## Vorfälle
 
-criminal-records-console-crime-history = Crime History
-criminal-records-history-placeholder = Write the crime here
-criminal-records-no-history = This crewmember's record is spotless.
-criminal-records-add-history = Add
-criminal-records-delete-history = Delete
+criminal-records-console-crime-history = Vorfallhistorie
+criminal-records-history-placeholder = Vorfall hier eintragen
+criminal-records-no-history = Diese Person hat eine blütenreine Akte.
+criminal-records-add-history = Hinzufügen
+criminal-records-delete-history = Löschen
 
-criminal-records-permission-denied = Permission denied
+criminal-records-permission-denied = Zugriff verweigert
 
-## Security channel notifications
+## Benachrichtigungen im Sicherheitsfunk
 
-criminal-records-console-wanted = {$name} ({$job}) was made wanted by {$officer} for: {$reason}.
-criminal-records-console-not-wanted = {$officer} cleared the wanted status of {$name} ({$job}).
-criminal-records-console-suspected = {$officer} marked {$name} ({$job}) as suspicious because of: {$reason}
-criminal-records-console-not-suspected = {$name} ({$job}) has been cleared of suspicion by {$officer}.
-criminal-records-console-detained = {$name} ({$job}) has been detained by {$officer}.
-criminal-records-console-released = {$name} ({$job}) has been released by {$officer}.
-criminal-records-console-paroled = {$name} ({$job}) has been released on parole by {$officer}.
-criminal-records-console-not-parole = {$officer} cleared the parole status of {$name} ({$job}).
-criminal-records-console-hostile = {$name} ({$job}) was marked as hostile by {$officer} for: {$reason}.
-criminal-records-console-not-hostile = {$name} ({$job}) no longer marked as hostile by {$officer}.
-criminal-records-console-eliminated = {$name} ({$job}) was marked as eliminated by {$officer}.
-criminal-records-console-not-eliminated = {$name} ({$job}) no longer marked as eliminated by {$officer}.
-criminal-records-console-unknown-officer = <unknown>
+criminal-records-console-wanted = {$name} ({$job}) wurde von {$officer} zur Fahndung ausgeschrieben. Grund: {$reason}.
+criminal-records-console-not-wanted = {$officer} hat die Fahndung nach {$name} ({$job}) aufgehoben.
+criminal-records-console-suspected = {$officer} hat {$name} ({$job}) als verdächtig eingestuft. Grund: {$reason}.
+criminal-records-console-not-suspected = {$officer} hat den Verdacht gegen {$name} ({$job}) aufgehoben.
+criminal-records-console-detained = {$name} ({$job}) wurde von {$officer} in Gewahrsam genommen.
+criminal-records-console-released = {$name} ({$job}) wurde von {$officer} freigelassen.
+criminal-records-console-paroled = {$name} ({$job}) wurde von {$officer} auf Bewährung entlassen.
+criminal-records-console-not-parole = {$officer} hat den Bewährungsstatus von {$name} ({$job}) aufgehoben.
+criminal-records-console-hostile = {$officer} hat {$name} ({$job}) als feindlich eingestuft. Grund: {$reason}.
+criminal-records-console-not-hostile = {$officer} hat die Einstufung von {$name} ({$job}) als feindlich aufgehoben.
+criminal-records-console-eliminated = {$officer} hat {$name} ({$job}) als eliminiert eingetragen.
+criminal-records-console-not-eliminated = {$officer} hat den Eintrag „eliminiert“ für {$name} ({$job}) aufgehoben.
+criminal-records-console-unknown-officer = unbekannt
 
-## Filters
+## Filter
 
-criminal-records-filter-placeholder = Input text and press "Enter"
+criminal-records-filter-placeholder = Text eingeben und Eingabetaste drücken
 criminal-records-name-filter = Name
-criminal-records-prints-filter = Fingerprints
+criminal-records-prints-filter = Fingerabdrücke
 criminal-records-dna-filter = DNA
-criminal-records-job-filter = Job
-criminal-records-species-filter = Species
+criminal-records-job-filter = Beruf
+criminal-records-species-filter = Spezies
 
-## Arrest auto history lines
-criminal-records-console-auto-history = ARRESTED: {$reason}
-criminal-records-console-unspecified-reason = <unspecified reason>
+## Automatische Festnahme-Einträge
+criminal-records-console-auto-history = FESTGENOMMEN: {$reason}
+criminal-records-console-unspecified-reason = <Grund nicht angegeben>

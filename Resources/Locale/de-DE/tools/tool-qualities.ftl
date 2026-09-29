@@ -1,41 +1,41 @@
-tool-quality-anchoring-name = Anchoring
-tool-quality-anchoring-tool-name = Wrench
+tool-quality-anchoring-name = Verankern
+tool-quality-anchoring-tool-name = Schraubenschlüssel
 
-tool-quality-prying-name = Prying
-tool-quality-prying-tool-name = Crowbar
+tool-quality-prying-name = Aufhebeln
+tool-quality-prying-tool-name = Brecheisen
 
-tool-quality-screwing-name = Screwing
-tool-quality-screwing-tool-name = Screwdriver
+tool-quality-screwing-name = Schrauben
+tool-quality-screwing-tool-name = Schraubendreher
 
-tool-quality-cutting-name = Cutting
-tool-quality-cutting-tool-name = Wirecutter
+tool-quality-cutting-name = Durchtrennen
+tool-quality-cutting-tool-name = Seitenschneider
 
-tool-quality-shearing-name = Shearing
-tool-quality-shearing-tool-name = Wirecutter
+tool-quality-shearing-name = Abknipsen
+tool-quality-shearing-tool-name = Seitenschneider
 
-tool-quality-welding-name = Welding
-tool-quality-welding-tool-name = Welder
+tool-quality-welding-name = Schweißen
+tool-quality-welding-tool-name = Schweißgerät
 
-tool-quality-pulsing-name = Pulsing
+tool-quality-pulsing-name = Senden von Impulsen
 tool-quality-pulsing-tool-name = Multitool
 
-tool-quality-slicing-name = Slicing
-tool-quality-slicing-tool-name = Knife
+tool-quality-slicing-name = Schneiden
+tool-quality-slicing-tool-name = Messer
 
-tool-quality-sawing-name = Sawing
-tool-quality-sawing-tool-name = Saw
+tool-quality-sawing-name = Sägen
+tool-quality-sawing-tool-name = Säge
 
-tool-quality-honking-name = Honking
-tool-quality-honking-tool-name = Bike Horn
+tool-quality-honking-name = Hupen
+tool-quality-honking-tool-name = Fahrradhupe
 
-tool-quality-woodcutting-name = Woodcutting
-tool-quality-woodcutting-tool-name = Hatchet
+tool-quality-woodcutting-name = Holzhacken
+tool-quality-woodcutting-tool-name = Beil
 
-tool-quality-rolling-name = Rolling
-tool-quality-rolling-tool-name = Rolling Pin
+tool-quality-rolling-name = Ausrollen
+tool-quality-rolling-tool-name = Nudelholz
 
-tool-quality-digging-name = Digging
-tool-quality-digging-tool-name = Shovel
+tool-quality-digging-name = Graben
+tool-quality-digging-tool-name = Schaufel
 
-tool-quality-brushing-name = Brushing
-tool-quality-brushing-tool-name = Wire Brush
+tool-quality-brushing-name = Bürsten
+tool-quality-brushing-tool-name = Drahtbürste

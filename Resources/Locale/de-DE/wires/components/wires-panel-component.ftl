@@ -1,24 +1,24 @@
-wires-panel-component-on-examine-open = The [color=lightgray]maintenance panel[/color] is [color=red]open[/color].
-wires-panel-component-on-examine-closed = The [color=lightgray]maintenance panel[/color] is [color=darkgreen]closed[/color].
+wires-panel-component-on-examine-open = Die [color=lightgray]Wartungsklappe[/color] ist [color=red]geöffnet[/color].
+wires-panel-component-on-examine-closed = Die [color=lightgray]Wartungsklappe[/color] ist [color=darkgreen]geschlossen[/color].
 
-wires-panel-verb-view-panel = View maintenance panel
+wires-panel-verb-view-panel = Wartungsklappe ansehen
 
-# wire colors
+# Kabelfarben
 
-wire-name-color-red = Red
-wire-name-color-blue = Blue
-wire-name-color-green = Green
+wire-name-color-red = Rot
+wire-name-color-blue = Blau
+wire-name-color-green = Grün
 wire-name-color-orange = Orange
-wire-name-color-brown = Brown
+wire-name-color-brown = Braun
 wire-name-color-gold = Gold
-wire-name-color-gray = Gray
+wire-name-color-gray = Grau
 wire-name-color-cyan = Cyan
-wire-name-color-navy = Navy
-wire-name-color-purple = Purple
+wire-name-color-navy = Marineblau
+wire-name-color-purple = Violett
 wire-name-color-pink = Pink
 wire-name-color-fuchsia = Fuchsia
 
-# letter names
+# Buchstabenbezeichnungen
 wire-letter-name-alpha = Alpha
 wire-letter-name-beta = Beta
 wire-letter-name-gamma = Gamma
