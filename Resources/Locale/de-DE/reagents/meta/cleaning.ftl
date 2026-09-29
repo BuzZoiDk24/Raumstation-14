@@ -1,14 +1,14 @@
-reagent-name-bleach = bleach
-reagent-desc-bleach = Heavy duty cleaner that can clean tiles better than Space Cleaner. Extremely toxic when ingested.
+reagent-name-bleach = Bleichmittel
+reagent-desc-bleach = Ein starker Reiniger, der Fliesen gründlicher säubert als Universalreiniger. Beim Verschlucken äußerst giftig.
 
-reagent-name-space-cleaner = space cleaner
-reagent-desc-space-cleaner = This is able to clean almost all surfaces of almost anything that may dirty them. The janitor is likely to appreciate refills.
+reagent-name-space-cleaner = Universalreiniger
+reagent-desc-space-cleaner = Entfernt nahezu jeden Schmutz von fast allen Oberflächen. Die Reinigungskraft freut sich bestimmt über Nachschub.
 
-reagent-name-soap = soap
-reagent-desc-soap = I wouldn't clean my mouth out with this if I were you.
+reagent-name-soap = Seife
+reagent-desc-soap = Damit würde ich mir an deiner Stelle nicht den Mund auswaschen.
 
-reagent-name-space-lube = space lube
-reagent-desc-space-lube = Space Lube is a high performance lubricant intended for maintenance of extremely complex mechanical equipment (and certainly not used to make people slip).
+reagent-name-space-lube = Weltraumgleitmittel
+reagent-desc-space-lube = Ein Hochleistungsschmiermittel für die Wartung äußerst komplexer Maschinen. Ganz sicher nicht dazu gedacht, Leute ausrutschen zu lassen.
 
-reagent-name-space-glue = space glue
-reagent-desc-space-glue = Space Glue is a high performance glue intended for maintenance of extremely complex mechanical equipment (and certainly not used to make people stick to the floor).
+reagent-name-space-glue = Weltraumkleber
+reagent-desc-space-glue = Ein Hochleistungskleber für die Wartung äußerst komplexer Maschinen. Ganz sicher nicht dazu gedacht, Leute am Boden festzukleben.

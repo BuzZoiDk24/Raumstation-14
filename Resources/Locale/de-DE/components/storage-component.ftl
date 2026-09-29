@@ -1,13 +1,23 @@
-comp-storage-no-item-size = N/A
-comp-storage-cant-insert = Can't insert.
-comp-storage-too-big = Too big!
-comp-storage-insufficient-capacity = No room!
-comp-storage-invalid-container = This doesn't go in there!
-comp-storage-anchored-failure = Can't insert an anchored item.
-comp-storage-cant-drop = You can't let go of { THE($entity) }!
-comp-storage-window-title = Storage Item
-comp-storage-window-weight = { $weight }/{ $maxWeight }, Max Size: {$size}
-comp-storage-window-slots = Slots: { $itemCount }/{ $maxCount }, Max Size: {$size}
-comp-storage-window-dummy = Dummy
-comp-storage-verb-open-storage = Open Storage
-comp-storage-verb-close-storage = Close Storage
+comp-storage-no-item-size = k. A.
+comp-storage-cant-insert = Das kannst du nicht hineinlegen.
+comp-storage-too-big = Zu groß!
+comp-storage-insufficient-capacity = Kein Platz!
+comp-storage-invalid-container = Das gehört nicht dort hinein!
+comp-storage-anchored-failure = Fest verankerte Gegenstände kannst du nicht verstauen.
+comp-storage-cant-drop = { PROPER($entity) ->
+    [true] Du kannst {$entity} nicht loslassen!
+   *[false] { GENDER($entity) ->
+        [masculine] Du kannst { DE-ARTICLE(GENDER($entity), "accusative") } {$entity} nicht loslassen!
+        [feminine] Du kannst { DE-ARTICLE(GENDER($entity), "accusative") } {$entity} nicht loslassen!
+        [neuter] Du kannst { DE-ARTICLE(GENDER($entity), "accusative") } {$entity} nicht loslassen!
+        [male] Du kannst { DE-ARTICLE(GENDER($entity), "accusative") } {$entity} nicht loslassen!
+        [female] Du kannst { DE-ARTICLE(GENDER($entity), "accusative") } {$entity} nicht loslassen!
+       *[other] Das kannst du nicht loslassen!
+    }
+}
+comp-storage-window-title = Behälter
+comp-storage-window-weight = {$weight}/{$maxWeight}, Maximalgröße: {$size}
+comp-storage-window-slots = Plätze: {$itemCount}/{$maxCount}, Maximalgröße: {$size}
+comp-storage-window-dummy = Platzhalter
+comp-storage-verb-open-storage = Behälter öffnen
+comp-storage-verb-close-storage = Behälter schließen

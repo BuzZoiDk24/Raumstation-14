@@ -1,9 +1,9 @@
 <Document>
-# Janitorial
+# Reinigung
 
-You keep things clean, it's a rough job sometimes, but someone's gotta do it. This will walk you through the tools of the trade, and how they're used.
+Du hältst die Station sauber. Manchmal ist das eine schmutzige Arbeit, aber irgendwer muss sie machen. Hier erfährst du, welche Werkzeuge dir dabei helfen und wie du sie benutzt.
 
-## Basic Equipment
+## Grundausstattung
 <Box>
 <GuideEntityEmbed Entity="MopItem"/>
 <GuideEntityEmbed Entity="JanitorialTrolley"/>
@@ -18,40 +18,40 @@ You keep things clean, it's a rough job sometimes, but someone's gotta do it. Th
 <GuideEntityEmbed Entity="Mousetrap"/>
 </Box>
 
-## Additional Equipment
+## Weitere Ausrüstung
 <Box>
 <GuideEntityEmbed Entity="WetFloorSign"/>
-<GuideEntityEmbed Entity="Holoprojector" Caption="holosign projector"/>
+<GuideEntityEmbed Entity="Holoprojector" Caption="Holoprojektor"/>
 <GuideEntityEmbed Entity="LightReplacer"/>
 <GuideEntityEmbed Entity="WireBrush"/>
 </Box>
 <Box>
-<GuideEntityEmbed Entity="AdvMopItem" Caption="Advanced mop, ask in R&D"/>
+<GuideEntityEmbed Entity="AdvMopItem" Caption="Hochleistungswischmopp, frag in der Forschung nach"/>
 </Box>
 
-## Fluid Acquisition and Disposal
+## Wasser holen und entsorgen
 <Box>
 <GuideEntityEmbed Entity="WaterTankFull"/>
 <GuideEntityEmbed Entity="Sink"/>
 <GuideEntityEmbed Entity="FloorDrain"/>
 </Box>
 
-## Tidying up.
-Now, onto the (figurative) meat and potatoes. We're here to clean, right? Lets keep it simple. The main tools you'll be putting to use are the trusty mop, a trash bag, space cleaner, and one of the three different buckets.
+## Aufräumen
+Jetzt geht es ans Saubermachen. Meistens brauchst du dafür nur deinen Wischmopp, einen Müllsack, Universalreiniger und einen der drei verschiedenen Eimer.
 
-Mopping: Fill your cart up with water, then, find some puddles! Wet your mop, and wipe them up, the resulting water puddle will dry after a short time. Don't forget the wet floor signs!
-- To drain your cart, drag it (with your cursor) onto a floor drain. This will dump all the fluids inside! Floor drains can usually be found somewhere in medical, the kitchen freezer, and of course, the janitor closet.
+Wischen: Fülle deinen Reinigungswagen mit Wasser und such nach Pfützen. Befeuchte den Wischmopp und wisch sie auf. Das Wasser, das dabei zurückbleibt, trocknet nach kurzer Zeit. Vergiss die Rutschgefahr-Schilder nicht!
+- Um den Wagen zu entleeren, zieh ihn mit dem Mauszeiger auf einen Bodenabfluss. Dadurch wird die gesamte Flüssigkeit abgelassen. Abflüsse findest du oft in der Krankenstation, im Kühlraum der Küche und natürlich in der Reinigungskammer.
 
-Trash: Place it in the bag directly, or hold it in your hand. Click -near- trash to scoop -all- nearby junk up, or click on each piece individually. Using the bag on a disposal will empty it.
-- Cargo might want some of your trash, it might be worthwhile to check in from time to time!
+Müll: Stecke ihn direkt in den Müllsack oder halte den Sack in der Hand und klicke neben herumliegenden Abfall. So sammelst du alles in der Nähe auf. Du kannst die Stücke auch einzeln anklicken. Benutze den Müllsack an einem Entsorgungsschacht, um ihn zu leeren.
+- Die Versorgung könnte einen Teil deines Mülls brauchen. Frag dort gelegentlich nach!
 
-Space Cleaner: This miracle spray can do two things, clean graffiti, and in a pinch, clean up puddles!
-- You might be able to get more of this from chemistry.
+Universalreiniger: Dieses Wundermittel entfernt Graffiti und hilft zur Not auch gegen Pfützen.
+- In der Chemie kannst du vielleicht Nachschub bekommen.
 
-## Extra Duties
-A good janitor is always on the lookout for a bit more to do, and there are plenty of tools at your disposal. Keep an eye out for broken lights, help the chef take care of mice in the kitchen, and if you're feeling -really- generous, try to restock the vending machines and emergency closets around the station!
+## Weitere Aufgaben
+Für eine gute Reinigungskraft gibt es immer etwas zu tun. Halte Ausschau nach kaputten Lampen und hilf in der Küche, wenn sich Mäuse breitmachen. Wenn du besonders großzügig bist, füllst du auch die Automaten und Notfallschränke der Station auf!
 
-##Additional Information:
+## Weitere Informationen
 <GuideReagentEmbed Reagent="SpaceCleaner"/>
 <GuideReagentEmbed Reagent="Ammonia"/>
 

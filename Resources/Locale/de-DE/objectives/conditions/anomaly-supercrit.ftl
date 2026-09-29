@@ -1,1 +1,1 @@
-objective-condition-supercrit-anomalies-title = Bringe {$count} Anomalien in einen überkritischen Zustand.
+objective-condition-supercrit-anomalies-title = Löse bei {$count} Anomalien ein überkritisches Ereignis aus.
