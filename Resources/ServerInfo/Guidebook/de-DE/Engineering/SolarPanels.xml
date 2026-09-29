@@ -1,9 +1,8 @@
-﻿<Document>
-  # Solar Panels
-  Solar Panels are a low-maintenance passive power source that generates power from incoming sunlight.
+<Document>
+  # Solarmodule
+  Solarmodule erzeugen aus Sonnenlicht Strom und brauchen wenig Wartung.
 
-  They are a renewable source of power that can be used to supplement generators in the station's power grid.
-  This is extremely useful, as while most generators burn through some type of fuel in some form or fashion, solar panels generate power for free.
+  Als erneuerbare Stromquelle ergänzen sie die Generatoren im Stationsnetz. Während die meisten Generatoren Brennstoff verbrauchen, liefern Solarmodule Strom, ohne welchen zu benötigen.
 
   <Box>
     <GuideEntityEmbed Entity="SolarPanel" Caption=""/>
@@ -11,62 +10,56 @@
     <GuideEntityEmbed Entity="SolarPanel" Caption=""/>
   </Box>
 
-  ## Power Generation
-  Solar panels generate power based on their relative angle to the sun, and if they are occluded by other objects.
+  ## Stromerzeugung
+  Wie viel Strom ein Solarmodul erzeugt, hängt davon ab, in welchem Winkel es zur Sonne steht und ob ihm etwas das Licht nimmt.
 
-  Because of this, you might see some panels generating 0 W of power, while others generate a lot more.
-  This is because the station is occluding some panels, so don't worry about it too much.
-  Most stations have solar arrays placed at all sides of the station, so there's always some power being generated.
+  Deshalb liefern manche Module 0 W und andere deutlich mehr. Oft wirft einfach die Station einen Schatten auf einige davon. Auf den meisten Stationen gibt es Solaranlagen an mehreren Seiten, sodass immer ein Teil der Module Strom erzeugt.
 
-  When directly facing the sun with no object occlusion, regular solar panels can generate [color=orange][protodata="SolarPanel" comp="SolarPanel" member="MaxSupply" format="N0"] W[/color] of power.
+  Ist ein gewöhnliches Solarmodul direkt auf die Sonne ausgerichtet und unverschattet, kann es bis zu [color=orange][protodata="SolarPanel" comp="SolarPanel" member="MaxSupply" format="N0"] W[/color] erzeugen.
 
-  Solar panels generate [color=orange]HV power[/color], and as such require an [color=orange]HV wire[/color] running underneath them to connect to the station's power grid.
+  Solarmodule speisen [color=orange]HV-Strom[/color] ein. Unter ihnen muss daher eine [color=orange]HV-Leitung[/color] verlaufen, die sie mit dem Stationsnetz verbindet.
 
-  ## Power Bridge
-  Solar panels might seem like an unnecessary power source at first glance.
-  After all, we have this giant black hole in the center of the station.
-  Why bother setting up solars when we can use that?
+  ## Überbrückung
+  Auf den ersten Blick erscheinen Solarmodule vielleicht überflüssig. Immerhin steht mitten auf der Station dieses riesige schwarze Loch. Wozu noch Sonnenenergie nutzen?
 
-  It's ideal to set up solars alongside the [textlink="AME" link="AME"] for a few reasons:
-  - Having active solar panels alongside the [textlink="AME" link="AME"] increases the runtime of the station's batteries significantly more than just the [textlink="AME" link="AME"] alone. This can buy engineers more time to setup bigger power sources.
-  - Having active solar panels can reduce load on other grid producers. For example, if the solar arrays are producing enough power to satisfy half the station's needs, that is reflected in a reduced load on other engines, which can reduce the amount of fuel they burn.
+  Solarmodule zusammen mit der [textlink="AME" link="AME"] zu betreiben, lohnt sich aus mehreren Gründen:
+  - Laufende Solarmodule und eine [textlink="AME" link="AME"] verlängern die Laufzeit der Stationsbatterien deutlich stärker als die [textlink="AME" link="AME"] allein. Das gibt der Technik mehr Zeit für den Aufbau größerer Generatoren.
+  - Solarmodule entlasten andere Stromerzeuger. Decken sie zum Beispiel die Hälfte des Stationsbedarfs, müssen die übrigen Generatoren weniger leisten und verbrauchen womöglich weniger Brennstoff.
 
 
-  ## Adjusting Panels
-  Because the station is orbiting a star, the sun's position in space changes over time.
-  Solar panels need to be pointing straight at the sun to generate power efficiently, and they need to move over time to keep up with the sun's position.
+  ## Module ausrichten
+  Weil die Station einen Stern umkreist, ändert sich die Position der Sonne im Laufe der Zeit. Für eine gute Stromausbeute müssen die Module direkt zur Sonne zeigen und ihr folgen.
 
-  The angle at which solar panels face to can be adjusted at a Solar Control Computer.
+  Ihren Winkel stellst du am Solarsteuerungscomputer ein.
   <Box>
     <GuideEntityEmbed Entity="ComputerSolarControl"/>
   </Box>
 
-  You can also adjust the rate at which the panels move to track the sun.
+  Dort kannst du auch einstellen, wie schnell die Module der Sonne nachgeführt werden.
 
-  The rate at which the sun moves around the station changes each shift, so time the sun's position and adjust the rate accordingly.
+  Die Geschwindigkeit, mit der sich die Sonne relativ zur Station bewegt, ist in jeder Schicht anders. Beobachte ihre Position und passe die Nachführung entsprechend an.
 
-  The Solar Control Computer also reports on the total power generated by the solar panels.
+  Der Solarsteuerungscomputer zeigt außerdem die Gesamtleistung der Solaranlage an.
 
-  ## Construction
+  ## Bau
 
-  Solar panels can be constructed by using two glass sheets on a solar assembly.
+  Verwende zwei Glasscheiben an einem Solarmodul-Bausatz, um ein Solarmodul herzustellen.
   <Box>
     <GuideEntityEmbed Entity="SolarAssembly" Caption=""/>
     <GuideEntityEmbed Entity="SheetGlass10" Caption=""/>
     <GuideEntityEmbed Entity="SolarPanel" Caption=""/>
   </Box>
 
-  You can purchase solar assemblies from Cargo.
+  Solarmodul-Bausätze kannst du bei der Versorgung bestellen.
 
-  ## Repairs
-  Solar panels can sometimes be damaged, and require repair.
+  ## Reparatur
+  Solarmodule können beschädigt werden und müssen dann repariert werden.
 
   <Box>
     <GuideEntityEmbed Entity="SolarPanelBroken"/>
   </Box>
 
-  To fix them, you can use a crowbar to pry the broken glass shards out of the panel.
-  Weld these glass shards into glass sheets, and then use them to make a new panel.
+  Heble mit einem Brecheisen die Glasscherben aus dem beschädigten Modul. Verschweiße die Scherben zu Glasscheiben und baue daraus ein neues Modul.
 
   <Box>
     <GuideEntityEmbed Entity="SolarPanelBroken" Caption=""/>
@@ -80,33 +73,30 @@
     <GuideEntityEmbed Entity="SolarPanel" Caption=""/>
   </Box>
 
-  ## Setting Up Solar Panel Arrays
-  Solar panel arrays are commonly found on the exterior of the station, and are used to generate large amounts of free power for the station.
+  ## Solaranlagen in Betrieb nehmen
+  Solaranlagen befinden sich meist außen an der Station und können große Mengen Strom ohne Brennstoff erzeugen.
 
-  You can either spacewalk to them from the outside or you can run a loop through the station's maintenance tunnels to reach them.
-  Solar array machine rooms are often marked with signs, and locked behind engineering access.
+  Du erreichst sie bei einem Weltraumspaziergang oder über einen Weg durch die Wartungstunnel. Die Maschinenräume der Solaranlagen sind oft ausgeschildert und nur mit Zugang zur Technik zu öffnen.
   <Box>
     <GuideEntityEmbed Entity="SignDirectionalSolar" Caption=""/>
     <GuideEntityEmbed Entity="AirlockEngineering" Caption=""/>
   </Box>
 
-  At the start of the shift solar panels are misaligned and disconnected from the grid.
-  You will need to align them and connect them to the station's power grid to start generating power.
+  Zu Schichtbeginn sind die Module falsch ausgerichtet und nicht mit dem Stromnetz verbunden. Richte sie aus und schließe sie an, damit sie Strom erzeugen.
 
-  This usually involves running a line of [color=orange]HV wire[/color] to the pannels from the solar array machine room, and then using a Solar Control Computer to align the panels.
+  Dafür legst du gewöhnlich eine [color=orange]HV-Leitung[/color] vom Maschinenraum zu den Modulen und richtest sie anschließend am Solarsteuerungscomputer aus.
 
-  Solar array machine rooms frequently have a Solar Control Computer nearby, as well as an [textlink="SMES" link="PowerStorage"] to store the power generated by the panels for later use.
+  Im Maschinenraum findest du häufig einen Solarsteuerungscomputer und eine [textlink="SMES-Einheit" link="PowerStorage"], die den erzeugten Strom für später speichert.
 
-  ## Upgrading Solar Panels
-  Solar panels can be upgraded to increase their power output.
+  ## Solarmodule aufrüsten
+  Solarmodule lassen sich für eine höhere Leistung aufrüsten.
 
   <Box>
     <GuideEntityEmbed Entity="SolarPanelPlasma" Caption=""/>
     <GuideEntityEmbed Entity="SolarPanelUranium" Caption=""/>
   </Box>
 
-  This can be done by replacing the glass sheets in the solar assembly with plasma or uranium glass sheets.
+  Ersetze dafür die Glasscheiben im Solarmodul-Bausatz durch Plasma- oder Uranglasscheiben.
 
-  Plasma and Uranium solar panels generate [color=orange][protodata="SolarPanelPlasma" comp="SolarPanel" member="MaxSupply" format="N0"] W[/color] and [color=orange][protodata="SolarPanelUranium" comp="SolarPanel" member="MaxSupply" format="N0"] W[/color] of power respectively.
-  They also are much tougher than regular solar panels.
+  Module aus Plasma- und Uranglas erzeugen jeweils bis zu [color=orange][protodata="SolarPanelPlasma" comp="SolarPanel" member="MaxSupply" format="N0"] W[/color] beziehungsweise [color=orange][protodata="SolarPanelUranium" comp="SolarPanel" member="MaxSupply" format="N0"] W[/color]. Außerdem halten sie mehr aus als gewöhnliche Solarmodule.
 </Document>

@@ -114,13 +114,30 @@ public sealed partial class NameIdentifierSystem : SharedNameIdentifierSystem
 
         if (proto.IdentifierDataset is not null)
         {
-            var identifiers = ProtoMan.Index(proto.IdentifierDataset);
-            formatted = Loc.GetString(identifiers.Values.Prefix+formatted);
+            var localizedKey = $"name-identifier-group-{proto.ID.ToLowerInvariant()}-{formatted}";
+            if (GetLocalizedIdentifierCount(proto) is not null && Loc.TryGetString(localizedKey, out var localized))
+                formatted = localized;
+            else
+                formatted = Loc.GetString(ProtoMan.Index(proto.IdentifierDataset).Values.Prefix + formatted);
         }
 
         return proto.Format is not null
             ? Loc.GetString(proto.Format, ("number", formatted))
             : formatted;
+    }
+
+    /// <summary>
+    /// A locale can supply a smaller, fully translated set of identifiers without
+    /// changing the English dataset or any entity prototypes.
+    /// </summary>
+    private int? GetLocalizedIdentifierCount(NameIdentifierGroupPrototype proto)
+    {
+        if (proto.IdentifierDataset is null ||
+            !Loc.TryGetString($"name-identifier-group-{proto.ID.ToLowerInvariant()}-count", out var text) ||
+            !int.TryParse(text, out var count) || count <= 0)
+            return null;
+
+        return count;
     }
 
     /// <summary>
@@ -171,7 +188,7 @@ public sealed partial class NameIdentifierSystem : SharedNameIdentifierSystem
 
         if (proto.IdentifierDataset is not null)
         {
-            max = ProtoMan.Index(proto.IdentifierDataset).Values.Count;
+            max = GetLocalizedIdentifierCount(proto) ?? ProtoMan.Index(proto.IdentifierDataset).Values.Count;
             min = 1;
         }
 
@@ -195,9 +212,9 @@ public sealed partial class NameIdentifierSystem : SharedNameIdentifierSystem
             return ids;
 
         // If we're using a dataset, grab the count. Otherwise, use (max - min).
-        ids =  new List<int>(proto.IdentifierDataset is null
+        ids = new List<int>(proto.IdentifierDataset is null
             ? proto.MaxValue - proto.MinValue
-            : ProtoMan.Index(proto.IdentifierDataset).Values.Count);
+            : GetLocalizedIdentifierCount(proto) ?? ProtoMan.Index(proto.IdentifierDataset).Values.Count);
 
         CurrentIds.Add(proto.ID, ids);
         return ids;

@@ -1,60 +1,56 @@
-﻿<Document>
-  # Inspecting Power
-  Engineers can inspect a power network to see useful statistics about it.
-  This can help engineers diagnose power issues and find root causes to problems.
+<Document>
+  # Stromversorgung prüfen
+  Ingenieure können die Werte eines Stromnetzes prüfen. So lassen sich Störungen und ihre Ursachen aufspüren.
 
-  ## Power Monitoring Computer
-  The Power Monitoring Computer is a device that can be used to inspect all the power networks on the station.
+  ## Stromüberwachungscomputer
+  Mit dem Stromüberwachungscomputer kannst du alle Stromnetze der Station untersuchen.
 
   <Box>
     <GuideEntityEmbed Entity="ComputerPowerMonitoring"/>
   </Box>
 
-  The Power Monitoring Computer has two major sections, a station map and the power statistics.
+  Er zeigt eine Stationskarte und die Messwerte der Stromversorgung.
 
-  The station map shows:
-  - The station layout, with [color=green]low[/color], [color=yellow]medium[/color], and [color=orange]high[/color] [textlink="voltage networks" link="VoltageNetworks"] highlighted.
-  - [textlink="All APCs, SMES, and substations." link="VoltageNetworks"]
-  - All power [textlink="producers" link="Generators"] connected to the station (note that they don't have to be connected to a power network to be shown).
+  Auf der Karte siehst du:
+  - den Aufbau der Station mit farblich markierten [color=green]Niederspannungs-[/color], [color=yellow]Mittelspannungs-[/color] und [color=orange]Hochspannungsnetzen[/color] ([textlink="Spannungsnetze" link="VoltageNetworks"]),
+  - [textlink="alle APCs, SMES-Einheiten und Umspannstationen" link="VoltageNetworks"] sowie
+  - alle angeschlossenen [textlink="Stromerzeuger" link="Generators"]. Sie erscheinen auch dann auf der Karte, wenn sie nicht mit einem Stromnetz verbunden sind.
 
-  The power statistics show:
-  - The total [textlink="generator" link="Generators"] output, which is what the generators are currently producing to match grid demand.
-  - The total [textlink="battery" link="PowerStorage"] usage, which is the amount of power being drawn from batteries. Grids completely powered by generators will show low battery usage.
-  - The total network loads, which is the amount of power being requested by the station.
+  Die Messwerte zeigen:
+  - die Gesamtleistung der [textlink="Generatoren" link="Generators"], also die Leistung, die sie gerade für den Bedarf im Netz bereitstellen,
+  - die gesamte Leistung aus [textlink="Batterien" link="PowerStorage"]. Wird das Netz vollständig von Generatoren versorgt, ist dieser Wert gering,
+  - die gesamte Netzlast, also den Strombedarf der Station.
 
-  In an ideal situation, the total generator output should match the total network load, and the total battery usage should be low.
-  Using these three statistics, engineers can get an accurate picture of the station's power situation.
-  For example:
-  - If the total generator output is lower than the total network load, the station is in a power deficit.
-  - If the total battery usage is high, the station is drawing power from batteries to make up the difference.
-  - If it is zero with the generator load below the total network load, then the station is actively in a brownout, as the batteries are fully discharged.
-  - If the total generator output is higher than the total network load, the SMESes are charging.
+  Im Idealfall entspricht die Leistung der Generatoren der Netzlast, und die Batterien müssen nur wenig beitragen. Zusammen zeigen dir diese drei Werte, wie es um die Stromversorgung steht.
+  Zum Beispiel:
+  - Liegt die Generatorleistung unter der Netzlast, fehlt Strom.
+  - Ist der Batterieverbrauch hoch, gleichen die Batterien den Fehlbetrag aus.
+  - Liegt der Batterieverbrauch bei null, während die Generatorleistung unter der Netzlast bleibt, sind die Batterien leer und es kommt bereits zu Unterspannung.
+  - Liegt die Generatorleistung über der Netzlast, laden die SMES-Einheiten.
 
-  ## Device Tabs
-  The Power Monitoring Computer has tabs for each device category on the station.
-  Navigating these power tabs will show the power statistics for each device category.
-  For example:
-  - Clicking on a source will show what that source is supplying the power to, and how much power it is supplying. It will also highlight the devices that are connected to that source.
-  - Clicking on an SMES, Substation, or APC will show the two power grids it is connected to, how much power it is receiving, and how much power it is distributing, as well as the exact devices that are making an exchange with the target device.
+  ## Gerätekategorien
+  Der Stromüberwachungscomputer besitzt Reiter für die verschiedenen Gerätearten der Station. Darin findest du die Messwerte der einzelnen Geräte.
+  Zum Beispiel:
+  - Wählst du eine Stromquelle aus, siehst du, welche Geräte sie versorgt, wie viel Leistung sie liefert und welche Geräte mit ihr verbunden sind.
+  - Bei einer SMES-Einheit, einer Umspannstation oder einem APC siehst du beide angeschlossenen Netze, die aufgenommene und abgegebene Leistung sowie die Geräte, mit denen Strom ausgetauscht wird.
 
-  ## Inspecting via Multitool
-  The Multitool can be used to inspect power cables to see their power statistics.
+  ## Mit dem Multitool prüfen
+  Mit einem Multitool kannst du die Messwerte einer Stromleitung abfragen.
 
   <Box>
     <GuideEntityEmbed Entity="Multitool"/>
   </Box>
 
-  When you click on a cable with the Multitool, it will show the cable's power statistics. This includes:
-  - The current supply, which is the amount of power the source is providing.
-  - The current supply from batteries, which is the amount of power being drawn from batteries.
-  - The theoretical supply, which is the maximum amount of power the source could provide if demanded.
-  - The ideal consumption, which is the current demand on the cable.
-  - The input storage, which is the capacity of batteries that are currently charging.
-  - The output storage, which is the capacity of batteries that are currently discharging.
+  Klicke mit dem Multitool auf eine Leitung. Angezeigt werden:
+  - aktuelle Einspeisung: die Leistung, die die Stromquelle gerade bereitstellt,
+  - aktuelle Einspeisung aus Batterien: die Leistung, die derzeit aus Batterien stammt,
+  - theoretische Einspeisung: die höchstmögliche Leistung der Stromquelle bei entsprechendem Bedarf,
+  - idealer Verbrauch: der momentane Strombedarf an dieser Leitung,
+  - Eingangsspeicher: die Kapazität der Batterien, die gerade geladen werden,
+  - Ausgangsspeicher: die Kapazität der Batterien, die gerade entladen werden.
 
-  Note that this information is relevant only to the voltage network you inspected.
-  A [color=green]low voltage[/color] cable (which likely only services a few rooms) will not show the same statistics as a [color=orange]high voltage[/color] cable (which services the entire station).
+  Diese Angaben gelten nur für das untersuchte Spannungsnetz. Eine [color=green]LV-Leitung[/color], die vielleicht nur wenige Räume versorgt, zeigt andere Werte als eine [color=orange]HV-Leitung[/color] für die ganze Station.
 
-  This is useful information to keep in mind, as it can help you troubleshoot why "this room is powered, but this one isn't!"
+  So findest du heraus, warum in einem Raum noch Licht brennt, während der nächste bereits dunkel ist.
 
 </Document>

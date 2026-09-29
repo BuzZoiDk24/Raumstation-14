@@ -1,25 +1,24 @@
 <Document>
-  # Radioisotope Thermoelectric Generator (RTG)
+  # Radioisotopengenerator (RTG)
 
   <Box>
     <GuideEntityEmbed Entity="GeneratorRTG" Caption="RTG" />
   </Box>
 
-  A Radioisotope Thermoelectric Generator (RTG) is a passive power source that generates power from the decay of radioactive isotopes.
+  Ein Radioisotopengenerator (RTG) gewinnt Strom aus dem Zerfall radioaktiver Isotope.
 
-  They require no maintenance and are a reliable source of power, making them ideal for powering essential systems that need to be online at all times, like Telecoms, the AI, or the Crew Monitoring Server.
+  RTGs brauchen keine Wartung und liefern zuverlässig Strom. Damit eignen sie sich besonders für Anlagen, die ständig laufen müssen, etwa die Telekommunikation, die KI oder den Crew-Überwachungsserver.
 
-  RTGs always generate [color=orange][protodata="GeneratorRTG" comp="PowerSupplier" member="MaxSupply" format="N0"/] W[/color] of power and must be connected to an [color=orange]HV power[/color] [textlink="network" link="VoltageNetworks"] to function.
+  RTGs liefern konstant [color=orange][protodata="GeneratorRTG" comp="PowerSupplier" member="MaxSupply" format="N0"/] W[/color]. Dafür müssen sie mit einem [color=orange]HV[/color]-[textlink="Stromnetz" link="VoltageNetworks"] verbunden sein.
 
-  However, they're only accessible through salvage finding one on an expedition. Should they bring some in, make sure to thank them!
+  An RTGs kommt ihr allerdings nur, wenn die Bergung auf einer Expedition welche findet. Bedankt euch, falls sie welche mitbringt!
 
-  ## RTG Damage
+  ## Beschädigte RTGs
   <Box>
-    <GuideEntityEmbed Entity="GeneratorRTGDamaged" Caption="Damaged RTG" />
+    <GuideEntityEmbed Entity="GeneratorRTGDamaged" Caption="Beschädigter RTG" />
   </Box>
-  If RTGs take enough damage, they can become damaged RTGs.
-  Damaged RTGs behave just like regular ones, but they're [color=yellow]radioactive[/color].
+  Wenn ein RTG stark beschädigt wird, funktioniert er zwar weiter wie zuvor, ist aber [color=yellow]radioaktiv[/color].
 
-  That means they're more dangerous, but on the bright side, you can put radiation collectors next to them to turn that radiation into more power.
-  This is usually more worthwhile, considering the power is still free, so long as you can find a safe spot to put the RTG(s) in.
+  Das macht ihn gefährlicher. Andererseits kannst du Strahlungskollektoren daneben aufstellen und so noch mehr Strom gewinnen.
+  Solange du einen sicheren Platz für die RTGs findest, lohnt sich das meist: Brennstoff brauchen sie nach wie vor keinen.
 </Document>

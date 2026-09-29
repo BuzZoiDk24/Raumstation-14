@@ -1,8 +1,8 @@
 ﻿<Document>
-  # Wire Panels
-  Some station devices like airlocks, vending machines, and arcade consoles have wire panels, which control certain aspects of their functionality.
+  # Wartungsklappen und Drähte
+  Manche Geräte auf der Station, etwa Luftschleusen, Verkaufsautomaten und Arcade-Automaten, haben hinter einer Wartungsklappe Drähte, die bestimmte Funktionen steuern.
 
-  These panels can be opened using a screwdriver to access the wiring inside.
+  Öffne die Klappe mit einem Schraubendreher, um an die Drähte zu gelangen.
 
   <Box>
     <GuideEntityEmbed Entity="Wirecutter"/>
@@ -10,20 +10,20 @@
     <GuideEntityEmbed Entity="Multitool"/>
   </Box>
 
-  From here you can use wirecutters and a multitool to interact with the wiring. Note that interacting with the wiring often requires insulated gloves, as if the wire is live, you can get shocked.
+  Nun kannst du die Verkabelung mit einem Seitenschneider oder Multitool bearbeiten. Zieh vorher möglichst isolierende Handschuhe an: An stromführenden Drähten kannst du einen Stromschlag bekommen.
 
   <Box>
     <GuideEntityEmbed Entity="ClothingHandsGlovesColorYellow"/>
   </Box>
 
-  You can cut and mend wires using the wirecutters and pulse wires using the multitool.
+  Mit dem Seitenschneider durchtrennst und verbindest du Drähte. Mit dem Multitool kannst du einen Impuls auf sie geben.
 
-  Cutting wires often completely disables or restores functionality to a device.
-  It may also trigger unintended functionality like shocking people, dropping door bolts, or exploding.
+  Durchtrennte Drähte können eine Gerätefunktion vollständig abschalten; wenn du sie wieder verbindest, funktioniert sie oft wieder.
+  Dabei können auch unerwartete Dinge passieren: Jemand bekommt einen Stromschlag, die Tür verriegelt sich oder das Gerät explodiert.
 
-  Pulsing wires can have a variety of effects, but oftentimes it either temporarily disables or enables functionality.
+  Ein Impuls kann verschiedene Wirkungen haben. Häufig schaltet er eine Funktion vorübergehend ein oder aus.
 
-  You can't pulse wires if the wire you're trying to pulse is cut. You have to mend the wire first.
+  Einen durchtrennten Draht kannst du nicht mit einem Impuls ansteuern. Verbinde ihn zuerst wieder.
 
 
 </Document>

@@ -56,6 +56,7 @@ namespace Content.Shared.Localizations
 			_loc.AddFunction(cultureDe, "MANY", FormatManyDe);
             _loc.AddFunction(cultureDe, "DE-ARTICLE", FormatGermanArticle);
             _loc.AddFunction(cultureDe, "DE-POSS-ADJ", FormatGermanPossessiveAdjective);
+            _loc.AddFunction(cultureDe, "DE-ADJECTIVE", FormatGermanAdjective);
         }
 
         private ILocValue FormatMany(LocArgs args)
@@ -324,6 +325,14 @@ namespace Content.Shared.Localizations
                 return new LocValueString("");
 
             var genus = ((LocValueString) args.Args[0]).Value.ToLowerInvariant();
+            // GENDER($entity) uses male/female, while item localization uses
+            // masculine/feminine. Both describe the same noun gender here.
+            genus = genus switch
+            {
+                "male" => "masculine",
+                "female" => "feminine",
+                _ => genus
+            };
             var grammaticalCase = ((LocValueString) args.Args[1]).Value.ToLowerInvariant();
 
             var number = args.Args.Count >= 3
@@ -377,7 +386,8 @@ namespace Content.Shared.Localizations
             var grammaticalCase = ((LocValueString) args.Args[2]).Value.ToLowerInvariant();
             var nounGender = ((LocValueString) args.Args[3]).Value.ToLowerInvariant();
 
-            var stem = pronouns == "female" || (pronouns != "male" && bodySex == "female")
+            var stem = (pronouns is "female" or "feminine") ||
+                (pronouns is not ("male" or "masculine") && bodySex == "female")
                 ? "ihr"
                 : "sein";
 
@@ -393,6 +403,31 @@ namespace Content.Shared.Localizations
                 ("genitive", "feminine" or "plural") => "er",
                 _ => ""
             };
+
+            return new LocValueString(stem + ending);
+        }
+
+        /// <summary>
+        /// Inflects a German adjective stem for a singular nominative noun.
+        /// Strong forms stand alone in a name; weak forms follow a definite article.
+        /// </summary>
+        private static ILocValue FormatGermanAdjective(LocArgs args)
+        {
+            if (args.Args.Count < 3)
+                return new LocValueString("");
+
+            var stem = ((LocValueString) args.Args[0]).Value;
+            var gender = ((LocValueString) args.Args[1]).Value.ToLowerInvariant();
+            var form = ((LocValueString) args.Args[2]).Value.ToLowerInvariant();
+
+            var ending = form == "weak"
+                ? "e"
+                : gender switch
+                {
+                    "male" or "masculine" => "er",
+                    "female" or "feminine" => "e",
+                    _ => "es"
+                };
 
             return new LocValueString(stem + ending);
         }

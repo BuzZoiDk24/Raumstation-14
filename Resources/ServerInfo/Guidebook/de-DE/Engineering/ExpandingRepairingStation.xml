@@ -1,25 +1,25 @@
 ﻿<Document>
-  # Expanding and Repairing Stations
-  In Space Station 14, it is common for players to want to expand the station, or repair holes left by meteors or other damage.
+  # Die Station erweitern und reparieren
+  In Space Station 14 kannst du die Station erweitern und Löcher reparieren, die Meteoriten oder andere Schäden hinterlassen haben.
 
-  ## Lattice
-  Lattice is bare rodwork placed in empty space. It's used as a foundation for building and anchoring objects onto the station.
+  ## Trägergitter
+  Ein Trägergitter besteht aus Metallstangen im freien Raum. Es bildet das Fundament, auf dem du weiterbauen und Gegenstände an der Station verankern kannst.
 
   <Box>
     <GuideEntityEmbed Entity="SheetSteel" Caption=""/>
     <GuideEntityEmbed Entity="PartRodMetal" Caption=""/>
   </Box>
 
-  You can create lattice by placing rods on empty space using [color=yellow][bold][keybind="Use"][/bold][/color]. Remember you can craft steel sheets into rods using the construction menu.
+  Platziere Metallstangen mit [color=yellow][bold][keybind="Use"][/bold][/color] im freien Raum, um ein Trägergitter zu bauen. Im Baumenü kannst du Stahlplatten zu Metallstangen verarbeiten.
 
-  Lattice cannot hold pressure, and all gasses will leak out into space through it.
+  Trägergitter sind nicht luftdicht: Gase strömen durch sie ins All.
 
-  You can use wirecutters to remove lattice by using [color=yellow][bold][keybind="Use"][/bold][/color] on them.
+  Um ein Trägergitter zu entfernen, verwende einen Seitenschneider mit [color=yellow][bold][keybind="Use"][/bold][/color] darauf.
 
-  If the game is preventing you from placing lattice, it's because there is another separated grid too close to the grid you're trying to expand. You can use a wirecutter to remove the offending grid.
+  Wenn du kein Trägergitter platzieren kannst, liegt möglicherweise ein anderes, getrenntes Stationsgitter zu nah an dem Bereich, den du erweitern willst. Das störende Gitter kannst du mit einem Seitenschneider entfernen.
 
-  ## Hull Tiles
-  Hull tiles are solid foundation for the station, where all the other parts of the station rest upon.
+  ## Rumpfplatten
+  Rumpfplatten bilden das feste Fundament für die übrigen Teile der Station.
 
   <Box>
     <GuideEntityEmbed Entity="SheetSteel" Caption=""/>
@@ -28,12 +28,12 @@
     <GuideEntityEmbed Entity="FloorTileItemWhite" Caption=""/>
   </Box>
 
-  Lattice can be made into hull tiles by using either steel or almost any type of floor tile on them by pressing [color=yellow][bold][keybind="Use"][/bold][/color].
-  This will convert the lattice into a hull tile, which can hold pressure and gasses.
+  Verwende Stahl oder fast jede Art von Bodenfliese mit [color=yellow][bold][keybind="Use"][/bold][/color] auf einem Trägergitter, um daraus eine Rumpfplatte zu machen.
+  Anders als das Gitter ist die Rumpfplatte luftdicht und hält dem Druck stand.
 
-  It is advised to use floor tiles to replace lattice instead of steel sheets, as you can craft 4 floor tiles from a single steel sheet.
+  Bodenfliesen sind dafür sparsamer als Stahlplatten: Aus einer Stahlplatte kannst du vier Bodenfliesen herstellen.
 
-  You can use an RCD to deconstruct hull tiles into lattice.
+  Mit einem RCD kannst du Rumpfplatten wieder zu Trägergittern zurückbauen.
 
 
 </Document>
