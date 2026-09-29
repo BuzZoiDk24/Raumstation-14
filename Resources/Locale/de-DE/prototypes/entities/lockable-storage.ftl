@@ -10,9 +10,11 @@ ent-BaseWallCloset = Wandschrank
 
 ent-BaseWallLocker = Wandschrank
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen für die Wand.
 
 ent-LockerBase = Schrank
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.
 
 ent-SuitStorageBase = Raumanzugschrank
     .gender = masculine
@@ -100,27 +102,36 @@ ent-SuitStorageWizard = Raumanzugschrank
 
 ent-LockerSteel = Sicherheitsschrank
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.
 
 ent-LockerQuarterMaster = Schrank des Quartiermeisters
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.
 
 ent-LockerCaptain = Schrank des Kapitäns
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.
 
 ent-LockerHeadOfPersonnel = Schrank des Personalchefs
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.
 
 ent-LockerChiefEngineer = Schrank des Chefingenieurs
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.
 
 ent-LockerEngineer = Schrank für Stationsingenieure
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.
 
 ent-LockerMedical = Schrank für Ärzte
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.
 
 ent-LockerWarden = Schrank des Wachleiters
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.
 
 ent-LockerSecurity = Schrank für Sicherheitsoffiziere
     .gender = masculine
+    .desc = Ein gewöhnlicher Aufbewahrungsschrank von NanoTrasen.

@@ -847,10 +847,12 @@ ent-LanternFlash = Laterne
 # Mail
 
 ent-PackageDelivery = Paket
-    .gender = feminine
+    .gender = neuter
+    .desc = { "" }
 
 ent-LetterDelivery = Brief
-    .gender = feminine
+    .gender = masculine
+    .desc = { "" }
 
 # MedicalTechFabCircuitboard
 
@@ -994,30 +996,39 @@ ent-RubberStampWizard = Stempel des Zauberers
 
 ent-TechnologyDisk = Technologiedatenträger
     .gender = masculine
+    .desc = { "" }
 
 ent-TechnologyDiskT1 = Technologiedatenträger
     .gender = masculine
+    .desc = { "" }
 
 ent-TechnologyDiskT2 = Technologiedatenträger
     .gender = masculine
+    .desc = { "" }
 
 ent-TechnologyDiskT3 = Technologiedatenträger
     .gender = masculine
+    .desc = { "" }
 
 ent-TechnologyDiskIndustrial = Technologiedatenträger
     .gender = masculine
+    .desc = { "" }
 
 ent-TechnologyDiskArsenal = Technologiedatenträger
     .gender = masculine
+    .desc = { "" }
 
 ent-TechnologyDiskExperimental = Technologiedatenträger
     .gender = masculine
+    .desc = { "" }
 
 ent-TechnologyDiskCivilianServices = Technologiedatenträger
     .gender = masculine
+    .desc = { "" }
 
 ent-TechnologyDiskRare = Technologiedatenträger
     .gender = masculine
+    .desc = { "" }
 
 # Teg
 

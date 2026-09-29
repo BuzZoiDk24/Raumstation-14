@@ -155,6 +155,17 @@ namespace Content.Shared.Localizations
 				"day" => "Tage",
 				"mole" => "Mol",
 				"unit" => "Einheiten",
+				"Platte" => "Platten",
+				"Barren" => "Barren",
+				"Brett" => "Bretter",
+				"Rolle" => "Rollen",
+				"Stück" => "Stück",
+				"Bündel" => "Bündel",
+				"Scheibe" => "Scheiben",
+				"Netz" => "Netze",
+				"Brocken" => "Brocken",
+				"Kapsel" => "Kapseln",
+				"Geldschein" => "Geldscheine",
 				_ => text
 			};
 		}

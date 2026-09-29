@@ -1,58 +1,58 @@
 # Generic
-lathe-category-circuitry = Circuitry
-lathe-category-clothing = Clothing
-lathe-category-lights = Lights
-lathe-category-machines = Machines
-lathe-category-parts = Parts
-lathe-category-tools = Tools
-lathe-category-weapons = Weapons
+lathe-category-circuitry = Schaltungen
+lathe-category-clothing = Kleidung
+lathe-category-lights = Beleuchtung
+lathe-category-machines = Maschinen
+lathe-category-parts = Bauteile
+lathe-category-tools = Werkzeuge
+lathe-category-weapons = Waffen
 
 # Biogen
-lathe-category-food = Food
-lathe-category-chemicals = Chemicals
-lathe-category-materials = Materials
+lathe-category-food = Lebensmittel
+lathe-category-chemicals = Chemikalien
+lathe-category-materials = Materialien
 
 # Circuit imprinter
-lathe-category-computers = Computers
-lathe-category-engineering = Engineering
-lathe-category-general = General
-lathe-category-medical = Medical
-lathe-category-research = Research
-lathe-category-security = Security
+lathe-category-computers = Computer
+lathe-category-engineering = Technik
+lathe-category-general = Allgemein
+lathe-category-medical = Medizin
+lathe-category-research = Forschung
+lathe-category-security = Sicherheitsdienst
 lathe-category-service = Service
-lathe-category-supply = Supply
+lathe-category-supply = Versorgung
 
 # Cutter
-lathe-category-tiles = Tiles
-lathe-category-circuit-tile = Circuit
-lathe-category-concrete-tile = Concrete
-lathe-category-dark-tile = Dark
-lathe-category-faux-tile = Faux
-lathe-category-maints-tile = Maints
-lathe-category-marble = Marble
-lathe-category-steel-tile = Steel
+lathe-category-tiles = Bodenfliesen
+lathe-category-circuit-tile = Schaltkreise
+lathe-category-concrete-tile = Beton
+lathe-category-dark-tile = Dunkel
+lathe-category-faux-tile = Imitate
+lathe-category-maints-tile = Wartungsbereich
+lathe-category-marble = Marmor
+lathe-category-steel-tile = Stahl
 lathe-category-shuttle-tile = Shuttle
-lathe-category-white-tile = White
-lathe-category-wood-tile = Wood
-lathe-category-plastic-tile = Plastic
-lathe-category-precious-tile = Precious
-lathe-category-industrial-tile = Industrial
+lathe-category-white-tile = Weiß
+lathe-category-wood-tile = Holz
+lathe-category-plastic-tile = Kunststoff
+lathe-category-precious-tile = Edelmetalle
+lathe-category-industrial-tile = Industrie
 
 # Science
 lathe-category-mechs = Mechs
-lathe-category-modules = Modules
-lathe-category-robotics = Robotics
+lathe-category-modules = Module
+lathe-category-robotics = Robotik
 
 # Security TechFab
-lathe-category-ammo = Ammo
-lathe-category-boxes = Boxes
-lathe-category-magazines = Magazines
+lathe-category-ammo = Munition
+lathe-category-boxes = Schachteln
+lathe-category-magazines = Magazine
 
 # Uniform
-lathe-category-bedsheets = Bedsheets
-lathe-category-carpets = Carpets
-lathe-category-coats = Coats
-lathe-category-command = Command
-lathe-category-hats = Hats
-lathe-category-jumpsuits = Jumpsuits
-lathe-category-neck = Neck
+lathe-category-bedsheets = Bettlaken
+lathe-category-carpets = Teppiche
+lathe-category-coats = Mäntel
+lathe-category-command = Kommando
+lathe-category-hats = Kopfbedeckungen
+lathe-category-jumpsuits = Overalls
+lathe-category-neck = Halsbekleidung

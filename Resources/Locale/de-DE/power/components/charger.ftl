@@ -1,4 +1,4 @@
-charger-examine = Charges at [color={$color}]{$chargeRate}W[/color].
-charger-component-charge-rate = Charge rate
-charger-content = Current charge is at [color=#5E7C16]{$chargePercent}[/color]%.
-charger-empty = There is nothing in the charger.
+charger-examine = Lädt mit [color={$color}]{$chargeRate} W[/color].
+charger-component-charge-rate = Ladeleistung
+charger-content = Der Ladestand beträgt [color=#5E7C16]{$chargePercent}[/color] %.
+charger-empty = Im Ladegerät befindet sich kein Gegenstand.
