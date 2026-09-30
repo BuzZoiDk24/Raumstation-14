@@ -350,7 +350,13 @@ namespace Content.Shared.Localizations
                 _germanEntityManager.TryGetComponent<MetaDataComponent>(entity, out var metadata) &&
                 metadata.EntityPrototype is { } prototype &&
                 _loc.GetEntityData(prototype.ID).Attributes.TryGetValue("gender", out var nounGender))
-                return new LocValueString(nounGender.ToLowerInvariant());
+            {
+                var localizedGender = nounGender.ToLowerInvariant();
+                // "proper" identifies a name, not a grammatical gender. Named
+                // pets keep the gender explicitly set by their Grammar component.
+                if (localizedGender is "male" or "female" or "masculine" or "feminine" or "neuter" or "epicene")
+                    return new LocValueString(localizedGender);
+            }
 
             if (_germanEntityManager.TryGetComponent<GrammarComponent>(entity, out var grammar) &&
                 grammar.Gender is { } gender)
