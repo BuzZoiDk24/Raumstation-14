@@ -21,9 +21,15 @@ salvage-expedition-difficulty-players = Recommended salvagers:
 # Runner
 salvage-expedition-not-all-present = Not all salvagers are aboard the shuttle!
 
-salvage-expedition-announcement-countdown-minutes = {$duration} minutes remaining to complete the expedition.
-salvage-expedition-announcement-countdown-seconds = {$duration} seconds remaining to complete the expedition.
-salvage-expedition-announcement-dungeon = Dungeon is located {$direction}.
+salvage-expedition-announcement-countdown-minutes = Die verbleibende Zeit für den Abschluss der Expedition beträgt {$duration} { $duration ->
+    [one] Minute
+    *[other] Minuten
+}.
+salvage-expedition-announcement-countdown-seconds = Die verbleibende Zeit für den Abschluss der Expedition beträgt {$duration} { $duration ->
+    [one] Sekunde
+    *[other] Sekunden
+}.
+salvage-expedition-announcement-dungeon = Der Komplex liegt im { CAPITALIZE($direction) }.
 salvage-expedition-completed = Expedition is completed.
 salvage-expedition-reward-description = Mission completion reward
 

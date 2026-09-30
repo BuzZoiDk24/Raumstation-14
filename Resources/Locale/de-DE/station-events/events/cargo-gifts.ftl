@@ -1,4 +1,4 @@
-cargo-gifts-event-announcement = Herzlichen Glückwunsch! { $sender } hat { $description } für { $dest } auf den Weg gebracht. Halte in der nächsten Frachtsendung danach Ausschau.
+cargo-gifts-event-announcement = Herzlichen Glückwunsch! { $sender } hat beschlossen, { $description } für { $dest } an die Station zu schicken. Achten Sie bei der nächsten Frachtsendung darauf.
 cargo-gift-default-description = ein Bündel Geschenke
 cargo-gift-default-sender = NanoTrasen
 cargo-gift-default-dest = die Versorgungsabteilung

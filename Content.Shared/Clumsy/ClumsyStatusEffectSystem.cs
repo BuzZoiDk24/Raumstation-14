@@ -102,7 +102,11 @@ public sealed partial class ClumsyStatusEffectSystem : EntitySystem
         args.Args = ev;
 
         var selfMessage = status.Comp.SelfFailedMessage == null ? null : Loc.GetString(status.Comp.SelfFailedMessage, ("item", args.Args.Item));
-        var othersMessage = status.Comp.OtherFailedMessage == null ? null : Loc.GetString(status.Comp.OtherFailedMessage, ("item", args.Args.Item));
+        var othersMessage = status.Comp.OtherFailedMessage == null
+            ? null
+            : Loc.GetString(status.Comp.OtherFailedMessage,
+                ("item", args.Args.Item),
+                ("holder", Identity.Entity(args.AppliedTo, EntityManager)));
         _popup.PopupEntity(selfMessage, othersMessage, args.AppliedTo, args.AppliedTo);
     }
 

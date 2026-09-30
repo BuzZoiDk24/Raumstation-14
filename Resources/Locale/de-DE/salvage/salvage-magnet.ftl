@@ -1,7 +1,13 @@
-salvage-system-announcement-losing = The magnet is no longer able to hold the salvagable debris. Estimated time until loss: {$timeLeft} seconds.
-salvage-system-announcement-spawn-debris-disintegrated = Debris disintegrated during orbital transfer.
-salvage-system-announcement-spawn-no-debris-available = No debris could be recovered by the salvage magnet.
-salvage-system-announcement-arrived = A piece of salvagable debris has been pulled in. Estimated hold time: {$timeLeft} seconds.
+salvage-system-announcement-losing = Der Bergungsmagnet kann die Trümmer nicht länger halten. Voraussichtliche Zeit bis zum Verlust: {$timeLeft} { $timeLeft ->
+    [one] Sekunde
+    *[other] Sekunden
+}.
+salvage-system-announcement-spawn-debris-disintegrated = Die Trümmer sind während des Orbitaltransfers zerfallen.
+salvage-system-announcement-spawn-no-debris-available = Der Bergungsmagnet konnte keine Trümmer bergen.
+salvage-system-announcement-arrived = Ein bergungsfähiges Trümmerstück wurde herangezogen. Voraussichtliche Haltezeit: {$timeLeft} { $timeLeft ->
+    [one] Sekunde
+    *[other] Sekunden
+}.
 salvage-asteroid-name = Asteroid
 
 salvage-magnet-window-title = Salvage magnet

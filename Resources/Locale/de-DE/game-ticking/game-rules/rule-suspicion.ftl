@@ -1,8 +1,8 @@
-rule-suspicion-added-announcement = There are traitors on the station! Find them, and kill them!
-rule-suspicion-traitor-time-has-run-out = Time has run out for the traitors!
-rule-suspicion-check-winner-stalemate = Everybody is dead, it's a stalemate!
-rule-suspicion-check-winner-station-win = The traitors are dead! The innocents win.
-rule-suspicion-check-winner-traitor-win = The innocents are dead! The traitors win.
-rule-suspicion-end-round-innocents-victory = The innocents have won!
-rule-suspicion-end-round-traitors-victory = The traitors have won!
-rule-suspicion-end-round-nobody-victory = Nobody wins!
+rule-suspicion-added-announcement = Auf der Station gibt es Verräter! Findet sie und tötet sie!
+rule-suspicion-traitor-time-has-run-out = Die Zeit für die Verräter ist abgelaufen!
+rule-suspicion-check-winner-stalemate = Alle sind tot. Unentschieden!
+rule-suspicion-check-winner-station-win = Die Verräter sind tot! Die Unschuldigen gewinnen.
+rule-suspicion-check-winner-traitor-win = Die Unschuldigen sind tot! Die Verräter gewinnen.
+rule-suspicion-end-round-innocents-victory = Die Unschuldigen haben gewonnen!
+rule-suspicion-end-round-traitors-victory = Die Verräter haben gewonnen!
+rule-suspicion-end-round-nobody-victory = Niemand gewinnt!

@@ -202,7 +202,7 @@ namespace Content.Server.RoundEnd
 
             _chatSystem.DispatchGlobalAnnouncement(Loc.GetString(text,
                 ("time", time),
-                ("units", Loc.GetString(units))),
+                ("units", Loc.GetString(units, ("amount", time)))),
                 Loc.GetString(name),
                 false,
                 null,

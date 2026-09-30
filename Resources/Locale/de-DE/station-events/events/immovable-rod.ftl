@@ -1,1 +1,1 @@
-station-event-immovable-rod-start-announcement = Nicht identifiziertes Hochgeschwindigkeitsobjekt auf Kollisionskurs mit der Station erfasst. Einschlag unmittelbar bevorstehend.
+station-event-immovable-rod-start-announcement = Ein nicht identifiziertes Objekt rast auf die Station zu. Der Einschlag steht unmittelbar bevor.
