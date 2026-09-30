@@ -15,24 +15,29 @@ ent-AmePartFlatpack = AME-Bausatz
 # AnimalIan
 
 ent-MobCorgiIan = Ian
-    .gender = proper
+    .gender = male
     .desc = Der Lieblingscorgi der Station.
+    .proper = true
 
 ent-MobCorgiIanOld = Ian (alt)
-    .gender = proper
+    .gender = male
     .desc = Immer noch der Lieblingscorgi der Station. Diese Räder stehen ihm gut.
+    .proper = true
 
 ent-MobCorgiLisa = Lisa
-    .gender = proper
+    .gender = female
     .desc = Ians Lieblingscorgi.
+    .proper = true
 
-ent-MobCorgiMouse = echte Maus
-    .gender = feminine
+ent-MobCorgiMouse = Echte Maus
+    .gender = female
     .desc = Eine echte hungrige Maus. Ganz bestimmt.
+    .proper = true
 
 ent-MobCorgiIanPup = Ian als Welpe
-    .gender = proper
+    .gender = male
     .desc = Der kleine Lieblingscorgi der Station. Wie süß!
+    .proper = true
 
 # AnimalMcGriff
 
@@ -57,16 +62,19 @@ ent-MobPossumPoppy = Poppy
 # AnimalNamedCat
 
 ent-MobCatRuntime = Runtime
-    .gender = feminine
-    .desc = Erfahrener Mäusejäger und Ausbruchskünstler.
+    .gender = female
+    .desc = Erfahrene Mäusejägerin und Ausbruchskünstlerin.
+    .proper = true
 
 ent-MobCatException = Exception
-    .gender = feminine
-    .desc = Frag nett, vielleicht bekommst du eines ihrer Ersatzleben.
+    .gender = male
+    .desc = Frag nett, vielleicht bekommst du eines seiner Ersatzleben.
+    .proper = true
 
 ent-MobCatFloppa = Floppa
-    .gender = feminine
+    .gender = male
     .desc = Floppa ist einfach da.
+    .proper = true
 
 ent-MobBingus = Bingus
     .gender = feminine

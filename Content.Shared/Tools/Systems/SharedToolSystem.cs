@@ -165,7 +165,9 @@ public abstract partial class SharedToolSystem : EntitySystem
                 ("target", target.Value));
         }
         else
-            examineText = Loc.GetString("tool-component-doafter-examine", ("quality", qualitiesText));
+            examineText = Loc.GetString("tool-component-doafter-examine",
+                ("user", user),
+                ("quality", qualitiesText));
 
         var toolEvent = new ToolDoAfterEvent(fuel, doAfterEv, GetNetEntity(target));
         var doAfterArgs = new DoAfterArgs(EntityManager, user, delay / toolComponent.SpeedModifier, toolEvent, tool, target: target, used: tool)

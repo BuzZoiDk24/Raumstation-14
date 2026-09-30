@@ -21,6 +21,7 @@ using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
 using JetBrains.Annotations;
 using Robust.Shared.Configuration;
+using Robust.Shared.Enums;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -279,7 +280,10 @@ public sealed partial class StationSpawningSystem : EntitySystem
             return;
 
         _cardSystem.TryChangeFullName(cardId, characterName, card);
-        _cardSystem.TryChangeJobTitle(cardId, jobPrototype.LocalizedName, card);
+        var jobTitle = jobPrototype.GetLocalizedName(
+            _humanoidProfile.GetPronouns(entity) ?? Gender.Male,
+            _humanoidProfile.GetBodySex(entity) ?? Sex.Male);
+        _cardSystem.TryChangeJobTitle(cardId, jobTitle, card);
 
         if (ProtoMan.Resolve(jobPrototype.Icon, out var jobIcon))
             _cardSystem.TryChangeJobIcon(cardId, jobIcon, card);

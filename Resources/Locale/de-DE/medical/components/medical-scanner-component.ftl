@@ -1,4 +1,4 @@
-## EnterVerb
+## Betreten
 
-medical-scanner-verb-enter = Enter
-medical-scanner-verb-noun-occupant = occupant
+medical-scanner-verb-enter = Betreten
+medical-scanner-verb-noun-occupant = Patient

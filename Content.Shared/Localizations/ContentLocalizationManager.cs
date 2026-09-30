@@ -2,12 +2,15 @@ using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Robust.Shared.Utility;
+using Content.Shared.Humanoid;
+using Robust.Shared.GameObjects.Components.Localization;
 
 namespace Content.Shared.Localizations
 {
     public sealed partial class ContentLocalizationManager
     {
         [Dependency] private ILocalizationManager _loc = default!;
+        [Dependency] private IEntityManager _germanEntityManager = default!;
 
         // If you want to change your codebase's language, do it here.
         private const string Culture = "de-DE";
@@ -55,6 +58,7 @@ namespace Content.Shared.Localizations
 			_loc.AddFunction(cultureDe, "MAKEPLURAL", FormatMakePluralDe);
 			_loc.AddFunction(cultureDe, "MANY", FormatManyDe);
             _loc.AddFunction(cultureDe, "DE-ARTICLE", FormatGermanArticle);
+            _loc.AddFunction(cultureDe, "DE-GENDER", FormatGermanGender);
             _loc.AddFunction(cultureDe, "DE-POSS-ADJ", FormatGermanPossessiveAdjective);
             _loc.AddFunction(cultureDe, "DE-ADJECTIVE", FormatGermanAdjective);
         }
@@ -172,7 +176,7 @@ namespace Content.Shared.Localizations
 
         // TODO: allow fluent to take in lists of strings so this can be a format function like it should be.
         /// <summary>
-        /// Formats a list as per english grammar rules.
+        /// Formats a list using the current localization's conjunction and punctuation.
         /// </summary>
         public static string FormatList(List<string> list)
         {
@@ -180,13 +184,14 @@ namespace Content.Shared.Localizations
             {
                 <= 0 => string.Empty,
                 1 => list[0],
-                2 => $"{list[0]} and {list[1]}",
-                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, and {list[^1]}"
+                2 => Loc.GetString("zzzz-fmt-list-and-pair", ("first", list[0]), ("last", list[1])),
+                _ => Loc.GetString("zzzz-fmt-list-and-many",
+                    ("items", string.Join(", ", list.GetRange(0, list.Count - 1))), ("last", list[^1]))
             };
         }
 
         /// <summary>
-        /// Formats a list as per english grammar rules, but uses or instead of and.
+        /// Formats alternatives using the current localization's conjunction and punctuation.
         /// </summary>
         public static string FormatListToOr(List<string> list)
         {
@@ -194,8 +199,9 @@ namespace Content.Shared.Localizations
             {
                 <= 0 => string.Empty,
                 1 => list[0],
-                2 => $"{list[0]} or {list[1]}",
-                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, or {list[^1]}"
+                2 => Loc.GetString("zzzz-fmt-list-or-pair", ("first", list[0]), ("last", list[1])),
+                _ => Loc.GetString("zzzz-fmt-list-or-many",
+                    ("items", string.Join(", ", list.GetRange(0, list.Count - 1))), ("last", list[^1]))
             };
         }
 
@@ -330,14 +336,40 @@ namespace Content.Shared.Localizations
             return new LocValueString(FormatPlaytime(time));
         }
 
-        private static ILocValue FormatGermanArticle(LocArgs args)
+        /// <summary>
+        /// Uses the localized noun gender for objects and NPCs. Humanoids keep
+        /// their chosen pronouns, while named pets can retain their own gender.
+        /// </summary>
+        private ILocValue FormatGermanGender(LocArgs args)
+        {
+            if (args.Args.Count < 1 || args.Args[0].Value is not EntityUid entity)
+                return new LocValueString("neuter");
+
+            var isHumanoid = _germanEntityManager.HasComponent<HumanoidProfileComponent>(entity);
+            if (!isHumanoid &&
+                _germanEntityManager.TryGetComponent<MetaDataComponent>(entity, out var metadata) &&
+                metadata.EntityPrototype is { } prototype &&
+                _loc.GetEntityData(prototype.ID).Attributes.TryGetValue("gender", out var nounGender))
+                return new LocValueString(nounGender.ToLowerInvariant());
+
+            if (_germanEntityManager.TryGetComponent<GrammarComponent>(entity, out var grammar) &&
+                grammar.Gender is { } gender)
+                return new LocValueString(gender.ToString().ToLowerInvariant());
+
+            return new LocValueString("neuter");
+        }
+
+        private ILocValue FormatGermanArticle(LocArgs args)
         {
             if (args.Args.Count < 2)
                 return new LocValueString("");
 
-            var genus = ((LocValueString) args.Args[0]).Value.ToLowerInvariant();
-            // GENDER($entity) uses male/female, while item localization uses
-            // masculine/feminine. Both describe the same noun gender here.
+            // Entity arguments use localized noun metadata. String arguments
+            // remain supported for objective groups and other explicit grammar.
+            var genus = args.Args[0].Value is EntityUid
+                ? ((LocValueString) FormatGermanGender(args)).Value.ToLowerInvariant()
+                : ((LocValueString) args.Args[0]).Value.ToLowerInvariant();
+            // Gender values use male/female or masculine/feminine.
             genus = genus switch
             {
                 "male" => "masculine",
@@ -349,6 +381,12 @@ namespace Content.Shared.Localizations
             var number = args.Args.Count >= 3
                 ? ((LocValueString) args.Args[2]).Value.ToLowerInvariant()
                 : "singular";
+
+            if (args.Args.Count < 3 && args.Args[0].Value is EntityUid entity &&
+                _germanEntityManager.TryGetComponent<MetaDataComponent>(entity, out var metadata) &&
+                metadata.EntityPrototype is { } prototype &&
+                _loc.GetEntityData(prototype.ID).Attributes.TryGetValue("number", out var nounNumber))
+                number = nounNumber.ToLowerInvariant();
 
             if (number == "plural")
             {

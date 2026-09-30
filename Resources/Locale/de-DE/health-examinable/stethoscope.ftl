@@ -1,15 +1,15 @@
-stethoscope-verb = Listen with stethoscope
+stethoscope-verb = Mit dem Stethoskop abhören
 
-stethoscope-nothing = You don't hear anything.
+stethoscope-nothing = Du hörst nichts.
 
-stethoscope-normal = You hear normal breathing.
-stethoscope-raggedy = You hear raggedy breathing.
-stethoscope-hyper = You hear hyperventilation.
-stethoscope-irregular = You hear hyperventilation with an irregular pattern.
-stethoscope-fucked = You hear twitchy, labored breathing interspersed with short gasps.
+stethoscope-normal = Du hörst eine gleichmäßige Atmung.
+stethoscope-raggedy = Du hörst eine raue, unregelmäßige Atmung.
+stethoscope-hyper = Du hörst eine schnelle, angestrengte Atmung.
+stethoscope-irregular = Du hörst eine schnelle, unregelmäßige Atmung.
+stethoscope-fucked = Du hörst eine stockende, angestrengte Atmung mit kurzen Atemzügen dazwischen.
 
-stethoscope-delta-steady = It's steady.
-stethoscope-delta-improving = It's improving.
-stethoscope-delta-worsening = It's getting worse.
+stethoscope-delta-steady = Die Atmung bleibt gleich.
+stethoscope-delta-improving = Die Atmung bessert sich.
+stethoscope-delta-worsening = Die Atmung verschlechtert sich.
 
 stethoscope-combined-status = {$absolute} {$delta}

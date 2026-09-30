@@ -48,25 +48,25 @@ chat-emote-msg-crying = weint.
 chat-emote-msg-squish = quetscht.
 chat-emote-msg-chitter = zirpt.
 chat-emote-msg-squeak = quietscht.
-chat-emote-msg-thump = { GENDER($entity) ->
+chat-emote-msg-thump = { DE-GENDER($entity) ->
     [epicene] klopft mit dem Schwanz.
-   *[other] klopft mit { DE-POSS-ADJ(GENDER($entity), $bodySex, "dative", "masculine") } Schwanz.
+   *[other] klopft mit { DE-POSS-ADJ(DE-GENDER($entity), $bodySex, "dative", "masculine") } Schwanz.
 }
 chat-emote-msg-click = klickt.
 chat-emote-msg-clap = klatscht!
-chat-emote-msg-clap-single = { GENDER($entity) ->
+chat-emote-msg-clap-single = { DE-GENDER($entity) ->
     [epicene] klatscht die Hände zusammen.
-   *[other] klatscht { DE-POSS-ADJ(GENDER($entity), $bodySex, "accusative", "plural") } Hände zusammen.
+   *[other] klatscht { DE-POSS-ADJ(DE-GENDER($entity), $bodySex, "accusative", "plural") } Hände zusammen.
 }
-chat-emote-msg-snap = { GENDER($entity) ->
+chat-emote-msg-snap = { DE-GENDER($entity) ->
     [epicene] schnippt mit den Fingern.
-   *[other] schnippt mit { DE-POSS-ADJ(GENDER($entity), $bodySex, "dative", "plural") } Fingern.
+   *[other] schnippt mit { DE-POSS-ADJ(DE-GENDER($entity), $bodySex, "dative", "plural") } Fingern.
 }
 chat-emote-msg-salute = salutiert.
 chat-emote-msg-gasp = keucht.
-chat-emote-msg-deathgasp = { GENDER($entity) ->
+chat-emote-msg-deathgasp = { DE-GENDER($entity) ->
     [epicene] verkrampft sich und sackt leblos zusammen. Die Augen starren ins Leere...
-   *[other] verkrampft sich und sackt leblos zusammen. { CAPITALIZE(DE-POSS-ADJ(GENDER($entity), $bodySex, "nominative", "plural")) } Augen starren ins Leere...
+   *[other] verkrampft sich und sackt leblos zusammen. { CAPITALIZE(DE-POSS-ADJ(DE-GENDER($entity), $bodySex, "nominative", "plural")) } Augen starren ins Leere...
 }
 chat-emote-msg-deathgasp-monkey = stößt ein schwaches Kreischen aus, bricht zusammen und bewegt sich nicht mehr...
 chat-emote-msg-deathgasp-scurret = stößt ein letztes „wa“ aus und wird regungslos...
@@ -90,7 +90,7 @@ chat-emote-msg-snarl = knurrt.
 chat-emote-msg-whine = winselt.
 chat-emote-msg-howl = heult.
 chat-emote-msg-growl = grollt.
-chat-emote-msg-flap = { GENDER($entity) ->
+chat-emote-msg-flap = { DE-GENDER($entity) ->
     [epicene] schlägt mit den Flügeln.
-   *[other] schlägt mit { DE-POSS-ADJ(GENDER($entity), $bodySex, "dative", "plural") } Flügeln.
+   *[other] schlägt mit { DE-POSS-ADJ(DE-GENDER($entity), $bodySex, "dative", "plural") } Flügeln.
 }

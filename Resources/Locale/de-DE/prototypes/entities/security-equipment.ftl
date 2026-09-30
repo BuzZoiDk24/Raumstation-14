@@ -2,10 +2,12 @@
 
 ent-Handcuffs = Handschellen
     .gender = feminine
+    .number = plural
     .desc = Damit hältst du Straftäter und andere Ärgernisse fest.
 
 ent-Cablecuffs = Kabelbinderfesseln
     .gender = feminine
+    .number = plural
     .desc = Improvisierte Fesseln aus übrig gebliebenen Kabeln.
 
 ent-Stunbaton = Elektroschlagstock

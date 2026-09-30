@@ -43,8 +43,8 @@ chat-manager-entity-me-wrap-message = { $hasArticle ->
     [true] { PROPER($entity) ->
         [true] [italic]{ CAPITALIZE($entityName) } {$message}[/italic]
        *[false] { $hasAdjective ->
-            [false] [italic]{ CAPITALIZE(DE-ARTICLE(GENDER($entity), "nominative")) } {$entityName} {$message}[/italic]
-           *[other] [italic]{ CAPITALIZE(DE-ARTICLE(GENDER($entity), "nominative")) } { DE-ADJECTIVE($adjective, GENDER($entity), "weak") } {$baseName} {$message}[/italic]
+            [false] [italic]{ CAPITALIZE(DE-ARTICLE($entity, "nominative")) } {$entityName} {$message}[/italic]
+           *[other] [italic]{ CAPITALIZE(DE-ARTICLE($entity, "nominative")) } { DE-ADJECTIVE($adjective, DE-GENDER($entity), "weak") } {$baseName} {$message}[/italic]
         }
     }
    *[false] [italic]{ CAPITALIZE($entityName) } {$message}[/italic]

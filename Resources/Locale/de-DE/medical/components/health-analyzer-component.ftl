@@ -1,25 +1,25 @@
-health-analyzer-window-no-patient-data-text = No patient data.
-health-analyzer-window-entity-unknown-text = Unknown
-health-analyzer-window-entity-unknown-species-text = Non-Humanoid
-health-analyzer-window-entity-unknown-value-text = N/A
+health-analyzer-window-no-patient-data-text = Keine Patientendaten.
+health-analyzer-window-entity-unknown-text = Unbekannt
+health-analyzer-window-entity-unknown-species-text = Nicht humanoid
+health-analyzer-window-entity-unknown-value-text = K. A.
 
-health-analyzer-window-entity-alive-text = Alive
-health-analyzer-window-entity-dead-text = Dead
-health-analyzer-window-entity-critical-text = Critical
+health-analyzer-window-entity-alive-text = Lebendig
+health-analyzer-window-entity-dead-text = Tot
+health-analyzer-window-entity-critical-text = Kritisch
 
-health-analyzer-window-entity-temperature-text = Temperature:
-health-analyzer-window-entity-blood-level-text = Blood Level:
-health-analyzer-window-entity-status-text = Status:
-health-analyzer-window-entity-damage-total-text = Total Damage:
+health-analyzer-window-entity-temperature-text = Temperatur:
+health-analyzer-window-entity-blood-level-text = Blutmenge:
+health-analyzer-window-entity-status-text = Zustand:
+health-analyzer-window-entity-damage-total-text = Gesamtschaden:
 
 health-analyzer-window-damage-group-text = {$damageGroup}: {$amount}
 health-analyzer-window-damage-type-text = {$damageType}: {$amount}
 
-health-analyzer-window-entity-unrevivable-text = [color=yellow]Unique body composition detected! Patient can not be resuscitated by normal means![/color]
-health-analyzer-window-entity-bleeding-text = [color=red]Patient has open wounds![/color]
+health-analyzer-window-entity-unrevivable-text = [color=yellow]Besondere Körperzusammensetzung erkannt! Eine Wiederbelebung mit gewöhnlichen Mitteln ist nicht möglich![/color]
+health-analyzer-window-entity-bleeding-text = [color=red]Der Patient hat offene Wunden![/color]
 
-health-analyzer-window-scan-mode-text = Scan Mode:
-health-analyzer-window-scan-mode-active = Active
-health-analyzer-window-scan-mode-inactive = Inactive
+health-analyzer-window-scan-mode-text = Scanmodus:
+health-analyzer-window-scan-mode-active = Aktiv
+health-analyzer-window-scan-mode-inactive = Inaktiv
 
-health-analyzer-popup-scan-target = {CAPITALIZE(THE($user))} is trying to scan you!
+health-analyzer-popup-scan-target = {CAPITALIZE($user)} versucht, dich zu untersuchen!

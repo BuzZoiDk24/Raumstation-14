@@ -11,7 +11,7 @@ lathe-menu-recipe-count = { $count ->
     *[other] {$count} Baupläne
 }
 lathe-menu-reagent-slot-examine = An der Seite befindet sich ein Schacht für einen Becher.
-lathe-reagent-dispense-no-container = Flüssigkeit läuft aus { DE-ARTICLE(GENDER($name), "dative") } {$name} auf den Boden!
+lathe-reagent-dispense-no-container = Flüssigkeit läuft aus { DE-ARTICLE($name, "dative") } {$name} auf den Boden!
 lathe-menu-result-reagent-display = {$reagent} ({$amount}u)
 lathe-menu-material-display = {$material} ({$amount})
 lathe-menu-tooltip-display = {$amount} {$material}

@@ -1,6 +1,6 @@
-damage-group-brute = Brute
-damage-group-burn = Burn
-damage-group-airloss = Airloss
-damage-group-toxin = Toxin
-damage-group-genetic = Genetic
-damage-group-metaphysical = Metaphysical
+damage-group-brute = Körperliche Schäden
+damage-group-burn = Verbrennungen
+damage-group-airloss = Sauerstoffmangel
+damage-group-toxin = Vergiftungen
+damage-group-genetic = Genetische Schäden
+damage-group-metaphysical = Übernatürliche Schäden

@@ -18,9 +18,9 @@ gun-FullAuto = Dauerfeuer
 gun-ballistic-cycle = Durchladen
 gun-ballistic-cycled = Durchgeladen
 gun-ballistic-cycled-empty = Durchgeladen (leer)
-gun-ballistic-transfer-invalid = { CAPITALIZE(DE-ARTICLE(GENDER($ammoEntity), "nominative")) } {$ammoEntity} passt nicht in { DE-ARTICLE(GENDER($targetEntity), "accusative") } {$targetEntity}!
-gun-ballistic-transfer-empty = { CAPITALIZE(DE-ARTICLE(GENDER($entity), "nominative")) } {$entity} enthält keine Munition.
-gun-ballistic-transfer-target-full = { CAPITALIZE(DE-ARTICLE(GENDER($entity), "nominative")) } {$entity} ist bereits vollständig geladen.
+gun-ballistic-transfer-invalid = { CAPITALIZE(DE-ARTICLE($ammoEntity, "nominative")) } {$ammoEntity} passt nicht in { DE-ARTICLE($targetEntity, "accusative") } {$targetEntity}!
+gun-ballistic-transfer-empty = { CAPITALIZE(DE-ARTICLE($entity, "nominative")) } {$entity} enthält keine Munition.
+gun-ballistic-transfer-target-full = { CAPITALIZE(DE-ARTICLE($entity, "nominative")) } {$entity} ist bereits vollständig geladen.
 
 # CartridgeAmmo
 gun-cartridge-spent = Diese Patrone wurde [color=red]bereits abgefeuert[/color].
