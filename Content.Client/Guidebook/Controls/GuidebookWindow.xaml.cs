@@ -31,6 +31,11 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
         IoCManager.InjectDependencies(this);
         _sawmill = Logger.GetSawmill("guidebook");
 
+        // Keep the outer resize area clear of buttons, trees and scrollbars.
+        // FancyWindow uses the outer seven pixels for resizing.
+        WindowLayout.Margin = new Thickness(8);
+        TreeBox.MinWidth = 220;
+
         Tree.OnSelectedItemChanged += OnSelectionChanged;
         TableOfContents.OnSelectedItemChanged += OnTableOfContentsSelectionChanged;
 
@@ -185,6 +190,9 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
 
         var firstEntry = TableOfContents.AddItem(null);
         firstEntry.Label.Text = Loc.GetString("guidebook-toc-header");
+        firstEntry.Label.ClipText = true;
+        firstEntry.Label.HorizontalExpand = true;
+        firstEntry.Button.ToolTip = firstEntry.Label.Text;
 
         var labels = EntryContainer.GetControlOfType<Label>(true);
         var stack = new Stack<(TreeItem Item, int Depth)>();
@@ -203,6 +211,9 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
                 ? TableOfContents.AddItem(parent.Item)
                 : TableOfContents.AddItem(firstEntry);
             item.Label.Text = label.Text;
+            item.Label.ClipText = true;
+            item.Label.HorizontalExpand = true;
+            item.Button.ToolTip = label.Text;
             item.Metadata = label;
 
             stack.Push((item, depth));
@@ -315,6 +326,10 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
         item.Metadata = entry;
         var name = Loc.GetString(entry.Name);
         item.Label.Text = name;
+        // Long translated titles must not impose the width of the navigation.
+        item.Label.ClipText = true;
+        item.Label.HorizontalExpand = true;
+        item.Button.ToolTip = name;
 
         foreach (var child in entry.Children)
         {

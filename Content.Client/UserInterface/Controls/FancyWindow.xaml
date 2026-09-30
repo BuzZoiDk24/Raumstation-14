@@ -5,7 +5,7 @@
                       MinWidth="200" MinHeight="150">
     <PanelContainer StyleClasses="BackgroundPanel" />
 
-    <BoxContainer Orientation="Vertical">
+    <BoxContainer Name="WindowLayout" Access="Protected" Orientation="Vertical">
         <Control>
             <PanelContainer StyleClasses="WindowHeadingBackground" Name="WindowHeader" />
             <BoxContainer Margin="4 2 4 0" Orientation="Horizontal">
