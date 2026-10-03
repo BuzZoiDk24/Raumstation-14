@@ -119,6 +119,9 @@ ent-BibleDruid = Druidentafel
     .desc = Das Geheimnis der Druiden!
 
 ent-BibleCommunistManifesto = Kommunistisches Manifest
+    .name-adjective = kommunistisch
+    .name-noun = Manifest
+    .name-noun-genitive = Manifests
     .gender = neuter
     .desc = Reißt dem Kapital die Maske der Menschlichkeit vom Gesicht.
 
@@ -150,7 +153,10 @@ ent-BoozeDispenser = Getränkespender
 
 # BoxFolderQmClipboard
 
-ent-BoxFolderQmClipboard = digitales Bestellbrett
+ent-BoxFolderQmClipboard = Digitales Bestellbrett
+    .name-adjective = digital
+    .name-noun = Bestellbrett
+    .name-noun-genitive = Bestellbretts
     .gender = neuter
     .desc = Ein sperriges elektronisches Bestellbrett voller Lieferaufträge und Finanzunterlagen. Bei so vielen heiklen Dokumenten solltest du gut darauf aufpassen.
 
@@ -234,7 +240,10 @@ ent-ClothingEyesHudMedSec = MedSec-HUD
     .gender = neuter
     .desc = Ein HUD, das medizinische und Sicherheitsanzeigen verbindet.
 
-ent-ClothingEyesHudMultiversal = multiversales HUD
+ent-ClothingEyesHudMultiversal = Multiversales HUD
+    .name-adjective = multiversal
+    .name-noun = HUD
+    .name-noun-genitive = HUDs
     .gender = neuter
     .desc = Ein HUD mit einer ungewöhnlichen Ausstattung.
 
@@ -254,11 +263,15 @@ ent-ClothingEyesGlassesHiddenSecurity = Sonnenbrille
     .gender = neuter
     .desc = Eine schwarze Sonnenbrille.
 
-ent-ClothingEyesEyepatchHudMedical = medizinische HUD-Augenklappe
+ent-ClothingEyesEyepatchHudMedical = Medizinische HUD-Augenklappe
+    .name-adjective = medizinisch
+    .name-noun = HUD-Augenklappe
     .gender = feminine
     .desc = Ein HUD, das die Menschen in deinem Sichtfeld scannt und ihren Gesundheitszustand anzeigt. Für echte Patrioten.
 
-ent-ClothingEyesEyepatchHudMedicalFlipped = medizinische HUD-Augenklappe
+ent-ClothingEyesEyepatchHudMedicalFlipped = Medizinische HUD-Augenklappe
+    .name-adjective = medizinisch
+    .name-noun = HUD-Augenklappe
     .gender = feminine
     .desc = Ein HUD, das die Menschen in deinem Sichtfeld scannt und ihren Gesundheitszustand anzeigt. Für echte Patrioten.
 
@@ -288,7 +301,10 @@ ent-ClothingEyesEyepatchHudDiagFlipped = Diagnose-HUD-Augenklappe
 
 # ClothingHandsKnuckleDustersQM
 
-ent-ClothingHandsKnuckleDustersQM = goldene Schlagringe des Quartiermeisters
+ent-ClothingHandsKnuckleDustersQM = Goldene Schlagringe des Quartiermeisters
+    .name-adjective = golden
+    .name-noun = Schlagringe des Quartiermeisters
+    .name-noun-dative = Schlagringen des Quartiermeisters
     .gender = neuter
     .number = plural
     .desc = 24-karätiges Gold, verstärkt mit Plaststahl und verziert mit dem NanoTrasen-Logo. Ein wahres Zeichen der Macht des Quartiermeisters.
@@ -313,13 +329,18 @@ ent-ClothingNeckClownmedal = Clownsmedaille
 
 # ClothingNeckGoldmedal
 
-ent-ClothingNeckGoldmedal = goldene Verdienstmedaille der Crew
+ent-ClothingNeckGoldmedal = Goldene Verdienstmedaille der Crew
+    .name-adjective = golden
+    .name-noun = Verdienstmedaille der Crew
     .gender = feminine
     .desc = Verliehen an Crewmitglieder, die sich besonders um die Besatzung verdient gemacht haben.
 
 # ClothingOuterHardsuitRd
 
-ent-ClothingOuterHardsuitRd = experimenteller Forschungsraumanzug
+ent-ClothingOuterHardsuitRd = Experimenteller Forschungsraumanzug
+    .name-adjective = experimentell
+    .name-noun = Forschungsraumanzug
+    .name-noun-genitive = Forschungsraumanzugs
     .gender = masculine
     .desc = Ein Spezialanzug für gefährliche Umgebungen mit niedrigem Druck. Eine zusätzliche Schicht schützt vor Verletzungen.
 
@@ -331,7 +352,10 @@ ent-ClothingOuterHardsuitVoidParamed = Weltraumanzug des Rettungsdienstes
 
 # ClothingShoesBootsMagAdv
 
-ent-ClothingShoesBootsMagAdv = fortschrittliche Magstiefel
+ent-ClothingShoesBootsMagAdv = Fortschrittliche Magstiefel
+    .name-adjective = fortschrittlich
+    .name-noun = Magstiefel
+    .name-noun-dative = Magstiefeln
     .gender = neuter
     .number = plural
     .desc = Hochmoderne Magnetstiefel, die ihre Träger nicht verlangsamen.
@@ -342,7 +366,9 @@ ent-DoorRemoteCommand = Türfernbedienung des Kommandos
     .gender = feminine
     .desc = Ein Gerät, mit dem du Türen aus der Ferne öffnen und verriegeln kannst.
 
-ent-DoorRemoteCustom = anpassbare Türfernbedienung
+ent-DoorRemoteCustom = Anpassbare Türfernbedienung
+    .name-adjective = anpassbar
+    .name-noun = Türfernbedienung
     .gender = feminine
     .desc = Mit diesem Gerät kannst du Türen aus der Ferne öffnen und verriegeln. Es verwendet die Zugriffsrechte deiner ID-Karte statt eigener Berechtigungen.
 
@@ -374,7 +400,9 @@ ent-DoorRemoteEngineering = Türfernbedienung des Technikbereichs
     .gender = feminine
     .desc = Ein Gerät, mit dem du Türen aus der Ferne öffnen und verriegeln kannst.
 
-ent-DoorRemoteAll = universelle Türfernbedienung
+ent-DoorRemoteAll = Universelle Türfernbedienung
+    .name-adjective = universell
+    .name-noun = Türfernbedienung
     .gender = feminine
     .desc = Mit diesem Gerät kannst du Türen aus der Ferne öffnen und verriegeln. Sogar Holztüren sind nicht sicher!
 
@@ -394,13 +422,18 @@ ent-FireAxe = Feuerwehraxt
     .gender = feminine
     .desc = Wahrlich eine Waffe für Verrückte. Wer würde schon versuchen, Feuer mit einer Axt zu bekämpfen?
 
-ent-FireAxeFlaming = brennende Feuerwehraxt
+ent-FireAxeFlaming = Brennende Feuerwehraxt
+    .name-adjective = brennend
+    .name-noun = Feuerwehraxt
     .gender = feminine
     .desc = Warum Feuer nur mit einer Axt bekämpfen, wenn du Feuer und Axt zugleich haben kannst? Jetzt mit griffigem Gummistiel!
 
 # FlippoEngravedLighter
 
-ent-FlippoEngravedLighter = graviertes Flippo-Feuerzeug der Detektei
+ent-FlippoEngravedLighter = Graviertes Flippo-Feuerzeug der Detektei
+    .name-adjective = graviert
+    .name-noun = Flippo-Feuerzeug der Detektei
+    .name-noun-genitive = Flippo-Feuerzeugs der Detektei
     .gender = neuter
     .desc = Ein robustes goldenes Feuerzeug, das lange durchhält. Die Gravur verschafft dir keinerlei taktischen Vorteil.
 
@@ -424,11 +457,17 @@ ent-HandTeleporter = Handteleporter
 
 # HandheldCrewMonitor
 
-ent-HandheldCrewMonitor = mobiler Crewmonitor
+ent-HandheldCrewMonitor = Mobiler Crewmonitor
+    .name-adjective = mobil
+    .name-noun = Crewmonitor
+    .name-noun-genitive = Crewmonitors
     .gender = masculine
     .desc = Ein tragbarer Monitor, der den Status der Anzugsensoren der Crew anzeigt.
 
-ent-HandheldCrewMonitorEmpty = mobiler Crewmonitor
+ent-HandheldCrewMonitorEmpty = Mobiler Crewmonitor
+    .name-adjective = mobil
+    .name-noun = Crewmonitor
+    .name-noun-genitive = Crewmonitors
     .gender = masculine
     .desc = Ein tragbarer Monitor, der den Status der Anzugsensoren der Crew anzeigt.
 
@@ -784,7 +823,9 @@ ent-CBURNIDcard = CBURN-ID-Karte
     .gender = feminine
     .desc = Mit dieser Karte erhältst du Zugang zu verschiedenen Bereichen der Station.
 
-ent-UniversalIDCard = universelle ID-Karte
+ent-UniversalIDCard = Universelle ID-Karte
+    .name-adjective = universell
+    .name-noun = ID-Karte
     .gender = feminine
     .desc = Eine ID-Karte, die dir ungeahnte Zugriffsrechte verschafft.
 
@@ -868,7 +909,10 @@ ent-MedicalTechFabCircuitboard = Maschinenplatine für den medizinischen Techfab
     .gender = feminine
     .desc = Eine Maschinenplatine für den medizinischen Techfab.
 
-ent-MedicalTechFab = medizinischer Techfab
+ent-MedicalTechFab = Medizinischer Techfab
+    .name-adjective = medizinisch
+    .name-noun = Techfab
+    .name-noun-genitive = Techfabs
     .gender = masculine
     .desc = Stellt Ausrüstung für die Krankenstation her.
 
@@ -1040,7 +1084,10 @@ ent-TechnologyDiskRare = Technologiedatenträger
 
 # Teg
 
-ent-TegCenter = thermoelektrischer Generator
+ent-TegCenter = Thermoelektrischer Generator
+    .name-adjective = thermoelektrisch
+    .name-noun = Generator
+    .name-noun-genitive = Generators
     .gender = masculine
     .desc = Ein hocheffizienter Generator, der aus dem Wärmeaustausch zwischen heißen und kalten Gasen Strom gewinnt.
 
@@ -1050,7 +1097,9 @@ ent-TegCirculator = Zirkulator des thermoelektrischen Generators
 
 # ToiletGoldenDirtyWater
 
-ent-ToiletGoldenDirtyWater = goldene Toilette
+ent-ToiletGoldenDirtyWater = Goldene Toilette
+    .name-adjective = golden
+    .name-noun = Toilette
     .gender = feminine
     .desc = Der HT-451G ist die goldene Version dieses Geräts. Laut Aufschrift besteht es aus reinstem merkurianischem Gold und besitzt einen Sitz aus echtem Leder.
 
@@ -1062,7 +1111,9 @@ ent-WantedListCartridge = PDA-Modul mit Fahndungsliste
 
 # WeaponAntiqueLaser
 
-ent-WeaponAntiqueLaser = antike Laserpistole
+ent-WeaponAntiqueLaser = Antike Laserpistole
+    .name-adjective = antik
+    .name-noun = Laserpistole
     .gender = feminine
     .desc = Eine antike Laserpistole von höchster Handwerkskunst mit Mahagonigriff und Chromverzierungen. Energiestacheln ragen bedrohlich hervor. Eine Gravur zeigt einen Kapitän in heldenhafter Pose neben einem toten Clown.
 

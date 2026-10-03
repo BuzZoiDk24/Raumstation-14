@@ -15,7 +15,9 @@ ent-MobMouse2 = Maus
     .gender = feminine
     .desc = Piep!
 
-ent-MobMouseCancer = mutierte Maus
+ent-MobMouseCancer = Mutierte Maus
+    .name-adjective = mutiert
+    .name-noun = Maus
     .gender = feminine
     .desc = Giftig. Piep!
 

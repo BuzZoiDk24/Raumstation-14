@@ -128,7 +128,7 @@ public abstract partial class SharedFlatpackSystem : EntitySystem
         attributes.TryGetValue("number", out var number);
         _metaData.SetEntityDescription(ent, Loc.GetString("flatpack-entity-description",
             ("name", machinePrototype.Name), ("gender", gender ?? "neuter"),
-            ("number", number ?? "singular")), meta);
+            ("number", number ?? "singular"), ("prototype", machinePrototype.ID)), meta);
 
         Dirty(ent, meta);
         Appearance.SetData(ent, FlatpackVisuals.Machine, MetaData(board).EntityPrototype?.ID ?? string.Empty);

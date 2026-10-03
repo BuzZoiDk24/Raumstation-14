@@ -1,70 +1,87 @@
 # Sicherheitsmunition, Ladegeräte und Energiezellen.
 
 ent-MagazinePistol = Pistolenmagazin (.35 Auto)
+    .name-genitive = Pistolenmagazins (.35 Auto)
     .gender = neuter
     .desc = Einreihiges Magazin für 10 Patronen. Konventionelle Projektilmunition für die meisten Einsatzsituationen.
 
 ent-MagazinePistolEmpty = Pistolenmagazin (.35 Auto, universell)
+    .name-genitive = Pistolenmagazins (.35 Auto, universell)
     .gender = neuter
     .desc = Einreihiges Magazin für 10 Patronen.
 
 ent-MagazinePistolPractice = Pistolenmagazin (.35 Auto, Übungsmunition)
+    .name-genitive = Pistolenmagazins (.35 Auto, Übungsmunition)
     .gender = neuter
     .desc = Einreihiges Magazin für 10 Patronen. Übungsmunition mit Kreidegeschossen. Sie zwickt ein wenig, verursacht aber keine bleibenden Schäden.
 
 ent-MagazinePistolIncendiary = Pistolenmagazin (.35 Auto, Brandmunition)
+    .name-genitive = Pistolenmagazins (.35 Auto, Brandmunition)
     .gender = neuter
     .desc = Einreihiges Magazin für 10 Patronen. Brandmunition mit einem selbstentzündlichen Stoff, der Ziele in Brand setzt.
 
 ent-MagazinePistolUranium = Pistolenmagazin (.35 Auto, Uranmunition)
+    .name-genitive = Pistolenmagazins (.35 Auto, Uranmunition)
     .gender = neuter
     .desc = Einreihiges Magazin für 10 Patronen. Munition mit spaltbarem Kern, die Ziele von innen bestrahlt.
 
 ent-MagazinePistolSubMachineGun = MP-Magazin (.35 Auto)
+    .name-genitive = MP-Magazins (.35 Auto)
     .gender = neuter
     .desc = Zweireihiges Magazin für 30 Patronen. Konventionelle Projektilmunition für die meisten Einsatzsituationen.
 
 ent-MagazinePistolSubMachineGunEmpty = MP-Magazin (.35 Auto, universell)
+    .name-genitive = MP-Magazins (.35 Auto, universell)
     .gender = neuter
     .desc = Zweireihiges Magazin für 30 Patronen.
 
 ent-MagazinePistolSubMachineGunPractice = MP-Magazin (.35 Auto, Übungsmunition)
+    .name-genitive = MP-Magazins (.35 Auto, Übungsmunition)
     .gender = neuter
     .desc = Zweireihiges Magazin für 30 Patronen. Übungsmunition mit Kreidegeschossen. Sie zwickt ein wenig, verursacht aber keine bleibenden Schäden.
 
 ent-MagazinePistolSubMachineGunIncendiary = MP-Magazin (.35 Auto, Brandmunition)
+    .name-genitive = MP-Magazins (.35 Auto, Brandmunition)
     .gender = neuter
     .desc = Zweireihiges Magazin für 30 Patronen. Brandmunition mit einem selbstentzündlichen Stoff, der Ziele in Brand setzt.
 
 ent-MagazinePistolSubMachineGunUranium = MP-Magazin (.35 Auto, Uranmunition)
+    .name-genitive = MP-Magazins (.35 Auto, Uranmunition)
     .gender = neuter
     .desc = Zweireihiges Magazin für 30 Patronen. Munition mit spaltbarem Kern, die Ziele von innen bestrahlt.
 
 ent-MagazineRifle = Gewehrmagazin (.20)
+    .name-genitive = Gewehrmagazins (.20)
     .gender = neuter
     .desc = Zweireihiges Magazin für 25 Patronen. Konventionelle Projektilmunition für die meisten Einsatzsituationen.
 
 ent-MagazineRifleEmpty = Gewehrmagazin (.20, universell)
+    .name-genitive = Gewehrmagazins (.20, universell)
     .gender = neuter
     .desc = Zweireihiges Magazin für 25 Patronen.
 
 ent-MagazineRiflePractice = Gewehrmagazin (.20, Übungsmunition)
+    .name-genitive = Gewehrmagazins (.20, Übungsmunition)
     .gender = neuter
     .desc = Zweireihiges Magazin für 25 Patronen. Übungsmunition mit Kreidegeschossen. Sie zwickt ein wenig, verursacht aber keine bleibenden Schäden.
 
 ent-MagazineRifleIncendiary = Gewehrmagazin (.20, Brandmunition)
+    .name-genitive = Gewehrmagazins (.20, Brandmunition)
     .gender = neuter
     .desc = Zweireihiges Magazin für 25 Patronen. Brandmunition mit einem selbstentzündlichen Stoff, der Ziele in Brand setzt.
 
 ent-MagazineRifleUranium = Gewehrmagazin (.20, Uranmunition)
+    .name-genitive = Gewehrmagazins (.20, Uranmunition)
     .gender = neuter
     .desc = Zweireihiges Magazin für 25 Patronen. Munition mit spaltbarem Kern, die Ziele von innen bestrahlt.
 
 ent-MagazinePistolSubMachineGunTopMounted = WT550-Magazin (.35 Auto)
+    .name-genitive = WT550-Magazins (.35 Auto)
     .gender = neuter
     .desc = Ein ungewöhnliches Magazin für 30 Patronen, das oben in die WT550 eingesetzt wird. Für konventionelle Projektilmunition.
 
 ent-MagazinePistolSubMachineGunTopMountedEmpty = WT550-Magazin (.35 Auto, universell)
+    .name-genitive = WT550-Magazins (.35 Auto, universell)
     .gender = neuter
     .desc = Ein ungewöhnliches Magazin für 30 Patronen, das oben in die WT550 eingesetzt wird.
 
@@ -209,18 +226,22 @@ ent-BoxShellTranquilizer = Munitionsschachtel (.50, Betäubungspatronen)
     .desc = Eine Pappschachtel mit .50-Betäubungspatronen.
 
 ent-PowerCellRecharger = Zellenladegerät
+    .name-genitive = Zellenladegeräts
     .gender = neuter
     .desc = Ein älteres Ladegerät für Energiezellen.
 
 ent-WeaponCapacitorRecharger = Universalladegerät
+    .name-genitive = Universalladegeräts
     .gender = neuter
     .desc = Eine moderne Ladestation für Energiezellen und kleine elektronische Geräte.
 
 ent-TurboItemRecharger = Turboladegerät
+    .name-genitive = Turboladegeräts
     .gender = neuter
     .desc = Ein übertaktetes Ladegerät. Für den Betrieb in der Nähe von Asthmatikern nicht empfohlen.
 
 ent-WallWeaponCapacitorRecharger = Wandladegerät
+    .name-genitive = Wandladegeräts
     .gender = neuter
     .desc = Ein kompaktes Ladegerät für die Wand. Es lädt elektronische Geräte auf, bietet aber keinen Platz für Energiezellen.
 

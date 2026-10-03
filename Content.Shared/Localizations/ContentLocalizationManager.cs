@@ -2,7 +2,10 @@ using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Robust.Shared.Utility;
+using Robust.Shared.Prototypes;
 using Content.Shared.Humanoid;
+using Content.Shared.IdentityManagement;
+using Content.Shared.NameModifier.EntitySystems;
 using Robust.Shared.GameObjects.Components.Localization;
 
 namespace Content.Shared.Localizations
@@ -11,6 +14,7 @@ namespace Content.Shared.Localizations
     {
         [Dependency] private ILocalizationManager _loc = default!;
         [Dependency] private IEntityManager _germanEntityManager = default!;
+        [Dependency] private IPrototypeManager _germanPrototypes = default!;
 
         // If you want to change your codebase's language, do it here.
         private const string Culture = "de-DE";
@@ -61,6 +65,7 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(cultureDe, "DE-GENDER", FormatGermanGender);
             _loc.AddFunction(cultureDe, "DE-POSS-ADJ", FormatGermanPossessiveAdjective);
             _loc.AddFunction(cultureDe, "DE-ADJECTIVE", FormatGermanAdjective);
+            _loc.AddFunction(cultureDe, "DE-NAME", FormatGermanName);
         }
 
         private ILocValue FormatMany(LocArgs args)
@@ -495,8 +500,8 @@ namespace Content.Shared.Localizations
         }
 
         /// <summary>
-        /// Inflects a German adjective stem for a singular nominative noun.
-        /// Strong forms stand alone in a name; weak forms follow a definite article.
+        /// Inflects an adjective stem. Existing three-argument calls default to
+        /// singular nominative; optional arguments select case and number.
         /// </summary>
         private static ILocValue FormatGermanAdjective(LocArgs args)
         {
@@ -506,17 +511,184 @@ namespace Content.Shared.Localizations
             var stem = ((LocValueString) args.Args[0]).Value;
             var gender = ((LocValueString) args.Args[1]).Value.ToLowerInvariant();
             var form = ((LocValueString) args.Args[2]).Value.ToLowerInvariant();
+            var grammaticalCase = args.Args.Count > 3
+                ? ((LocValueString) args.Args[3]).Value.ToLowerInvariant()
+                : "nominative";
+            var number = args.Args.Count > 4
+                ? ((LocValueString) args.Args[4]).Value.ToLowerInvariant()
+                : "singular";
+            return new LocValueString(InflectGermanAdjective(stem, gender, form, grammaticalCase, number));
+        }
 
-            var ending = form == "weak"
-                ? "e"
-                : gender switch
+        private static string InflectGermanAdjective(string stem, string gender, string form,
+            string grammaticalCase, string number)
+        {
+            gender = gender switch
+            {
+                "male" => "masculine",
+                "female" => "feminine",
+                "masculine" or "feminine" or "neuter" or "plural" => gender,
+                _ => "neuter"
+            };
+            if (number == "plural")
+                gender = "plural";
+
+            if (grammaticalCase is not ("nominative" or "accusative" or "dative" or "genitive") ||
+                form is not ("strong" or "weak" or "mixed"))
+                return stem;
+
+            var ending = form switch
+            {
+                "weak" => (grammaticalCase, gender) switch
                 {
-                    "male" or "masculine" => "er",
-                    "female" or "feminine" => "e",
-                    _ => "es"
-                };
+                    ("nominative", "masculine" or "feminine" or "neuter") => "e",
+                    ("accusative", "feminine" or "neuter") => "e",
+                    _ => "en"
+                },
+                "mixed" => (grammaticalCase, gender) switch
+                {
+                    ("nominative", "masculine") => "er",
+                    ("nominative" or "accusative", "neuter") => "es",
+                    ("nominative" or "accusative", "feminine") => "e",
+                    _ => "en"
+                },
+                _ => (grammaticalCase, gender) switch
+                {
+                    ("nominative", "masculine") => "er",
+                    ("nominative" or "accusative", "feminine" or "plural") => "e",
+                    ("nominative" or "accusative", "neuter") => "es",
+                    ("accusative", "masculine") => "en",
+                    ("dative", "masculine" or "neuter") => "em",
+                    ("dative" or "genitive", "feminine") => "er",
+                    ("dative", "plural") => "en",
+                    ("genitive", "plural") => "er",
+                    ("genitive", "masculine" or "neuter") => "en",
+                    _ => ""
+                }
+            };
+            return stem + ending;
+        }
 
-            return new LocValueString(stem + ending);
+        /// <summary>
+        /// Formats an entity or entity-prototype name for a sentence without
+        /// changing its display name. A string first argument is a prototype ID,
+        /// not an arbitrary name. The optional fourth argument for entities is
+        /// an already escaped display name, as used by hands and chat.
+        /// </summary>
+        private ILocValue FormatGermanName(LocArgs args)
+        {
+            if (args.Args.Count < 3)
+                return new LocValueString("");
+
+            var grammaticalCase = ((LocValueString) args.Args[1]).Value.ToLowerInvariant();
+            var declension = ((LocValueString) args.Args[2]).Value.ToLowerInvariant();
+            if (args.Args[0].Value is string prototypeId)
+            {
+                if (!_germanPrototypes.TryIndex<EntityPrototype>(prototypeId, out var prototype))
+                    return new LocValueString(prototypeId);
+                var data = _loc.GetEntityData(prototype.ID);
+                var gender = data.Attributes.GetValueOrDefault("gender", "neuter").ToLowerInvariant();
+                var number = data.Attributes.GetValueOrDefault("number", "singular").ToLowerInvariant();
+                declension = NormalizeGermanDeclension(declension, number);
+                return new LocValueString(FormatGermanBaseName(prototype.ID, data.Name, data,
+                    gender, grammaticalCase, declension, number));
+            }
+
+            if (args.Args[0].Value is not EntityUid entity ||
+                !_germanEntityManager.TryGetComponent<MetaDataComponent>(entity, out var metadata))
+                return new LocValueString("");
+
+            var identityName = Identity.Name(entity, _germanEntityManager);
+            var escaped = args.Args.Count > 3;
+            var displayName = escaped ? ((LocValueString) args.Args[3]).Value : identityName;
+            var expectedName = escaped ? FormattedMessage.EscapeText(metadata.EntityName) : metadata.EntityName;
+            if (displayName != expectedName ||
+                _germanEntityManager.HasComponent<HumanoidProfileComponent>(entity))
+                return new LocValueString(displayName);
+
+            var names = _germanEntityManager.System<NameModifierSystem>();
+            var baseName = names.GetBaseName(entity);
+            var nounNumber = "singular";
+            if (metadata.EntityPrototype is { } entityPrototype)
+            {
+                var data = _loc.GetEntityData(entityPrototype.ID);
+                if (IsGermanProperName(data))
+                    return new LocValueString(displayName);
+                nounNumber = data.Attributes.GetValueOrDefault("number", "singular").ToLowerInvariant();
+                declension = NormalizeGermanDeclension(declension, nounNumber);
+                var gender = ((LocValueString) FormatGermanGender(args)).Value.ToLowerInvariant();
+                baseName = FormatGermanBaseName(entityPrototype.ID, baseName, data,
+                    gender, grammaticalCase, declension, nounNumber);
+            }
+            else
+                declension = NormalizeGermanDeclension(declension, nounNumber);
+
+            var result = names.GetContextualName(entity, baseName, grammaticalCase, declension, nounNumber);
+            return new LocValueString(escaped ? FormattedMessage.EscapeText(result) : result);
+        }
+
+        private static bool IsGermanProperName(EntityLocData data)
+        {
+            return data.Attributes.GetValueOrDefault("gender") == "proper" ||
+                   data.Attributes.GetValueOrDefault("proper") == "true";
+        }
+
+        private static string NormalizeGermanDeclension(string declension, string number)
+        {
+            // There is no indefinite article in the plural.
+            return declension == "indefinite"
+                ? number == "plural" ? "strong" : "mixed"
+                : declension;
+        }
+
+        private string FormatGermanBaseName(string prototypeId, string baseName, EntityLocData data,
+            string gender, string grammaticalCase, string declension, string number)
+        {
+            if (baseName != data.Name || IsGermanProperName(data))
+                return baseName;
+
+            if (TryGetGermanNameAttribute(prototypeId, data.Name, "name-adjective", out var stem) &&
+                TryGetGermanNameAttribute(prototypeId, data.Name, "name-noun", out var noun) &&
+                string.Equals(baseName,
+                    InflectGermanAdjective(stem, gender, "strong", "nominative", number) + " " + noun,
+                    StringComparison.OrdinalIgnoreCase))
+            {
+                if (TryGetGermanNameAttribute(prototypeId, data.Name, $"name-noun-{grammaticalCase}", out var nounForm))
+                    noun = nounForm;
+                return InflectGermanAdjective(stem, gender, declension, grammaticalCase, number) + " " + noun;
+            }
+
+            return TryGetGermanNameAttribute(prototypeId, data.Name, $"name-{grammaticalCase}", out var fullForm)
+                ? fullForm
+                : baseName;
+        }
+
+        /// <summary>
+        /// Case forms belong to the localized base name that defines them.
+        /// Desc-only variants may inherit them; differently named variants must
+        /// provide their own forms instead of inheriting a parent's noun ending.
+        /// </summary>
+        private bool TryGetGermanNameAttribute(string prototypeId, string baseName, string attribute,
+            out string value)
+        {
+            foreach (var parent in _germanPrototypes.EnumerateParents<EntityPrototype>(prototypeId, true))
+            {
+                if (parent == null)
+                    continue;
+                // TryGetString logs an error when a message exists but its
+                // requested optional attribute does not. Read the cached
+                // attribute dictionary instead: missing forms are normal.
+                var data = _loc.GetEntityData(parent.ID);
+                if (data.Name != baseName)
+                    break;
+                if (data.Attributes.TryGetValue(attribute, out var form))
+                {
+                    value = form;
+                    return true;
+                }
+            }
+            value = "";
+            return false;
         }
     }
 }

@@ -2,8 +2,6 @@ using System.Linq;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.IdentityManagement;
-using Content.Shared.NameIdentifier;
-using Content.Shared.NameModifier.EntitySystems;
 using Content.Shared.Radio;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -14,8 +12,6 @@ namespace Content.Server.Chat.Systems;
 
 public sealed partial class ChatSystem
 {
-    [Dependency] private NameModifierSystem _germanEmoteNameModifier = default!;
-
     private void SendEntitySpeak(
         EntityUid source,
         string originalMessage,
@@ -207,24 +203,11 @@ public sealed partial class ChatSystem
         var prototypeId = MetaData(ent).EntityPrototype?.ID;
         var hasArticle = nameOverride == null && prototypeId != null &&
             Loc.TryGetString($"de-entity-article-{prototypeId}", out _);
-        var adjective = "";
-        var baseName = "";
-        if (hasArticle && TryComp<NameIdentifierComponent>(ent, out var identifier) &&
-            identifier.Group is { } group && ProtoMan.Resolve(group, out var groupProto) &&
-            groupProto.ID == "AdjectivePrefix")
-        {
-            adjective = identifier.FullIdentifier;
-            baseName = _germanEmoteNameModifier.GetBaseName(ent);
-        }
-
         // Emotes use Identity.Name, since it doesn't actually involve your voice at all.
         var wrappedMessage = Loc.GetString("chat-manager-entity-me-wrap-message",
             ("entityName", name),
             ("entity", ent),
             ("hasArticle", hasArticle ? "true" : "false"),
-            ("hasAdjective", adjective.Length > 0 ? "true" : "false"),
-            ("adjective", FormattedMessage.EscapeText(adjective)),
-            ("baseName", FormattedMessage.EscapeText(baseName)),
             ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
 
         SendInVoiceRange(ChatChannel.Emotes, action, wrappedMessage, source, range, author);

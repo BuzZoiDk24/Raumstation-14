@@ -47,8 +47,11 @@ public sealed partial class RandomGiftSystem : EntitySystem
         var attributes = Loc.GetEntityData(component.SelectedEntity).Attributes;
         attributes.TryGetValue("gender", out var gender);
         attributes.TryGetValue("number", out var number);
+        var proper = gender == "proper" ||
+                     attributes.TryGetValue("proper", out var properName) && properName == "true";
         args.PushText(Loc.GetString("gift-packin-contains", ("name", name),
-            ("gender", gender ?? "neuter"), ("number", number ?? "singular")));
+            ("gender", gender ?? "neuter"), ("number", number ?? "singular"),
+            ("prototype", component.SelectedEntity), ("proper", proper ? "true" : "false")));
     }
 
     private void OnUseInHand(EntityUid uid, RandomGiftComponent component, UseInHandEvent args)

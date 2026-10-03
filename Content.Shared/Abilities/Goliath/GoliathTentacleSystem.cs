@@ -1,4 +1,5 @@
 using Content.Shared.Directions;
+using Content.Shared.Humanoid;
 using Content.Shared.Maps;
 using Content.Shared.Physics;
 using Content.Shared.Popups;
@@ -19,6 +20,7 @@ public sealed partial class GoliathTentacleSystem : EntitySystem
     [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private TurfSystem _turf = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private HumanoidProfileSystem _humanoidProfiles = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -33,7 +35,9 @@ public sealed partial class GoliathTentacleSystem : EntitySystem
 
         // TODO: animation
 
-        _popup.PopupEntity(Loc.GetString("tentacle-ability-use-popup", ("entity", args.Performer)), args.Performer, type: PopupType.SmallCaution);
+        var bodySex = _humanoidProfiles.GetBodySex(args.Performer)?.ToString().ToLowerInvariant() ?? "unsexed";
+        _popup.PopupEntity(Loc.GetString("tentacle-ability-use-popup",
+            ("entity", args.Performer), ("bodySex", bodySex)), args.Performer, type: PopupType.SmallCaution);
         _stun.TryAddStunDuration(args.Performer, TimeSpan.FromSeconds(0.8f));
 
         var coords = args.Target;

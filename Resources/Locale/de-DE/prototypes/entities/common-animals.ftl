@@ -9,30 +9,39 @@ ent-MobGoat = Ziege
     .desc = Ihr Rückgrat besteht aus langen, spitzen Segmenten. Kein Wunder, dass sie so grantig ist.
 
 ent-MobSheepBase = Schaf
+    .name-genitive = Schafs
     .gender = neuter
     .desc = Ein Schaf.
 
 ent-MobSheep = Schaf
+    .name-genitive = Schafs
     .gender = neuter
     .desc = Eine niedliche, gentechnisch veränderte Chemiefabrik, die Milch und Baumwolle produziert.
 
 ent-MobSheepRainbow = Regenbogenschaf
+    .name-genitive = Regenbogenschafs
     .gender = neuter
     .desc = Ein Schaf. Dieses hier scheint... zu leuchten.
 
 ent-MobCorgiBase = Corgi
+    .name-genitive = Corgis
     .gender = masculine
     .desc = Endlich ein Weltraumcorgi!
 
 ent-MobCorgi = Corgi
+    .name-genitive = Corgis
     .gender = masculine
     .desc = Endlich ein Weltraumcorgi!
 
 ent-MobCorgiNarsi = Corgi der Verderbnis
+    .name-genitive = Corgis der Verderbnis
     .gender = masculine
     .desc = Ian! Nein!
 
 ent-MobCorgiPuppy = Corgiwelpe
+    .name-accusative = Corgiwelpen
+    .name-dative = Corgiwelpen
+    .name-genitive = Corgiwelpen
     .gender = masculine
     .desc = Ein kleiner Corgi! Aww...
 
@@ -53,42 +62,52 @@ ent-MobCatSpace = Weltraumkatze
     .desc = Ein Haustier auf Samtpfoten, auf das Schlimmste vorbereitet.
 
 ent-MobCatCaracal = Karakal
+    .name-genitive = Karakals
     .gender = masculine
     .desc = Zum Brüllen komisch.
 
 ent-MobCatKitten = Kätzchen
+    .name-genitive = Kätzchens
     .gender = neuter
     .desc = Klein und flauschig.
 
 ent-BaseMobCarp = Weltraumkarpfen
+    .name-genitive = Weltraumkarpfens
     .gender = masculine
     .desc = Ein Weltraumkarpfen.
 
 ent-MobCarp = Weltraumkarpfen
+    .name-genitive = Weltraumkarpfens
     .gender = masculine
     .desc = Ein Weltraumkarpfen.
 
 ent-MobCarpMagic = Zauberkarpfen
+    .name-genitive = Zauberkarpfens
     .gender = masculine
     .desc = Sieht aus wie irgendein Fisch. Vielleicht ist er magisch.
 
 ent-MobCarpHolo = Holokarpfen
+    .name-genitive = Holokarpfens
     .gender = masculine
     .desc = Ein Karpfen aus holografischer Energie. Zu deinem Leidwesen ist er ziemlich real.
 
 ent-MobCarpRainbow = Regenbogenkarpfen
+    .name-genitive = Regenbogenkarpfens
     .gender = masculine
     .desc = Wow, was für ein glänzendes Fischlein!
 
 ent-MobCarpSalvage = Weltraumkarpfen
+    .name-genitive = Weltraumkarpfens
     .gender = masculine
     .desc = Ein Weltraumkarpfen.
 
 ent-MobCarpDragon = Weltraumkarpfen
+    .name-genitive = Weltraumkarpfens
     .gender = masculine
     .desc = Ein Weltraumkarpfen.
 
 ent-MobCarpDungeon = Weltraumkarpfen
+    .name-genitive = Weltraumkarpfens
     .gender = masculine
     .desc = Ein Weltraumkarpfen.
 

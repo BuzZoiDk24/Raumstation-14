@@ -38,14 +38,11 @@ chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][
 chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Jemand[/BubbleHeader] flüstert: { chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
 
 # Only common nouns explicitly marked for articles use the German noun gender.
-# Their adjective stem is inflected separately for display names and for narration.
+# Reapply all name modifiers for narration, preserving identity overrides.
 chat-manager-entity-me-wrap-message = { $hasArticle ->
     [true] { PROPER($entity) ->
         [true] [italic]{ CAPITALIZE($entityName) } {$message}[/italic]
-       *[false] { $hasAdjective ->
-            [false] [italic]{ CAPITALIZE(DE-ARTICLE($entity, "nominative")) } {$entityName} {$message}[/italic]
-           *[other] [italic]{ CAPITALIZE(DE-ARTICLE($entity, "nominative")) } { DE-ADJECTIVE($adjective, DE-GENDER($entity), "weak") } {$baseName} {$message}[/italic]
-        }
+       *[false] [italic]{ CAPITALIZE(DE-ARTICLE($entity, "nominative")) } { DE-NAME($entity, "nominative", "weak", $entityName) } {$message}[/italic]
     }
    *[false] [italic]{ CAPITALIZE($entityName) } {$message}[/italic]
 }

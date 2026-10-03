@@ -29,8 +29,15 @@ public abstract partial class SharedNameIdentifierSystem : EntitySystem
         if (!group.FullName)
             format = group.Prefix ? "name-identifier-format-prepend" : "name-identifier-format-append";
 
+        var number = args.Number;
+        if (MetaData(ent).EntityPrototype is { } prototype &&
+            Loc.GetEntityData(prototype.ID).Attributes.TryGetValue("number", out var nounNumber))
+            number = nounNumber.ToLowerInvariant();
+
         // We apply the modifier with a low priority to keep it near the base name
         // "Beep (Si-4562) the zombie" instead of "Beep the zombie (Si-4562)"
-        args.AddModifier(format, -10, ("identifier", ent.Comp.FullIdentifier), ("entity", ent.Owner));
+        args.AddModifier(format, -10, ("identifier", ent.Comp.FullIdentifier), ("entity", ent.Owner),
+            ("nameCase", args.NameCase), ("adjectiveDeclension", args.AdjectiveDeclension),
+            ("number", number), ("capitalizePrefix", args.CapitalizePrefix ? "true" : "false"));
     }
 }

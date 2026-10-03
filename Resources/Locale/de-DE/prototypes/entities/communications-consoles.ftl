@@ -9,6 +9,8 @@ ent-SyndicateComputerComms = Syndikat-Kommunikationskonsole
     .desc = Eine Konsole, die sich aus der Ferne in die Kommunikationssysteme der Station hacken kann. Eine Durchsage verrät der Station deine Anwesenheit.
 
 ent-WizardComputerComms = Magische Kommunikationskonsole
+    .name-adjective = magisch
+    .name-noun = Kommunikationskonsole
     .gender = feminine
     .desc = Eine Konsole, die deine Worte auf magische Weise an die Station überträgt. Eine Durchsage verrät der Station deine Anwesenheit.
 
@@ -25,6 +27,8 @@ ent-SyndicateCommsComputerCircuitboard = Syndikat-Kommunikationsplatine
     .desc = Eine Computerplatine für eine Kommunikationskonsole des Syndikats.
 
 ent-WizardCommsComputerCircuitboard = Magische Kommunikationsplatine
+    .name-adjective = magisch
+    .name-noun = Kommunikationsplatine
     .gender = feminine
     .desc = Eine Computerplatine für eine magische Kommunikationskonsole.
 

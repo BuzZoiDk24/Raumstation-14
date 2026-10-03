@@ -1,7 +1,10 @@
 flatpack-unpack-no-room = No room to unpack!
 flatpack-examine = Use a [color=yellow]multitool[/color] to unpack this.
 flatpack-entity-name = {$name} flatpack
-flatpack-entity-description = Ein Bausatz, aus dem sich { DE-ARTICLE($gender, "nominative", $number, article: "indefinite") } { $name } zusammenbauen lässt.
+flatpack-entity-description = Ein Bausatz, aus dem sich { $number ->
+    [plural] { DE-NAME($prototype, "nominative", "indefinite") } zusammenbauen lassen.
+   *[other] { DE-ARTICLE($gender, "nominative", $number, article: "indefinite") } { DE-NAME($prototype, "nominative", "indefinite") } zusammenbauen lässt.
+    }
 
 flatpacker-item-slot-name = Machine board slot
 flatpacker-ui-title = Flatpacker 1001

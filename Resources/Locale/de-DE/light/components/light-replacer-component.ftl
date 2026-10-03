@@ -7,7 +7,7 @@ comp-light-replacer-missing-light = No {MAKEPLURAL($light-name)} left in {THE($l
 comp-light-replacer-insert-broken-light = You can't insert broken lights!
 
 # Shown when a player attempts to replace a light with the same color & type as the active light.
-comp-light-replacer-same-light = In dieser Fassung steckt bereits { DE-ARTICLE($light, "nominative", article: "indefinite") } { $light }!
+comp-light-replacer-same-light = In dieser Fassung steckt bereits { DE-ARTICLE($light, "nominative", article: "indefinite") } { DE-NAME($light, "nominative", "indefinite") }!
 
 # Radial Menu messages
 comp-light-replacer-eject-specified-lights = Eject all {MAKEPLURAL($light)}.

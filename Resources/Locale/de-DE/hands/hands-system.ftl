@@ -11,6 +11,9 @@ comp-hands-examine-empty = { GENDER($user) ->
     [neuter] Es
    *[other] { $user }
     } hält nichts in den Händen.
-comp-hands-examine-wrapper = { DE-ARTICLE($itemEntity, "accusative", article: "indefinite") } [color=paleturquoise]{ $item }[/color]
+comp-hands-examine-wrapper = { ATTRIB($itemEntity, "number") ->
+    [plural] { "" }
+   *[other] { DE-ARTICLE($itemEntity, "accusative", article: "indefinite") }{ " " }
+    }[color=paleturquoise]{ DE-NAME($itemEntity, "accusative", "indefinite", $item) }[/color]
 
 hands-system-blocked-by = Blockiert durch

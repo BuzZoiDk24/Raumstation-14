@@ -1,0 +1,24 @@
+test-de-adjective = { DE-ADJECTIVE($stem, $gender, $form, $case, $number) }
+test-de-adjective-default = { DE-ADJECTIVE("staubig", "masculine", "strong") }
+test-de-name-definite = { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") }
+test-de-name-indefinite = { DE-ARTICLE($entity, "accusative", article: "indefinite") } { DE-NAME($entity, "accusative", "indefinite") }
+test-de-name-dative = { DE-ARTICLE($entity, "dative", article: "indefinite") } { DE-NAME($entity, "dative", "indefinite") }
+test-de-name-genitive = { DE-ARTICLE($entity, "genitive") } { DE-NAME($entity, "genitive", "weak") }
+test-de-name-override = { DE-NAME($entity, "accusative", "weak", $name) }
+
+ent-GermanAdjectiveTestBackpack = Rucksack
+    .desc = Testobjekt für deutsche Namensformen.
+    .gender = masculine
+    .name-genitive = Rucksacks
+ent-GermanAdjectiveTestMouse = Maus
+    .desc = Testobjekt für deutsche Namensformen.
+    .gender = feminine
+ent-GermanAdjectiveTestTool = Werkzeug
+    .desc = Testobjekt für deutsche Namensformen.
+    .gender = neuter
+    .name-genitive = Werkzeugs
+ent-GermanAdjectiveTestBoots = Stiefel
+    .desc = Testobjekt für deutsche Namensformen.
+    .gender = masculine
+    .number = plural
+    .name-dative = Stiefeln

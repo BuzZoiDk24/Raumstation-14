@@ -6,13 +6,13 @@ strippable-component-cannot-put-message = Das lässt sich dort nicht verstauen!
 strippable-component-item-slot-free-message = Dort ist nichts!
 strippable-component-cannot-unequip-message = Das lässt sich nicht ablegen!
 strippable-component-cannot-drop-message = Das lässt sich nicht fallen lassen!
-strippable-component-alert-owner = {$user} nimmt dir { DE-ARTICLE($item, "accusative") } {$item} ab!
+strippable-component-alert-owner = {$user} nimmt dir { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") } ab!
 strippable-component-alert-owner-hidden = Jemand fummelt an deiner Ausrüstung herum!
-strippable-component-alert-owner-insert = {$user} legt dir { DE-ARTICLE($item, "accusative") } {$item} an!
-strippable-component-alert-owner-insert-hand = {$user} drückt dir { DE-ARTICLE($item, "accusative") } {$item} in die Hand!
+strippable-component-alert-owner-insert = {$user} legt dir { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") } an!
+strippable-component-alert-owner-insert-hand = {$user} drückt dir { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") } in die Hand!
 
 # Warnung beim Hantieren an angelegten Gegenständen.
-strippable-component-alert-owner-interact = {$user} hantiert an { DE-ARTICLE($item, "dative") } {$item} herum!
+strippable-component-alert-owner-interact = {$user} hantiert an { DE-ARTICLE($item, "dative") } { DE-NAME($item, "dative", "weak") } herum!
 
 # Kontextmenü
 strip-verb-get-data-text = Durchsuchen

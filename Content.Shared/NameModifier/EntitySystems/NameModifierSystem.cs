@@ -39,6 +39,24 @@ public sealed partial class NameModifierSystem : EntitySystem
     }
 
     /// <summary>
+    /// Reapplies name modifiers for a grammatical context without changing metadata.
+    /// The normal display name remains capitalized and in the nominative.
+    /// </summary>
+    public string GetContextualName(EntityUid entity, string baseName, string grammaticalCase,
+        string declension, string number)
+    {
+        var args = new RefreshNameModifiersEvent(baseName)
+        {
+            NameCase = grammaticalCase,
+            AdjectiveDeclension = declension,
+            Number = number,
+            CapitalizePrefix = false,
+        };
+        RaiseLocalEvent(entity, ref args);
+        return args.GetModifiedName();
+    }
+
+    /// <summary>
     /// Raises a <see cref="RefreshNameModifiersEvent"/> to gather modifiers and
     /// updates the entity's name to its base name with modifiers applied.
     /// This will add a <see cref="NameModifierComponent"/> if any modifiers are added.
@@ -98,6 +116,13 @@ public sealed class RefreshNameModifiersEvent : IInventoryRelayEvent
     /// this so you don't include other modifiers.
     /// </summary>
     public readonly string BaseName;
+
+    // Optional grammatical context. Default values preserve display-name formatting
+    // and are ignored by localizations that do not use adjective inflection.
+    public string NameCase = "nominative";
+    public string AdjectiveDeclension = "strong";
+    public string Number = "singular";
+    public bool CapitalizePrefix = true;
 
     private readonly List<(LocId LocId, int Priority, (string, object)[] ExtraArgs)> _modifiers = [];
 

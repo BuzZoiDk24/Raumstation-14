@@ -6,12 +6,12 @@ comp-storage-invalid-container = Das gehört nicht dort hinein!
 comp-storage-anchored-failure = Fest verankerte Gegenstände kannst du nicht verstauen.
 comp-storage-cant-drop = { PROPER($entity) ->
     [true] Du kannst {$entity} nicht loslassen!
-   *[false] { GENDER($entity) ->
-        [masculine] Du kannst { DE-ARTICLE($entity, "accusative") } {$entity} nicht loslassen!
-        [feminine] Du kannst { DE-ARTICLE($entity, "accusative") } {$entity} nicht loslassen!
-        [neuter] Du kannst { DE-ARTICLE($entity, "accusative") } {$entity} nicht loslassen!
-        [male] Du kannst { DE-ARTICLE($entity, "accusative") } {$entity} nicht loslassen!
-        [female] Du kannst { DE-ARTICLE($entity, "accusative") } {$entity} nicht loslassen!
+   *[false] { DE-GENDER($entity) ->
+        [masculine] Du kannst { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") } nicht loslassen!
+        [feminine] Du kannst { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") } nicht loslassen!
+        [neuter] Du kannst { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") } nicht loslassen!
+        [male] Du kannst { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") } nicht loslassen!
+        [female] Du kannst { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") } nicht loslassen!
        *[other] Das kannst du nicht loslassen!
     }
 }
