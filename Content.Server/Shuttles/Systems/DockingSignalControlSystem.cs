@@ -12,7 +12,8 @@ public sealed partial class DockingSignalControlSystem : EntitySystem
     [Dependency] private DockingSystem _dockingSystem = default!;
 
     [SubscribeLocalEvent]
-    private void OnMapInit(Entity<DockingSignalControlComponent> ent, ref MapInitEvent args)
+    // Register ports before ComponentStartup validates saved device links.
+    private void OnInit(Entity<DockingSignalControlComponent> ent, ref ComponentInit args)
     {
         _deviceLinkSystem.EnsureSourcePorts(ent, ent.Comp.DockStatusSignalPort);
         _deviceLinkSystem.EnsureSinkPorts(ent, ent.Comp.DockTogglePort);

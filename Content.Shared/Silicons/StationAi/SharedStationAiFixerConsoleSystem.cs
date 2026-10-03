@@ -104,7 +104,8 @@ public abstract partial class SharedStationAiFixerConsoleSystem : EntitySystem
     private void OnExamined(Entity<StationAiFixerConsoleComponent> ent, ref ExaminedEvent args)
     {
         var message = TryGetStationAiHolder(ent, out var holder) ?
-            Loc.GetString("station-ai-fixer-console-examination-station-ai-holder-present", ("holder", Name(holder.Value))) :
+            Loc.GetString("station-ai-fixer-console-examination-station-ai-holder-present",
+                ("holder", Name(holder.Value)), ("holderEntity", holder.Value)) :
             Loc.GetString("station-ai-fixer-console-examination-station-ai-holder-absent");
 
         args.PushMarkup(message);

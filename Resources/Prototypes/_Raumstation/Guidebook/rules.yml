@@ -1,0 +1,170 @@
+# Raumstation 14 rules. All detail pages are reached through rules hyperlinks.
+# The existing DefaultRuleset remains the server entry point.
+
+- type: guideEntry
+  id: RaumstationRuleRespect
+  name: guide-entry-raumstation-rules-respect
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Respect.xml"
+
+- type: guideEntry
+  id: RaumstationRuleContent
+  name: guide-entry-raumstation-rules-content
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Content.xml"
+
+- type: guideEntry
+  id: RaumstationRuleNames
+  name: guide-entry-raumstation-rules-names
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Names.xml"
+
+- type: guideEntry
+  id: RaumstationRuleFairPlay
+  name: guide-entry-raumstation-rules-fairplay
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/FairPlay.xml"
+
+- type: guideEntry
+  id: RaumstationRuleAccounts
+  name: guide-entry-raumstation-rules-accounts
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Accounts.xml"
+
+- type: guideEntry
+  id: RaumstationRuleAdminHelp
+  name: guide-entry-raumstation-rules-adminhelp
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/AdminHelp.xml"
+
+- type: guideEntry
+  id: RaumstationRuleLanguage
+  name: guide-entry-raumstation-rules-language
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Language.xml"
+
+- type: guideEntry
+  id: RaumstationRuleRoleplay
+  name: guide-entry-raumstation-rules-roleplay
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Roleplay.xml"
+
+- type: guideEntry
+  id: RaumstationRuleMetaKnowledge
+  name: guide-entry-raumstation-rules-metaknowledge
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/MetaKnowledge.xml"
+
+- type: guideEntry
+  id: RaumstationRuleEscalation
+  name: guide-entry-raumstation-rules-escalation
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Escalation.xml"
+
+- type: guideEntry
+  id: RaumstationRuleSelfAntag
+  name: guide-entry-raumstation-rules-selfantag
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/SelfAntag.xml"
+
+- type: guideEntry
+  id: RaumstationRuleRoles
+  name: guide-entry-raumstation-rules-roles
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Roles.xml"
+
+- type: guideEntry
+  id: RaumstationRuleAbsence
+  name: guide-entry-raumstation-rules-absence
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Absence.xml"
+
+- type: guideEntry
+  id: RaumstationRuleRoundEnd
+  name: guide-entry-raumstation-rules-roundend
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/RoundEnd.xml"
+
+- type: guideEntry
+  id: RaumstationRuleArrivals
+  name: guide-entry-raumstation-rules-arrivals
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Arrivals.xml"
+
+- type: guideEntry
+  id: RaumstationRuleRoleTypes
+  name: guide-entry-raumstation-rules-roletypes
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/RoleTypes.xml"
+
+- type: guideEntry
+  id: RaumstationRuleAntagonists
+  name: guide-entry-raumstation-rules-antagonists
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Antagonists.xml"
+
+- type: guideEntry
+  id: RaumstationRuleTeamAntagonists
+  name: guide-entry-raumstation-rules-teamantagonists
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/TeamAntagonists.xml"
+
+- type: guideEntry
+  id: RaumstationRuleDestruction
+  name: guide-entry-raumstation-rules-destruction
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Destruction.xml"
+
+- type: guideEntry
+  id: RaumstationRuleGhostRoles
+  name: guide-entry-raumstation-rules-ghostroles
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/GhostRoles.xml"
+
+- type: guideEntry
+  id: RaumstationRuleCommand
+  name: guide-entry-raumstation-rules-command
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Command.xml"
+
+- type: guideEntry
+  id: RaumstationRuleSecurity
+  name: guide-entry-raumstation-rules-security
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/Security.xml"
+
+- type: guideEntry
+  id: RaumstationRuleSpaceLaw
+  name: guide-entry-raumstation-rules-spacelaw
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/SpaceLaw.xml"
+
+- type: guideEntry
+  id: RaumstationRuleSiliconLaws
+  name: guide-entry-raumstation-rules-siliconlaws
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/SiliconLaws.xml"
+
+- type: guideEntry
+  id: RaumstationRuleSiliconPriority
+  name: guide-entry-raumstation-rules-siliconpriority
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/SiliconPriority.xml"
+
+- type: guideEntry
+  id: RaumstationRuleSiliconChanges
+  name: guide-entry-raumstation-rules-siliconchanges
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/SiliconChanges.xml"
+
+- type: guideEntry
+  id: RaumstationRuleSiliconInterpretation
+  name: guide-entry-raumstation-rules-siliconinterpretation
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/SiliconInterpretation.xml"
+
+- type: guideEntry
+  id: RaumstationRuleSiliconOrders
+  name: guide-entry-raumstation-rules-siliconorders
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/de-DE/ServerRules/Raumstation14/SiliconOrders.xml"

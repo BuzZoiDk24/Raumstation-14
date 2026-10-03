@@ -1,39 +1,114 @@
 <Document>
-# Serverregeln
+# Serverregeln für Raumstation 14
 
 Willkommen auf Raumstation 14. Spielt miteinander, lasst anderen Raum für ihre Geschichten und achtet auf die Anweisungen des Serverteams. Diese Regeln gelten auch für Funk, Chat und Charakternamen.
 
-## Umgang miteinander
+Die folgenden Abschnitte geben einen Überblick. Die verlinkten Seiten erläutern die einzelnen Regeln mit Beispielen. Die Beispiele sind nicht abschließend. Entscheidend sind die Regel, deine Rolle und die konkrete Spielsituation.
 
-1. Behandelt andere respektvoll. Beleidigungen gegen Spielende, Belästigung, Diskriminierung, Drohungen und gezielte Provokationen sind nicht erlaubt. Ein Streit zwischen Figuren ist Teil des Spiels; Angriffe auf die Menschen dahinter sind es nicht.
+Die Grundregeln gelten jederzeit, auch zwischen Runden und für Geister. Rollenspielregeln gelten für die beteiligten Figuren während einer Runde, bis die Rundenübersicht erscheint. Besondere Rollen können einzelne Vorgaben verändern, heben die Grundregeln aber nicht auf. Abweichende Vorgaben für eine Übungsrunde müssen ausdrücklich vom Serverteam angekündigt werden.
 
-2. Haltet sexuelle Inhalte und sexualisiertes Rollenspiel aus dem Spiel heraus. Auch extreme Gewaltdarstellungen, die nur schockieren sollen, haben hier keinen Platz.
+## Grundregeln
 
-3. Wählt Namen, die zu einer Figur auf einer Raumstation passen. Namen mit beleidigenden, anstößigen oder absichtlich störenden Inhalten sind nicht erlaubt.
+- [textlink="Respekt und Umgang miteinander" link="RaumstationRuleRespect"]
+  Behandelt andere respektvoll und trennt Konflikte zwischen Figuren von Angriffen auf Spielende.
+
+- [textlink="Keine sexuellen oder schockierenden Inhalte" link="RaumstationRuleContent"]
+  Sexuelle Inhalte, sexualisiertes Rollenspiel und gezielte Schockinhalte sind nicht erlaubt.
+
+- [textlink="Passende Charakternamen" link="RaumstationRuleNames"]
+  Wählt Namen und Beschreibungen, die zu einer Figur auf einer Raumstation passen.
+
+- [textlink="Adminhilfe und Entscheidungen des Serverteams" link="RaumstationRuleAdminHelp"]
+  Befolgt die Anweisungen des Serverteams und klärt Regelverstöße über die Adminhilfe.
+
+- [textlink="Sprache und Chatkanäle" link="RaumstationRuleLanguage"]
+  Raumstation 14 ist ein deutschsprachiger Server. Trennt Gespräche im Spiel von Gesprächen außerhalb des Spiels.
+
 
 ## Fairplay
 
-4. Nutzt keine Cheats, Makros, Exploits oder Fehler aus, um euch Vorteile zu verschaffen oder die Runde zu stören. Meldet solche Fehler dem Serverteam.
+- [textlink="Fairplay und Spielfehler" link="RaumstationRuleFairPlay"]
+  Nutzt keine Cheats, unfairen Makros oder Spielfehler aus, um euch Vorteile zu verschaffen.
 
-5. Spielt mit dem Wissen eurer Figur. Informationen aus anderen Runden, Zuschauermodus, Streams oder Gesprächen außerhalb des Spiels dürfen eure Entscheidungen in der laufenden Runde nicht beeinflussen. Gebt geheime Rundeninformationen nicht außerhalb des Spiels weiter.
+- [textlink="Konten und Sanktionen" link="RaumstationRuleAccounts"]
+  Umgeht keine Sperren oder Einschränkungen und spielt nicht mehrere Konten gleichzeitig.
 
-6. Umgeht keine Sanktionen. Nutzt keine weiteren Konten, um trotz einer Sperre oder Einschränkung mitzuspielen.
 
-## Rollenspiel auf der Station
+## Rollenspielregeln
 
-7. Spielt eine Figur mit nachvollziehbaren Zielen und reagiert auf das, was um sie herum passiert. Gebt anderen Gelegenheit, auf eure Handlungen zu antworten. Sprecht im Spiel als eure Figur; Fragen zu Technik, Regeln und Streitfällen gehören in die dafür vorgesehenen Kanäle.
+- [textlink="Eine nachvollziehbare Figur spielen" link="RaumstationRuleRoleplay"]
+  Spielt eine Figur mit nachvollziehbaren Zielen und gebt anderen Raum für ihre Geschichten.
 
-8. Übernehmt nur Aufgaben, die zu eurer Rolle passen, oder spielt aus, warum eure Figur etwas anderes tut. Besonders bei verantwortungsvollen Berufen soll eure Figur die Grundaufgaben kennen und sich um ihre Abteilung kümmern. Wer etwas noch lernt, kann im Spiel um Hilfe bitten.
+- [textlink="Figurenwissen und Wissen außerhalb des Spiels" link="RaumstationRuleMetaKnowledge"]
+  Spielt mit dem Wissen eurer Figur. Nutzt keine Zuschauerinformationen oder Absprachen außerhalb des Spiels.
 
-9. Haltet Konflikte verhältnismäßig. Nicht jeder Streit rechtfertigt Gewalt. Gebt anderen Figuren die Chance, zu reden, zu fliehen oder sich zu ergeben, wenn die Situation das zulässt.
+- [textlink="Konflikte und angemessene Eskalation" link="RaumstationRuleEscalation"]
+  Haltet Konflikte verhältnismäßig. Nicht jeder Streit rechtfertigt Gewalt.
 
-10. Schadet der Station und der Crew nicht absichtlich ohne eine entsprechende Rolle, einen nachvollziehbaren Anlass im Spiel oder eine ausdrückliche Freigabe des Serverteams. Sabotage, grundloser Angriff und das mutwillige Vereiteln der Runde zählen dazu.
+- [textlink="Keine grundlosen Angriffe oder Sabotage" link="RaumstationRuleSelfAntag"]
+  Ohne passende Rolle, nachvollziehbaren Anlass im Spiel oder Freigabe des Serverteams sind schwere Angriffe und Sabotage nicht erlaubt.
 
-11. Wer eine Antagonistenrolle hat, darf Konflikte auslösen und Ziele verfolgen. Lasst dabei Raum für Gegenwehr und Geschichten anderer Figuren. Vermeidet Aktionen, die ohne Bezug zu eurer Rolle möglichst vielen das Spiel verderben.
+- [textlink="Aufgaben, Zusammenarbeit und Rollenwechsel" link="RaumstationRuleRoles"]
+  Kümmert euch um eure Aufgabe und spielt nachvollziehbar aus, wenn eure Figur andere Aufgaben übernimmt.
 
-12. Bleibt bis zum Ende der Runde im Spiel: Nutzt den Rundenabschluss nicht als Freibrief für grundlose Gewalt oder Zerstörung. Geht mit bewusstlosen, gefesselten und festgesetzten Figuren so um, dass ihre Spielenden weiter beteiligt bleiben können, soweit die Situation es erlaubt.
+- [textlink="Abwesenheit und Rollenabgabe" link="RaumstationRuleAbsence"]
+  Gebt wichtige Rollen nach Möglichkeit ab, wenn ihr länger nicht spielen könnt.
+
+- [textlink="Rundenende und Ablauf der Schicht" link="RaumstationRuleRoundEnd"]
+  Die Regeln gelten bis zum tatsächlichen Rundenende. Der Shuttle-Aufruf erlaubt keine grundlose Gewalt.
+
+- [textlink="Ankunft und neue Spieler" link="RaumstationRuleArrivals"]
+  Lasst ankommenden Spielern eine faire Gelegenheit, auf der Station ins Spiel einzusteigen.
+
+
+## Antagonisten und besondere Rollen
+
+- [textlink="Rollenarten und besondere Anweisungen" link="RaumstationRuleRoleTypes"]
+  Die Rolleninformationen des Spiels bestimmen, welche Freiheiten und Pflichten deine Figur hat.
+
+- [textlink="Antagonisten und ihre Ziele" link="RaumstationRuleAntagonists"]
+  Verfolgt eure Ziele und schafft Konflikte, ohne die Grundregeln oder Rollenbeschränkungen zu ignorieren.
+
+- [textlink="Zusammenarbeit im Antagonistenteam" link="RaumstationRuleTeamAntagonists"]
+  Unterstützt das eigene Team und arbeitet nicht absichtlich gegen gemeinsame Ziele.
+
+- [textlink="Sabotage und Zerstörung" link="RaumstationRuleDestruction"]
+  Richtet Ausmaß und Folgen eurer Sabotage nach der Rolle, dem Ziel und der Spielsituation.
+
+- [textlink="Geisterrollen und Rolleninformationen" link="RaumstationRuleGhostRoles"]
+  Lest vor der Übernahme einer Geisterrolle ihre Beschreibung und nutzt kein Wissen aus der Beobachtung.
+
+
+## Sicherheitsdienst und Kommando
+
+- [textlink="Verantwortung des Kommandos" link="RaumstationRuleCommand"]
+  Nutzt Führungsrollen, um die Schicht zu organisieren, und gebt anderen Gelegenheit, ihre Aufgaben zu erfüllen.
+
+- [textlink="Verantwortung des Sicherheitsdienstes" link="RaumstationRuleSecurity"]
+  Reagiert verhältnismäßig auf Gefahren und behandelt Verdächtige und Gefangene so, dass sie weiter mitspielen können.
+
+- [textlink="Stationsrecht und Serverregeln" link="RaumstationRuleSpaceLaw"]
+  Stationsrecht regelt das Verhalten der Figuren. Serverregeln regeln das Verhalten der Spielenden.
+
+
+## KI und Cyborgs
+
+- [textlink="KI, Cyborgs und ihre Gesetze" link="RaumstationRuleSiliconLaws"]
+  Spielt nach den tatsächlich geltenden Gesetzen. Diese stehen über gewöhnlichen Rollenspielpflichten, aber nicht über den Grundregeln.
+
+- [textlink="Reihenfolge und Widersprüche von Gesetzen" link="RaumstationRuleSiliconPriority"]
+  Bei widersprüchlichen Gesetzen hat das höher priorisierte Gesetz Vorrang.
+
+- [textlink="Gesetzesänderungen" link="RaumstationRuleSiliconChanges"]
+  Veranlasst oder erlaubt nicht freiwillig die Änderung eures geltenden Gesetzessatzes.
+
+- [textlink="Einheitliche Auslegung von Gesetzen" link="RaumstationRuleSiliconInterpretation"]
+  Legt Begriffe und Pflichten nachvollziehbar aus und wechselt die Auslegung nicht nach persönlichem Vorteil.
+
+- [textlink="Befehle, Grenzen und widersprüchliche Aufträge" link="RaumstationRuleSiliconOrders"]
+  Befolgt Befehle entsprechend euren Gesetzen und löst Widersprüche nachvollziehbar.
 
 ## Fragen und Entscheidungen
 
-13. Befolgt Anweisungen des Serverteams. Nutzt die Adminhilfe, wenn ihr eine Regel nicht einordnen könnt, einen Fehler entdeckt oder einen Vorfall melden möchtet. Klärt Regelstreitigkeiten nicht durch Vergeltung im Spiel; das Serverteam entscheidet im Zweifelsfall über die Anwendung dieser Regeln.
+Wenn du unsicher bist, frage über die [textlink="Adminhilfe" link="RaumstationRuleAdminHelp"] nach. Klärt Regelstreitigkeiten nicht durch Vergeltung im Spiel. Das Serverteam entscheidet im Zweifelsfall über die Anwendung dieser Regeln.
 </Document>

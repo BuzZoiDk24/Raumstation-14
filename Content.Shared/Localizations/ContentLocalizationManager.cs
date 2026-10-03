@@ -365,6 +365,11 @@ namespace Content.Shared.Localizations
             return new LocValueString("neuter");
         }
 
+        /// <summary>
+        /// Formats a definite article by default. Use article: "indefinite"
+        /// for ein/eine; grammatical case and noun metadata are shared.
+        /// Indefinite plurals have no article.
+        /// </summary>
         private ILocValue FormatGermanArticle(LocArgs args)
         {
             if (args.Args.Count < 2)
@@ -393,6 +398,33 @@ namespace Content.Shared.Localizations
                 metadata.EntityPrototype is { } prototype &&
                 _loc.GetEntityData(prototype.ID).Attributes.TryGetValue("number", out var nounNumber))
                 number = nounNumber.ToLowerInvariant();
+
+            var indefinite = args.Options.TryGetValue("article", out var article) &&
+                article.Value is string articleType &&
+                articleType.Equals("indefinite", StringComparison.OrdinalIgnoreCase);
+
+            if (indefinite)
+            {
+                if (number == "plural")
+                    return new LocValueString("");
+
+                return (genus, grammaticalCase) switch
+                {
+                    ("masculine", "nominative") => new LocValueString("ein"),
+                    ("masculine", "accusative") => new LocValueString("einen"),
+                    ("masculine", "dative") => new LocValueString("einem"),
+                    ("masculine", "genitive") => new LocValueString("eines"),
+
+                    ("feminine", "nominative" or "accusative") => new LocValueString("eine"),
+                    ("feminine", "dative" or "genitive") => new LocValueString("einer"),
+
+                    ("neuter", "nominative" or "accusative") => new LocValueString("ein"),
+                    ("neuter", "dative") => new LocValueString("einem"),
+                    ("neuter", "genitive") => new LocValueString("eines"),
+
+                    _ => new LocValueString("")
+                };
+            }
 
             if (number == "plural")
             {

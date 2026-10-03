@@ -44,7 +44,11 @@ public sealed partial class RandomGiftSystem : EntitySystem
             return;
 
         var name = ProtoMan.Index<EntityPrototype>(component.SelectedEntity).Name;
-        args.PushText(Loc.GetString("gift-packin-contains", ("name", name)));
+        var attributes = Loc.GetEntityData(component.SelectedEntity).Attributes;
+        attributes.TryGetValue("gender", out var gender);
+        attributes.TryGetValue("number", out var number);
+        args.PushText(Loc.GetString("gift-packin-contains", ("name", name),
+            ("gender", gender ?? "neuter"), ("number", number ?? "singular")));
     }
 
     private void OnUseInHand(EntityUid uid, RandomGiftComponent component, UseInHandEvent args)

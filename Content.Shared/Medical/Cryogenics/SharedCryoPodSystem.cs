@@ -212,7 +212,8 @@ public abstract partial class SharedCryoPodSystem : EntitySystem
         {
             using (args.PushGroup(nameof(CryoPodComponent)))
             {
-                args.PushMarkup(Loc.GetString("cryo-pod-examine", ("beaker", Name(container.Value))));
+                args.PushMarkup(Loc.GetString("cryo-pod-examine",
+                    ("beaker", Name(container.Value)), ("beakerEntity", container.Value)));
                 if (containerSolution.Volume == 0)
                 {
                     args.PushMarkup(Loc.GetString("cryo-pod-empty-beaker"));
