@@ -10,5 +10,11 @@ clumsy-defibrillator-fail-message = Oops! You zapped yourself.
 clumsy-catch-fail-message-user = { CAPITALIZE(THE($item)) } hits your head!
 clumsy-catch-fail-message-others = { CAPITALIZE(THE($item)) } hits { THE($catcher) }'s head!
 
-clumsy-grab-fail-message-user = { CAPITALIZE(DE-ARTICLE($item, "nominative")) } { DE-NAME($item, "nominative", "weak") } rutscht dir aus der Hand...
-clumsy-grab-fail-message-others = { CAPITALIZE(DE-ARTICLE($item, "nominative")) } { DE-NAME($item, "nominative", "weak") } rutscht {$holder} aus der Hand...
+clumsy-grab-fail-message-user = { CAPITALIZE(DE-ARTICLE($item, "nominative")) } { DE-NAME($item, "nominative", "weak") } { ATTRIB($item, "number") ->
+    [plural] rutschen
+   *[other] rutscht
+} dir aus der Hand...
+clumsy-grab-fail-message-others = { CAPITALIZE(DE-ARTICLE($item, "nominative")) } { DE-NAME($item, "nominative", "weak") } { ATTRIB($item, "number") ->
+    [plural] rutschen
+   *[other] rutscht
+} {$holder} aus der Hand...

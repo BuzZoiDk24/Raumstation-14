@@ -1,15 +1,17 @@
 # Gegenstände, die für Dieb- und Verräterziele gezählt werden.
 
-# AltarNanoTrasen
+# AltarNanotrasen
 
-ent-AltarNanoTrasen = NanoTrasen-Altar
+ent-AltarNanotrasen = NanoTrasen-Altar
     .gender = masculine
+    .name-genitive = NanoTrasen-Altars
     .desc = Ein Altar der Götter.
 
 # AmePartFlatpack
 
 ent-AmePartFlatpack = AME-Bausatz
     .gender = masculine
+    .name-genitive = AME-Bausatzes
     .desc = Ein Bausatz zum Errichten eines Antimaterie-Engine-Reaktors.
 
 # AnimalIan
@@ -127,6 +129,7 @@ ent-BibleCommunistManifesto = Kommunistisches Manifest
 
 ent-BibleNarsie = Buch von Nar’Sie
     .gender = neuter
+    .name-genitive = Buchs von Nar’Sie
     .desc = Was kann bei einem blutverschmierten Buch schon schiefgehen?
 
 ent-BibleNanoTrasen = Codex Nanotrasimus
@@ -135,6 +138,7 @@ ent-BibleNanoTrasen = Codex Nanotrasimus
 
 ent-BibleHonk = Frohsinn der Hupmutter
     .gender = masculine
+    .name-genitive = Frohsinns der Hupmutter
     .desc = O große und glorreiche Mutter, Herrin des Frohsinns, Hüterin der Masken und des Schabernacks, gesegnet seist du unter uns Spaßmachern.
 
 ent-BibleRatvar = Tafel von Ratvar
@@ -145,10 +149,12 @@ ent-BibleRatvar = Tafel von Ratvar
 
 ent-BoozeDispenserEmpty = Getränkespender
     .gender = masculine
+    .name-genitive = Getränkespenders
     .desc = Ein Getränkespender mit einem Stellplatz für den zu füllenden Behälter.
 
 ent-BoozeDispenser = Getränkespender
     .gender = masculine
+    .name-genitive = Getränkespenders
     .desc = Ein Getränkespender mit einem Stellplatz für den zu füllenden Behälter.
 
 # BoxFolderQmClipboard
@@ -170,6 +176,7 @@ ent-CaptainIDCard = ID-Karte des Kapitäns
 
 ent-CaptainSabre = Säbel des Kapitäns
     .gender = masculine
+    .name-genitive = Säbels des Kapitäns
     .desc = Eine Zeremonialwaffe des Stationskapitäns.
 
 # CargoShuttleConsoleCircuitboard
@@ -186,42 +193,49 @@ ent-ComputerShuttleCargo = Frachtshuttle-Konsole
 
 ent-ChemDispenserEmpty = Chemikalienspender
     .gender = masculine
+    .name-genitive = Chemikalienspenders
     .desc = Ein Chemikalienspender für den industriellen Einsatz.
 
 ent-ChemDispenser = Chemikalienspender
     .gender = masculine
+    .name-genitive = Chemikalienspenders
     .desc = Ein Chemikalienspender für den industriellen Einsatz.
 
 # ChiefEngineerToolBelt
 
 ent-ClothingBeltChiefEngineer = Werkzeuggürtel des Chefingenieurs
     .gender = masculine
+    .name-genitive = Werkzeuggürtels des Chefingenieurs
     .desc = Bietet Platz für Werkzeug und sieht dabei ziemlich schick aus.
 
 # ClothingEyesHuds
 
 ent-ClothingEyesHudDiagnostic = Diagnose-HUD
     .gender = neuter
+    .name-genitive = Diagnose-HUDs
     .desc = Ein HUD, das den Zustand von Robotern und Exosuits analysiert. Hergestellt aus echtem Sehborgium.
 
 ent-ClothingEyesHudMedical = Medizin-HUD
     .gender = neuter
+    .name-genitive = Medizin-HUDs
     .desc = Ein HUD, das die Menschen in deinem Sichtfeld scannt und ihren Gesundheitszustand anzeigt.
 
 ent-ClothingEyesHudSecurity = Sicherheits-HUD
     .gender = neuter
+    .name-genitive = Sicherheits-HUDs
     .desc = Ein HUD, das ID-Status und Sicherheitsakten der Menschen in deinem Sichtfeld anzeigt.
 
 ent-ClothingEyesHudCommand = Kommando-HUD
     .gender = neuter
+    .name-genitive = Kommando-HUDs
     .desc = Ein HUD, das den ID-Status der Menschen in deinem Sichtfeld anzeigt.
 
 ent-ClothingEyesHudBeer = Bierbrille
-    .gender = neuter
+    .gender = feminine
     .desc = Eine Sonnenbrille, die Reagenzien erkennt und dir im Handumdrehen ein Gefühl für die Zähflüssigkeit von Getränken verleiht.
 
 ent-ClothingEyesHudFriedOnion = Zwiebelbrille
-    .gender = neuter
+    .gender = feminine
     .desc = Ein HUD mit einer ungewöhnlichen Ausstattung.
 
 ent-ClothingEyesHudOnionBeer = Thungerst-Brille
@@ -230,14 +244,17 @@ ent-ClothingEyesHudOnionBeer = Thungerst-Brille
 
 ent-ClothingEyesHudMedOnion = Medonion-HUD
     .gender = neuter
+    .name-genitive = Medonion-HUDs
     .desc = Ein HUD mit einer ungewöhnlichen Ausstattung.
 
 ent-ClothingEyesHudMedOnionBeer = Medthungerst-HUD
     .gender = neuter
+    .name-genitive = Medthungerst-HUDs
     .desc = Ein HUD mit einer ungewöhnlichen Ausstattung.
 
 ent-ClothingEyesHudMedSec = MedSec-HUD
     .gender = neuter
+    .name-genitive = MedSec-HUDs
     .desc = Ein HUD, das medizinische und Sicherheitsanzeigen verbindet.
 
 ent-ClothingEyesHudMultiversal = Multiversales HUD
@@ -249,18 +266,21 @@ ent-ClothingEyesHudMultiversal = Multiversales HUD
 
 ent-ClothingEyesHudOmni = Omni-HUD
     .gender = neuter
+    .name-genitive = Omni-HUDs
     .desc = Ein HUD mit einer ungewöhnlichen Ausstattung.
 
 ent-ClothingEyesHudSyndicate = Syndikatsvisier
     .gender = neuter
+    .name-genitive = Syndikatsvisiers
     .desc = Ein professionelles HUD des Syndikats, mit dem du Menschen leichter aufspürst und anschließend ausschaltest.
 
 ent-ClothingEyesHudSyndicateAgent = Medizinvisier des Syndikats
     .gender = neuter
+    .name-genitive = Medizinvisiers des Syndikats
     .desc = Das medizinische HUD der Syndikatsanitäter. Damit erkennst du den Zustand deines Teams auf einen Blick.
 
 ent-ClothingEyesGlassesHiddenSecurity = Sonnenbrille
-    .gender = neuter
+    .gender = feminine
     .desc = Eine schwarze Sonnenbrille.
 
 ent-ClothingEyesEyepatchHudMedical = Medizinische HUD-Augenklappe
@@ -319,6 +339,7 @@ ent-ClothingHeadHatWarden = Mütze des Wachleiters
 
 ent-ClothingHeadsetAltMedical = Kopfhörer-Headset des Chefarztes
     .gender = neuter
+    .name-genitive = Kopfhörer-Headsets des Chefarztes
     .desc = Eine überarbeitete, modulare Sprechanlage, die über den Ohren sitzt. Nimmt Verschlüsselungsschlüssel auf.
 
 # ClothingNeckClownmedal
@@ -348,6 +369,7 @@ ent-ClothingOuterHardsuitRd = Experimenteller Forschungsraumanzug
 
 ent-ClothingOuterHardsuitVoidParamed = Weltraumanzug des Rettungsdienstes
     .gender = masculine
+    .name-genitive = Weltraumanzugs des Rettungsdienstes
     .desc = Ein Weltraumanzug für den Rettungsdienst.
 
 # ClothingShoesBootsMagAdv
@@ -414,6 +436,7 @@ ent-DoorRemoteXenoborg = Türfernbedienung des Xenoborgs
 
 ent-FaxMachineCaptain = Langstreckenfaxgerät des Kapitäns
     .gender = neuter
+    .name-genitive = Langstreckenfaxgeräts des Kapitäns
     .desc = Bluespace-Technologie im Dienste der Bürokratie.
 
 # FireAxe
@@ -441,18 +464,21 @@ ent-FlippoEngravedLighter = Graviertes Flippo-Feuerzeug der Detektei
 
 ent-FoodMeatCorgi = Corgifleisch bester Qualität
     .gender = neuter
+    .name-genitive = Corgifleisches bester Qualität
     .desc = Die verdorbene Frucht einer abscheulichen Tat. Das Fleisch mag köstlich sein, aber zu welchem Preis?
 
 # ForensicScanner
 
 ent-ForensicScanner = Spurenscanner
     .gender = masculine
+    .name-genitive = Spurenscanners
     .desc = Ein tragbares Gerät, das Gegenstände nach Fingerabdrücken und Fasern absuchen kann.
 
 # HandTeleporter
 
 ent-HandTeleporter = Handteleporter
     .gender = masculine
+    .name-genitive = Handteleporters
     .desc = Ein echtes NanoTrasen-Produkt mit feinster Bluespace-Technik. Beim ersten Einsatz öffnet er ein Portal zu einem zufälligen Ziel. Ein zweiter Einsatz verbindet es mit einem Portal an deinem Standort. Beim dritten werden alle Portale entfernt.
 
 # HandheldCrewMonitor
@@ -475,82 +501,101 @@ ent-HandheldCrewMonitorEmpty = Mobiler Crewmonitor
 
 ent-BedsheetCaptain = Bettlaken des Kapitäns
     .gender = neuter
+    .name-genitive = Bettlakens des Kapitäns
     .desc = Ein Bettlaken mit NanoTrasen-Emblem. Sein neuartiges Gewebe soll für die meisten nicht chemischen Stoffe nur 0,01 % durchlässig sein. Bei Kapitänen sehr beliebt.
 
 ent-BedsheetCE = Bettlaken des Chefingenieurs
     .gender = neuter
+    .name-genitive = Bettlakens des Chefingenieurs
     .desc = Das Schraubenschlüssel-Emblem sieht gut aus. Das Laken reflektiert stark und ist fleckenabweisend, damit auch Öl kein Problem ist.
 
 ent-BedsheetCentcom = Bettlaken des Zentralkommandos
     .gender = neuter
+    .name-genitive = Bettlakens des Zentralkommandos
     .desc = Für Wärme aus modernem Nanogarn gewebt und prächtig verziert. Für jeden hohen Besuch ein Muss.
 
 ent-BedsheetCMO = Bettlaken des Chefarztes
     .gender = neuter
+    .name-genitive = Bettlakens des Chefarztes
     .desc = Ein sterilisiertes Bettlaken mit Kreuz-Emblem. Die Katzenhaare darauf stammen vermutlich von Runtime.
 
 ent-BedsheetHOP = Bettlaken des Personalchefs
     .gender = neuter
+    .name-genitive = Bettlakens des Personalchefs
     .desc = Ein Bettlaken mit Schlüssel-Emblem. Für die seltenen Momente, in denen du mit Ian kuscheln kannst, ohne dass dich jemand über Funk ruft.
 
 ent-BedsheetHOS = Bettlaken des Sicherheitschefs
     .gender = neuter
+    .name-genitive = Bettlakens des Sicherheitschefs
     .desc = Ein Bettlaken mit Schild-Emblem. Das Verbrechen schläft nie, du aber schon. Trotzdem bleibst du DAS GESETZ!
 
 ent-BedsheetQM = Bettlaken des Quartiermeisters
     .gender = neuter
+    .name-genitive = Bettlakens des Quartiermeisters
     .desc = Ein überraschend weiches Bettlaken aus Leinen.
 
 ent-BedsheetRD = Bettlaken des Forschungsleiters
     .gender = neuter
+    .name-genitive = Bettlakens des Forschungsleiters
     .desc = Ein Bettlaken mit Becherglas-Emblem aus feuerfestem Material. Vor deinen üblichen Laborbränden schützt es dich vermutlich trotzdem nicht.
 
 # HeadCloak
 
 ent-ClothingNeckCloakCentcom = Mantel des Zentralkommandos
     .gender = masculine
+    .name-genitive = Mantels des Zentralkommandos
     .desc = Ein pompöser grüner Mantel mit Goldbesatz, eigens für die Zentralkommandantin oder den Zentralkommandanten geschneidert. Er ist so schwer, dass der Besatz echtes Gold sein könnte.
 
 ent-ClothingNeckCloakCap = Mantel des Kapitäns
     .gender = masculine
+    .name-genitive = Mantels des Kapitäns
     .desc = Ein pompöser, bequemer blauer Mantel mit Goldbesatz. Besonders wertvoll ist er nicht, aber schick sieht er aus.
 
 ent-ClothingNeckCloakHos = Mantel des Sicherheitschefs
     .gender = masculine
+    .name-genitive = Mantels des Sicherheitschefs
     .desc = Ein eleganter Mantel in Dunkelrot und Schwarz für Menschen, die Verbrecher in die Schranken weisen. Versuch beim Verhör trotzdem höflich zu bleiben!
 
 ent-ClothingNeckCloakCe = Mantel des Chefingenieurs
     .gender = masculine
+    .name-genitive = Mantels des Chefingenieurs
     .desc = Ein dunkelgrüner Mantel mit hellblauen Verzierungen für Menschen, die die hohe Kunst des Ingenieurwesens beherrschen.
 
 ent-ClothingCloakCmo = Mantel des Chefarztes
     .gender = masculine
+    .name-genitive = Mantels des Chefarztes
     .desc = Ein steriler blauer Mantel mit grünem Kreuz. Er strahlt Pflichtgefühl und Hilfsbereitschaft aus.
 
 ent-ClothingNeckCloakRd = Mantel des Forschungsleiters
     .gender = masculine
+    .name-genitive = Mantels des Forschungsleiters
     .desc = Ein weißer Mantel mit violetten Streifen. Er zeigt, wer hier über die neueste Technik entscheidet.
 
 ent-ClothingNeckCloakQm = Mantel des Quartiermeisters
     .gender = masculine
+    .name-genitive = Mantels des Quartiermeisters
     .desc = Ein robuster brauner Mantel mit reflektierendem Streifen. Nicht besonders prunkvoll, aber er zeigt, wer den Laden organisiert.
 
 ent-ClothingNeckCloakHop = Mantel des Personalchefs
     .gender = masculine
+    .name-genitive = Mantels des Personalchefs
     .desc = Ein blauer Mantel mit roten Schultern und goldenen Knöpfen. Damit weiß jeder, wer über die Zugänge der Station wacht.
 
 ent-ClothingNeckCloakCapFormal = Mantel des Kapitäns für offizielle Anlässe
     .gender = masculine
+    .name-genitive = Mantels des Kapitäns für offizielle Anlässe
     .desc = Ein aufwendig verzierter Mantel für besondere Anlässe.
 
 ent-ClothingNeckCloakAdmin = Weh-Mantel
     .gender = masculine
+    .name-genitive = Weh-Mantels
     .desc = Weh!
 
 # Hypospray
 
 ent-Hypospray = Hypospray
     .gender = neuter
+    .name-genitive = Hyposprays
     .desc = Ein steriler Injektor, der Patienten schnell Medikamente verabreicht.
 
 # IDCard
@@ -833,10 +878,12 @@ ent-UniversalIDCard = Universelle ID-Karte
 
 ent-JetpackCaptain = Jetpack des Kapitäns
     .gender = neuter
+    .name-genitive = Jetpacks des Kapitäns
     .desc = Ein Jetpack mit Platz für fünf Liter Gas.
 
 ent-JetpackCaptainFilled = Jetpack des Kapitäns
     .gender = neuter
+    .name-genitive = Jetpacks des Kapitäns
     .desc = Ein Jetpack mit Platz für fünf Liter Gas.
 
 # LAMP
@@ -871,6 +918,7 @@ ent-LampInterrogator = Verhörlampe
 
 ent-Floodlight = Flutlicht
     .gender = neuter
+    .name-genitive = Flutlichts
     .desc = Ein Mast mit leistungsstarken Scheinwerfern.
 
 ent-FlashlightLantern = Taschenlampe
@@ -897,10 +945,12 @@ ent-LanternFlash = Laterne
 
 ent-PackageDelivery = Paket
     .gender = neuter
+    .name-genitive = Pakets
     .desc = { "" }
 
 ent-LetterDelivery = Brief
     .gender = masculine
+    .name-genitive = Briefs
     .desc = { "" }
 
 # MedicalTechFabCircuitboard
@@ -940,6 +990,7 @@ ent-WeaponPistolMk58 = Pistole Mk 58
 
 ent-WeaponRevolverInspector = Revolver „Inspector“
     .gender = masculine
+    .name-genitive = Revolvers „Inspector“
     .desc = Ein doppelt wirkender Revolver, den verschiedene Hersteller anbieten. Weil er auch auf dem zivilen Markt erhältlich ist, ist er bei Privatdetektiven beliebt. Schon beim Halten fühlst du dich glücklich. Fasst sechs .45-Magnum-Patronen.
 
 # PlantRD
@@ -956,130 +1007,161 @@ ent-SalvageExpeditionsComputerCircuitboard = Platine für den Bergungsexpedition
 
 ent-ComputerSalvageExpedition = Bergungsexpeditionscomputer
     .gender = masculine
+    .name-genitive = Bergungsexpeditionscomputers
     .desc = Hier kannst du Bergungsmissionen annehmen, wenn du dich traust.
 
 # Stamp
 
 ent-RubberStampCaptain = Stempel des Kapitäns
     .gender = masculine
+    .name-genitive = Stempels des Kapitäns
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampCentcom = Stempel des Zentralkommandos
     .gender = masculine
+    .name-genitive = Stempels des Zentralkommandos
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampChaplain = Stempel des Kaplans
     .gender = masculine
+    .name-genitive = Stempels des Kaplans
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampLawyer = Stempel des Anwalts
     .gender = masculine
+    .name-genitive = Stempels des Anwalts
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampClown = Stempel des Clowns
     .gender = masculine
+    .name-genitive = Stempels des Clowns
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampCE = Stempel des Chefingenieurs
     .gender = masculine
+    .name-genitive = Stempels des Chefingenieurs
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampCMO = Stempel des Chefarztes
     .gender = masculine
+    .name-genitive = Stempels des Chefarztes
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampHop = Stempel des Personalchefs
     .gender = masculine
+    .name-genitive = Stempels des Personalchefs
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampHos = Stempel des Sicherheitschefs
     .gender = masculine
+    .name-genitive = Stempels des Sicherheitschefs
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampMime = Stempel des Mimen
     .gender = masculine
+    .name-genitive = Stempels des Mimen
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampQm = Stempel des Quartiermeisters
     .gender = masculine
+    .name-genitive = Stempels des Quartiermeisters
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampRd = Stempel des Forschungsleiters
     .gender = masculine
+    .name-genitive = Stempels des Forschungsleiters
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampTrader = Stempel des Händlers
     .gender = masculine
+    .name-genitive = Stempels des Händlers
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampSyndicate = Stempel des Syndikats
     .gender = masculine
+    .name-genitive = Stempels des Syndikats
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampWarden = Stempel des Wachleiters
     .gender = masculine
+    .name-genitive = Stempels des Wachleiters
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampApproved = Stempel „GENEHMIGT“
     .gender = masculine
+    .name-genitive = Stempels „GENEHMIGT“
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampDenied = Stempel „ABGELEHNT“
     .gender = masculine
+    .name-genitive = Stempels „ABGELEHNT“
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampDetective = Stempel des Detektivs
     .gender = masculine
+    .name-genitive = Stempels des Detektivs
     .desc = Ein Gummistempel für wichtige Dokumente.
 
 ent-RubberStampGreytide = Stempel des Grey Tide
     .gender = masculine
+    .name-genitive = Stempels des Grey Tide
     .desc = Ein Gummistempel für wichtige Dokumente. Schon sein Anblick lässt die graue Flut über dich hereinbrechen …
 
 ent-RubberStampPsychologist = Stempel des Psychologen
     .gender = masculine
+    .name-genitive = Stempels des Psychologen
     .desc = Ein Gummistempel für wichtige Dokumente. Verschreib damit ein paar Behandlungen!
 
 ent-RubberStampWizard = Stempel des Zauberers
     .gender = masculine
+    .name-genitive = Stempels des Zauberers
     .desc = Ein chaotischer Zaubererstempel für unchaotische Büroarbeit. Wie ironisch.
 
 # TechnologyDisk
 
 ent-TechnologyDisk = Technologiedatenträger
     .gender = masculine
+    .name-genitive = Technologiedatenträgers
     .desc = { "" }
 
 ent-TechnologyDiskT1 = Technologiedatenträger
     .gender = masculine
+    .name-genitive = Technologiedatenträgers
     .desc = { "" }
 
 ent-TechnologyDiskT2 = Technologiedatenträger
     .gender = masculine
+    .name-genitive = Technologiedatenträgers
     .desc = { "" }
 
 ent-TechnologyDiskT3 = Technologiedatenträger
     .gender = masculine
+    .name-genitive = Technologiedatenträgers
     .desc = { "" }
 
 ent-TechnologyDiskIndustrial = Technologiedatenträger
     .gender = masculine
+    .name-genitive = Technologiedatenträgers
     .desc = { "" }
 
 ent-TechnologyDiskArsenal = Technologiedatenträger
     .gender = masculine
+    .name-genitive = Technologiedatenträgers
     .desc = { "" }
 
 ent-TechnologyDiskExperimental = Technologiedatenträger
     .gender = masculine
+    .name-genitive = Technologiedatenträgers
     .desc = { "" }
 
 ent-TechnologyDiskCivilianServices = Technologiedatenträger
     .gender = masculine
+    .name-genitive = Technologiedatenträgers
     .desc = { "" }
 
 ent-TechnologyDiskRare = Technologiedatenträger
     .gender = masculine
+    .name-genitive = Technologiedatenträgers
     .desc = { "" }
 
 # Teg
@@ -1093,6 +1175,7 @@ ent-TegCenter = Thermoelektrischer Generator
 
 ent-TegCirculator = Zirkulator des thermoelektrischen Generators
     .gender = masculine
+    .name-genitive = Zirkulators des thermoelektrischen Generators
     .desc = Leitet Gas zum Wärmeaustausch durch den thermoelektrischen Generator. Besitzt einen Einlass und einen Auslass.
 
 # ToiletGoldenDirtyWater
@@ -1107,6 +1190,7 @@ ent-ToiletGoldenDirtyWater = Goldene Toilette
 
 ent-WantedListCartridge = PDA-Modul mit Fahndungsliste
     .gender = neuter
+    .name-genitive = PDA-Moduls mit Fahndungsliste
     .desc = Ein Programm, das eine Liste gesuchter Personen abruft.
 
 # WeaponAntiqueLaser
@@ -1127,16 +1211,20 @@ ent-WeaponEnergyMagnum = Energiemagnum
 
 ent-DummyArtifactItem = Artefakt
     .gender = neuter
+    .name-genitive = Artefakts
     .desc = Ein seltsames Artefakt aus unbekannter Zeit. Das könnte interessant werden.
 
 ent-ComplexXenoArtifactItem = Artefakt
     .gender = neuter
+    .name-genitive = Artefakts
     .desc = Ein seltsames Artefakt aus unbekannter Zeit. Das könnte interessant werden.
 
 ent-DummyArtifactStructure = Artefakt
     .gender = neuter
+    .name-genitive = Artefakts
     .desc = Ein seltsames Artefakt aus unbekannter Zeit. Das könnte interessant werden.
 
 ent-ComplexXenoArtifact = Artefakt
     .gender = neuter
+    .name-genitive = Artefakts
     .desc = Ein seltsames Artefakt aus unbekannter Zeit. Das könnte interessant werden.

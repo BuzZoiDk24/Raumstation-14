@@ -1,7 +1,7 @@
 # Ejection verb label.
 cryo-pod-verb-noun-occupant = Patient
 # Examine text showing whether there's a beaker in the pod and if it is empty.
-cryo-pod-examine = Darin befindet sich { DE-ARTICLE($beakerEntity, "nominative", article: "indefinite") } { $beaker }.
+cryo-pod-examine = Darin befindet sich { DE-ARTICLE($beakerEntity, "nominative", article: "indefinite") } { DE-NAME($beakerEntity, "nominative", "indefinite") }.
 cryo-pod-empty-beaker = Der Behälter ist leer!
 # Shown when a normal ejection through the eject verb is attempted on a locked pod.
 cryo-pod-locked = The ejection mechanism is unresponsive!
