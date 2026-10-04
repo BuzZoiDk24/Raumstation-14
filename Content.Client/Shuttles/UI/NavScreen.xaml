@@ -18,7 +18,6 @@
         HorizontalAlignment="Right"
         VerticalExpand="True"
         MinWidth="256"
-        MaxWidth="256"
         Margin="5 0 5 5"
         Orientation="Vertical">
         <controls:StripeBack MinSize="48 48">

@@ -1,1 +1,1 @@
-clock-examine = The time reads: [color=white]{$time}[/color]
+clock-examine = Die Uhr zeigt [color=white]{$time}[/color] an

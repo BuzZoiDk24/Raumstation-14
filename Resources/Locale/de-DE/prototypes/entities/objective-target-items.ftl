@@ -679,7 +679,7 @@ ent-ChaplainIDCard = Kaplan-ID-Karte
     .gender = feminine
     .desc = Mit dieser Karte erhältst du Zugang zu verschiedenen Bereichen der Station.
 
-ent-JanitorIDCard = Reinigungskraft-ID-Karte
+ent-JanitorIDCard = Hausmeister-ID-Karte
     .gender = feminine
     .desc = Mit dieser Karte erhältst du Zugang zu verschiedenen Bereichen der Station.
 
@@ -803,7 +803,7 @@ ent-ERTEngineerIDCard = ID-Karte des Notfallteam-Ingenieurs
     .gender = feminine
     .desc = Mit dieser Karte erhältst du Zugang zu verschiedenen Bereichen der Station.
 
-ent-ERTJanitorIDCard = ID-Karte der Notfallteam-Reinigungskraft
+ent-ERTJanitorIDCard = ID-Karte des Notfallteam-Hausmeisters
     .gender = feminine
     .desc = Mit dieser Karte erhältst du Zugang zu verschiedenen Bereichen der Station.
 

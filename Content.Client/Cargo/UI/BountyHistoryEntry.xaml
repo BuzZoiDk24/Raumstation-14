@@ -5,16 +5,10 @@
     <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True">
         <BoxContainer Orientation="Vertical"
                       HorizontalExpand="True">
-            <BoxContainer Orientation="Horizontal">
-                <BoxContainer Orientation="Vertical" HorizontalExpand="True">
-                    <RichTextLabel Name="RewardLabel"/>
-                    <RichTextLabel Name="ManifestLabel"/>
-                </BoxContainer>
-                <BoxContainer Orientation="Vertical" MinWidth="120" Margin="0 0 10 0">
-                    <RichTextLabel Name="TimestampLabel" HorizontalAlignment="Right" />
-                    <RichTextLabel Name="IdLabel" HorizontalAlignment="Right" />
-                </BoxContainer>
-            </BoxContainer>
+            <RichTextLabel Name="RewardLabel" HorizontalExpand="True"/>
+            <RichTextLabel Name="ManifestLabel" HorizontalExpand="True"/>
+            <RichTextLabel Name="TimestampLabel" HorizontalExpand="True"/>
+            <RichTextLabel Name="IdLabel" HorizontalExpand="True"/>
             <controls:Separator StyleClasses="LowDivider" Margin="5 10 5 10"/>
             <RichTextLabel Name="NoticeLabel" />
         </BoxContainer>

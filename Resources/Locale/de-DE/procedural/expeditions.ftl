@@ -1,25 +1,25 @@
 salvage-expedition-type = Mission
-salvage-expedition-window-title = Salvage expeditions
-salvage-expedition-window-difficulty = Difficulty:
+salvage-expedition-window-title = Bergungsexpeditionen
+salvage-expedition-window-difficulty = Schwierigkeit:
 salvage-expedition-window-details = Details:
-salvage-expedition-window-hostiles = Hostiles:
-salvage-expedition-window-duration = Duration:
-salvage-expedition-window-biome = Biome:
-salvage-expedition-window-modifiers = Modifiers:
+salvage-expedition-window-hostiles = Feinde:
+salvage-expedition-window-duration = Dauer:
+salvage-expedition-window-biome = Biom:
+salvage-expedition-window-modifiers = Bedingungen:
 
-offering-window-claimed = Claimed
-offering-window-claim = Claim
+offering-window-claimed = Angenommen
+offering-window-claim = Annehmen
 
-salvage-expedition-window-next = Next offer
+salvage-expedition-window-next = Nächstes Angebot
 
-salvage-expedition-difficulty-Moderate = Moderate
-salvage-expedition-difficulty-Hazardous = Hazardous
-salvage-expedition-difficulty-Extreme = Extreme
+salvage-expedition-difficulty-Moderate = Mäßig
+salvage-expedition-difficulty-Hazardous = Gefährlich
+salvage-expedition-difficulty-Extreme = Extrem
 
-salvage-expedition-difficulty-players = Recommended salvagers:
+salvage-expedition-difficulty-players = Empfohlene Anzahl an Bergungsspezialisten:
 
 # Runner
-salvage-expedition-not-all-present = Not all salvagers are aboard the shuttle!
+salvage-expedition-not-all-present = Nicht alle Bergungsspezialisten sind an Bord des Shuttles!
 
 salvage-expedition-announcement-countdown-minutes = Die verbleibende Zeit für den Abschluss der Expedition beträgt {$duration} { $duration ->
     [one] Minute
@@ -30,36 +30,36 @@ salvage-expedition-announcement-countdown-seconds = Die verbleibende Zeit für d
     *[other] Sekunden
 }.
 salvage-expedition-announcement-dungeon = Der Komplex liegt im { CAPITALIZE($direction) }.
-salvage-expedition-completed = Expedition is completed.
-salvage-expedition-reward-description = Mission completion reward
+salvage-expedition-completed = Die Expedition ist abgeschlossen.
+salvage-expedition-reward-description = Belohnung für den Abschluss der Mission
 
 # Salvage biome mod
-salvage-biome-mod-caves = Caves
-salvage-biome-mod-grasslands = Grasslands
-salvage-biome-mod-snow = Snow
+salvage-biome-mod-caves = Höhlen
+salvage-biome-mod-grasslands = Grasland
+salvage-biome-mod-snow = Schnee
 salvage-biome-mod-lava = Lava
 
 # Salvage mods
-salvage-light-mod-daylight = Daylight
-salvage-light-mod-evening = Evening
-salvage-light-mod-night = Night time
+salvage-light-mod-daylight = Tageslicht
+salvage-light-mod-evening = Abend
+salvage-light-mod-night = Nacht
 
-salvage-temperature-mod-room-temperature = Room temperature
-salvage-temperature-mod-hot = Hot
-salvage-temperature-mod-high-temperature = High temperature
-salvage-temperature-mod-extreme-heat = Extreme heat
-salvage-temperature-mod-cold = Cold
-salvage-temperature-mod-low-temperature = Low temperature
-salvage-temperature-mod-extreme-cold = Extreme cold
+salvage-temperature-mod-room-temperature = Raumtemperatur
+salvage-temperature-mod-hot = Heiß
+salvage-temperature-mod-high-temperature = Hohe Temperatur
+salvage-temperature-mod-extreme-heat = Extreme Hitze
+salvage-temperature-mod-cold = Kalt
+salvage-temperature-mod-low-temperature = Niedrige Temperatur
+salvage-temperature-mod-extreme-cold = Extreme Kälte
 
-salvage-air-mod-no-atmosphere = No atmosphere
-salvage-air-mod-breathable-atmosphere = Breathable atmosphere
-salvage-air-mod-dangerous-atmosphere = Dangerous atmosphere
-salvage-air-mod-toxic-atmosphere = Toxic atmosphere
-salvage-air-mod-volatile-atmosphere = Volatile atmosphere
+salvage-air-mod-no-atmosphere = Keine Atmosphäre
+salvage-air-mod-breathable-atmosphere = Atembare Atmosphäre
+salvage-air-mod-dangerous-atmosphere = Gefährliche Atmosphäre
+salvage-air-mod-toxic-atmosphere = Giftige Atmosphäre
+salvage-air-mod-volatile-atmosphere = Leicht entzündliche Atmosphäre
 
-salvage-dungeon-mod-lava-brig = Lava Brig
-salvage-dungeon-mod-snowy-labs = Snowy labs
+salvage-dungeon-mod-lava-brig = Lavagefängnis
+salvage-dungeon-mod-snowy-labs = Verschneite Labore
 salvage-dungeon-mod-experiment = Experiment
-salvage-dungeon-mod-haunted = Haunted
-salvage-dungeon-mod-mineshaft = Mineshaft
+salvage-dungeon-mod-haunted = Spukhaus
+salvage-dungeon-mod-mineshaft = Minenschacht

@@ -1,7 +1,7 @@
 ﻿<controls:FancyWindow xmlns="https://spacestation14.io"
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                       xmlns:disposal="clr-namespace:Content.Client.Disposal"
-                      SetSize="300 160"
+                      MinSize="300 160"
                       Resizable="False">
     <BoxContainer Orientation="Vertical" Margin="10">
         <BoxContainer Orientation="Horizontal" SeparationOverride="4">
@@ -21,7 +21,7 @@
             <Label Text="{Loc 'ui-disposal-unit-label-pressure'}" />
             <disposal:PressureBar Name="PressureBar"
                          MinSize="190 20"
-                         HorizontalAlignment="Right"
+                         HorizontalExpand="True"
                          MinValue="0"
                          MaxValue="1"
                          Page="0"

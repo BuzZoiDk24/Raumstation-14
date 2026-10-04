@@ -2,7 +2,8 @@
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                       xmlns:ui="clr-namespace:Content.Client.Shuttles.UI"
                       Title="{Loc 'shuttle-console-window-title'}"
-                      SetSize="960 762"
+                      Resizable="True"
+                      PreventShrinkingBelowInitialSize="True"
                       MinSize="960 762">
     <BoxContainer Orientation="Vertical">
         <!-- Top row mode buttons -->
@@ -15,19 +16,19 @@
                     ToggleMode="True"
                     HorizontalExpand="True"
                     VerticalExpand="True"
-                    Text="NAV"
+                    Text="{Loc 'raumstation-shuttle-mode-navigation'}"
                     Margin="5"/>
             <Button Name="MapModeButton"
                     ToggleMode="True"
                     HorizontalExpand="True"
                     VerticalExpand="True"
-                    Text="MAP"
+                    Text="{Loc 'raumstation-shuttle-mode-map'}"
                     Margin="5"/>
             <Button Name="DockModeButton"
                     ToggleMode="True"
                     HorizontalExpand="True"
                     VerticalExpand="True"
-                    Text="DOCK"
+                    Text="{Loc 'raumstation-shuttle-mode-docking'}"
                     Margin="5"/>
         </BoxContainer>
         <!-- Contents box -->

@@ -33,18 +33,18 @@ ent-PassengerPDA = Passagier-PDA
     .gender = masculine
     .desc = Warum ist er eigentlich nicht grau?
 
-ent-JanitorPDA = Reinigungs-PDA
-    .name-genitive = Reinigungs-PDAs
+ent-JanitorPDA = Hausmeister-PDA
+    .name-genitive = Hausmeister-PDAs
     .gender = masculine
     .desc = Riecht nach Bleichmittel.
 
-ent-ClothingBeltJanitor = Reinigungsgürtel
-    .name-genitive = Reinigungsgürtels
+ent-ClothingBeltJanitor = Hausmeistergürtel
+    .name-genitive = Hausmeistergürtels
     .gender = masculine
     .desc = Hier findet die wichtigste Reinigungsausrüstung Platz.
 
-ent-ClothingBeltJanitorFilled = Reinigungsgürtel
-    .name-genitive = Reinigungsgürtels
+ent-ClothingBeltJanitorFilled = Hausmeistergürtel
+    .name-genitive = Hausmeistergürtels
     .gender = masculine
     .desc = Hier findet die wichtigste Reinigungsausrüstung Platz.
 
@@ -70,12 +70,12 @@ ent-ClothingUniformJumpskirtColorGrey = Graues Uniformkleid
     .gender = neuter
     .desc = Ein geschmackvolles graues Uniformkleid, das an die guten alten Zeiten erinnert.
 
-ent-ClothingUniformJumpsuitJanitor = Overall der Reinigungskraft
-    .name-genitive = Overalls der Reinigungskraft
+ent-ClothingUniformJumpsuitJanitor = Overall des Hausmeisters
+    .name-genitive = Overalls des Hausmeisters
     .gender = masculine
     .desc = Für die arme Seele, die den ganzen Tag den Wischmopp schwingt.
 
-ent-ClothingUniformJumpskirtJanitor = Uniformkleid der Reinigungskraft
-    .name-genitive = Uniformkleids der Reinigungskraft
+ent-ClothingUniformJumpskirtJanitor = Uniformkleid des Hausmeisters
+    .name-genitive = Uniformkleids des Hausmeisters
     .gender = neuter
     .desc = Für die arme Seele, die den ganzen Tag den Wischmopp schwingt.

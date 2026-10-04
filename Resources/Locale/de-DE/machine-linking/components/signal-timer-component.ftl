@@ -1,4 +1,4 @@
-signal-timer-menu-title = Timer
-signal-timer-menu-label = Label: 
-signal-timer-menu-delay = Delay: 
-signal-timer-menu-start = Start
+signal-timer-menu-title = Zeitschaltuhr
+signal-timer-menu-label = Beschriftung:
+signal-timer-menu-delay = Verzögerung:
+signal-timer-menu-start = Starten

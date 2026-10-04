@@ -5,43 +5,46 @@ salvage-job-rank-title-MAX = [color=gold]Bergungsmeister[/color]
 
 job-board-radio-announce = Der Bergungsrang ist auf [bold]{$rank}[/bold] gestiegen! Neue Aufträge können bei der Versorgungsabteilung gekauft werden.
 
-job-board-ui-window-title = Job Board
-job-board-ui-label-rank = [bold]Rank:[/bold]
-job-board-ui-label-items = Target: [color=red]{$item}[/color]
+job-board-ui-window-title = Bergungsaufträge
+job-board-ui-label-rank = [bold]Rang:[/bold]
+job-board-ui-label-items = Ziel: [color=red]{$item}[/color]
 
-job-board-label-text = [head=2]Salvage Job Shipment[/head]
-    {"[italic]For use only on official off-station salvage shipments.[/italic]"}
+job-board-label-text = [head=2]Lieferung zum Bergungsauftrag[/head]
+    {"[italic]Nur für offizielle Bergungslieferungen von außerhalb der Station.[/italic]"}
 
-    {"[bold]Target:[/bold]"} {$target}
-    {"[bold]Reward:[/bold]"} ${$reward}
+    {"[bold]Ziel:[/bold]"} {$target}
+    {"[bold]Vergütung:[/bold]"} ${$reward}
+
+
+    {"[italic]Lieferungen können von der Donk Corporation kontrolliert werden[/italic]"}
 
 
     {"[italic]Shipments are subject to inspection by the Donk corporation[/italic]"}
 
-salv-job-board-name-BountyTeethSpaceCarp = Space Carp
-salv-job-board-name-BountySalvageScrap = Deep-Space Debris
-salv-job-board-name-BountySalvageOreGold = Gold (Ore)
-salv-job-board-name-BountySalvageOreSilver = Silver (Ore)
+salv-job-board-name-BountyTeethSpaceCarp = Weltraumkarpfen
+salv-job-board-name-BountySalvageScrap = Trümmer aus dem tiefen Weltraum
+salv-job-board-name-BountySalvageOreGold = Golderz
+salv-job-board-name-BountySalvageOreSilver = Silbererz
 
-salv-job-board-name-BountySalvageOreUranium = Uranium (Ore)
-salv-job-board-name-BountySalvageOrePlasma = Plasma (Ore)
-salv-job-board-name-BountySalvageOreBananium = Bananium (Ore)
+salv-job-board-name-BountySalvageOreUranium = Uranerz
+salv-job-board-name-BountySalvageOrePlasma = Plasmaerz
+salv-job-board-name-BountySalvageOreBananium = Bananiumerz
 salv-job-board-name-BountyTeethSharkminnow = Sharkminnow
 
 salv-job-board-name-BountyGoliathPlates = Goliath
 salv-job-board-name-BountyHivelordRemains = Hivelord
-salv-job-board-name-BountySalvageDiamond = Diamond
+salv-job-board-name-BountySalvageDiamond = Diamant
 
-bounty-description-tooth-space-carp = We need you to get a sample of some space carp teeth. You can find these guys on all kinds of salvage debris. Just be careful about their bite.
-bounty-description-salvage-scrap = We are researching the effects of deep space on station materials, and we need some samples. Find some old junk off of debris and bring it to us.
-bounty-description-salvage-ore-gold = We are engaging in an experimental new electronics manufacturing process. Deliver us a large sum of unrefined gold ore. It can come from any source.
-bounty-description-salvage-ore-silver = We are studying the material effects of silver based on the refining methods. Send us a large amount of unrefined silver ore. It can come from any source.
+bounty-description-tooth-space-carp = Wir benötigen einige Weltraumkarpfenzähne als Probe. Diese Tiere findet ihr auf allerlei Bergungstrümmern. Passt nur auf, dass sie euch nicht beißen.
+bounty-description-salvage-scrap = Wir untersuchen, wie sich der tiefe Weltraum auf Stationsmaterialien auswirkt, und benötigen Proben. Sucht alten Schrott auf Trümmerstücken und bringt ihn uns.
+bounty-description-salvage-ore-gold = Wir erproben ein neues Verfahren zur Herstellung von Elektronik. Liefert uns eine große Menge unverarbeitetes Golderz. Woher es stammt, spielt keine Rolle.
+bounty-description-salvage-ore-silver = Wir untersuchen, wie sich verschiedene Veredelungsverfahren auf die Eigenschaften von Silber auswirken. Schickt uns eine große Menge unverarbeitetes Silbererz. Woher es stammt, spielt keine Rolle.
 
-bounty-description-tooth-sharkminnow = We need you to get a sample of some Sharkminnow teeth. These guys are a fair bit nastier than the smaller carp you're familiar with. Take care to not let them bite you: they'll suck out your blood and heal.
-bounty-description-salvage-ore-plasma = We need a shipment of plasma ore to send over to the research station. Please provide us with some so that we can continue our testing. It can come from any source.
-bounty-description-salvage-ore-uranium = We need a sample of uranium ore for our ongoing experiments on nuclear devices. Be aware that while the uranium does glow slightly, it will probably not harm you. It can come from any source.
-bounty-description-salvage-ore-bananium = We have an ongoing project to decode the mystifying clown genomic sequence. We believe a sample of raw bananium will help us achieve this. Note that this only comes from the rarest of deep-space asteroids.
+bounty-description-tooth-sharkminnow = Wir benötigen einige Sharkminnow-Zähne als Probe. Diese Tiere sind deutlich gefährlicher als die kleineren Karpfen, die ihr kennt. Lasst euch nicht beißen, denn sie saugen euch Blut ab und heilen sich damit.
+bounty-description-salvage-ore-plasma = Wir benötigen eine Lieferung Plasmaerz für die Forschungsstation. Liefert uns etwas davon, damit wir unsere Versuche fortsetzen können. Woher es stammt, spielt keine Rolle.
+bounty-description-salvage-ore-uranium = Wir benötigen Uranerz für unsere laufenden Versuche mit nuklearen Geräten. Auch wenn das Uran leicht leuchtet, wird es euch vermutlich nicht schaden. Woher es stammt, spielt keine Rolle.
+bounty-description-salvage-ore-bananium = Wir arbeiten daran, die rätselhafte Genomsequenz des Clowns zu entschlüsseln. Wir glauben, dass uns eine Probe rohen Bananiums dabei helfen wird. Bedenkt, dass es nur auf den seltensten Asteroiden im tiefen Weltraum vorkommt.
 
-bounty-description-remains = We need you to get a sample of a few Hivelord cores. Be aware that Hivelords can replicate infinitely if the core is not destroyed. Take care not to get overwhelmed.
-bounty-description-plates = We need you to get a couple sheets of Goliath hide. These guys are pretty slow, but be careful about the tentacles: they'll grab you and pull you to the ground. You don't want to know what happens next.
-bounty-description-diamond = We need you to acquire a few diamonds for some advanced fabrication. These can either be found in the mining asteroid nearby or cut out of the basilisk creature. Whichever way you want to do it, get us some.
+bounty-description-remains = Wir benötigen einige Hivelord-Kerne als Probe. Hivelords können sich unbegrenzt vermehren, solange ihr Kern nicht zerstört wird. Lasst euch nicht überwältigen.
+bounty-description-plates = Wir benötigen ein paar Platten Goliathhaut. Diese Tiere sind recht langsam, aber passt auf ihre Tentakel auf. Sie packen euch und ziehen euch zu Boden. Ihr wollt nicht wissen, was danach passiert.
+bounty-description-diamond = Wir benötigen ein paar Diamanten für die Herstellung fortschrittlicher Geräte. Ihr könnt sie auf dem nahen Bergbauasteroiden finden oder aus einem Basilisken herausschneiden. Wie ihr es anstellt, bleibt euch überlassen. Besorgt uns einfach welche.

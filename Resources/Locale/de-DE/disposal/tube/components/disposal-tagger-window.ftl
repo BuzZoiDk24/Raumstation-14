@@ -1,2 +1,2 @@
-disposal-tagger-window-title = Müllschacht-Markierer
-disposal-tagger-window-tag-input-label = Markierung:
+disposal-tagger-window-title = Müllschacht-Route
+disposal-tagger-window-tag-input-label = Ziel:

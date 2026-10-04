@@ -2,13 +2,13 @@
 
 ui-disposal-unit-title = {CAPITALIZE($name)}
 
-ui-disposal-unit-label-state = Zustand:
+ui-disposal-unit-label-state = Status:
 ui-disposal-unit-label-pressure = Druck:
 ui-disposal-unit-label-status = Bereit
 
 ui-disposal-unit-button-flush = Spülen
 ui-disposal-unit-button-eject = Inhalt auswerfen
-ui-disposal-unit-button-routing = Ziel auswählen
+ui-disposal-unit-button-routing = Route
 ui-disposal-unit-button-power = Strom
 
 ## Verbs

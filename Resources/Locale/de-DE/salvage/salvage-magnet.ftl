@@ -10,45 +10,45 @@ salvage-system-announcement-arrived = Ein bergungsfähiges Trümmerstück wurde 
 }.
 salvage-asteroid-name = Asteroid
 
-salvage-magnet-window-title = Salvage magnet
-salvage-expedition-window-progression = Progression
+salvage-magnet-window-title = Bergungsmagnet
+salvage-expedition-window-progression = Fortschritt
 
 salvage-magnet-resources = {$resource ->
-    [OreIron] Iron
-    [OreCoal] Coal
-    [OreQuartz] Quartz
-    [OreSalt] Salt
+    [OreIron] Eisen
+    [OreCoal] Kohle
+    [OreQuartz] Quarz
+    [OreSalt] Salz
     [OreGold] Gold
-    [OreDiamond] Diamond
-    [OreSilver] Silver
+    [OreDiamond] Diamant
+    [OreSilver] Silber
     [OrePlasma] Plasma
-    [OreUranium] Uranium
-    [OreArtifactFragment] Artifact fragments
+    [OreUranium] Uran
+    [OreArtifactFragment] Artefaktfragmente
     [OreBananium] Bananium
     *[other] {$resource}
 }
 
 salvage-magnet-resources-count = {$count ->
-    [1] (Poor)
-    [2] (Moderate)
-    [3] (Moderate)
-    [4] (Rich)
-    [5] (Rich)
-    *[other] (Extraordinary)
+    [1] (Gering)
+    [2] (Mittel)
+    [3] (Mittel)
+    [4] (Reichhaltig)
+    [5] (Reichhaltig)
+    *[other] (Außergewöhnlich)
 }
 
 # Debris
-salvage-magnet-debris-ChunkDebris = Space debris
+salvage-magnet-debris-ChunkDebris = Weltraumtrümmer
 
 # Asteroids
-dungeon-config-proto-BlobAsteroid = Asteroid clump
-dungeon-config-proto-ClusterAsteroid = Asteroid cluster
-dungeon-config-proto-SpindlyAsteroid = Asteroid spiral
-dungeon-config-proto-SwissCheeseAsteroid = Asteroid fragments
+dungeon-config-proto-BlobAsteroid = Asteroidenklumpen
+dungeon-config-proto-ClusterAsteroid = Asteroidengruppe
+dungeon-config-proto-SpindlyAsteroid = Asteroidenspirale
+dungeon-config-proto-SwissCheeseAsteroid = Asteroidenfragmente
 
 # Wrecks
-salvage-map-wreck = Salvage wreck
-salvage-map-wreck-desc-size = Size:
-salvage-map-wreck-size-small = [color=lime]Small[/color]
-salvage-map-wreck-size-medium = [color=cornflowerblue]Medium[/color]
-salvage-map-wreck-size-large = [color=orchid]Large[/color]
+salvage-map-wreck = Bergungswrack
+salvage-map-wreck-desc-size = Größe:
+salvage-map-wreck-size-small = [color=lime]Klein[/color]
+salvage-map-wreck-size-medium = [color=cornflowerblue]Mittel[/color]
+salvage-map-wreck-size-large = [color=orchid]Groß[/color]

@@ -32,6 +32,22 @@ namespace Content.Client.UserInterface.Controls
             XamlChildren = ContentsContainer.Children;
         }
 
+        /// <summary>
+        /// Keeps the measured opening size as the lower bound for manual resizing.
+        /// </summary>
+        public bool PreventShrinkingBelowInitialSize { get; set; }
+
+        protected override void Opened()
+        {
+            base.Opened();
+
+            if (!PreventShrinkingBelowInitialSize)
+                return;
+
+            Measure(new Vector2(float.PositiveInfinity, float.PositiveInfinity));
+            MinSize = Vector2.Max(MinSize, DesiredSize);
+        }
+
         public string? Title
         {
             get => WindowTitle.Text;

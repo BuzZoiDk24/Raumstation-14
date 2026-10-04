@@ -13,7 +13,6 @@
                            VerticalAlignment="Top"
                            HorizontalAlignment="Right"
                            MinWidth="256"
-                           MaxWidth="256"
                            Align="Center"
                            Margin="5 0 5 5"
                            Orientation="Vertical">
