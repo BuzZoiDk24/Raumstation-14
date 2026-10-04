@@ -1,8 +1,8 @@
-smart-fridge-component-try-eject-unknown-entry = Invalid selection!
-smart-fridge-component-try-eject-out-of-stock = Out of stock!
-smart-fridge-component-try-eject-access-denied = Access denied!
-smart-fridge-component-search-filter = Search...
+smart-fridge-component-try-eject-unknown-entry = Ungültige Auswahl!
+smart-fridge-component-try-eject-out-of-stock = Nicht vorrätig!
+smart-fridge-component-try-eject-access-denied = Zugriff verweigert!
+smart-fridge-component-search-filter = Suchen...
 smart-fridge-component-title = SmartFridge
 smart-fridge-list-item = {$item} [{$amount}]
-smart-fridge-request-generic = All sales final
-smart-fridge-request-chemistry = Request refills from chemistry
+smart-fridge-request-generic = Keine Rücknahme
+smart-fridge-request-chemistry = Nachschub bei der Chemie anfordern

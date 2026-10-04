@@ -1,3 +1,3 @@
-gas-recycler-reacting = It is [color=green]converting[/color] waste gases.
-gas-recycler-low-pressure = The input pressure is [color=darkred]too low[/color].
-gas-recycler-low-temperature = The input temperature is [color=darkred]too low[/color].
+gas-recycler-reacting = Das Gerät [color=green]wandelt Abgase um[/color].
+gas-recycler-low-pressure = Der Eingangsdruck ist [color=darkred]zu niedrig[/color].
+gas-recycler-low-temperature = Die Eingangstemperatur ist [color=darkred]zu niedrig[/color].
