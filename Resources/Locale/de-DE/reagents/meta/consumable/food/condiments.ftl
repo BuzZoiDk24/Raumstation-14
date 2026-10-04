@@ -1,44 +1,44 @@
-reagent-name-astrotame = Astrotame
-reagent-desc-astrotame = The sweetness of a thousand sugars but none of the calories.
+reagent-name-astrotame = Astrotam
+reagent-desc-astrotame = Die Süße von tausend Zuckerwürfeln, ganz ohne Kalorien.
 
-reagent-name-bbq-sauce = BBQ sauce
-reagent-desc-bbq-sauce = Hand wipes not included.
+reagent-name-bbq-sauce = BBQ-Sauce
+reagent-desc-bbq-sauce = Feuchttücher nicht enthalten.
 
-reagent-name-cornoil = corn oil
-reagent-desc-cornoil = Corn oil, A delicious oil used in cooking. Made from corn.
+reagent-name-cornoil = Maisöl
+reagent-desc-cornoil = Ein schmackhaftes Öl zum Kochen. Wird aus Mais hergestellt.
 
-reagent-name-coldsauce = coldsauce
-reagent-desc-coldsauce = Leaves the tongue numb in its passage.
+reagent-name-coldsauce = Frostsauce
+reagent-desc-coldsauce = Lässt die Zunge beim Essen taub werden.
 
-reagent-name-horseradish-sauce = horseradish sauce
-reagent-desc-horseradish-sauce = Smelly horseradish sauce.
+reagent-name-horseradish-sauce = Meerrettichsauce
+reagent-desc-horseradish-sauce = Eine streng riechende Meerrettichsauce.
 
-reagent-name-hotsauce = hotsauce
-reagent-desc-hotsauce = Burns so good.
+reagent-name-hotsauce = Scharfe Sauce
+reagent-desc-hotsauce = Brennt so schön.
 
-reagent-name-ketchup = ketchup
-reagent-desc-ketchup = Made from pureed tomatoes and flavored with spices.
+reagent-name-ketchup = Ketchup
+reagent-desc-ketchup = Aus pürierten Tomaten hergestellt und mit Gewürzen verfeinert.
 
-reagent-name-ketchunaise = ketchunaise
-reagent-desc-ketchunaise = So-called Russian dressing, popular among Space Americans.
+reagent-name-ketchunaise = Ketchunaise
+reagent-desc-ketchunaise = Auch als Russian Dressing bekannt und bei Weltraumamerikanern beliebt.
 
-reagent-name-laughin-syrup = laughin' syrup
-reagent-desc-laughin-syrup = The product of juicing Laughin' Peas. Fizzy, and seems to change flavour based on what it's used with!
+reagent-name-laughin-syrup = Lachsirup
+reagent-desc-laughin-syrup = Wird aus entsafteten Lacherbsen gewonnen. Sprudelt und scheint je nach Kombination anders zu schmecken!
 
-reagent-name-mayo = mayonnaise
-reagent-desc-mayo = Creamy sauce, made from oil, egg, and some (edible) acid.
+reagent-name-mayo = Mayonnaise
+reagent-desc-mayo = Eine cremige Sauce aus Öl, Ei und etwas essbarer Säure.
 
-reagent-name-mustard = mustard
-reagent-desc-mustard = Basic yellow mustard, made from the seeds of the mustard plant.
+reagent-name-mustard = Senf
+reagent-desc-mustard = Einfacher gelber Senf aus den Samen der Senfpflanze.
 
-reagent-name-vinaigrette = vinaigrette
-reagent-desc-vinaigrette = A basic salad dressing made with oil, vinegar and seasoning.
+reagent-name-vinaigrette = Vinaigrette
+reagent-desc-vinaigrette = Ein einfaches Salatdressing aus Öl, Essig und Gewürzen.
 
-reagent-name-soysauce = soy sauce
-reagent-desc-soysauce = A salty soy-based flavoring.
+reagent-name-soysauce = Sojasauce
+reagent-desc-soysauce = Ein salziges Würzmittel auf Sojabasis.
 
-reagent-name-table-salt = table salt
-reagent-desc-table-salt = Commonly known as salt, Sodium Chloride is often used to season food or kill borers instantly.
+reagent-name-table-salt = Speisesalz
+reagent-desc-table-salt = Natriumchlorid, meist einfach Salz genannt, wird zum Würzen von Speisen verwendet oder um Bohrparasiten sofort zu töten.
 
-reagent-name-syrup = syrup
-reagent-desc-syrup = Delicious syrup made from tree sap, somehow stickier than glue.
+reagent-name-syrup = Sirup
+reagent-desc-syrup = Leckerer Sirup aus Baumsaft, der irgendwie klebriger ist als Klebstoff.

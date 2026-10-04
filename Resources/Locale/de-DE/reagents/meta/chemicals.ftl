@@ -1,38 +1,26 @@
-reagent-name-acetone = acetone
-reagent-desc-acetone = A slick, slightly carcinogenic liquid. Has a multitude of mundane uses in everyday life.
-
-reagent-name-phenol = phenol
-reagent-desc-phenol = An aromatic ring of carbon with a hydroxyl group. A useful precursor to some medicines, but has no healing properties on its own.
-
-reagent-name-sodium-carbonate = sodium carbonate
-reagent-desc-sodium-carbonate = A white, odorless, water-soluble salt that yields an alkaline solution in water.  Also known as soda ash.
-
-reagent-name-artifexium = artifexium
-reagent-desc-artifexium = A lavender mixture of microscopic artifact fragments and a strong acid. It has the ability to activate artifacts.
-
-reagent-name-artifact-glue = artifact glue
-reagent-desc-artifact-glue = Mixture of glue and artifexium. It can restore durability of nodes in artifact on touch.
-
-reagent-name-benzene = benzene
-reagent-desc-benzene = An aromatic, slightly carcinogenic, ring of carbon, forming a base for many organic compounds.
-
-reagent-name-hydroxide = hydroxide
-reagent-desc-hydroxide = A strong alkaline chemical, forming a base for many organic compounds.
-
-reagent-name-sodium-hydroxide = sodium hydroxide
-reagent-desc-sodium-hydroxide = A white, odorless, water-soluble salt that yields an strong alkaline solution in water. Causes burns and vomiting when ingested.
-
-reagent-name-fersilicite = fersilicite
-reagent-desc-fersilicite = An intermetallic compound with unusual magnetic properties at low temperatures.
-
-reagent-name-sodium-polyacrylate = sodium polyacrylate
-reagent-desc-sodium-polyacrylate = A super-absorbent polymer with assorted industrial uses.
-
-reagent-name-cellulose = cellulose fibers
-reagent-desc-cellulose = A crystaline polydextrose polymer, plants swear by this stuff.
-
-reagent-name-rororium = rororium
-reagent-desc-rororium = A strange substance which fills the cores of the hivelords that roam the mining asteroid. Thought to be the source of their regenerative powers.
-
-reagent-name-lye = lye
-reagent-desc-lye = A translucent, orange, alkaline solution used in traditional soap production.
+reagent-name-acetone = Aceton
+reagent-desc-acetone = Eine glatte, leicht krebserregende Flüssigkeit. Hat zahlreiche alltägliche Anwendungen.
+reagent-name-phenol = Phenol
+reagent-desc-phenol = Ein aromatischer Kohlenstoffring mit einer Hydroxygruppe. Wird zur Herstellung einiger Medikamente benötigt, hat selbst aber keine heilende Wirkung.
+reagent-name-sodium-carbonate = Natriumcarbonat
+reagent-desc-sodium-carbonate = Ein weißes, geruchloses und wasserlösliches Salz, das in Wasser eine alkalische Lösung bildet. Auch als Soda bekannt.
+reagent-name-artifexium = Artifexium
+reagent-desc-artifexium = Ein lavendelfarbenes Gemisch aus mikroskopischen Artefaktfragmenten und einer starken Säure. Kann Artefakte aktivieren.
+reagent-name-artifact-glue = Artefaktkleber
+reagent-desc-artifact-glue = Eine Mischung aus Klebstoff und Artifexium. Stellt bei Kontakt die Haltbarkeit von Artefaktknoten wieder her.
+reagent-name-benzene = Benzol
+reagent-desc-benzene = Ein aromatischer, leicht krebserregender Kohlenstoffring. Grundlage vieler organischer Verbindungen.
+reagent-name-hydroxide = Hydroxid
+reagent-desc-hydroxide = Ein stark alkalischer Stoff, der als Grundlage für viele organische Verbindungen dient.
+reagent-name-sodium-hydroxide = Natriumhydroxid
+reagent-desc-sodium-hydroxide = Ein weißes, geruchloses und wasserlösliches Salz, das in Wasser eine stark alkalische Lösung bildet. Verursacht beim Verschlucken Verätzungen und Erbrechen.
+reagent-name-fersilicite = Fersilicit
+reagent-desc-fersilicite = Eine intermetallische Verbindung mit ungewöhnlichen magnetischen Eigenschaften bei niedrigen Temperaturen.
+reagent-name-sodium-polyacrylate = Natriumpolyacrylat
+reagent-desc-sodium-polyacrylate = Ein besonders saugfähiges Polymer mit vielfältigen industriellen Anwendungen.
+reagent-name-cellulose = Cellulosefasern
+reagent-desc-cellulose = Ein kristallines Polydextrose-Polymer. Pflanzen schwören darauf.
+reagent-name-rororium = Rororium
+reagent-desc-rororium = Ein seltsamer Stoff aus den Kernen der Schwarmfürsten, die auf dem Bergungsasteroiden umherstreifen. Gilt als Quelle ihrer Regenerationskräfte.
+reagent-name-lye = Lauge
+reagent-desc-lye = Eine durchscheinende, orangefarbene, alkalische Lösung, die traditionell zur Seifenherstellung verwendet wird.

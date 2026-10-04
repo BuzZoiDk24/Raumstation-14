@@ -1,20 +1,20 @@
-reagent-name-nutriment = nutriment
-reagent-desc-nutriment = All the vitamins, minerals, and carbohydrates the body needs in pure form.
+reagent-name-nutriment = Nährstoffe
+reagent-desc-nutriment = Alle Vitamine, Mineralstoffe und Kohlenhydrate, die der Körper braucht, in reiner Form.
 
-reagent-name-glucose = glucose
-reagent-desc-glucose = A simple sugar found in many foods.
+reagent-name-glucose = Glukose
+reagent-desc-glucose = Ein Einfachzucker, der in vielen Lebensmitteln vorkommt.
 
-reagent-name-vitamin = vitamin
-reagent-desc-vitamin = Found in healthy, complete meals.
+reagent-name-vitamin = Vitamine
+reagent-desc-vitamin = In gesunden, vollwertigen Mahlzeiten enthalten.
 
-reagent-name-protein = protein
-reagent-desc-protein = Found in certain meals, good for bodily health.
+reagent-name-protein = Eiweiß
+reagent-desc-protein = In bestimmten Mahlzeiten enthalten und gut für die Gesundheit.
 
-reagent-name-cocoapowder = cocoa powder
-reagent-desc-cocoapowder = From the best varieties of cocoa beans
+reagent-name-cocoapowder = Kakaopulver
+reagent-desc-cocoapowder = Aus den besten Kakaobohnensorten
 
-reagent-name-butter = butter
-reagent-desc-butter = You can believe it!
+reagent-name-butter = Butter
+reagent-desc-butter = Kaum zu glauben, es ist tatsächlich Butter!
 
-reagent-name-pumpkin-flesh = pumpkin flesh
-reagent-desc-pumpkin-flesh = The mushy, sweet remains of a pumpkin.
+reagent-name-pumpkin-flesh = Kürbisfleisch
+reagent-desc-pumpkin-flesh = Die weichen, süßen Überreste eines Kürbisses.

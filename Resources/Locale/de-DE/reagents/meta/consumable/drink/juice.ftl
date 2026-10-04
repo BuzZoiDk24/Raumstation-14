@@ -1,47 +1,47 @@
-reagent-name-juice-apple = apple juice
-reagent-desc-juice-apple = It's a little piece of Eden.
+reagent-name-juice-apple = Apfelsaft
+reagent-desc-juice-apple = Ein kleines Stück Paradies.
 
-reagent-name-juice-banana = banana juice
-reagent-desc-juice-banana = The raw essence of a banana. HONK.
+reagent-name-juice-banana = Bananensaft
+reagent-desc-juice-banana = Die pure Essenz einer Banane. HONK.
 
-reagent-name-juice-berry = berry juice
-reagent-desc-juice-berry = A delicious blend of several different kinds of berries.
+reagent-name-juice-berry = Beerensaft
+reagent-desc-juice-berry = Eine köstliche Mischung aus verschiedenen Beerensorten.
 
-reagent-name-juice-blue-pumpkin = blue pumpkin juice
-reagent-desc-juice-blue-pumpkin = The juice of a blue pumpkin. Smells like pool water.
+reagent-name-juice-blue-pumpkin = Blauer Kürbissaft
+reagent-desc-juice-blue-pumpkin = Der Saft eines blauen Kürbisses. Riecht nach Schwimmbadwasser.
 
-reagent-name-juice-bungo = bungo juice
-reagent-desc-juice-bungo = The juice of a bungo fruit. Exotic!
+reagent-name-juice-bungo = Bungosaft
+reagent-desc-juice-bungo = Der Saft einer Bungofrucht. Exotisch!
 
-reagent-name-juice-berry-poison = poison berry juice
-reagent-desc-juice-berry-poison = A surprisingly tasty juice blended from various kinds of very deadly and toxic berries.
+reagent-name-juice-berry-poison = Giftbeerensaft
+reagent-desc-juice-berry-poison = Ein überraschend leckerer Saft aus verschiedenen äußerst giftigen und tödlichen Beeren.
 
-reagent-name-juice-carrot = carrot juice
-reagent-desc-juice-carrot = It's like a carrot, but less crunchy.
+reagent-name-juice-carrot = Karottensaft
+reagent-desc-juice-carrot = Wie eine Karotte, nur weniger knackig.
 
-reagent-name-juice-grape = grape juice
-reagent-desc-juice-grape = Freshly squeezed juice from red grapes. Quite sweet.
+reagent-name-juice-grape = Traubensaft
+reagent-desc-juice-grape = Frisch gepresster Saft aus roten Trauben. Ziemlich süß.
 
-reagent-name-juice-lemon = lemon juice
-reagent-desc-juice-lemon = This juice is VERY sour.
+reagent-name-juice-lemon = Zitronensaft
+reagent-desc-juice-lemon = Dieser Saft ist SEHR sauer.
 
-reagent-name-juice-lime = lime juice
-reagent-desc-juice-lime = The sweet-sour juice of limes.
+reagent-name-juice-lime = Limettensaft
+reagent-desc-juice-lime = Der süßsaure Saft von Limetten.
 
-reagent-name-juice-orange = orange juice
-reagent-desc-juice-orange = Both delicious AND rich in Vitamin C. What more do you need?
+reagent-name-juice-orange = Orangensaft
+reagent-desc-juice-orange = Lecker UND reich an Vitamin C. Was will man mehr?
 
-reagent-name-juice-pineapple = pineapple juice
-reagent-desc-juice-pineapple = The delicious juice of a pineapple.
+reagent-name-juice-pineapple = Ananassaft
+reagent-desc-juice-pineapple = Der köstliche Saft einer Ananas.
 
-reagent-name-juice-potato = potato juice
-reagent-desc-juice-potato = Juice of the potato. Bleh.
+reagent-name-juice-potato = Kartoffelsaft
+reagent-desc-juice-potato = Saft aus Kartoffeln. Bäh.
 
-reagent-name-juice-tomato = tomato juice
-reagent-desc-juice-tomato = Tomatoes made into juice. What a waste of good tomatoes, huh?
+reagent-name-juice-tomato = Tomatensaft
+reagent-desc-juice-tomato = Tomaten, zu Saft verarbeitet. Was für eine Verschwendung guter Tomaten, oder?
 
-reagent-name-juice-watermelon = watermelon juice
-reagent-desc-juice-watermelon = The delicious juice of a watermelon.
+reagent-name-juice-watermelon = Wassermelonensaft
+reagent-desc-juice-watermelon = Der köstliche Saft einer Wassermelone.
 
-reagent-name-juice-cherry = cherry juice
-reagent-desc-juice-cherry = Tasty cherry juice, sweet and tangy.
+reagent-name-juice-cherry = Kirschsaft
+reagent-desc-juice-cherry = Leckerer Kirschsaft, süß und säuerlich.

@@ -1,101 +1,101 @@
-reagent-name-coffee = coffee
-reagent-desc-coffee = A drink made from brewed coffee beans. Contains a moderate amount of caffeine.
+reagent-name-coffee = Kaffee
+reagent-desc-coffee = Ein Getränk aus aufgebrühten Kaffeebohnen. Enthält eine mäßige Menge Koffein.
 
-reagent-name-cream = cream
-reagent-desc-cream = The fatty, still liquid part of milk. Why don't you mix this with sum scotch, eh?
+reagent-name-cream = Sahne
+reagent-desc-cream = Der fettreiche, noch flüssige Teil der Milch. Wie wär's mit einem Schuss Scotch dazu?
 
-reagent-name-coconut-water = coconut water
-reagent-desc-coconut-water = A favorite of survivors on deserted islands.
+reagent-name-coconut-water = Kokoswasser
+reagent-desc-coconut-water = Bei Überlebenden auf einsamen Inseln besonders beliebt.
 
-reagent-name-cream-of-coconut = cream of coconut
-reagent-desc-cream-of-coconut = Sweet, syrupy version of coconut cream with added sugar.
+reagent-name-cream-of-coconut = Gesüßte Kokoscreme
+reagent-desc-cream-of-coconut = Eine süße, sirupartige Kokoscreme mit zugesetztem Zucker.
 
-reagent-name-cafe-latte = cafe latte
-reagent-desc-cafe-latte = A nice, strong and tasty beverage while you are reading.
+reagent-name-cafe-latte = Caffè Latte
+reagent-desc-cafe-latte = Ein kräftiges, leckeres Getränk, das sich wunderbar beim Lesen genießen lässt.
 
-reagent-name-tea-powder = tea powder
-reagent-desc-tea-powder = Finely ground tea leaves, used for making tea.
+reagent-name-tea-powder = Teepulver
+reagent-desc-tea-powder = Fein gemahlene Teeblätter zur Zubereitung von Tee.
 
-reagent-name-green-tea = green tea
-reagent-desc-green-tea = Tasty green tea.
+reagent-name-green-tea = Grüner Tee
+reagent-desc-green-tea = Leckerer grüner Tee.
 
-reagent-name-grenadine = grenadine
-reagent-desc-grenadine = Not cherry flavored!
+reagent-name-grenadine = Grenadine
+reagent-desc-grenadine = Schmeckt nicht nach Kirsche!
 
-reagent-name-iced-coffee = iced coffee
-reagent-desc-iced-coffee = Coffee and ice, refreshing and cool.
+reagent-name-iced-coffee = Eiskaffee
+reagent-desc-iced-coffee = Kaffee mit Eis, kühl und erfrischend.
 
-reagent-name-iced-green-tea = iced green tea
-reagent-desc-iced-green-tea = Cold green tea.
+reagent-name-iced-green-tea = Grüner Eistee
+reagent-desc-iced-green-tea = Kalter grüner Tee.
 
-reagent-name-iced-tea = iced tea
-reagent-desc-iced-tea = No relation to a certain rap artist/actor.
+reagent-name-iced-tea = Eistee
+reagent-desc-iced-tea = Nicht mit dem gleichnamigen Rapper und Schauspieler verwandt.
 
-reagent-name-lemonade = lemonade
-reagent-desc-lemonade = Drink using lemon juice, water, and a sweetener such as cane sugar or honey.
+reagent-name-lemonade = Zitronenlimonade
+reagent-desc-lemonade = Ein Getränk aus Zitronensaft, Wasser und einem Süßungsmittel wie Rohrzucker oder Honig.
 
 reagent-name-arnold-palmer = Arnold Palmer
-reagent-desc-arnold-palmer = Now watch this drive.
+reagent-desc-arnold-palmer = Und jetzt schau dir diesen Abschlag an.
 
-reagent-name-milk = milk
-reagent-desc-milk = An opaque white liquid produced by the mammary glands of mammals.
+reagent-name-milk = Milch
+reagent-desc-milk = Eine undurchsichtige weiße Flüssigkeit, die in den Milchdrüsen von Säugetieren entsteht.
 
-reagent-name-milk-goat = goats milk
-reagent-desc-milk-goat = An opaque white liquid produced by a goat. High buttermilk content.
+reagent-name-milk-goat = Ziegenmilch
+reagent-desc-milk-goat = Eine undurchsichtige weiße Flüssigkeit, die von Ziegen produziert wird. Mit hohem Buttermilchanteil.
 
-reagent-name-milk-sheep = sheep's milk
-reagent-desc-milk-sheep = An opaque white liquid produced by a sheep. High in fat.
+reagent-name-milk-sheep = Schafsmilch
+reagent-desc-milk-sheep = Eine undurchsichtige weiße Flüssigkeit, die von Schafen produziert wird. Sehr fettreich.
 
-reagent-name-milk-oat = oat milk
-reagent-desc-milk-oat = Surprisingly tasty.
+reagent-name-milk-oat = Hafermilch
+reagent-desc-milk-oat = Überraschend lecker.
 
-reagent-name-milk-soy = soy milk
-reagent-desc-milk-soy = Consumers favorite.
+reagent-name-milk-soy = Sojamilch
+reagent-desc-milk-soy = Bei Verbrauchern besonders beliebt.
 
-reagent-name-milk-spoiled = spoiled milk
-reagent-desc-milk-spoiled = This milk has gone rancid.
+reagent-name-milk-spoiled = Verdorbene Milch
+reagent-desc-milk-spoiled = Diese Milch ist ranzig geworden.
 
-reagent-name-nothing = nothing
-reagent-desc-nothing = Absolutely nothing.
+reagent-name-nothing = Nichts
+reagent-desc-nothing = Absolut nichts.
 
-reagent-name-nuclear-cola = nuclear cola
-reagent-desc-nuclear-cola = Cola, cola never changes.
+reagent-name-nuclear-cola = Nuklearcola
+reagent-desc-nuclear-cola = Cola. Cola bleibt immer gleich.
 
-reagent-name-hot-cocoa = hot cocoa
-reagent-desc-hot-cocoa = Smells like the holidays!
+reagent-name-hot-cocoa = Heißer Kakao
+reagent-desc-hot-cocoa = Riecht nach Feiertagen!
 
-reagent-name-soda-water = soda water
-reagent-desc-soda-water = A container of club soda. Why not make a scotch and soda?
+reagent-name-soda-water = Sodawasser
+reagent-desc-soda-water = Ein Behälter mit Sodawasser. Wie wär's mit einem Scotch Soda?
 
-reagent-name-soy-latte = soy latte
-reagent-desc-soy-latte = A coffee drink made with espresso and steamed soy milk.
+reagent-name-soy-latte = Soja-Latte
+reagent-desc-soy-latte = Ein Kaffeegetränk aus Espresso und aufgeschäumter Sojamilch.
 
-reagent-name-tea = tea
-reagent-desc-tea = A drink made by boiling leaves of the tea tree, Camellia sinensis.
+reagent-name-tea = Tee
+reagent-desc-tea = Ein Getränk aus aufgebrühten Blättern der Teepflanze Camellia sinensis.
 
-reagent-name-tonic-water = tonic water
-reagent-desc-tonic-water = It tastes strange but at least the quinine keeps the Space Malaria at bay.
+reagent-name-tonic-water = Tonic Water
+reagent-desc-tonic-water = Schmeckt seltsam, aber wenigstens hält das Chinin die Weltraummalaria in Schach.
 
-reagent-name-water = water
-reagent-desc-water = A colorless liquid that humans need in order to survive.
+reagent-name-water = Wasser
+reagent-desc-water = Eine farblose Flüssigkeit, die Menschen zum Überleben brauchen.
 
-reagent-name-ice = ice
-reagent-desc-ice = Frozen water.
+reagent-name-ice = Eis
+reagent-desc-ice = Gefrorenes Wasser.
 
-reagent-name-dry-ramen = dry ramen
-reagent-desc-dry-ramen = Dry noodles and salt.
+reagent-name-dry-ramen = Trockene Ramen
+reagent-desc-dry-ramen = Trockene Nudeln und Salz.
 
-reagent-name-hot-ramen = hot ramen
-reagent-desc-hot-ramen = Hot noodles.
+reagent-name-hot-ramen = Heiße Ramen
+reagent-desc-hot-ramen = Heiße Nudeln.
 
-reagent-name-pilk = pilk
-reagent-desc-pilk = A sickening mixture of milk and cola.
+reagent-name-pilk = Pilk
+reagent-desc-pilk = Eine widerliche Mischung aus Milch und Cola.
 
-reagent-name-posca = posca
-reagent-desc-posca = Poor warriors' drink from a forgotten era.
+reagent-name-posca = Posca
+reagent-desc-posca = Das Getränk armer Krieger aus einer längst vergessenen Zeit.
 
-reagent-name-mopwata = mopwata
-reagent-desc-mopwata = Dirty, stagnant mop water.
+reagent-name-mopwata = Wischwasser
+reagent-desc-mopwata = Schmutziges, abgestandenes Wischwasser.
 
-reagent-name-orange-lime-soda = citrus bikeshed
-reagent-desc-orange-lime-soda = The soda should be orange! No, it should be lemon-lime!
+reagent-name-orange-lime-soda = Zitrusstreit
+reagent-desc-orange-lime-soda = Die Limonade soll nach Orange schmecken! Nein, nach Zitrone und Limette!

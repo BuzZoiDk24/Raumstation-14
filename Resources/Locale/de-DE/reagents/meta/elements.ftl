@@ -1,65 +1,44 @@
-reagent-name-aluminium = aluminium
-reagent-desc-aluminium = A silver, soft, non-magnetic, and ductile metal.
-
-reagent-name-ash = ash
-reagent-desc-ash = A light grey powdery residue
-
-reagent-name-carbon = carbon
-reagent-desc-carbon = A black, crystalline solid.
-
-reagent-name-charcoal = charcoal
-reagent-desc-charcoal = A black, porous solid
-
-reagent-name-chlorine = chlorine
-reagent-desc-chlorine = A yellow-green gas which is toxic to humans.
-
-reagent-name-copper = copper
-reagent-desc-copper = A soft, malleable, and ductile metal with very high thermal and electrical conductivity.
-
-reagent-name-fluorine = fluorine
-reagent-desc-fluorine = A highly toxic pale yellow gas. Extremely reactive.
-
-reagent-name-gold = gold
-reagent-desc-gold = Gold is a dense, soft, shiny metal and the most malleable and ductile metal known.
-
-reagent-name-hydrogen = hydrogen
-reagent-desc-hydrogen = A light, flammable gas.
-
-reagent-name-iodine = iodine
-reagent-desc-iodine = Commonly added to table salt as a nutrient. On its own it tastes far less pleasing.
-
-reagent-name-iron = iron
-reagent-desc-iron = A silvery-grey metal which forms iron oxides (rust) with contact with air. Commonly alloyed with other elements to create alloys such as steel.
-
-reagent-name-lithium = lithium
-reagent-desc-lithium = A soft, silvery-white alkali metal. It's highly reactive, and ignites if it makes contact with water.
-
-reagent-name-mercury = mercury
-reagent-desc-mercury = A silver metal which is liquid at room temperature. It's highly toxic to humans.
-
-reagent-name-potassium = potassium
-reagent-desc-potassium = A soft, shiny grey metal. Even more reactive than lithium.
-
-reagent-name-phosphorus = phosphorus
-reagent-desc-phosphorus = A reactive metal used in pyrotechnics and weapons.
-
-reagent-name-radium = radium
-reagent-desc-radium = A radioactive metal, silvery-white in its pure form. It glows due to its radioactivity and is highly toxic.
-
-reagent-name-silicon = silicon
-reagent-desc-silicon = A hard and brittle crystalline solid with a blue-grey color.
-
-reagent-name-silver = silver
-reagent-desc-silver = A soft, white, lustrous transition metal, it has the highest electrical conductivity of any element and the highest thermal conductivity of any metal.
-
-reagent-name-sulfur = sulfur
-reagent-desc-sulfur = A yellow, crystalline solid.
-
-reagent-name-sodium = sodium
-reagent-desc-sodium = A silvery-white alkali metal. Highly reactive in its pure form.
-
-reagent-name-uranium = uranium
-reagent-desc-uranium = A grey metallic chemical element in the actinide series, weakly radioactive.
-
-reagent-name-zinc = zinc
-reagent-desc-zinc = A silvery, brittle metal, often used in batteries to carry charge.
+reagent-name-aluminium = Aluminium
+reagent-desc-aluminium = Ein silberfarbenes, weiches, nicht magnetisches und gut formbares Metall.
+reagent-name-ash = Asche
+reagent-desc-ash = Ein hellgrauer, pulverförmiger Rückstand.
+reagent-name-carbon = Kohlenstoff
+reagent-desc-carbon = Ein schwarzer, kristalliner Feststoff.
+reagent-name-charcoal = Holzkohle
+reagent-desc-charcoal = Ein schwarzer, poröser Feststoff.
+reagent-name-chlorine = Chlor
+reagent-desc-chlorine = Ein gelbgrünes Gas, das für Menschen giftig ist.
+reagent-name-copper = Kupfer
+reagent-desc-copper = Ein weiches, gut formbares Metall mit sehr hoher Wärme- und elektrischer Leitfähigkeit.
+reagent-name-fluorine = Fluor
+reagent-desc-fluorine = Ein hochgiftiges, blassgelbes Gas. Äußerst reaktionsfreudig.
+reagent-name-gold = Gold
+reagent-desc-gold = Ein dichtes, weiches und glänzendes Metall. Es lässt sich besonders gut verformen und zu dünnen Drähten ziehen.
+reagent-name-hydrogen = Wasserstoff
+reagent-desc-hydrogen = Ein leichtes, brennbares Gas.
+reagent-name-iodine = Iod
+reagent-desc-iodine = Wird häufig als Nährstoff dem Speisesalz zugesetzt. Für sich genommen schmeckt es deutlich weniger angenehm.
+reagent-name-iron = Eisen
+reagent-desc-iron = Ein silbergraues Metall, das an der Luft Eisenoxide bildet, also rostet. Wird häufig mit anderen Elementen zu Legierungen wie Stahl verarbeitet.
+reagent-name-lithium = Lithium
+reagent-desc-lithium = Ein weiches, silberweißes Alkalimetall. Sehr reaktionsfreudig und entzündet sich bei Kontakt mit Wasser.
+reagent-name-mercury = Quecksilber
+reagent-desc-mercury = Ein silberfarbenes Metall, das bei Raumtemperatur flüssig ist. Für Menschen hochgiftig.
+reagent-name-potassium = Kalium
+reagent-desc-potassium = Ein weiches, glänzendes, graues Metall. Noch reaktionsfreudiger als Lithium.
+reagent-name-phosphorus = Phosphor
+reagent-desc-phosphorus = Ein reaktionsfreudiger Stoff, der in Pyrotechnik und Waffen verwendet wird.
+reagent-name-radium = Radium
+reagent-desc-radium = Ein radioaktives Metall, in reiner Form silberweiß. Leuchtet aufgrund seiner Radioaktivität und ist hochgiftig.
+reagent-name-silicon = Silicium
+reagent-desc-silicon = Ein harter, spröder, kristalliner Feststoff von blaugrauer Farbe.
+reagent-name-silver = Silber
+reagent-desc-silver = Ein weiches, weißes und glänzendes Übergangsmetall. Besitzt die höchste elektrische Leitfähigkeit aller Elemente und die höchste Wärmeleitfähigkeit aller Metalle.
+reagent-name-sulfur = Schwefel
+reagent-desc-sulfur = Ein gelber, kristalliner Feststoff.
+reagent-name-sodium = Natrium
+reagent-desc-sodium = Ein silberweißes Alkalimetall. In reiner Form sehr reaktionsfreudig.
+reagent-name-uranium = Uran
+reagent-desc-uranium = Ein graues, metallisches Element aus der Gruppe der Actinoide. Schwach radioaktiv.
+reagent-name-zinc = Zink
+reagent-desc-zinc = Ein silberfarbenes, sprödes Metall, das häufig in Batterien verwendet wird.

@@ -1,41 +1,41 @@
-reagent-name-flour = flour
-reagent-desc-flour = Used for baking.
+reagent-name-flour = Mehl
+reagent-desc-flour = Wird zum Backen verwendet.
 
-reagent-name-cornmeal = cornmeal
-reagent-desc-cornmeal = Used for baking.
+reagent-name-cornmeal = Maismehl
+reagent-desc-cornmeal = Wird zum Backen verwendet.
 
-reagent-name-oats = oats
-reagent-desc-oats = Used for a variety of tasty purposes.
+reagent-name-oats = Hafer
+reagent-desc-oats = Lässt sich auf allerlei leckere Arten verwenden.
 
-reagent-name-enzyme = universal enzyme
-reagent-desc-enzyme = Used in cooking various dishes.
+reagent-name-enzyme = Universalenzym
+reagent-desc-enzyme = Wird zur Zubereitung verschiedener Gerichte verwendet.
 
-reagent-name-egg = cooked egg
-reagent-desc-egg = Cooked chicken embryo, delicious.
+reagent-name-egg = Gekochtes Ei
+reagent-desc-egg = Gegarter Hühnerembryo. Lecker.
 
-reagent-name-raw-egg = raw egg
-reagent-desc-raw-egg = Used for baking.
+reagent-name-raw-egg = Rohes Ei
+reagent-desc-raw-egg = Wird zum Backen verwendet.
 
-reagent-name-sugar = sugar
-reagent-desc-sugar = Tasty spacey sugar!
+reagent-name-sugar = Zucker
+reagent-desc-sugar = Leckerer Weltraumzucker!
 
-reagent-name-blackpepper = black pepper
-reagent-desc-blackpepper = Often used to flavor food or make people sneeze.
+reagent-name-blackpepper = Schwarzer Pfeffer
+reagent-desc-blackpepper = Wird oft zum Würzen verwendet oder um Leute zum Niesen zu bringen.
 
-reagent-name-vinegar = vinegar
-reagent-desc-vinegar = Often used to flavor food.
+reagent-name-vinegar = Essig
+reagent-desc-vinegar = Wird oft zum Würzen verwendet.
 
-reagent-name-rice = rice
-reagent-desc-rice = Hard, small white grains.
+reagent-name-rice = Reis
+reagent-desc-rice = Kleine, harte, weiße Körner.
 
-reagent-name-oil-olive = olive oil
-reagent-desc-oil-olive = Viscous and fragrant.
+reagent-name-oil-olive = Olivenöl
+reagent-desc-oil-olive = Dickflüssig und aromatisch.
 
-reagent-name-oil = oil
-reagent-desc-oil = Used by chefs to cook.
+reagent-name-oil = Öl
+reagent-desc-oil = Wird von Köchen zum Kochen verwendet.
 
-reagent-name-capsaicin-oil = Capsaicin Oil
-reagent-desc-capsaicin-oil = Capsaicin Oil is the ingredient found in different types of hot peppers.
+reagent-name-capsaicin-oil = Capsaicinöl
+reagent-desc-capsaicin-oil = Capsaicinöl kommt in verschiedenen scharfen Chilisorten vor.
 
-reagent-name-frost-oil = Frost Oil
-reagent-desc-frost-oil = Frost Oil is the ingredient found in chilly peppers, a rare pepper mutation.
+reagent-name-frost-oil = Frostöl
+reagent-desc-frost-oil = Frostöl kommt in Frostchilis vor, einer seltenen Chilimutation.

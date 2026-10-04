@@ -1,20 +1,14 @@
-reagent-name-oxygen = oxygen
-reagent-desc-oxygen = An oxidizing, colorless gas.
-
-reagent-name-plasma = plasma
-reagent-desc-plasma = Funky, space-magic pixie dust. You probably shouldn't eat this, but we both know you will anyways.
-
-reagent-name-tritium = tritium
-reagent-desc-tritium = Radioactive space-magic pixie dust.
-
-reagent-name-carbon-dioxide = carbon dioxide
-reagent-desc-carbon-dioxide = You have genuinely no idea what this is.
-
-reagent-name-nitrogen = nitrogen
-reagent-desc-nitrogen = A colorless, odorless unreactive gas. Highly stable.
-
-reagent-name-nitrous-oxide = nitrous oxide
-reagent-desc-nitrous-oxide = You know how everything seems funnier when you're tired? Well...
-
-reagent-name-frezon = frezon
-reagent-desc-frezon = A highly effective coolant.. and hallucinogenic.
+reagent-name-oxygen = Sauerstoff
+reagent-desc-oxygen = Ein farbloses Gas, das Verbrennungen fördert.
+reagent-name-plasma = Plasma
+reagent-desc-plasma = Abgefahrener Feenstaub mit Weltraummagie. Du solltest das vermutlich nicht essen, aber wir wissen beide, dass du es trotzdem tun wirst.
+reagent-name-tritium = Tritium
+reagent-desc-tritium = Radioaktiver Feenstaub mit Weltraummagie.
+reagent-name-carbon-dioxide = Kohlendioxid
+reagent-desc-carbon-dioxide = Du hast wirklich keine Ahnung, was das ist.
+reagent-name-nitrogen = Stickstoff
+reagent-desc-nitrogen = Ein farbloses, geruchloses und reaktionsträges Gas. Sehr stabil.
+reagent-name-nitrous-oxide = Lachgas
+reagent-desc-nitrous-oxide = Kennst du das, wenn alles lustiger wirkt, sobald du müde bist? Tja …
+reagent-name-frezon = Frezon
+reagent-desc-frezon = Ein äußerst wirksames Kühlmittel … und halluzinogen.

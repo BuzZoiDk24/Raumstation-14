@@ -1,6 +1,20 @@
-handheld-grinder-cannot-juice = You cannot juice {THE($item)}!
-handheld-grinder-cannot-grind = You cannot grind {THE($item)}!
-
-handheld-grinder-default = You finished processing {THE($item)}.
-handheld-grinder-juiced = You finished juicing {THE($item)}.
-handheld-grinder-grinded = You finished grinding {THE($item)}.
+handheld-grinder-cannot-juice = Du kannst { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } nicht entsaften!
+handheld-grinder-cannot-grind = Du kannst { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } nicht zerkleinern!
+handheld-grinder-default = Du hast { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } fertig verarbeitet.
+handheld-grinder-juiced = Du hast { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } fertig entsaftet.
+handheld-grinder-grinded = Du hast { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } fertig zerkleinert.

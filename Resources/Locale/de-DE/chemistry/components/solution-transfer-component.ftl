@@ -1,20 +1,38 @@
-### Solution transfer component
-
-comp-solution-transfer-fill-normal = You fill {THE($target)} with {$amount}u from {THE($owner)}.
-comp-solution-transfer-fill-fully = You fill {THE($target)} to the brim with {$amount}u from {THE($owner)}.
-comp-solution-transfer-transfer-solution = You transfer {$amount}u to {THE($target)}.
-
-## Displayed when trying to transfer to a solution, but either the giver is empty or the taker is full
-comp-solution-transfer-is-empty = {CAPITALIZE(THE($target))} is empty!
-comp-solution-transfer-is-full = {CAPITALIZE(THE($target))} is full!
-
-## Displayed in change transfer amount verb's name
-comp-solution-transfer-verb-custom-amount = Custom
+comp-solution-transfer-fill-normal = Du füllst { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "accusative") } { DE-NAME($target, "accusative", "weak") }
+    } mit {$amount}u aus { PROPER($owner) ->
+    [true] { $owner }
+   *[false] { DE-ARTICLE($owner, "dative") } { DE-NAME($owner, "dative", "weak") }
+    }.
+comp-solution-transfer-fill-fully = Du füllst { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "accusative") } { DE-NAME($target, "accusative", "weak") }
+    } mit {$amount}u aus { PROPER($owner) ->
+    [true] { $owner }
+   *[false] { DE-ARTICLE($owner, "dative") } { DE-NAME($owner, "dative", "weak") }
+    } bis zum Rand.
+comp-solution-transfer-transfer-solution = Du überträgst {$amount}u in { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "accusative") } { DE-NAME($target, "accusative", "weak") }
+    }.
+comp-solution-transfer-is-empty = { PROPER($target) ->
+    [true] { $target }
+   *[false] { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") }
+    } { ATTRIB($target, "number") ->
+    [plural] sind leer!
+   *[other] ist leer!
+    }
+comp-solution-transfer-is-full = { PROPER($target) ->
+    [true] { $target }
+   *[false] { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") }
+    } { ATTRIB($target, "number") ->
+    [plural] sind voll!
+   *[other] ist voll!
+    }
+comp-solution-transfer-verb-custom-amount = Benutzerdefiniert
 comp-solution-transfer-verb-amount = {$amount}u
-comp-solution-transfer-verb-toggle = Toggle to {$amount}u
-
-## Displayed after you successfully change a solution's amount using the BUI
-comp-solution-transfer-set-amount = Transfer amount set to {$amount}u.
+comp-solution-transfer-verb-toggle = Auf {$amount}u umstellen
+comp-solution-transfer-set-amount = Die Übertragungsmenge wurde auf {$amount}u eingestellt.
 comp-solution-transfer-set-amount-max = Max: {$amount}u
 comp-solution-transfer-set-amount-min = Min: {$amount}u
-

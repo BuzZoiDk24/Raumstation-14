@@ -1,14 +1,29 @@
-magic-mirror-component-activate-user-has-no-hair = You can't have any hair!
+magic-mirror-component-activate-user-has-no-hair = Du kannst keine Haare bekommen!
 
-magic-mirror-add-slot-self = You're giving yourself some hair.
-magic-mirror-remove-slot-self = You're removing some of your hair.
-magic-mirror-change-slot-self = You're changing your hairstyle.
-magic-mirror-change-color-self = You're changing your hair color.
+magic-mirror-add-slot-self = Du lässt dir Haare wachsen.
+magic-mirror-remove-slot-self = Du entfernst einen Teil deiner Haare.
+magic-mirror-change-slot-self = Du veränderst deine Frisur.
+magic-mirror-change-color-self = Du veränderst deine Haarfarbe.
 
-magic-mirror-add-slot-target = Hair is being added to you by {THE($user)}.
-magic-mirror-remove-slot-target = Your hair is being cut off by {THE($user)}.
-magic-mirror-change-slot-target = Your hairstyle is being changed by {THE($user)}.
-magic-mirror-change-color-target = Your hair color is being changed by {THE($user)}.
+magic-mirror-add-slot-target = { PROPER($user) ->
+    [true] { $user }
+   *[false] { CAPITALIZE(DE-ARTICLE($user, "nominative")) } { DE-NAME($user, "nominative", "weak") }
+    } lässt dir Haare wachsen.
+magic-mirror-remove-slot-target = { PROPER($user) ->
+    [true] { $user }
+   *[false] { CAPITALIZE(DE-ARTICLE($user, "nominative")) } { DE-NAME($user, "nominative", "weak") }
+    } schneidet dir die Haare ab.
+magic-mirror-change-slot-target = { PROPER($user) ->
+    [true] { $user }
+   *[false] { CAPITALIZE(DE-ARTICLE($user, "nominative")) } { DE-NAME($user, "nominative", "weak") }
+    } verändert deine Frisur.
+magic-mirror-change-color-target = { PROPER($user) ->
+    [true] { $user }
+   *[false] { CAPITALIZE(DE-ARTICLE($user, "nominative")) } { DE-NAME($user, "nominative", "weak") }
+    } verändert deine Haarfarbe.
 
-magic-mirror-blocked-by-hat-self = You need to take off your hat before changing your hair.
-magic-mirror-blocked-by-hat-self-target = You try to change {POSS-ADJ($target)} hair but {POSS-ADJ($target)} clothes get in the way.
+magic-mirror-blocked-by-hat-self = Du musst deine Kopfbedeckung abnehmen, bevor du deine Haare verändern kannst.
+magic-mirror-blocked-by-hat-self-target = Du versuchst, die Haare von { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "dative") } { DE-NAME($target, "dative", "weak") }
+    } zu verändern, aber die Kleidung ist im Weg.

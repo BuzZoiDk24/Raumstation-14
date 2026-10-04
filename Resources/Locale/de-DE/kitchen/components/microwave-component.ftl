@@ -1,26 +1,24 @@
-## Entity
-
-microwave-component-interact-using-no-power = It has no power!
-microwave-component-interact-using-broken = It's broken!
-microwave-component-interact-using-container-full = Container is full
-microwave-component-interact-using-transfer-success = Transferred {$amount}u
-microwave-component-interact-using-transfer-fail = That won't work!
-microwave-component-suicide-others-message = {$victim} is trying to cook their head!
-microwave-component-suicide-message = You cook your head!
-microwave-component-interact-full = It's full.
-microwave-component-interact-item-too-big = { CAPITALIZE(THE($item)) } is too big to fit in the microwave!
-
-## Bound UI
-
-microwave-bound-user-interface-instant-button = INSTANT
-microwave-bound-user-interface-cook-time-label = COOK TIME: {$time}
-
-## UI
-
-microwave-menu-title = Microwave
+microwave-component-interact-using-no-power = Die Mikrowelle hat keinen Strom!
+microwave-component-interact-using-broken = Die Mikrowelle ist kaputt!
+microwave-component-interact-using-container-full = Der Behälter ist voll
+microwave-component-interact-using-transfer-success = {$amount}u übertragen
+microwave-component-interact-using-transfer-fail = Das geht nicht!
+microwave-component-suicide-others-message = {$victim} versucht, den eigenen Kopf zu garen!
+microwave-component-suicide-message = Du garst deinen Kopf!
+microwave-component-interact-full = Die Mikrowelle ist voll.
+microwave-component-interact-item-too-big = { PROPER($item) ->
+    [true] { $item }
+   *[false] { CAPITALIZE(DE-ARTICLE($item, "nominative")) } { DE-NAME($item, "nominative", "weak") }
+    } { ATTRIB($item, "number") ->
+    [plural] sind zu groß, um in die Mikrowelle zu passen!
+   *[other] ist zu groß, um in die Mikrowelle zu passen!
+    }
+microwave-bound-user-interface-instant-button = SOFORT
+microwave-bound-user-interface-cook-time-label = GARZEIT: {$time}
+microwave-menu-title = Mikrowelle
 microwave-menu-start-button = Start
-microwave-menu-eject-all-text = Eject All Contents
-microwave-menu-eject-all-tooltip = This vaporizes all reagents, but ejects any solids.
-microwave-menu-instant-button = INSTANT
-microwave-menu-footer-flavor-left = Do not insert any electronic, metallic or living objects.
+microwave-menu-eject-all-text = Alles auswerfen
+microwave-menu-eject-all-tooltip = Dabei werden alle Flüssigkeiten verdampft und alle festen Gegenstände ausgeworfen.
+microwave-menu-instant-button = SOFORT
+microwave-menu-footer-flavor-left = Keine elektronischen, metallischen oder lebenden Gegenstände hineinlegen.
 microwave-menu-footer-flavor-right = v1.5

@@ -458,11 +458,12 @@ public sealed partial class IngestionSystem : EntitySystem
 
         if (args.ForceFed)
         {
+            var verb = GetProtoVerb(edible);
             var targetName = Identity.Entity(args.Target, EntityManager);
             var userName = Identity.Entity(args.User, EntityManager);
-            _popup.PopupEntity(Loc.GetString("edible-force-feed-success", ("user", userName), ("verb", edible.Verb), ("flavors", flavors), ("satiated", args.Satiated)), entity, entity);
+            _popup.PopupEntity(Loc.GetString("edible-force-feed-success", ("user", userName), ("verb", verb), ("flavors", flavors), ("satiated", args.Satiated)), entity, entity);
 
-            _popup.PopupEntity(Loc.GetString("edible-force-feed-success-user", ("target", targetName), ("verb", edible.Verb)), args.User, args.User);
+            _popup.PopupEntity(Loc.GetString("edible-force-feed-success-user", ("target", targetName), ("verb", verb)), args.User, args.User);
 
             // log successful forced feeding
             // TODO: Use correct verb

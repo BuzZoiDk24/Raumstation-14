@@ -1,52 +1,99 @@
-## UI
-
-injector-volume-transfer-label = Volume: [color=white]{$currentVolume}/{$totalVolume}u[/color]
-    Mode: [color=white]{$modeString}[/color] ([color=white]{$transferVolume}u[/color])
-injector-volume-label = Volume: [color=white]{$currentVolume}/{$totalVolume}u[/color]
-    Mode: [color=white]{$modeString}[/color]
-injector-toggle-verb-text = Toggle Injector Mode
-
-## Entity
-
-injector-component-inject-mode-name = inject
-injector-component-draw-mode-name = draw
-injector-component-dynamic-mode-name = dynamic
-injector-component-mode-changed-text = Now {$mode}
-injector-component-transfer-success-message = You transfer {$amount}u into {THE($target)}.
-injector-component-transfer-success-message-self = You transfer {$amount}u into yourself.
-injector-component-inject-success-message = You inject {$amount}u into {THE($target)}!
-injector-component-inject-success-message-self = You inject {$amount}u into yourself!
-injector-component-draw-success-message = You draw {$amount}u from {THE($target)}.
-injector-component-draw-success-message-self = You draw {$amount}u from yourself.
-
-## Fail Messages
-
-injector-component-target-already-full-message = {CAPITALIZE(THE($target))} is already full!
-injector-component-target-already-full-message-self = You are already full!
-injector-component-target-is-empty-message = {CAPITALIZE(THE($target))} is empty!
-injector-component-target-is-empty-message-self = You are empty!
-injector-component-cannot-toggle-draw-message = Too full to draw!
-injector-component-cannot-toggle-inject-message = Nothing to inject!
-injector-component-cannot-toggle-dynamic-message = Can't toggle dynamic!
-injector-component-empty-message = {CAPITALIZE(THE($injector))} is empty!
-injector-component-blocked-user = Protective gear blocked your injection!
-injector-component-blocked-other = {CAPITALIZE(THE(POSS-ADJ($target)))} armor blocked {THE($user)}'s injection!
-injector-component-cannot-transfer-message = You aren't able to transfer into {THE($target)}!
-injector-component-cannot-transfer-message-self = You aren't able to transfer into yourself!
-injector-component-cannot-inject-message = You aren't able to inject into {THE($target)}!
-injector-component-cannot-inject-message-self = You aren't able to inject into yourself!
-injector-component-cannot-draw-message = You aren't able to draw from {THE($target)}!
-injector-component-cannot-draw-message-self = You aren't able to draw from yourself!
-injector-component-ignore-mobs = This injector can only interact with containers!
-
-## mob-inject doafter messages
-
-injector-component-needle-injecting-user = You start injecting the needle.
-injector-component-needle-injecting-target = {CAPITALIZE(THE($user))} is trying to inject a needle into you!
-injector-component-needle-drawing-user = You start drawing the needle.
-injector-component-needle-drawing-target = {CAPITALIZE(THE($user))} is trying to use a needle to draw from you!
-injector-component-spray-injecting-user = You start preparing the spray nozzle.
-injector-component-spray-injecting-target = {CAPITALIZE(THE($user))} is trying to place a spray nozzle onto you!
-
-## Target Popup Success messages
-injector-component-feel-prick-message = You feel a tiny prick!
+injector-volume-transfer-label = Volumen: [color=white]{$currentVolume}/{$totalVolume}u[/color]
+    Modus: [color=white]{$modeString}[/color] ([color=white]{$transferVolume}u[/color])
+injector-volume-label = Volumen: [color=white]{$currentVolume}/{$totalVolume}u[/color]
+    Modus: [color=white]{$modeString}[/color]
+injector-toggle-verb-text = Modus wechseln
+injector-component-inject-mode-name = Injizieren
+injector-component-draw-mode-name = Aufziehen
+injector-component-dynamic-mode-name = Automatisch
+injector-component-mode-changed-text = Jetzt im Modus „{$mode}“.
+injector-component-transfer-success-message = Du überträgst {$amount}u in { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "accusative") } { DE-NAME($target, "accusative", "weak") }
+    }.
+injector-component-transfer-success-message-self = Du überträgst {$amount}u in deinen Körper.
+injector-component-inject-success-message = Du injizierst {$amount}u in { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "accusative") } { DE-NAME($target, "accusative", "weak") }
+    }!
+injector-component-inject-success-message-self = Du injizierst dir {$amount}u!
+injector-component-draw-success-message = Du entnimmst { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "dative") } { DE-NAME($target, "dative", "weak") }
+    } {$amount}u.
+injector-component-draw-success-message-self = Du entnimmst dir {$amount}u.
+injector-component-target-already-full-message = { PROPER($target) ->
+    [true] { $target }
+   *[false] { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") }
+    } { ATTRIB($target, "number") ->
+    [plural] sind bereits voll!
+   *[other] ist bereits voll!
+    }
+injector-component-target-already-full-message-self = Du kannst keine weitere Flüssigkeit aufnehmen!
+injector-component-target-is-empty-message = { PROPER($target) ->
+    [true] { $target }
+   *[false] { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") }
+    } { ATTRIB($target, "number") ->
+    [plural] sind leer!
+   *[other] ist leer!
+    }
+injector-component-target-is-empty-message-self = Dir lässt sich keine Flüssigkeit entnehmen!
+injector-component-cannot-toggle-draw-message = Zu voll zum Aufziehen!
+injector-component-cannot-toggle-inject-message = Nichts zum Injizieren!
+injector-component-cannot-toggle-dynamic-message = Der automatische Modus lässt sich nicht aktivieren!
+injector-component-empty-message = { PROPER($injector) ->
+    [true] { $injector }
+   *[false] { CAPITALIZE(DE-ARTICLE($injector, "nominative")) } { DE-NAME($injector, "nominative", "weak") }
+    } { ATTRIB($injector, "number") ->
+    [plural] sind leer!
+   *[other] ist leer!
+    }
+injector-component-blocked-user = Die Schutzausrüstung hat deine Injektion verhindert!
+injector-component-blocked-other = Die Schutzausrüstung von { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "dative") } { DE-NAME($target, "dative", "weak") }
+    } hat die Injektion durch { PROPER($user) ->
+    [true] { $user }
+   *[false] { DE-ARTICLE($user, "accusative") } { DE-NAME($user, "accusative", "weak") }
+    } verhindert!
+injector-component-cannot-transfer-message = Du kannst keine Flüssigkeit in { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "accusative") } { DE-NAME($target, "accusative", "weak") }
+    } übertragen!
+injector-component-cannot-transfer-message-self = Du kannst keine Flüssigkeit in deinen Körper übertragen!
+injector-component-cannot-inject-message = Du kannst { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "dative") } { DE-NAME($target, "dative", "weak") }
+    } nichts injizieren!
+injector-component-cannot-inject-message-self = Du kannst dir nichts injizieren!
+injector-component-cannot-draw-message = Du kannst { PROPER($target) ->
+    [true] { $target }
+   *[false] { DE-ARTICLE($target, "dative") } { DE-NAME($target, "dative", "weak") }
+    } keine Flüssigkeit entnehmen!
+injector-component-cannot-draw-message-self = Du kannst dir keine Flüssigkeit entnehmen!
+injector-component-ignore-mobs = Dieser Injektor kann nur mit Behältern verwendet werden!
+injector-component-needle-injecting-user = Du beginnst, die Nadel einzuführen.
+injector-component-needle-injecting-target = { PROPER($user) ->
+    [true] { $user }
+   *[false] { CAPITALIZE(DE-ARTICLE($user, "nominative")) } { DE-NAME($user, "nominative", "weak") }
+    } { ATTRIB($user, "number") ->
+    [plural] versuchen
+   *[other] versucht
+    }, dir eine Nadel einzuführen!
+injector-component-needle-drawing-user = Du beginnst, mit der Nadel Flüssigkeit zu entnehmen.
+injector-component-needle-drawing-target = { PROPER($user) ->
+    [true] { $user }
+   *[false] { CAPITALIZE(DE-ARTICLE($user, "nominative")) } { DE-NAME($user, "nominative", "weak") }
+    } { ATTRIB($user, "number") ->
+    [plural] versuchen
+   *[other] versucht
+    }, dir mit einer Nadel Flüssigkeit zu entnehmen!
+injector-component-spray-injecting-user = Du beginnst, die Sprühdüse vorzubereiten.
+injector-component-spray-injecting-target = { PROPER($user) ->
+    [true] { $user }
+   *[false] { CAPITALIZE(DE-ARTICLE($user, "nominative")) } { DE-NAME($user, "nominative", "weak") }
+    } { ATTRIB($user, "number") ->
+    [plural] versuchen
+   *[other] versucht
+    }, eine Sprühdüse an deinen Körper zu halten!
+injector-component-feel-prick-message = Du spürst einen kleinen Stich!

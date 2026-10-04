@@ -15,16 +15,16 @@ tickrate = 30
 port = 1212
 # Attempt to automatically forward the port using UPnP. Change to true to enable.
 # If it doesn't work, please follow the instructions here: https://docs.spacestation14.com/en/server-hosting/port-forwarding.html
-upnp = false
+upnp = true
 # The maximum number of players that can connect to the server. (Including admins)
 # Look at the game section for the soft max players setting. Which is what is displayed in the server list.
 max_connections = 256
 
 [game]
 # Name of the server. This is what will be displayed in the server list and lobby.
-hostname = "MyServer"
+hostname = "[GER] CHillstube Server"
 # Description of the server. This is what will be displayed in the server list.
-desc = "Just another server, don't mind me!"
+desc = "Deutscher SS14-Server, basierend auf Vanilla-Code von Wizden."
 # The maximum number of players that can connect to the server. (Exluding admins)
 soft_max_players = 30
 # Controls the lobby timer in seconds.
@@ -84,7 +84,7 @@ enabled = false
 [chat]
 # Message of the day. This is displayed to players when they connect to the server.
 # Type your message between the quotes.
-motd = ""
+motd = "Willkommen auf dem CHillstube-Server von SS14!"
 
 [hub]
 # Set to true to show this server on the public server list
@@ -127,6 +127,11 @@ ahelp_webhook = ""
 round_update_webhook = ""
 # Role ID to ping when the round ends.
 round_end_role = ""
+
+[training]
+# Automatische Stromversorgung für Übungsrunden.
+# Wird beim Initialisieren der Karte angewendet.
+infinite_station_power = false
 
 [adminlogs]
 # Name of the server within the admin logs.

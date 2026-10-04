@@ -1,3 +1,5 @@
-cloning-pod-biomass = It currently has [color=red]{$number}[/color] units of biomass.
-
-cloning-pod-component-upgrade-emag-requirement = The card zaps something inside the cloning pod.
+cloning-pod-biomass = Die Kapsel enthält derzeit [color=red]{$number}[/color] { $number ->
+    [1] Einheit
+   *[other] Einheiten
+    } Biomasse.
+cloning-pod-component-upgrade-emag-requirement = Die Karte lässt im Inneren der Klonkapsel etwas knistern.

@@ -1,18 +1,34 @@
-# Types
-mixing-verb-default-mix = mix
-mixing-verb-default-grind = grind
-mixing-verb-default-juice = juice
-mixing-verb-default-condense = condense
-mixing-verb-centrifuge = centrifugation
-mixing-verb-electrolysis = electrolyze
-mixing-verb-holy = bless
-mixing-verb-stir = stir
-mixing-verb-shake = shake
-
-## Entity
-
-default-mixing-success = You mix the {$mixed} with the {$mixer}
-bible-mixing-success = You bless the {$mixed} with the {$mixer}
-spoon-mixing-success = You stir the {$mixed} with the {$mixer}
-handheld-centrifuge-success = You seperate chemicals in the {$mixed}
-
+mixing-verb-default-mix = mischen
+mixing-verb-default-grind = zerkleinern
+mixing-verb-default-juice = entsaften
+mixing-verb-default-condense = kondensieren
+mixing-verb-centrifuge = zentrifugieren
+mixing-verb-electrolysis = elektrolysieren
+mixing-verb-holy = segnen
+mixing-verb-stir = umrühren
+mixing-verb-shake = schütteln
+default-mixing-success = Du mischst den Inhalt von { PROPER($mixed) ->
+    [true] { $mixed }
+   *[false] { DE-ARTICLE($mixed, "dative") } { DE-NAME($mixed, "dative", "weak") }
+    } mit { PROPER($mixer) ->
+    [true] { $mixer }
+   *[false] { DE-ARTICLE($mixer, "dative") } { DE-NAME($mixer, "dative", "weak") }
+    }
+bible-mixing-success = Du segnest { PROPER($mixed) ->
+    [true] { $mixed }
+   *[false] { DE-ARTICLE($mixed, "accusative") } { DE-NAME($mixed, "accusative", "weak") }
+    } mit { PROPER($mixer) ->
+    [true] { $mixer }
+   *[false] { DE-ARTICLE($mixer, "dative") } { DE-NAME($mixer, "dative", "weak") }
+    }
+spoon-mixing-success = Du rührst den Inhalt von { PROPER($mixed) ->
+    [true] { $mixed }
+   *[false] { DE-ARTICLE($mixed, "dative") } { DE-NAME($mixed, "dative", "weak") }
+    } mit { PROPER($mixer) ->
+    [true] { $mixer }
+   *[false] { DE-ARTICLE($mixer, "dative") } { DE-NAME($mixer, "dative", "weak") }
+    } um
+handheld-centrifuge-success = Du trennst die Chemikalien in { PROPER($mixed) ->
+    [true] { $mixed }
+   *[false] { DE-ARTICLE($mixed, "dative") } { DE-NAME($mixed, "dative", "weak") }
+    }
