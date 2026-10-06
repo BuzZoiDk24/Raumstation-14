@@ -1,18 +1,18 @@
-borg-module-fit = This module fits into {$types}.
+borg-module-fit = Dieses Modul passt in {$types}.
 
-borg-type-all = [color=white]any cyborg[/color]
-borg-type-salvage = [color= #d6b328]salvage cyborgs[/color]
-borg-type-engineer = [color= #ff9900]engineer cyborgs[/color]
-borg-type-generic = [color= #666680]generic cyborgs[/color]
-borg-type-janitor = [color= #a747c0]janitor cyborgs[/color]
-borg-type-medical = [color= #5995ba]medical cyborgs[/color]
-borg-type-service = [color= #508242]service cyborgs[/color]
+borg-type-all = [color=white]jeden Cyborg[/color]
+borg-type-salvage = [color= #d6b328]Bergungs-Cyborgs[/color]
+borg-type-engineer = [color= #ff9900]Technik-Cyborgs[/color]
+borg-type-generic = [color= #666680]Allzweck-Cyborgs[/color]
+borg-type-janitor = [color= #a747c0]Reinigungs-Cyborgs[/color]
+borg-type-medical = [color= #5995ba]Medizin-Cyborgs[/color]
+borg-type-service = [color= #508242]Service-Cyborgs[/color]
 
-borg-type-syndicate = [color= #962023]syndicate cyborgs[/color]
-borg-type-syndicate-assault = [color= #680a0d]syndicate assault cyborgs[/color]
+borg-type-syndicate = [color= #962023]Syndikats-Cyborgs[/color]
+borg-type-syndicate-assault = [color= #680a0d]Syndikats-Sturmcyborgs[/color]
 
-xenoborg-type-all = [color= #3d94ff]any xenoborg[/color]
-xenoborg-type-engi = [color= #edd45b]engi xenoborgs[/color]
-xenoborg-type-heavy = [color= #d62020]heavy xenoborgs[/color]
-xenoborg-type-scout = [color= #6a6b6f]scout xenoborgs[/color]
-xenoborg-type-stealth = [color= #ff00cc]stealth xenoborgs[/color]
+xenoborg-type-all = [color= #3d94ff]jeden Xenoborg[/color]
+xenoborg-type-engi = [color= #edd45b]Technik-Xenoborgs[/color]
+xenoborg-type-heavy = [color= #d62020]schwere Xenoborgs[/color]
+xenoborg-type-scout = [color= #6a6b6f]Aufklärungs-Xenoborgs[/color]
+xenoborg-type-stealth = [color= #ff00cc]Tarn-Xenoborgs[/color]

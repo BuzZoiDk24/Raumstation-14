@@ -1,9 +1,9 @@
-node-scan-tooltip = Scan active nodes
-node-scan-no-data = No active node data found
-node-scan-display-title = Node scanner
+node-scan-tooltip = Aktive Knoten scannen
+node-scan-no-data = Keine Daten zu aktiven Knoten gefunden
+node-scan-display-title = Knotenscanner
 
-node-scanner-artifact-state-ready = Artifact is ready for interaction
-node-scanner-artifact-state-unlocking = Artifact is resonating with your actions
-node-scanner-artifact-state-cooldown = Artifact is resting
-node-scanner-artifact-connected = Scanning artifact
-node-scanner-artifact-non-connected = Artifact not found or out of range
+node-scanner-artifact-state-ready = Das Artefakt ist bereit für eine Interaktion
+node-scanner-artifact-state-unlocking = Das Artefakt reagiert auf deine Handlungen
+node-scanner-artifact-state-cooldown = Das Artefakt ruht
+node-scanner-artifact-connected = Artefakt wird gescannt
+node-scanner-artifact-non-connected = Kein Artefakt gefunden oder außerhalb der Reichweite

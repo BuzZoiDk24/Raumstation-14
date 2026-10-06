@@ -1,20 +1,20 @@
-robotics-console-window-title = Robotics Console
-robotics-console-no-cyborgs = No Cyborgs!
+robotics-console-window-title = Robotikkonsole
+robotics-console-no-cyborgs = Keine Cyborgs!
 
-robotics-console-select-cyborg = Select a cyborg above.
-robotics-console-model = [color=gray]Model:[/color] {$name}
+robotics-console-select-cyborg = Wähle oben einen Cyborg aus.
+robotics-console-model = [color=gray]Modell:[/color] {$name}
 # name is not formatted to prevent players trolling
-robotics-console-designation = [color=gray]Designation:[/color]
-robotics-console-battery = [color=gray]Battery charge:[/color] [color={$color}]{$charge}[/color]%
-robotics-console-hp = [color=gray]Integrity:[/color] [color={$color}]{$hp}[/color]%
-robotics-console-modules = [color=gray]Modules installed:[/color] {$count}
-robotics-console-brain = [color=gray]Brain installed:[/color] [color={$brain ->
-    [true] green]Yes
-    *[false] red]No
+robotics-console-designation = [color=gray]Kennung:[/color]
+robotics-console-battery = [color=gray]Akkuladung:[/color] [color={$color}]{$charge}[/color]%
+robotics-console-hp = [color=gray]Integrität:[/color] [color={$color}]{$hp}[/color]%
+robotics-console-modules = [color=gray]Installierte Module:[/color] {$count}
+robotics-console-brain = [color=gray]Gehirn installiert:[/color] [color={$brain ->
+    [true] green]Ja
+    *[false] red]Nein
 }[/color]
 
-robotics-console-locked-message = Controls locked, swipe ID.
-robotics-console-disable = Disable
-robotics-console-destroy = Destroy
+robotics-console-locked-message = Bedienelemente gesperrt, ID-Karte durchziehen.
+robotics-console-disable = Deaktivieren
+robotics-console-destroy = Zerstören
 
-robotics-console-cyborg-destroying = {$name} is being remotely detonated!
+robotics-console-cyborg-destroying = {$name} wird aus der Ferne gesprengt!

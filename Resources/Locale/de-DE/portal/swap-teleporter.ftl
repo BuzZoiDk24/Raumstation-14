@@ -1,18 +1,17 @@
-swap-teleporter-popup-link-create = Quantum link established!
-swap-teleporter-popup-link-fail-already = Quantum link failed! Link already present on device.
-swap-teleporter-popup-link-fail-already-other = Quantum link failed! Link already present on secondary device.
-swap-teleporter-popup-link-destroyed = Quantum link destroyed!
-swap-teleporter-popup-teleport-cancel-time = It's still recharging!
-swap-teleporter-popup-teleport-cancel-link = It's not linked with another device!
-swap-teleporter-popup-teleport-other = {CAPITALIZE(THE($entity))} activates, and you find yourself somewhere else.
-swap-teleporter-popup-teleport-fail = {CAPITALIZE(THE($entity))} activates and fails to transport you anywhere.
+swap-teleporter-popup-link-create = Quantenverbindung hergestellt!
+swap-teleporter-popup-link-fail-already = Quantenverbindung fehlgeschlagen! Dieses Gerät ist bereits verbunden.
+swap-teleporter-popup-link-fail-already-other = Quantenverbindung fehlgeschlagen! Das andere Gerät ist bereits verbunden.
+swap-teleporter-popup-link-destroyed = Quantenverbindung getrennt!
+swap-teleporter-popup-teleport-cancel-time = Das Gerät lädt noch auf!
+swap-teleporter-popup-teleport-cancel-link = Das Gerät ist mit keinem anderen verbunden!
+swap-teleporter-popup-teleport-other = {CAPITALIZE(DE-ARTICLE($entity, "nominative"))} { DE-NAME($entity, "nominative", "weak") } aktiviert sich und du findest dich an einem anderen Ort wieder.
+swap-teleporter-popup-teleport-fail = {CAPITALIZE(DE-ARTICLE($entity, "nominative"))} { DE-NAME($entity, "nominative", "weak") } aktiviert sich, kann dich aber nirgendwohin transportieren.
 
-swap-teleporter-verb-destroy-link = Destroy Quantum Link
+swap-teleporter-verb-destroy-link = Quantenverbindung trennen
 
-swap-teleporter-examine-link-present = [color=forestgreen]It is linked to another device.[/color] Alt-Click to break the quantum link.
-swap-teleporter-examine-link-absent = [color=yellow]It is not currently linked.[/color] Use on another device to establish a quantum link.
-swap-teleporter-examine-time-remaining = Time left to recharge: [color=purple]{$second} second{$second ->
-    [one].
-    *[other]s.
+swap-teleporter-examine-link-present = [color=forestgreen]Das Gerät ist mit einem anderen verbunden.[/color] Alt-Klick trennt die Quantenverbindung.
+swap-teleporter-examine-link-absent = [color=yellow]Das Gerät ist derzeit nicht verbunden.[/color] Benutze es an einem anderen Gerät, um eine Quantenverbindung herzustellen.
+swap-teleporter-examine-time-remaining = Verbleibende Ladezeit: [color=purple]{$second} {$second ->
+    [one] Sekunde.
+    *[other] Sekunden.
 }[/color]
-

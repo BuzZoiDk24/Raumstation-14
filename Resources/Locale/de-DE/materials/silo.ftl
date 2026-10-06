@@ -1,10 +1,10 @@
-ore-silo-ui-title = Material Silo
-ore-silo-ui-label-clients = Machines
-ore-silo-ui-label-mats = Materials
+ore-silo-ui-title = Materialsilo
+ore-silo-ui-label-clients = Maschinen
+ore-silo-ui-label-mats = Materialien
 ore-silo-ui-itemlist-entry = {$linked ->
-    [true] {"[Linked] "}
+    [true] {"[Verbunden] "}
     *[False] {""}
 } {$name} ({$beacon}) {$inRange ->
     [true] {""}
-    *[false] (Out of Range)
+    *[false] (Außer Reichweite)
 }

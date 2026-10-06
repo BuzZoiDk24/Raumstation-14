@@ -1,57 +1,57 @@
 # General
-ai-wire-snipped = One of your systems' wires has been cut at {$source}.
-wire-name-ai-vision-light = AIV
-wire-name-ai-act-light = AIA
-station-ai-takeover = AI takeover
-station-ai-eye-name = AI eye - {$name}
-station-ai-has-no-power-for-upload = Upload failed - the AI core is unpowered.
-station-ai-is-too-damaged-for-upload = Upload failed - the AI core must be repaired.
-station-ai-core-losing-power = Your AI core is now running on reserve battery power.
-station-ai-core-critical-power = Your AI core is critically low on power. External power must be re-established or severe data corruption may occur!
-station-ai-core-taking-damage = Your AI core is sustaining physical damage.
+ai-wire-snipped = Bei {$source} wurde ein Kabel eines deiner Systeme durchtrennt.
+wire-name-ai-vision-light = KIS
+wire-name-ai-act-light = KIA
+station-ai-takeover = KI-Übernahme
+station-ai-eye-name = KI-Auge - {$name}
+station-ai-has-no-power-for-upload = Übertragung fehlgeschlagen - der KI-Kern hat keinen Strom.
+station-ai-is-too-damaged-for-upload = Übertragung fehlgeschlagen - der KI-Kern muss repariert werden.
+station-ai-core-losing-power = Dein KI-Kern läuft jetzt mit Reservestrom.
+station-ai-core-critical-power = Die Energiereserven deines KI-Kerns sind fast aufgebraucht. Stelle die externe Stromversorgung wieder her, sonst drohen schwere Datenverluste!
+station-ai-core-taking-damage = Dein KI-Kern erleidet physische Schäden.
 
 # Ghost role
-station-ai-ghost-role-name = Station AI
-station-ai-ghost-role-description = Serve the station crew as its ever watchful AI.
+station-ai-ghost-role-name = Stations-KI
+station-ai-ghost-role-description = Diene der Stationscrew als ihre stets wachsame KI.
 
 # Radial actions
-ai-open = Open actions
-ai-close = Close actions
+ai-open = Aktionen öffnen
+ai-close = Aktionen schließen
 
-bolt-close = Close bolt
-bolt-open = Open bolt
+bolt-close = Bolzen senken
+bolt-open = Bolzen anheben
 
-emergency-access-on = Enable emergency access
-emergency-access-off = Disable emergency access
+emergency-access-on = Notfallzugang aktivieren
+emergency-access-off = Notfallzugang deaktivieren
 
-electrify-door-on = Enable overcharge
-electrify-door-off = Disable overcharge
+electrify-door-on = Überladung aktivieren
+electrify-door-off = Überladung deaktivieren
 
-toggle-light = Toggle light
+toggle-light = Licht umschalten
 
-ai-device-not-responding = Device is not responding
-ai-device-no-access = You have no access to this device
+ai-device-not-responding = Das Gerät reagiert nicht
+ai-device-no-access = Du hast keinen Zugriff auf dieses Gerät
 
-ai-consciousness-download-warning = Your consciousness is being downloaded.
+ai-consciousness-download-warning = Dein Bewusstsein wird heruntergeladen.
 
 # UI
-station-ai-customization-menu = AI customization
-station-ai-customization-categories = Categories
-station-ai-customization-options = Options (choice of one)
-station-ai-customization-core = AI core displays
-station-ai-customization-hologram = Holographic avatars
+station-ai-customization-menu = KI-Anpassung
+station-ai-customization-categories = Kategorien
+station-ai-customization-options = Optionen (eine Auswahl)
+station-ai-customization-core = Anzeigen des KI-Kerns
+station-ai-customization-hologram = Holografische Avatare
 
 # Customizations
-station-ai-icon-ai = Ghost in the machine
-station-ai-icon-angel = Guardian angel
-station-ai-icon-bliss = Simpler times
-station-ai-icon-clown = Clownin' around
-station-ai-icon-dorf = Adventure awaits
-station-ai-icon-heartline = Lifeline
-station-ai-icon-smiley = All smiles
+station-ai-icon-ai = Geist in der Maschine
+station-ai-icon-angel = Schutzengel
+station-ai-icon-bliss = Einfachere Zeiten
+station-ai-icon-clown = Clownereien
+station-ai-icon-dorf = Das Abenteuer wartet
+station-ai-icon-heartline = Lebenslinie
+station-ai-icon-smiley = Immer ein Lächeln
 
-station-ai-hologram-female = Female appearance
-station-ai-hologram-male = Male appearance
-station-ai-hologram-face = Disembodied head
-station-ai-hologram-cat = Cat form
-station-ai-hologram-dog = Corgi form
+station-ai-hologram-female = Weibliche Erscheinung
+station-ai-hologram-male = Männliche Erscheinung
+station-ai-hologram-face = Freischwebender Kopf
+station-ai-hologram-cat = Katzengestalt
+station-ai-hologram-dog = Corgigestalt
