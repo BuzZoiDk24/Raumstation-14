@@ -9,10 +9,10 @@ Der Anomaliepartikelemitter (A.P.E.) beeinflusst die Werte einer Anomalie, indem
 
 Der A.P.E. verschießt vier Arten anomaler Partikel: Delta, Epsilon, Sigma und Zeta. Jede Art hat eine bestimmte Wirkung:
 
-- [color=crimson]Gefahr:[/color] Erhöht die Gefährlichkeit der Anomalie.
+- [color=crimson]Gefahr:[/color] Erhöht die Intensität der Anomalie.
 - [color=plum]Instabilität:[/color] Macht die Anomalie instabiler.
 - [color=goldenrod]Eindämmung:[/color] Erhöht die Stabilität, senkt aber die Gesundheit. Zu viele Eindämmungspartikel lassen die Anomalie zusammenbrechen und einen Anomaliekern zurücklassen.
-- [color=#6b75fa]Umwandlung:[/color] Erhöht die Gefährlichkeit und kann das Verhalten der Anomalie verändern.
+- [color=#6b75fa]Umwandlung:[/color] Erhöht die Intensität und kann das Verhalten der Anomalie verändern.
 
 Welche Partikelart welche Wirkung hat, unterscheidet sich von Anomalie zu Anomalie. Ein Scan verrät dir die Zuordnung.
 

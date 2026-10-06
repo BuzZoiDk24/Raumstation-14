@@ -19,7 +19,7 @@ ent-RandomTraitorAliveObjective = Verbündeten am Leben halten
 ent-RandomTraitorProgressObjective = Verbündetem zum Erfolg verhelfen
     .desc = Gib dich nur zu erkennen, wenn du das Risiko eingehen willst. Hauptsache, diese Person erfüllt ihre Ziele.
 
-ent-SupercritAnomaliesObjective = Anomalien überkritisch werden lassen
+ent-SupercritAnomaliesObjective = Überkritische Reaktionen auslösen
     .desc = NanoTrasen interessiert sich sehr für Anomalien mit möglicherweise katastrophalen Folgen. Zeig ihnen, mit welchem Feuer sie spielen.
 
 ent-HijackTradeStationObjective = Übernimm die automatisierte Handelsstation.

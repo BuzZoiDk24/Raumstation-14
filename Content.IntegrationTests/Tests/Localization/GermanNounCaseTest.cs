@@ -31,6 +31,18 @@ public sealed class GermanNounCaseTest : GameTest
     [TestCase("GermanNounCaseTestVariant", "genitive", "weak", "Rucksacks")]
     [TestCase("GermanNounCaseTestRenamedVariant", "genitive", "weak", "Spezialbeutel")]
     [TestCase("MobCorgiIan", "genitive", "weak", "Ian")]
+    [TestCase("FoodDonkpocketSpicyWarm", "nominative", "weak", "warme scharfe Donk-Pocket")]
+    [TestCase("FoodDonkpocketSpicyWarm", "accusative", "mixed", "warme scharfe Donk-Pocket")]
+    [TestCase("FoodDonkpocketSpicyWarm", "dative", "mixed", "warmen scharfen Donk-Pocket")]
+    [TestCase("FoodDonkpocketSpicyWarm", "genitive", "strong", "warmer scharfer Donk-Pocket")]
+    [TestCase("FoodMeatChickenFriedVox", "accusative", "mixed", "mysteriöses frittiertes Hähnchen")]
+    [TestCase("FoodMeatChickenFriedVox", "dative", "strong", "mysteriösem frittiertem Hähnchen")]
+    [TestCase("FoodMeatChickenFriedVox", "genitive", "weak", "mysteriösen frittierten Hähnchens")]
+    [TestCase("FoodBreadFrenchToast", "dative", "weak", "armen Rittern")]
+    [TestCase("FoodCocoaBeans", "dative", "weak", "Kakaobohnen")]
+    [TestCase("FoodPizzaMeatSlice", "genitive", "weak", "Stücks Fleischpizza")]
+    [TestCase("FoodMeatFish", "genitive", "weak", "rohen Karpfenfilets")]
+    [TestCase("FoodEggBoiled", "dative", "strong", "gekochtem Ei")]
     public async Task PrototypeNameForms(string prototype, string grammaticalCase, string form, string expected)
     {
         await Pair.Server.WaitAssertion(() =>

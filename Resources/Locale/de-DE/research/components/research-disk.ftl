@@ -1,1 +1,1 @@
-research-disk-inserted = You insert the disk, adding {$points} points to the server.
+research-disk-inserted = Du legst den Datenträger ein und fügst dem Server {$points} Forschungspunkte hinzu.

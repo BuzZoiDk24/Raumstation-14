@@ -566,7 +566,9 @@ namespace Content.Shared.Localizations
                     _ => ""
                 }
             };
-            return stem + ending;
+            // Comma-separated stems let every adjective in a name share the ending.
+            // A stem such as "sehr alt" remains a single phrase.
+            return string.Join(" ", stem.Split(',').Select(part => part.Trim() + ending));
         }
 
         /// <summary>

@@ -67,8 +67,8 @@ signal-port-description-growing = Sendet ein Signal, wenn die verbundene Anomali
 signal-port-name-pulse = Puls
 signal-port-description-pulse = Sendet ein Signal, wenn die verbundene Anomalie pulsiert.
 
-signal-port-name-supercrit = Überkritisches Ereignis
-signal-port-description-supercrit = Sendet ein Signal, wenn die verbundene Anomalie nach Erreichen von 100 % Gefährlichkeit ein überkritisches Ereignis auslöst.
+signal-port-name-supercrit = Überkritische Reaktion
+signal-port-description-supercrit = Sendet ein Signal, wenn die verbundene Anomalie bei 100 % Intensität eine überkritische Reaktion auslöst.
 
 signal-port-name-power-charging = Wird geladen
 signal-port-description-power-charging = Sendet HIGH, wenn die Batterie geladen wird, und andernfalls LOW.

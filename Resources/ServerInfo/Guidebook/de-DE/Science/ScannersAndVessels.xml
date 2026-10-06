@@ -7,7 +7,7 @@ Mit dem Anomaliescanner untersuchst du Anomalien. Du findest ihn in den Schränk
 <GuideEntityEmbed Entity="AnomalyScanner"/>
 </Box>
 
-Ein Scan zeigt die Gefährlichkeit, den Stabilitätsverlauf, die ungefähre Ausbeute an Forschungspunkten, die Reaktion auf verschiedene Partikelarten und die Zeit bis zum nächsten Puls. Mit den Angaben zu den Partikeln kannst du die Anomalie über einen A.P.E. gezielt beeinflussen.
+Ein Scan zeigt die Intensität, den Stabilitätsverlauf, die ungefähre Ausbeute an Forschungspunkten, die Reaktion auf verschiedene Partikelarten und die Zeit bis zum nächsten Puls. Mit den Angaben zu den Partikeln kannst du die Anomalie über einen A.P.E. gezielt beeinflussen.
 
 ## Anomaliegefäß
 
@@ -17,8 +17,8 @@ Ein Anomaliegefäß erzeugt Forschungspunkte aus einer Anomalie. Benutze den Sca
 <GuideEntityEmbed Entity="MachineAnomalyVessel"/>
 </Box>
 
-Wie viele Punkte das Gefäß pro Sekunde erzeugt, hängt von Gefährlichkeit, Stabilität und Gesundheit der Anomalie ab. Je höher die Werte, desto größer die Ausbeute.
+Wie viele Punkte das Gefäß pro Sekunde erzeugt, hängt von Intensität, Stabilität und Gesundheit der Anomalie ab. Je höher die Werte, desto größer die Ausbeute.
 
-Vorsicht: Wird eine verbundene Anomalie [color=#a4885c]überkritisch[/color], explodiert das Gefäß. Dabei können die Station und Geräte in der Nähe beschädigt werden.
+Vorsicht: Löst eine verbundene Anomalie eine [color=#a4885c]überkritische Reaktion[/color] aus, explodiert das Gefäß. Dabei können die Station und Geräte in der Nähe beschädigt werden.
 
 </Document>

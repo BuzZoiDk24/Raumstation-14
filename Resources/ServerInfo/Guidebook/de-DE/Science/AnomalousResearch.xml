@@ -27,15 +27,15 @@ Anomalien erscheinen an festen Orten auf der Station. Du kannst sie nicht bewege
 
 Jede Anomalie hat drei wichtige Werte. Zwei davon zeigt der Anomaliescanner an:
 
-- [color=#a4885c]Gefährlichkeit:[/color] Ein Zahlenwert dafür, wie gefährlich die Anomalie ist.
+- [color=#a4885c]Intensität:[/color] Ein Zahlenwert für die Stärke der Anomalie.
 - [color=#a4885c]Stabilität:[/color] Sie kann abnehmen, gleich bleiben oder zunehmen. Davon hängt ab, wie häufig und weitreichend die Auswirkungen sind.
 - [color=#a4885c]Gesundheit:[/color] Dieser Wert ist verborgen. Eindämmungspartikel senken ihn; zu viele lassen die Anomalie verschwinden.
 
-## Pulse und überkritische Ereignisse
-Besonders gefährlich sind [color=#a4885c]Pulse[/color] und [color=#a4885c]überkritische Ereignisse[/color].
+## Pulse und überkritische Reaktionen
+Besonders gefährlich sind [color=#a4885c]Pulse[/color] und [color=#a4885c]überkritische Reaktionen[/color].
 
-Bei einem Puls breiten sich die Auswirkungen der Anomalie schlagartig aus. Wie gefährlich das ist, hängt von ihrer Gefährlichkeit und Stabilität ab.
+Bei einem Puls breiten sich die Auswirkungen der Anomalie schlagartig aus. Wie stark diese Auswirkungen ausfallen, hängt von ihrer Intensität und Stabilität ab.
 
-Erreicht eine Anomalie 100 % Gefährlichkeit, wird sie überkritisch. Sie schwillt an und verschwindet anschließend in einem katastrophalen Ereignis. Lass es möglichst nicht dazu kommen!
+Bei 100 % Intensität kommt es zu einer überkritischen Reaktion. Die Anomalie schwillt an und verschwindet anschließend mit katastrophalen Auswirkungen. Lass es möglichst nicht dazu kommen!
 
 </Document>
