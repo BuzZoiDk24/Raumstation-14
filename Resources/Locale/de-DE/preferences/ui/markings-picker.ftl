@@ -65,3 +65,4 @@ markings-layer-LFoot = Left Foot
 markings-layer-Overlay = Overlay
 markings-layer-TailOverlay = Overlay
 
+markings-layer-OverEyes = Über den Augen

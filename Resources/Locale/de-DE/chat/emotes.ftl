@@ -94,3 +94,6 @@ chat-emote-msg-flap = { DE-GENDER($entity) ->
     [epicene] schlägt mit den Flügeln.
    *[other] schlägt mit { DE-POSS-ADJ(DE-GENDER($entity), $bodySex, "dative", "plural") } Flügeln.
 }
+
+chat-emote-name-blink = Blinzeln
+chat-emote-msg-blink = blinzelt.
