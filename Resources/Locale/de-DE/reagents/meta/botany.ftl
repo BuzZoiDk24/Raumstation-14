@@ -1,23 +1,23 @@
-reagent-name-e-z-nutrient = EZ nutrient
-reagent-desc-e-z-nutrient = Give your plants some of those EZ nutrients! Dionas find this delicious.
+reagent-name-e-z-nutrient = EZ-Nährstoff
+reagent-desc-e-z-nutrient = Gönn deinen Pflanzen etwas EZ-Nährstoff! Dionas finden ihn köstlich.
 
-reagent-name-left4-zed = left-4-zed
-reagent-desc-left4-zed = A cocktail of mutagenic compounds that gives nutrients, harms and affects plant life's genome.
+reagent-name-left4-zed = Left-4-Zed
+reagent-desc-left4-zed = Ein Cocktail aus mutagenen Verbindungen, der Pflanzen mit Nährstoffen versorgt, ihnen schadet und ihr Erbgut verändert.
 
-reagent-name-mutagenic-fertilizer = mutagenic fertilizer
-reagent-desc-mutagenic-fertilizer = A pungent fertilizer that mutates plants while keeping them edible.
+reagent-name-mutagenic-fertilizer = Mutagener Dünger
+reagent-desc-mutagenic-fertilizer = Ein streng riechender Dünger, der Pflanzen mutieren lässt, ohne sie ungenießbar zu machen.
 
-reagent-name-pest-killer = pest killer
-reagent-desc-pest-killer = A mixture that targets pests. While useful it slowly poisons plants with toxins, be careful when using it.
+reagent-name-pest-killer = Schädlingsvernichter
+reagent-desc-pest-killer = Eine Mischung gegen Schädlinge. Trotz ihres Nutzens vergiftet sie Pflanzen langsam, also sei bei der Anwendung vorsichtig.
 
-reagent-name-plant-b-gone = plant-B-gone
-reagent-desc-plant-b-gone = A harmful toxic mixture to kill plantlife. Very effective against kudzu.
+reagent-name-plant-b-gone = Plant-B-Gone
+reagent-desc-plant-b-gone = Eine schädliche, giftige Mischung zum Abtöten von Pflanzen. Sehr wirksam gegen Kudzu.
 
-reagent-name-robust-harvest = robust harvest
-reagent-desc-robust-harvest = A highly effective fertilizer with a limited potency-boosting effect on plants. Use it cautiously, as excessive application can reduce plant yield. It has a particularly beneficial effect on dionas.
+reagent-name-robust-harvest = Robust Harvest
+reagent-desc-robust-harvest = Ein hochwirksamer Dünger, der die Potenz von Pflanzen in begrenztem Umfang erhöht. Vorsichtig anwenden, da übermäßiger Einsatz den Ertrag verringern kann. Wirkt besonders günstig auf Dionas.
 
-reagent-name-weed-killer = weed killer
-reagent-desc-weed-killer = A mixture that targets weeds. Very effective against kudzu. While useful it slowly poisons plants with toxins, be careful when using it.
+reagent-name-weed-killer = Unkrautvernichter
+reagent-desc-weed-killer = Eine Mischung gegen Unkraut. Sehr wirksam gegen Kudzu. Trotz ihres Nutzens vergiftet sie Pflanzen langsam, also sei bei der Anwendung vorsichtig.
 
 reagent-name-ammonia = Ammoniak
 reagent-desc-ammonia = Ein wirksamer Dünger, der Pflanzen mit Nährstoffen versorgt.

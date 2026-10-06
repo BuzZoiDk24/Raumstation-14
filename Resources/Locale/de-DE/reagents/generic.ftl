@@ -1,11 +1,9 @@
-### Messages that can be utilized by multiple reagents.
-
-generic-reagent-effect-burning-insides = You feel your insides burning up!
-generic-reagent-effect-burning-eyes = Your eyes begin to slightly burn.
-generic-reagent-effect-burning-eyes-a-bit = Your eyes burn a bit.
-generic-reagent-effect-tearing-up = Your eyes start to tear up.
-generic-reagent-effect-nauseous = You feel nauseous.
-generic-reagent-effect-parched = You feel parched.
-generic-reagent-effect-thirsty = You feel thirsty.
-generic-reagent-effect-sick = You feel sick after consuming that...
-generic-reagent-effect-slicing-insides = You feel an incredibly sharp pain in your gut!
+generic-reagent-effect-burning-insides = Du spürst, wie dein Inneres brennt!
+generic-reagent-effect-burning-eyes = Deine Augen beginnen leicht zu brennen.
+generic-reagent-effect-burning-eyes-a-bit = Deine Augen brennen ein wenig.
+generic-reagent-effect-tearing-up = Deine Augen beginnen zu tränen.
+generic-reagent-effect-nauseous = Dir ist übel.
+generic-reagent-effect-parched = Du fühlst dich völlig ausgetrocknet.
+generic-reagent-effect-thirsty = Du hast Durst.
+generic-reagent-effect-sick = Nachdem du das zu dir genommen hast, wird dir schlecht...
+generic-reagent-effect-slicing-insides = Du spürst einen unglaublich stechenden Schmerz im Bauch!
