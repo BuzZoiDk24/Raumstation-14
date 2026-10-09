@@ -18,11 +18,18 @@ public sealed partial class PirateAccentSystem : RelayAccentSystem<PirateAccentC
     // Converts left word when typed into the right word. For example typing you becomes ye.
     public override string Accentuate(string message, Entity<PirateAccentComponent>? ent = null)
     {
+        if (string.IsNullOrWhiteSpace(message))
+            return message;
+
+        var german = Loc.DefaultCulture?.TwoLetterISOLanguageName == "de";
+
         var random = ent.HasValue
             ? SharedRandomExtensions.PredictedRandom(_timing, GetNetEntity(ent.Value))
             : _random;
 
-        var msg = _replacement.ApplyReplacements(message, "pirate", ent?.Owner);
+        var msg = german
+            ? AccentuateGerman(message)
+            : _replacement.ApplyReplacements(message, "pirate", ent?.Owner);
 
         if (!random.Prob(ent.HasValue ? ent.Value.Comp.YarrChance : 0.5f))
             return msg;
@@ -36,9 +43,10 @@ public sealed partial class PirateAccentSystem : RelayAccentSystem<PirateAccentC
             var pick = random.Pick(ent.Value.Comp.PirateWords);
             var pirateWord = Loc.GetString(pick);
             // Reverse sanitize capital
-            if (!firstWordAllCaps)
+            // German prefixes are separate exclamations. Keep noun and sentence capitals.
+            if (!firstWordAllCaps && !german)
                 msg = msg[0].ToString().ToLower() + msg.Remove(0, 1);
-            else
+            else if (firstWordAllCaps)
                 pirateWord = pirateWord.ToUpper();
             msg = pirateWord + " " + msg;
         }
