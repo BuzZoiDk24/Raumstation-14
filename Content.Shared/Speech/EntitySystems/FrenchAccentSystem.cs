@@ -1,5 +1,8 @@
 using System.Text.RegularExpressions;
 using Content.Shared.Speech.Components;
+using Content.Shared.Random.Helpers;
+using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 namespace Content.Shared.Speech.EntitySystems;
 
@@ -9,6 +12,8 @@ namespace Content.Shared.Speech.EntitySystems;
 public sealed partial class FrenchAccentSystem : RelayAccentSystem<FrenchAccentComponent>
 {
     [Dependency] private ReplacementAccentSystem _replacement = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IGameTiming _timing = default!;
 
     private static readonly Regex RegexTh = new("th", RegexOptions.IgnoreCase);
     private static readonly Regex RegexStartH = new(@"(?<!\w)h", RegexOptions.IgnoreCase);
@@ -16,6 +21,17 @@ public sealed partial class FrenchAccentSystem : RelayAccentSystem<FrenchAccentC
 
     public override string Accentuate(string message, Entity<FrenchAccentComponent>? ent = null)
     {
+        if (string.IsNullOrWhiteSpace(message))
+            return message;
+
+        if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+        {
+            var random = ent.HasValue
+                ? SharedRandomExtensions.PredictedRandom(_timing, GetNetEntity(ent.Value))
+                : _random;
+            return AccentuateGerman(message, random);
+        }
+
         var msg = message;
 
         msg = _replacement.ApplyReplacements(msg, "french", ent?.Owner);
