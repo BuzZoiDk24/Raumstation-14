@@ -30,3 +30,25 @@ accent-skeleton-words-replace-8 = tibia
 
 accent-skeleton-words-9 = under
 accent-skeleton-words-replace-9 = ulna
+
+# German bone puns. Only complete utterances are replaced.
+
+accent-skeleton-german-1 = mir schlottern die Knochen
+    .source = Ich habe Angst|Ich hab Angst
+    .scope = whole
+
+accent-skeleton-german-2 = der Schreck sitzt mir in den Knochen
+    .source = Ich bin erschrocken|Ich habe mich erschrocken|Das hat mich erschreckt
+    .scope = whole
+
+accent-skeleton-german-3 = KLAPPER KLAPPER
+    .source = Scheiße|Scheisse|Verdammt|Mist
+    .scope = whole
+
+accent-skeleton-german-4 = knochensicher
+    .source = Ganz sicher|Absolut|Auf jeden Fall|Definitiv
+    .scope = whole
+
+accent-skeleton-german-5 = ich bin knochenmüde
+    .source = Ich bin müde|Ich bin total müde|Ich bin erschöpft|Ich bin totmüde
+    .scope = whole

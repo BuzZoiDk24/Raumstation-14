@@ -246,3 +246,640 @@ accent-cowboy-replacement-82 = hollered
 
 accent-cowboy-words-83 = yelling
 accent-cowboy-replacement-83 = hollering
+
+# German cowboy rules. Original keys remain for prototype compatibility.
+accent-cowboy-german-1 = howdy
+    .source = Hallo|Hi|Hey|Guten Tag|Guten Morgen|Guten Abend|Moin|Servus|Grüß dich|Grüss dich
+    .scope = whole
+
+accent-cowboy-german-2 = bis dann, Partner
+    .source = Tschüss|Tschuess|Tschau|Ciao|Auf Wiedersehen|Bis bald|Bis später|Mach es gut|Machs gut|Mach's gut
+    .scope = whole
+
+accent-cowboy-german-3 = bin dir verbunden
+    .source = Danke|Vielen Dank|Danke schön|Dankeschön|Danke sehr|Besten Dank
+    .scope = whole
+
+accent-cowboy-german-4 = bin euch verbunden
+    .source = Danke euch|Vielen Dank euch
+    .scope = whole
+
+accent-cowboy-german-5 = was in drei Teufels Namen
+    .source = Was zum Teufel|Was zur Hölle|Was zum Geier|WTF
+    .scope = whole
+
+accent-cowboy-german-6 = Donnerwetter
+    .source = Wow|Boah
+    .scope = whole
+
+accent-cowboy-german-7 = sei so gut und hilf mir
+    .source = Bitte hilf mir|Hilf mir bitte
+    .scope = whole
+
+accent-cowboy-german-8 = seien Sie so gut und helfen Sie mir
+    .source = Bitte helfen Sie mir
+    .scope = whole
+
+accent-cowboy-german-9 = mir knurrt der Magen
+    .source = Ich habe Hunger|Ich bin hungrig
+    .scope = whole
+
+accent-cowboy-german-10 = mir platzt der Kragen
+    .source = Ich bin wütend|Ich bin sauer
+    .scope = whole
+
+accent-cowboy-german-11 = ich bin hundemüde
+    .source = Ich bin müde|Ich bin erschöpft
+    .scope = whole
+
+accent-cowboy-german-12 = will ich meinen
+    .source = Ich denke schon|Ich glaube schon
+    .scope = whole
+
+accent-cowboy-german-13 = glaub ich kaum
+    .source = Ich denke nicht|Ich glaube nicht
+    .scope = whole
+
+accent-cowboy-german-14 = mach dich vom Acker
+    .source = Lauf|Hau ab|Verschwinde|Mach dich weg
+    .scope = whole
+
+accent-cowboy-german-15 = macht euch vom Acker
+    .source = Lauft|Haut ab|Verschwindet
+    .scope = whole
+
+accent-cowboy-german-16 = Bohnensaft
+    .source = Kaffee
+    .scope = words
+
+accent-cowboy-german-17 = des Bohnensafts
+    .source = des Kaffees
+    .scope = words
+
+accent-cowboy-german-18 = eines Bohnensafts
+    .source = eines Kaffees
+    .scope = words
+
+accent-cowboy-german-19 = Sechsschüsser
+    .source = Revolver
+    .scope = words
+
+accent-cowboy-german-20 = Sechsschüssers
+    .source = Revolvers
+    .scope = words
+
+accent-cowboy-german-21 = Sechsschüssern
+    .source = Revolvern
+    .scope = words
+
+accent-cowboy-german-22 = Kittchen
+    .source = Gefängnis
+    .scope = words
+
+accent-cowboy-german-23 = Kittchens
+    .source = Gefängnisses
+    .scope = words
+
+accent-cowboy-german-24 = Kittchen
+    .source = Gefängnisse
+    .scope = words
+
+accent-cowboy-german-25 = Kittchen
+    .source = Gefängnissen
+    .scope = words
+
+accent-cowboy-german-26 = Partner
+    .source = Kumpel
+    .scope = words
+
+accent-cowboy-german-27 = des Partners
+    .source = des Kumpels
+    .scope = words
+
+accent-cowboy-german-28 = eines Partners
+    .source = eines Kumpels
+    .scope = words
+
+accent-cowboy-german-29 = die Partner
+    .source = die Kumpels
+    .scope = words
+
+accent-cowboy-german-30 = mit den Partnern
+    .source = mit den Kumpels
+    .scope = words
+
+accent-cowboy-german-31 = Partnerin
+    .source = Kollegin|Kumpeline
+    .scope = words
+
+accent-cowboy-german-32 = Partnerinnen
+    .source = Kolleginnen
+    .scope = words
+
+accent-cowboy-german-33 = Dynamitstange
+    .source = Bombe
+    .scope = words
+
+accent-cowboy-german-34 = Dynamitstangen
+    .source = Bomben
+    .scope = words
+
+accent-cowboy-german-35 = Blechmann
+    .source = Cyborg|Borg
+    .scope = words
+
+accent-cowboy-german-36 = die Blechmänner
+    .source = die Cyborgs|die Borgs
+    .scope = words
+
+accent-cowboy-german-37 = den Blechmännern
+    .source = den Cyborgs|den Borgs
+    .scope = words
+
+accent-cowboy-german-38 = des Blechmanns
+    .source = des Cyborgs|des Borgs
+    .scope = words
+
+accent-cowboy-german-39 = eines Blechmanns
+    .source = eines Cyborgs|eines Borgs
+    .scope = words
+
+accent-cowboy-german-40 = Fesseln
+    .source = Handschellen
+    .scope = words
+
+accent-cowboy-german-41 = verschnürt
+    .source = gefesselt
+    .scope = words
+
+accent-cowboy-german-42 = eingefangen
+    .source = festgenommen
+    .scope = words
+
+accent-cowboy-german-43 = einfangen
+    .source = festnehmen
+    .scope = words
+
+accent-cowboy-german-44 = einzufangen
+    .source = festzunehmen
+    .scope = words
+
+accent-cowboy-german-45 = das Futter
+    .source = das Essen
+    .scope = words
+
+accent-cowboy-german-46 = mein Futter
+    .source = mein Essen
+    .scope = words
+
+accent-cowboy-german-47 = dein Futter
+    .source = dein Essen
+    .scope = words
+
+accent-cowboy-german-48 = sein Futter
+    .source = sein Essen
+    .scope = words
+
+accent-cowboy-german-49 = ihr Futter
+    .source = ihr Essen
+    .scope = words
+
+accent-cowboy-german-50 = Stiefel
+    .source = Schuh
+    .scope = words
+
+accent-cowboy-german-51 = Stiefel
+    .source = Schuhe
+    .scope = words
+
+accent-cowboy-german-52 = Stiefeln
+    .source = Schuhen
+    .scope = words
+
+accent-cowboy-german-53 = Stiefels
+    .source = Schuhs
+    .scope = words
+
+accent-cowboy-german-54 = Stiefels
+    .source = Schuhes
+    .scope = words
+
+accent-cowboy-german-55 = Viehklau
+    .source = Diebstahl
+    .scope = words
+
+accent-cowboy-german-56 = Viehklaus
+    .source = Diebstahls
+    .scope = words
+
+accent-cowboy-german-57 = Raubzug
+    .source = Überfall
+    .scope = words
+
+accent-cowboy-german-58 = Raubzugs
+    .source = Überfalls
+    .scope = words
+
+accent-cowboy-german-59 = Raubzüge
+    .source = Überfälle
+    .scope = words
+
+accent-cowboy-german-60 = Raubzügen
+    .source = Überfällen
+    .scope = words
+
+accent-cowboy-german-61 = brüllen
+    .source = schreien
+    .scope = words
+
+accent-cowboy-german-62 = brülle
+    .source = schreie
+    .scope = words
+
+accent-cowboy-german-63 = brüllst
+    .source = schreist
+    .scope = words
+
+accent-cowboy-german-64 = brüllt
+    .source = schreit
+    .scope = words
+
+accent-cowboy-german-65 = brüllte
+    .source = schrie
+    .scope = words
+
+accent-cowboy-german-66 = gebrüllt
+    .source = geschrien
+    .scope = words
+
+accent-cowboy-german-67 = mächtig
+    .source = sehr
+    .scope = words
+
+accent-cowboy-german-68 = völlig
+    .source = total
+    .scope = words
+
+accent-cowboy-german-69 = hundemüde
+    .source = müde
+    .scope = words
+
+accent-cowboy-german-70 = hundemüden
+    .source = müden
+    .scope = words
+
+accent-cowboy-german-71 = hundemüder
+    .source = müder
+    .scope = words
+
+accent-cowboy-german-72 = hundemüdes
+    .source = müdes
+    .scope = words
+
+accent-cowboy-german-73 = hundemüdem
+    .source = müdem
+    .scope = words
+
+accent-cowboy-german-74 = ratlos
+    .source = verwirrt
+    .scope = words
+
+accent-cowboy-german-75 = ratlose
+    .source = verwirrte
+    .scope = words
+
+accent-cowboy-german-76 = ratlosen
+    .source = verwirrten
+    .scope = words
+
+accent-cowboy-german-77 = ratloser
+    .source = verwirrter
+    .scope = words
+
+accent-cowboy-german-78 = ratloses
+    .source = verwirrtes
+    .scope = words
+
+accent-cowboy-german-79 = ratlosem
+    .source = verwirrtem
+    .scope = words
+
+accent-cowboy-german-80 = das Greenhorn
+    .source = der Anfänger
+    .scope = start
+
+accent-cowboy-german-81 = das Greenhorn
+    .source = den Anfänger
+    .scope = words
+
+accent-cowboy-german-82 = dem Greenhorn
+    .source = dem Anfänger
+    .scope = words
+
+accent-cowboy-german-83 = des Greenhorns
+    .source = des Anfängers
+    .scope = words
+
+accent-cowboy-german-84 = ein Greenhorn
+    .source = ein Anfänger
+    .scope = words
+
+accent-cowboy-german-85 = ein Greenhorn
+    .source = einen Anfänger
+    .scope = words
+
+accent-cowboy-german-86 = einem Greenhorn
+    .source = einem Anfänger
+    .scope = words
+
+accent-cowboy-german-87 = eines Greenhorns
+    .source = eines Anfängers
+    .scope = words
+
+accent-cowboy-german-88 = Greenhorn
+    .source = Anfänger
+    .scope = whole
+
+accent-cowboy-german-89 = das Greenhorn
+    .source = der Neuling
+    .scope = words
+
+accent-cowboy-german-90 = das Greenhorn
+    .source = den Neuling
+    .scope = words
+
+accent-cowboy-german-91 = dem Greenhorn
+    .source = dem Neuling
+    .scope = words
+
+accent-cowboy-german-92 = des Greenhorns
+    .source = des Neulings
+    .scope = words
+
+accent-cowboy-german-93 = ein Greenhorn
+    .source = ein Neuling
+    .scope = words
+
+accent-cowboy-german-94 = ein Greenhorn
+    .source = einen Neuling
+    .scope = words
+
+accent-cowboy-german-95 = einem Greenhorn
+    .source = einem Neuling
+    .scope = words
+
+accent-cowboy-german-96 = eines Greenhorns
+    .source = eines Neulings
+    .scope = words
+
+accent-cowboy-german-97 = Greenhorn
+    .source = Neuling
+    .scope = whole
+
+accent-cowboy-german-98 = das Greenhorn
+    .source = die Anfängerin
+    .scope = words
+
+accent-cowboy-german-99 = ein Greenhorn
+    .source = eine Anfängerin
+    .scope = words
+
+accent-cowboy-german-100 = mit dem Greenhorn
+    .source = mit der Anfängerin
+    .scope = words
+
+accent-cowboy-german-101 = mit einem Greenhorn
+    .source = mit einer Anfängerin
+    .scope = words
+
+accent-cowboy-german-102 = die Greenhorns
+    .source = die Anfänger
+    .scope = words
+
+accent-cowboy-german-103 = den Greenhorns
+    .source = den Anfängern
+    .scope = words
+
+accent-cowboy-german-104 = Greenhorns
+    .source = Anfängerinnen|Neulinge|Neulingen
+    .scope = words
+
+accent-cowboy-german-105 = Greenhorn
+    .source = Anfängerin
+    .scope = whole
+
+accent-cowboy-german-106 = der Gesetzlose
+    .source = der Verräter
+    .scope = start
+
+accent-cowboy-german-107 = den Gesetzlosen
+    .source = den Verräter
+    .scope = words
+
+accent-cowboy-german-108 = dem Gesetzlosen
+    .source = dem Verräter
+    .scope = words
+
+accent-cowboy-german-109 = des Gesetzlosen
+    .source = des Verräters
+    .scope = words
+
+accent-cowboy-german-110 = ein Gesetzloser
+    .source = ein Verräter
+    .scope = words
+
+accent-cowboy-german-111 = einen Gesetzlosen
+    .source = einen Verräter
+    .scope = words
+
+accent-cowboy-german-112 = einem Gesetzlosen
+    .source = einem Verräter
+    .scope = words
+
+accent-cowboy-german-113 = eines Gesetzlosen
+    .source = eines Verräters
+    .scope = words
+
+accent-cowboy-german-114 = die Gesetzlosen
+    .source = die Verräter
+    .scope = words
+
+accent-cowboy-german-115 = den Gesetzlosen
+    .source = den Verrätern
+    .scope = words
+
+accent-cowboy-german-116 = die Gesetzlose
+    .source = die Verräterin
+    .scope = words
+
+accent-cowboy-german-117 = der Gesetzlosen
+    .source = der Verräterin
+    .scope = words
+
+accent-cowboy-german-118 = eine Gesetzlose
+    .source = eine Verräterin
+    .scope = words
+
+accent-cowboy-german-119 = einer Gesetzlosen
+    .source = einer Verräterin
+    .scope = words
+
+accent-cowboy-german-120 = die Gesetzlosen
+    .source = die Verräterinnen
+    .scope = words
+
+accent-cowboy-german-121 = den Gesetzlosen
+    .source = den Verräterinnen
+    .scope = words
+
+accent-cowboy-german-122 = Gesetzloser
+    .source = Verräter
+    .scope = whole
+
+accent-cowboy-german-123 = Gesetzlose
+    .source = Verräterin
+    .scope = whole
+
+accent-cowboy-german-124 = mein Gesetzloser
+    .source = mein Verräter
+    .scope = words
+
+accent-cowboy-german-125 = dein Gesetzloser
+    .source = dein Verräter
+    .scope = words
+
+accent-cowboy-german-126 = sein Gesetzloser
+    .source = sein Verräter
+    .scope = words
+
+accent-cowboy-german-127 = ihr Gesetzloser
+    .source = ihr Verräter
+    .scope = words
+
+accent-cowboy-german-128 = unser Gesetzloser
+    .source = unser Verräter
+    .scope = words
+
+accent-cowboy-german-129 = euer Gesetzloser
+    .source = euer Verräter
+    .scope = words
+
+accent-cowboy-german-130 = der Partner
+    .source = der Kollege
+    .scope = words
+
+accent-cowboy-german-131 = ein Partner
+    .source = ein Kollege
+    .scope = words
+
+accent-cowboy-german-132 = einen Partner
+    .source = einen Kollegen
+    .scope = words
+
+accent-cowboy-german-133 = einem Partner
+    .source = einem Kollegen
+    .scope = words
+
+accent-cowboy-german-134 = des Partners
+    .source = des Kollegen
+    .scope = words
+
+accent-cowboy-german-135 = eines Partners
+    .source = eines Kollegen
+    .scope = words
+
+accent-cowboy-german-136 = die Partner
+    .source = die Kollegen
+    .scope = words
+
+accent-cowboy-german-137 = mit den Partnern
+    .source = mit den Kollegen
+    .scope = words
+
+accent-cowboy-german-138 = Partner
+    .source = Kollege
+    .scope = whole
+
+accent-cowboy-german-139 = das Schießeisen
+    .source = die Waffe
+    .scope = words
+
+accent-cowboy-german-140 = ein Schießeisen
+    .source = eine Waffe
+    .scope = words
+
+accent-cowboy-german-141 = mit dem Schießeisen
+    .source = mit der Waffe
+    .scope = words
+
+accent-cowboy-german-142 = mit einem Schießeisen
+    .source = mit einer Waffe
+    .scope = words
+
+accent-cowboy-german-143 = wegen des Schießeisens
+    .source = wegen der Waffe
+    .scope = words
+
+accent-cowboy-german-144 = wegen eines Schießeisens
+    .source = wegen einer Waffe
+    .scope = words
+
+accent-cowboy-german-145 = Schießeisen
+    .source = Waffen
+    .scope = words
+
+accent-cowboy-german-146 = mein Schießeisen
+    .source = meine Waffe
+    .scope = words
+
+accent-cowboy-german-147 = dein Schießeisen
+    .source = deine Waffe
+    .scope = words
+
+accent-cowboy-german-148 = sein Schießeisen
+    .source = seine Waffe
+    .scope = words
+
+accent-cowboy-german-149 = ihr Schießeisen
+    .source = ihre Waffe
+    .scope = words
+
+accent-cowboy-german-150 = unser Schießeisen
+    .source = unsere Waffe
+    .scope = words
+
+accent-cowboy-german-151 = euer Schießeisen
+    .source = eure Waffe
+    .scope = words
+
+accent-cowboy-german-152 = Schießeisen
+    .source = Waffe
+    .scope = whole
+
+accent-cowboy-german-153 = das Plumpsklo
+    .source = die Toilette
+    .scope = words
+
+accent-cowboy-german-154 = ein Plumpsklo
+    .source = eine Toilette
+    .scope = words
+
+accent-cowboy-german-155 = auf dem Plumpsklo
+    .source = auf der Toilette
+    .scope = words
+
+accent-cowboy-german-156 = auf einem Plumpsklo
+    .source = auf einer Toilette
+    .scope = words
+
+accent-cowboy-german-157 = zum Plumpsklo
+    .source = zur Toilette
+    .scope = words
+
+accent-cowboy-german-158 = Plumpsklos
+    .source = Toiletten
+    .scope = words
+
+accent-cowboy-german-159 = Plumpsklo
+    .source = Toilette
+    .scope = whole

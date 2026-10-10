@@ -1,70 +1,70 @@
-trait-blindness-name = Blindness
-trait-blindness-desc = You are legally blind, and can't see clearly past a few meters in front of you.
+trait-blindness-name = Blindheit
+trait-blindness-desc = Du bist nahezu blind und kannst schon wenige Meter vor dir nicht mehr klar sehen.
 
-trait-poor-vision-name = Short-sighted
-trait-poor-vision-desc = Your eyes are not what they once were, you have difficulty seeing things far away without corrective glasses.
+trait-poor-vision-name = Kurzsichtigkeit
+trait-poor-vision-desc = Deine Augen sind nicht mehr die besten. Ohne eine geeignete Brille erkennst du entfernte Dinge nur schlecht.
 
-trait-narcolepsy-name = Narcolepsy
-trait-narcolepsy-desc = You fall asleep randomly.
+trait-narcolepsy-name = Narkolepsie
+trait-narcolepsy-desc = Du schläfst immer wieder unvermittelt ein.
 
-trait-pacifist-name = Pacifist
-trait-pacifist-desc = You cannot attack or hurt any living beings.
+trait-pacifist-name = Pazifismus
+trait-pacifist-desc = Du kannst keine Lebewesen angreifen oder verletzen.
 
-permanent-blindness-trait-examined = [color=lightblue]{CAPITALIZE(POSS-ADJ($target))} eyes are glassy and unfocused. It doesn't seem like {SUBJECT($target)} can see you well, if at all.[/color]
+permanent-blindness-trait-examined = [color=lightblue]Die Augen von { NAME($target) } wirken glasig und unfokussiert. Der Blick scheint dich kaum oder gar nicht zu erfassen.[/color]
 
-trait-lightweight-name = Lightweight drunk
-trait-lightweight-desc = Alcohol has a stronger effect on you.
+trait-lightweight-name = Geringe Alkoholtoleranz
+trait-lightweight-desc = Alkohol wirkt bei dir stärker.
 
-trait-monochromacy-name = Monochromacy
-trait-monochromacy-desc = You are fully colorblind, everything you perceive ranges from blacks to whites.
+trait-monochromacy-name = Vollständige Farbenblindheit
+trait-monochromacy-desc = Du siehst keine Farben. Alles erscheint dir in Schwarz, Weiß und Grautönen.
 
-trait-muted-name = Muted
-trait-muted-desc = You can't speak.
+trait-muted-name = Stummheit
+trait-muted-desc = Du kannst nicht sprechen.
 
-trait-paracusia-name = Paracusia
-trait-paracusia-desc = You hear sounds that aren't really there.
+trait-paracusia-name = Akustische Halluzinationen
+trait-paracusia-desc = Du hörst Geräusche, die in Wirklichkeit nicht da sind.
 
-trait-unrevivable-name = Unrevivable
-trait-unrevivable-desc = You are unable to be revived by defibrillators.
+trait-unrevivable-name = Nicht reanimierbar
+trait-unrevivable-desc = Du kannst nicht mit einem Defibrillator wiederbelebt werden.
 
-trait-accentless-name = Accentless
-trait-accentless-desc = You don't have the accent that your species would usually have.
+trait-accentless-name = Ohne Speziesakzent
+trait-accentless-desc = Du sprichst ohne den für deine Spezies üblichen Akzent.
 
-trait-frontal-lisp-name = Frontal lisp
-trait-frontal-lisp-desc = You thpeak with a lithp.
+trait-frontal-lisp-name = Lispeln
+trait-frontal-lisp-desc = Du thprichtht mit einem Lithpeln.
 
-trait-socialanxiety-name = Stutter
-trait-socialanxiety-desc = You speak with a stutter.
+trait-socialanxiety-name = Stottern
+trait-socialanxiety-desc = Du stotterst beim Sprechen.
 
-trait-southern-name = Southern drawl
-trait-southern-desc = You have a different way of speakin'.
+trait-southern-name = Bairisch
+trait-southern-desc = Du sprichst bairisch. A bissl anders klingt’s bei dir halt scho.
 
-trait-snoring-name = Snoring
-trait-snoring-desc = You will snore while sleeping.
+trait-snoring-name = Schnarchen
+trait-snoring-desc = Du schnarchst im Schlaf.
 
-trait-liar-name = Pathological liar
-trait-liar-desc = You can hardly bring yourself to tell the truth. Sometimes you lie anyway.
+trait-liar-name = Zwanghaftes Lügen
+trait-liar-desc = Es fällt dir schwer, die Wahrheit zu sagen. Manchmal lügst du, selbst wenn du es gar nicht vorhast.
 
-trait-german-name = German accent
-trait-german-desc = You seem to come from space Germany.
+trait-german-name = Schweizerdeutsch
+trait-german-desc = Du sprichst Schweizerdeutsch. Mit emel, es bitzli Chäs und em Weggli wird sogar eine Raumstation ein Stück gemütlicher.
 
-trait-french-name = French accent
-trait-french-desc = Your accent seems to have a certain ┬½je ne sais quoi┬╗.
+trait-french-name = Französischer Akzent
+trait-french-desc = Dein Deutsch hat einen französischen Klang und ein gewisses „je ne sais quoi“.
 
-trait-spanish-name = Spanish accent
-trait-spanish-desc = Hola se├▒or, ┬┐d├│nde est├í la biblioteca?
+trait-spanish-name = Spanischer Akzent
+trait-spanish-desc = Du sprichst Deutsch mit spanischem Akzent. Ein „Hola“ oder „Por favor“ gehört für dich einfach dazu.
 
-trait-scottish-name = Scottish accent
-trait-scottish-desc = Ye're speaking like ae proper Scot!
+trait-scottish-name = Berlinerisch
+trait-scottish-desc = Du berlinerst. Ick hab nüscht jesehn, wa?
 
-trait-painnumbness-name = Numb
-trait-painnumbness-desc = You lack any sense of feeling pain, being unaware of how hurt you may be.
+trait-painnumbness-name = Schmerzunempfindlichkeit
+trait-painnumbness-desc = Du spürst keine Schmerzen und merkst deshalb womöglich nicht, wie schwer du verletzt bist.
 
-trait-hemophilia-name = Hemophilia
-trait-hemophilia-desc = Your body fails to make blood clots.
+trait-hemophilia-name = Bluterkrankheit
+trait-hemophilia-desc = Dein Blut gerinnt nicht richtig.
 
-trait-impaired-mobility-name = Impaired Mobility
-trait-impaired-mobility-desc = You have difficulty moving without a mobility aid.
+trait-impaired-mobility-name = Eingeschränkte Beweglichkeit
+trait-impaired-mobility-desc = Ohne eine Gehhilfe fällt dir das Gehen schwer.
 
 trait-blink-dyspraxia-name = Blinzelstörung
 trait-blink-dyspraxia-desc = Deine Augenlider sind nicht richtig aufeinander abgestimmt. Du musst bewusst blinzeln, und manchmal wollen deine Augen einfach nicht im gleichen Takt mitmachen.

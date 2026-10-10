@@ -16,6 +16,9 @@ public sealed partial class SkeletonAccentSystem : RelayAccentSystem<SkeletonAcc
 
     public override string Accentuate(string message, Entity<SkeletonAccentComponent>? ent = null)
     {
+        if (string.IsNullOrWhiteSpace(message))
+            return message;
+
         var random = ent.HasValue
             ? SharedRandomExtensions.PredictedRandom(_timing, GetNetEntity(ent.Value))
             : _random;
@@ -27,12 +30,19 @@ public sealed partial class SkeletonAccentSystem : RelayAccentSystem<SkeletonAcc
 
         var msg = message;
 
-        // Character manipulations:
-        // At the start of words, any non-vowel + "one" becomes "bone", e.g. tone -> bone ; lonely -> bonely; clone -> clone (remains unchanged).
-        msg = BoneRegex.Replace(msg, "bone");
+        if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+        {
+            msg = AccentuateSkeletonGerman(msg, random);
+        }
+        else
+        {
+            // Character manipulations:
+            // At the start of words, any non-vowel + "one" becomes "bone", e.g. tone -> bone ; lonely -> bonely; clone -> clone (remains unchanged).
+            msg = BoneRegex.Replace(msg, "bone");
 
-        // apply word replacements
-        msg = _replacement.ApplyReplacements(msg, "skeleton", ent?.Owner);
+            // apply word replacements
+            msg = _replacement.ApplyReplacements(msg, "skeleton", ent?.Owner);
+        }
 
         // Suffix:
         if (random.Prob(ent.HasValue ? ent.Value.Comp.AckChance : 0.3f))

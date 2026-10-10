@@ -1,11 +1,17 @@
 using System.Text.RegularExpressions;
 using System.Text;
 using Content.Shared.Speech.Components;
+using Content.Shared.Random.Helpers;
+using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 namespace Content.Shared.Speech.EntitySystems;
 
 public sealed partial class SpanishAccentSystem : RelayAccentSystem<SpanishAccentComponent>
 {
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IGameTiming _timing = default!;
+
     // for words in all lowercase (multiple "s" are allowed)
     private static readonly Regex RegexLower = new(@"(?<!\w)(s+h*[bcdfgjklmnpqrtvwxz])");
     // For Capitalized Words (Station -> Estation; Capital "S" Is Replaced Directly, Multiple "S" Are Allowed)
@@ -15,6 +21,17 @@ public sealed partial class SpanishAccentSystem : RelayAccentSystem<SpanishAccen
 
     public override string Accentuate(string message, Entity<SpanishAccentComponent>? ent = null)
     {
+        if (string.IsNullOrWhiteSpace(message))
+            return message;
+
+        if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+        {
+            var random = ent.HasValue
+                ? SharedRandomExtensions.PredictedRandom(_timing, GetNetEntity(ent.Value))
+                : _random;
+            return ReplacePunctuation(AccentuateGerman(message, random));
+        }
+
         // Insert E before every S that is followed by a consonant that makes a distinct sound
         // (H is excluded because [sh] is a single sound)
         message = InsertS(message);
@@ -53,7 +70,15 @@ public sealed partial class SpanishAccentSystem : RelayAccentSystem<SpanishAccen
             if (toInsert.Length == 0)
                 msg.Append(s);
             else
-                msg.Append(s.Insert(s.Length - s.TrimStart().Length, toInsert.ToString()));
+            {
+                var start = s.Length - s.TrimStart().Length;
+                // Whole-message translations can already contain Spanish punctuation.
+                if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de"
+                    && s.Substring(start).StartsWith(toInsert.ToString(), StringComparison.Ordinal))
+                    msg.Append(s);
+                else
+                    msg.Append(s.Insert(start, toInsert.ToString()));
+            }
         }
 
         return msg.ToString();

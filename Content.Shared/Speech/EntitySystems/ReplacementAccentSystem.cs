@@ -75,6 +75,15 @@ public sealed partial class ReplacementAccentSystem : RelayAccentSystem<Replacem
         if (!random.Prob(prototype.ReplacementChance))
             return message;
 
+        if (accent == "scottish" && Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+            return AccentuateBerlinGerman(message, random);
+
+        if (accent == "liar" && Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+            return AccentuateLiarGerman(message, random);
+
+        if (accent == "cowboy" && Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+            return AccentuateCowboyGerman(message, random);
+
         // Prioritize fully replacing if that exists--
         // ideally both aren't used at the same time (but we don't have a way to enforce that in serialization yet)
         if (prototype.FullReplacements != null)

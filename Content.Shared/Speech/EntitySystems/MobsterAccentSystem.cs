@@ -24,6 +24,9 @@ public sealed partial class MobsterAccentSystem : RelayAccentSystem<MobsterAccen
 
     public override string Accentuate(string message, Entity<MobsterAccentComponent>? ent = null)
     {
+        if (string.IsNullOrWhiteSpace(message))
+            return message;
+
         // Order:
         // Do text manipulations first
         // Then prefix/suffix funnyies
@@ -31,6 +34,10 @@ public sealed partial class MobsterAccentSystem : RelayAccentSystem<MobsterAccen
         var random = ent.HasValue
             ? SharedRandomExtensions.PredictedRandom(_timing, GetNetEntity(ent.Value))
             : _random;
+
+        if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+            return AddGermanMobsterFlair(AccentuateMobsterGerman(message, random), random,
+                ent.HasValue && ent.Value.Comp.IsBoss);
 
         // direct word replacements
         var msg = _replacement.ApplyReplacements(message, "mobster", ent?.Owner);

@@ -7,7 +7,7 @@ namespace Content.Shared.Speech.EntitySystems;
 
 public sealed partial class FrenchAccentSystem
 {
-    private const int GermanRuleCount = 144;
+    private const int GermanRuleCount = 156;
     private (Regex Pattern, string[] Variants)[]? _germanFrenchRules;
     private static readonly Regex GermanWordStartingH = new(@"(?<![\w’'])h\p{L}+(?![\w’'])",
         RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
@@ -20,14 +20,22 @@ public sealed partial class FrenchAccentSystem
             for (var i = 1; i <= GermanRuleCount; i++)
             {
                 var key = $"accent-french-german-{i}";
+                var scope = Loc.GetString(key + ".scope");
+                if (scope == "disabled")
+                    continue;
                 var alternatives = string.Join("|", Loc.GetString(key + ".source")
                     .Split('|').Select(Regex.Escape));
-                var whole = Loc.GetString(key + ".scope") == "whole";
+                var whole = scope == "whole";
                 var pattern = whole
                     ? $@"^(\s*)(?:{alternatives})(?=[.!?]*\s*$)"
                     : $@"(?<![\w’'])(?:{alternatives})(?![\w’'])";
-                rules.Add((new Regex(pattern, RegexOptions.IgnoreCase | RegexOptions.CultureInvariant),
-                    Loc.GetString(key).Split('|')));
+                var rule = (new Regex(pattern, RegexOptions.IgnoreCase | RegexOptions.CultureInvariant),
+                    Loc.GetString(key).Split('|'));
+                // Match complete expressions before individual words such as "Nein".
+                if (whole)
+                    rules.Insert(0, rule);
+                else
+                    rules.Add(rule);
             }
             _germanFrenchRules = rules.ToArray();
         }

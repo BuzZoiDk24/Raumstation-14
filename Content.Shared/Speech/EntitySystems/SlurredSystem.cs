@@ -23,6 +23,9 @@ public sealed partial class SlurredSystem : RelayAccentSystem<SlurredAccentCompo
 
         var scale = GetProbabilityScale(ent.Value);
         var random = SharedRandomExtensions.PredictedRandom(_timing, GetNetEntity(ent.Value));
+        if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+            return AccentuateGerman(message, random, scale);
+
         var sb = new StringBuilder();
 
         // This is pretty much ported from TG.
@@ -74,6 +77,50 @@ public sealed partial class SlurredSystem : RelayAccentSystem<SlurredAccentCompo
         }
 
         return sb.ToString();
+    }
+
+    private string AccentuateGerman(string message, IRobustRandom random, float scale)
+    {
+        const string vowels = "aeiouäöüAEIOUÄÖÜ";
+        var result = new StringBuilder();
+
+        for (var i = 0; i < message.Length; i++)
+        {
+            var character = message[i];
+            var isVowel = vowels.IndexOf(character) >= 0;
+
+            // Occasionally swallow a word-final e, but preserve ie/ue spellings.
+            var swallowE = (character == 'e' || character == 'E')
+                && i > 0
+                && char.IsLetter(message[i - 1])
+                && vowels.IndexOf(message[i - 1]) < 0
+                && (i + 1 == message.Length || !char.IsLetter(message[i + 1]));
+
+            if (swallowE && random.Prob(scale / 15f))
+            {
+                result.Append('\'');
+            }
+            else
+            {
+                result.Append(character);
+                if (isVowel && random.Prob(scale / 3f))
+                    result.Append(character);
+            }
+
+            // Keep consonant clusters, punctuation and whitespace intact.
+            if (character == ' ' && random.Prob(scale / 20f))
+            {
+                result.Append(Loc.GetString("slur-accent-confused"));
+                result.Append(' ');
+            }
+            else if (character == '.' && random.Prob(scale / 20f))
+            {
+                result.Append(' ');
+                result.Append(Loc.GetString("slur-accent-burp"));
+            }
+        }
+
+        return result.ToString();
     }
 
     /// <summary>

@@ -27,6 +27,9 @@ public sealed partial class StutteringSystem : RelayAccentSystem<StutteringAccen
             return message;
 
         var random = SharedRandomExtensions.PredictedRandom(_timing, GetNetEntity(ent.Value));
+        if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+            return AccentuateGerman(message, ent.Value, random);
+
         var length = message.Length;
         var finalMessage = new StringBuilder();
 
@@ -57,6 +60,50 @@ public sealed partial class StutteringSystem : RelayAccentSystem<StutteringAccen
         }
 
         return finalMessage.ToString();
+    }
+
+    private static string AccentuateGerman(string message, Entity<StutteringAccentComponent> ent,
+        IRobustRandom random)
+    {
+        var result = new StringBuilder();
+        for (var i = 0; i < message.Length;)
+        {
+            var soundLength = GetGermanSoundLength(message, i);
+            var sound = message.Substring(i, soundLength);
+            i += soundLength;
+
+            if (Stutter.IsMatch(sound) && random.Prob(ent.Comp.MatchRandomProb))
+            {
+                if (random.Prob(ent.Comp.FourRandomProb))
+                    sound = string.Concat(new[] { sound, "-", sound, "-", sound, "-", sound });
+                else if (random.Prob(ent.Comp.ThreeRandomProb))
+                    sound = string.Concat(new[] { sound, "-", sound, "-", sound });
+                else if (random.Prob(ent.Comp.CutRandomProb))
+                    sound = "";
+                else
+                    sound = string.Concat(sound, "-", sound);
+            }
+
+            result.Append(sound);
+        }
+
+        return result.ToString();
+    }
+
+    private static int GetGermanSoundLength(string message, int index)
+    {
+        if (index + 2 < message.Length
+            && char.ToLowerInvariant(message[index]) == 's'
+            && char.ToLowerInvariant(message[index + 1]) == 'c'
+            && char.ToLowerInvariant(message[index + 2]) == 'h')
+            return 3;
+
+        if (index + 1 < message.Length
+            && char.ToLowerInvariant(message[index]) == 'c'
+            && char.ToLowerInvariant(message[index + 1]) == 'h')
+            return 2;
+
+        return 1;
     }
 
     /// <summary>

@@ -15,8 +15,8 @@ accent-french-german-3 = mes collègues
     .scope = words
 
 accent-french-german-4 = de rien|je vous en prie
-    .source = Bitte schön|Bitte sehr|Gern geschehen|Keine Ursache|Nichts zu danken
-    .scope = words
+    .source = Gern geschehen|Keine Ursache|Nichts zu danken
+    .scope = whole
 
 accent-french-german-5 = au revoir
     .source = Auf Wiedersehen
@@ -32,7 +32,7 @@ accent-french-german-7 = pardon|excusez-moi
 
 accent-french-german-8 = mon amie|ma chère amie
     .source = meine Freundin
-    .scope = words
+    .scope = disabled
 
 accent-french-german-9 = ma collègue
     .source = meine Kollegin
@@ -72,7 +72,7 @@ accent-french-german-17 = bravo|très bien
 
 accent-french-german-18 = mon ami|mon cher ami
     .source = mein Freund
-    .scope = words
+    .scope = disabled
 
 accent-french-german-19 = mon pote|mon ami
     .source = mein Kumpel
@@ -124,11 +124,11 @@ accent-french-german-30 = merde
 
 accent-french-german-31 = très bien|excellent
     .source = Sehr gut
-    .scope = words
+    .scope = whole
 
 accent-french-german-32 = attention
     .source = Vorsicht|Achtung
-    .scope = words
+    .scope = whole
 
 accent-french-german-33 = möschtest
     .source = möchtest
@@ -536,7 +536,7 @@ accent-french-german-133 = santé
 
 accent-french-german-134 = bon appétit
     .source = Mahlzeit
-    .scope = whole
+    .scope = disabled
 
 accent-french-german-135 = Cafés
     .source = Kaffees
@@ -577,3 +577,51 @@ accent-french-german-143 = Fromage
 accent-french-german-144 = Vin
     .source = Wein
     .scope = words
+
+accent-french-german-145 = oh non
+    .source = Oh nein|Ach nein
+    .scope = whole
+
+accent-french-german-146 = aïe
+    .source = Aua|Autsch
+    .scope = whole
+
+accent-french-german-147 = au secours
+    .source = Hilfe
+    .scope = whole
+
+accent-french-german-148 = quelle chance
+    .source = Was für ein Glück|Zum Glück
+    .scope = whole
+
+accent-french-german-149 = espérons-le
+    .source = Hoffentlich
+    .scope = whole
+
+accent-french-german-150 = sérieux?
+    .source = Wirklich?|Echt?|Im Ernst?
+    .scope = whole
+
+accent-french-german-151 = aucune idée
+    .source = Keine Ahnung
+    .scope = whole
+
+accent-french-german-152 = un moment
+    .source = Einen Moment|Moment mal
+    .scope = whole
+
+accent-french-german-153 = dépêche-toi
+    .source = Beeil dich|Mach schnell
+    .scope = whole
+
+accent-french-german-154 = arrête
+    .source = Hör auf|Lass das
+    .scope = whole
+
+accent-french-german-155 = quel dommage
+    .source = Wie schade
+    .scope = whole
+
+accent-french-german-156 = pas de chance
+    .source = So ein Pech
+    .scope = whole

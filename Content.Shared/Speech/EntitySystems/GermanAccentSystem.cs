@@ -18,11 +18,17 @@ public sealed partial class GermanAccentSystem : RelayAccentSystem<GermanAccentC
 
     public override string Accentuate(string message, Entity<GermanAccentComponent>? ent = null)
     {
+        if (string.IsNullOrWhiteSpace(message))
+            return message;
+
         var msg = message;
 
         var random = ent.HasValue
             ? SharedRandomExtensions.PredictedRandom(_timing, GetNetEntity(ent.Value))
             : _random;
+
+        if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+            return AccentuateSwissGerman(message, random);
 
         // rarely, "the" should become "das" instead of "ze"
         // TODO: The ReplacementAccentSystem should have random replacements this built-in.

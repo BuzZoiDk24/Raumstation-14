@@ -10,6 +10,8 @@ namespace Content.Shared.Speech.EntitySystems;
 public sealed partial class ParrotAccentSystem : RelayAccentSystem<ParrotAccentComponent>
 {
     private static readonly Regex WordCleanupRegex = new("[^A-Za-z0-9 -]");
+    // Preserve letters, combining marks and numbers in German words and names.
+    private static readonly Regex GermanWordCleanupRegex = new(@"[^\p{L}\p{M}\p{N} -]");
 
     [Dependency] private IGameTiming _timing = default!;
 
@@ -24,7 +26,10 @@ public sealed partial class ParrotAccentSystem : RelayAccentSystem<ParrotAccentC
         if (random.Prob(ent.Value.Comp.LongestWordRepeatChance))
         {
             // Don't count non-alphanumeric characters as parts of words
-            var cleaned = WordCleanupRegex.Replace(message, string.Empty);
+            var cleanup = Loc.DefaultCulture?.TwoLetterISOLanguageName == "de"
+                ? GermanWordCleanupRegex
+                : WordCleanupRegex;
+            var cleaned = cleanup.Replace(message, string.Empty);
             // Split on whitespace and favor words towards the end of the message
             var words = cleaned.Split(null).Reverse();
             // Find longest word
@@ -35,7 +40,7 @@ public sealed partial class ParrotAccentSystem : RelayAccentSystem<ParrotAccentC
                 message = EnsurePunctuation(message);
 
                 // Capitalize the first letter of the repeated word
-                longest = string.Concat(longest[0].ToString().ToUpper(), longest.AsSpan(1));
+                longest = string.Concat(longest.Substring(0, 1).ToUpper(), longest.Substring(1));
 
                 message = $"{message} {GetRandomSquawk(ent.Value)} {longest}!";
                 return message; // No more changes, or it's too much

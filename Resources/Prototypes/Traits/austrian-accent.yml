@@ -1,0 +1,8 @@
+- type: trait
+  id: AustrianAccent
+  name: trait-austrian-name
+  description: trait-austrian-desc
+  category: SpeechTraits
+  cost: 1
+  components:
+  - type: AustrianAccent
