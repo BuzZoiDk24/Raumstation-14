@@ -7,7 +7,7 @@ namespace Content.Shared.Speech.EntitySystems;
 
 public sealed partial class AustrianAccentSystem
 {
-    private const int GermanRuleCount = 59;
+    private const int GermanRuleCount = 74;
     private (Regex Pattern, string[] Variants)[]? _germanAustrianRules;
     private string AccentuateAustrianGerman(string message, IRobustRandom random)
     {

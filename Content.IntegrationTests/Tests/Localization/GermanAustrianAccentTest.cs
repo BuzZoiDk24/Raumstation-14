@@ -42,6 +42,18 @@ public sealed class GermanAustrianAccentTest : GameTest
     [TestCase("Hallo. Ich habe nichts.", "Hallo. I hab nix.")]
     [TestCase("", "")]
     [TestCase("   ", "   ")]
+    [TestCase("Ich scherze nur.", "I scherze nur.")]
+    [TestCase("Wir scherzen nur.", "Wir scherzen nur.")]
+    [TestCase("Scherze nicht mit mir!", "Scherze ned mit mir!")]
+    [TestCase("Der Scherz war gut.", "Der Schmäh war gut.")]
+    [TestCase("Ich mache einen Scherz.", "I mache einen Schmäh.")]
+    [TestCase("Das sind gute Scherze.", "Das sind gute Schmähs.")]
+    [TestCase("Die Scherze waren gut.", "Die Schmähs waren gut.")]
+    [TestCase("Mit den Scherzen.", "Mit den Schmähs.")]
+    [TestCase("Der Inhalt der Scherze.", "Der Inhalt der Schmähs.")]
+    [TestCase("Scherzen ist nicht verboten.", "Scherzen is ned verboten.")]
+    [TestCase("WIR SCHERZEN NUR.", "WIR SCHERZEN NUR.")]
+    [TestCase("DIE SCHERZE WAREN GUT.", "DIE SCHMÄHS WAREN GUT.")]
     public async Task GermanSpeechRemainsReadable(string input, string expected)
     {
         await WithCulture("de-DE", system =>

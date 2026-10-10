@@ -861,7 +861,7 @@ accent-pirate-german-189 = Kameraden
 
 accent-pirate-german-190 = Beute
     .source = Schätzen
-    .standalone = false
+    .standalone = true
 
 accent-pirate-german-191 = Musketen
     .source = Gewehren
@@ -889,7 +889,7 @@ accent-pirate-german-196 = Kameraden
 
 accent-pirate-german-197 = Beute
     .source = Schätze
-    .standalone = false
+    .standalone = true
 
 accent-pirate-german-198 = Musketen
     .source = Gewehre
@@ -993,19 +993,19 @@ accent-pirate-german-222 = wenig Beute
 
 accent-pirate-german-223 = viel Beute
     .source = viele Schätze
-    .standalone = false
+    .standalone = true
 
 accent-pirate-german-224 = wenig Beute
     .source = wenige Schätze
-    .standalone = false
+    .standalone = true
 
 accent-pirate-german-225 = die gesamte Beute
     .source = alle Schätze
-    .standalone = false
+    .standalone = true
 
 accent-pirate-german-226 = die gesamte Beute
     .source = all die Schätze
-    .standalone = false
+    .standalone = true
 
 accent-pirate-german-227 = Schiffskamerad
     .source = Kollege

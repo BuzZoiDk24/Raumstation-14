@@ -46,7 +46,7 @@ trait-liar-name = Zwanghaftes Lügen
 trait-liar-desc = Es fällt dir schwer, die Wahrheit zu sagen. Manchmal lügst du, selbst wenn du es gar nicht vorhast.
 
 trait-german-name = Schweizerdeutsch
-trait-german-desc = Du sprichst Schweizerdeutsch. Mit emel, es bitzli Chäs und em Weggli wird sogar eine Raumstation ein Stück gemütlicher.
+trait-german-desc = Du sprichst Schweizerdeutsch. Mit es bitzli Chäs und em Weggli wird sogar eine Raumstation ein Stück gemütlicher.
 
 trait-french-name = Französischer Akzent
 trait-french-desc = Dein Deutsch hat einen französischen Klang und ein gewisses „je ne sais quoi“.

@@ -126,7 +126,7 @@ accent-austrian-german-31 = wurscht
     .scope = word
 
 accent-austrian-german-32 = Schmäh
-    .source = Witz|Scherz
+    .source = Witz
     .scope = word
 
 accent-austrian-german-33 = Schmähs
@@ -134,7 +134,7 @@ accent-austrian-german-33 = Schmähs
     .scope = word
 
 accent-austrian-german-34 = Schmähs
-    .source = Witze|Scherze|Witzen|Scherzen
+    .source = Witze|Witzen
     .scope = word
 
 accent-austrian-german-35 = Marille
@@ -235,4 +235,64 @@ accent-austrian-german-58 = das Sackerl
 
 accent-austrian-german-59 = ein Sackerl
     .source = eine Tüte
+    .scope = word
+
+accent-austrian-german-60 = Schmäh
+    .source = Scherz
+    .scope = whole
+
+accent-austrian-german-61 = Schmähs
+    .source = Scherze|Scherzen
+    .scope = whole
+
+accent-austrian-german-62 = ein Schmäh
+    .source = ein Scherz
+    .scope = word
+
+accent-austrian-german-63 = einen Schmäh
+    .source = einen Scherz
+    .scope = word
+
+accent-austrian-german-64 = einem Schmäh
+    .source = einem Scherz
+    .scope = word
+
+accent-austrian-german-65 = der Schmäh
+    .source = der Scherz
+    .scope = word
+
+accent-austrian-german-66 = den Schmäh
+    .source = den Scherz
+    .scope = word
+
+accent-austrian-german-67 = dem Schmäh
+    .source = dem Scherz
+    .scope = word
+
+accent-austrian-german-68 = die Schmähs
+    .source = die Scherze
+    .scope = word
+
+accent-austrian-german-69 = der Schmähs
+    .source = der Scherze
+    .scope = word
+
+accent-austrian-german-70 = den Schmähs
+    .source = den Scherzen
+    .scope = word
+
+accent-austrian-german-71 = mit Schmähs
+    .source = mit Scherzen
+    .scope = word
+
+accent-austrian-german-72 = gute Schmähs
+    .source = gute Scherze
+    .scope = word
+
+accent-austrian-german-73 = lustige Schmähs
+    .source = lustige Scherze
+    .scope = word
+
+accent-austrian-german-74 = schlechte Schmähs
+    .source = schlechte Scherze
     .scope = word
