@@ -1,11 +1,11 @@
 mutation-plant-sentient = Die Pflanze scheint ihre Umgebung zu beobachten.
 mutation-plant-slippery = Sie fühlt sich glitschig an.
 
-mutation-plant-description-kudzu = Sie wächst ungewöhnlich schnell und bildet dünne Triebe.
+mutation-plant-description-kudzu = Sie wächst ungewöhnlich [color=crimson]schnell und bildet dünne Triebe[/color].
 mutation-plant-description-ligneous = Sie ist verholzt und muss mit einem scharfen Gegenstand geerntet werden.
 mutation-plant-description-scream = Diese Pflanze wirkt irgendwie nervös.
-mutation-plant-description-unviable = Sie ist welk und kränklich.
-mutation-plant-description-seedless = Ihre Früchte sind samenlos.
+mutation-plant-description-unviable = Sie ist [color=crimson]welk und kränklich[/color].
+mutation-plant-description-seedless = Ihre Früchte sind [color=crimson]samenlos[/color].
 mutation-plant-description-sampled = Von ihr wurde bereits eine Probe genommen.
 
 mutation-plant-noun-kudzu = Kudzuwuchs

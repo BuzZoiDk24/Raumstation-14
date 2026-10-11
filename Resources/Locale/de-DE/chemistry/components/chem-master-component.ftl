@@ -21,7 +21,6 @@ chem-master-window-pills-number-label = Anzahl:
 chem-master-window-dose-label = Dosis (u):
 chem-master-window-create-button = Herstellen
 chem-master-window-bottles-label = Flaschen:
-chem-master-window-unknown-reagent-text = Unbekannter Stoff
 chem-master-window-sort-type-none = Sortierung: Älteste zuerst
 chem-master-window-sort-type-alphabetical = Sortierung: Alphabetisch
 chem-master-window-sort-type-quantity = Sortierung: Menge

@@ -97,3 +97,9 @@ chat-emote-msg-flap = { DE-GENDER($entity) ->
 
 chat-emote-name-blink = Blinzeln
 chat-emote-msg-blink = blinzelt.
+
+chat-emote-name-hiss = Fauchen
+chat-emote-name-caw = Krächzen
+
+chat-emote-msg-hiss = faucht!
+chat-emote-msg-caw = krächzt.

@@ -78,3 +78,4 @@ research-technology-bluespace-cargo-transport = Bluespace-Frachttransport
 research-technology-clowning-utilities = Clownausrüstung
 research-technology-quantum-fiber-weaving = Quantenfaserweberei
 research-technology-bluespace-chemistry = Bluespace-Chemie
+research-technology-packaged-lights = Effiziente Lampenproduktion

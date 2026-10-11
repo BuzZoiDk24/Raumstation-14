@@ -93,3 +93,6 @@ units-kelvin-long = Kelvin
 units-k-kelvin-long = Kilokelvin
 units-m-kelvin-long = Megakelvin
 units-g-kelvin-long = Gigakelvin
+
+units-u = u
+units-mole = mol

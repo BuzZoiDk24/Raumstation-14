@@ -23,3 +23,5 @@ health-analyzer-window-scan-mode-active = Aktiv
 health-analyzer-window-scan-mode-inactive = Inaktiv
 
 health-analyzer-popup-scan-target = {CAPITALIZE($user)} versucht, dich zu untersuchen!
+
+health-analyzer-window-entity-unknown-temperature-text = Wird analysiert...

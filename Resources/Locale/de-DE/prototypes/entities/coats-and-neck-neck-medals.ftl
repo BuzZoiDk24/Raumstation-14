@@ -1,8 +1,3 @@
-ent-ClothingNeckMedalBase = Medaille
-    .desc = Eine Medaille, die deinen Mut beweist. Ob sie wirklich aus Metall ist, steht auf einem anderen Blatt.
-    .gender = feminine
-    .number = singular
-
 ent-ClothingNeckBronzeheart = Bronzeherz-Medaille
     .desc = Wird an Besatzungsmitglieder verliehen, die angesichts einer Gefahr vorbildliche Tapferkeit beweisen.
     .gender = feminine
@@ -30,5 +25,10 @@ ent-ClothingNeckSciencemedal = Forschungsmedaille
 
 ent-ClothingNeckSecuritymedal = Sicherheitsmedaille
     .desc = Für die beste Arbeit im Sicherheitsdienst.
+    .gender = feminine
+    .number = singular
+
+ent-ClothingMedalBase = Medaille
+    .desc = Eine Medaille, die deinen Mut beweist. Ob sie wirklich aus Metall ist, steht auf einem anderen Blatt.
     .gender = feminine
     .number = singular

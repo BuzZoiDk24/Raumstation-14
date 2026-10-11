@@ -52,7 +52,6 @@ ui-options-quality-label = Quality
 ui-options-misc-label = Misc
 ui-options-interface-label = Interface
 
-
 ui-options-auto-fill-highlights = Automatically set the highlights list based on your character's name and job
 ui-options-highlights-color = Highlights color:
 ui-options-highlights-color-example = This is highlighted text.
@@ -448,3 +447,6 @@ ui-options-admin-overlay-ghost-hide-distance = Ghost overlay hide range from mou
 
 ui-options-admin-strip-overlay-title = Strip Overlay
 ui-options-admin-strip-overlay-setting = Show strip overlay by default
+
+ui-options-chat-preview = Chat-Vorschaublasen beim Tippen anzeigen
+ui-options-preview-bubble-background-opacity = Deckkraft des Hintergrunds der Vorschaublasen
