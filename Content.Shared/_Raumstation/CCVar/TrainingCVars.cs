@@ -6,8 +6,9 @@ namespace Content.Shared._Raumstation.CCVar;
 public sealed class TrainingCVars
 {
     /// <summary>
-    /// Automatically refill station batteries when entities enter a map and let
-    /// them recharge continuously. Read on map initialization, not a live toggle.
+    /// Refill station batteries and add continuous training recharge while enabled.
+    /// Can be switched during a round; disabling preserves stored charge and
+    /// removes only the additional training recharge.
     /// </summary>
     public static readonly CVarDef<bool> InfiniteStationPower =
         CVarDef.Create("training.infinite_station_power", false, CVar.SERVERONLY);

@@ -18,15 +18,15 @@ port = 1212
 upnp = true
 # The maximum number of players that can connect to the server. (Including admins)
 # Look at the game section for the soft max players setting. Which is what is displayed in the server list.
-max_connections = 256
+max_connections = 21
 
 [game]
 # Name of the server. This is what will be displayed in the server list and lobby.
-hostname = "[GER] CHillstube Server"
+hostname = "[GER] Raumstation 14"
 # Description of the server. This is what will be displayed in the server list.
 desc = "Deutscher SS14-Server, basierend auf Vanilla-Code von Wizden."
 # The maximum number of players that can connect to the server. (Exluding admins)
-soft_max_players = 30
+soft_max_players = 20
 # Controls the lobby timer in seconds.
 lobbyduration = 150
 # Should roles be restricted based on time?
