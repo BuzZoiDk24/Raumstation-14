@@ -22,8 +22,8 @@ reagent-desc-weed-killer = Eine Mischung gegen Unkraut. Sehr wirksam gegen Kudzu
 reagent-name-ammonia = Ammoniak
 reagent-desc-ammonia = Ein wirksamer Dünger, der Pflanzen mit Nährstoffen versorgt.
 
-reagent-name-diethylamine = diethylamine
-reagent-desc-diethylamine = A very potent fertilizer, treats plants with nutrients, eliminates pests, and sometimes it can even speed up growth.
+reagent-name-diethylamine = Diethylamin
+reagent-desc-diethylamine = Ein sehr wirksamer Dünger, der Pflanzen mit Nährstoffen versorgt, Schädlinge beseitigt und manchmal sogar das Wachstum beschleunigt.
 
-reagent-name-sedin = sedin
-reagent-desc-sedin = A modified version of diethylamine that can restore seeds on plants at the cost of potency.
+reagent-name-sedin = Sedin
+reagent-desc-sedin = Eine abgewandelte Form von Diethylamin, mit der Pflanzen wieder Samen bilden können. Dafür verlieren sie an Potenz.
