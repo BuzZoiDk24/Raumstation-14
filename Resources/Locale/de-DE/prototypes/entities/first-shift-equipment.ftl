@@ -4,6 +4,8 @@ ent-ClothingBackpack = Rucksack
     .name-genitive = Rucksacks
     .gender = masculine
     .desc = Du trägst ihn auf dem Rücken und verstaust deine Sachen darin.
+    .plural = Rucksäcke
+    .plural-dative = Rucksäcken
 
 ent-ClothingBackpackSatchel = Umhängetasche
     .gender = feminine
@@ -62,6 +64,8 @@ ent-ClothingUniformJumpsuitColorGrey = Grauer Overall
     .name-noun-genitive = Overalls
     .gender = masculine
     .desc = Ein geschmackvoller grauer Overall, der an die guten alten Zeiten erinnert.
+    .plural = graue Overalls
+    .name-noun-plural = Overalls
 
 ent-ClothingUniformJumpskirtColorGrey = Graues Uniformkleid
     .name-adjective = grau

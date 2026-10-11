@@ -23,6 +23,7 @@ public abstract partial class SharedChatSystem
         ["salutiert"] = "Salute", ["keucht"] = "Gasp", ["summt"] = "Buzz",
         ["zwitschert"] = "Chirp", ["piept"] = "Beep", ["klingelt"] = "Chime",
         ["pingt"] = "Ping", ["blinzelt"] = "Blink",
+        ["faucht"] = "Hiss", ["krächzt"] = "Caw",
     };
 
     private void CacheEmotes()

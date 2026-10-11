@@ -75,7 +75,7 @@ public sealed partial class EntityProviderSystem : EntitySystem
                 if (!ProtoMan.Resolve(entity.Key, out var entityPrototype))
                     continue;
 
-                args.PushMarkup(Loc.GetString("comp-entity-provider-entity-listing", ("amount", entity.Value), ("name", entityPrototype.Name)));
+                args.PushMarkup(Loc.GetString("comp-entity-provider-entity-listing", ("amount", entity.Value), ("name", entityPrototype.Name), ("prototype", entityPrototype.ID)));
             }
         }
     }

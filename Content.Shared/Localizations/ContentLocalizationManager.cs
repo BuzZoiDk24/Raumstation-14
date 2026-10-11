@@ -88,7 +88,7 @@ namespace Content.Shared.Localizations
             var maxDecimals = (int)Math.Floor(((LocValueNumber) args.Args[1]).Value);
             var formatter = (NumberFormatInfo)NumberFormatInfo.GetInstance(CultureInfo.GetCultureInfo(Culture)).Clone();
             formatter.NumberDecimalDigits = maxDecimals;
-            return new LocValueString(string.Format(formatter, "{0:N}", number).TrimEnd('0').TrimEnd(char.Parse(formatter.NumberDecimalSeparator)) + "%");
+            return new LocValueString(TrimNaturalFraction(string.Format(formatter, "{0:N}", number), formatter) + "%");
         }
 
         private ILocValue FormatNaturalFixed(LocArgs args)
@@ -97,7 +97,18 @@ namespace Content.Shared.Localizations
             var maxDecimals = (int)Math.Floor(((LocValueNumber) args.Args[1]).Value);
             var formatter = (NumberFormatInfo)NumberFormatInfo.GetInstance(CultureInfo.GetCultureInfo(Culture)).Clone();
             formatter.NumberDecimalDigits = maxDecimals;
-            return new LocValueString(string.Format(formatter, "{0:N}", number).TrimEnd('0').TrimEnd(char.Parse(formatter.NumberDecimalSeparator)));
+            return new LocValueString(TrimNaturalFraction(string.Format(formatter, "{0:N}", number), formatter));
+        }
+
+        /// <summary>
+        /// Removes redundant fractional zeros without truncating integer digits.
+        /// With zero decimal places, all trailing zeros belong to the integer.
+        /// </summary>
+        private static string TrimNaturalFraction(string formatted, NumberFormatInfo formatter)
+        {
+            return formatter.NumberDecimalDigits > 0
+                ? formatted.TrimEnd('0').TrimEnd(char.Parse(formatter.NumberDecimalSeparator))
+                : formatted;
         }
 
         private static readonly Regex PluralEsRule = new("^.*(s|sh|ch|x|z)$");
@@ -576,6 +587,9 @@ namespace Content.Shared.Localizations
         /// changing its display name. A string first argument is a prototype ID,
         /// not an arbitrary name. The optional fourth argument for entities is
         /// an already escaped display name, as used by hands and chat.
+        /// The number option selects a noun number. For prototype arguments,
+        /// count formats a complete quantity, falling back to name × count.
+        /// Plural forms are explicit locale attributes, never guessed endings.
         /// </summary>
         private ILocValue FormatGermanName(LocArgs args)
         {
@@ -591,9 +605,27 @@ namespace Content.Shared.Localizations
                 var data = _loc.GetEntityData(prototype.ID);
                 var gender = data.Attributes.GetValueOrDefault("gender", "neuter").ToLowerInvariant();
                 var number = data.Attributes.GetValueOrDefault("number", "singular").ToLowerInvariant();
+                var hasCount = args.Options.TryGetValue("count", out var countValue) && countValue is LocValueNumber;
+                var count = hasCount ? ((LocValueNumber) countValue!).Value : 1;
+                if (hasCount && count != 1)
+                    number = "plural";
+                else if (args.Options.TryGetValue("number", out var requestedNumber) && requestedNumber.Value is string numberText)
+                    number = numberText.ToLowerInvariant();
+
+                // Missing translations must not become invented German plurals.
+                // Counted listings can safely retain the unchanged item name.
+                if (hasCount && number == "plural" &&
+                    data.Attributes.GetValueOrDefault("number", "singular") != "plural" &&
+                    (IsGermanProperName(data) || !TryGetGermanNameAttribute(prototype.ID, data.Name, "plural", out _) &&
+                     !TryGetGermanNameAttribute(prototype.ID, data.Name, "name-noun-plural", out _)))
+                    return new LocValueString(data.Name + " × " + count.ToString(CultureInfo.GetCultureInfo(Culture)));
+
                 declension = NormalizeGermanDeclension(declension, number);
-                return new LocValueString(FormatGermanBaseName(prototype.ID, data.Name, data,
-                    gender, grammaticalCase, declension, number));
+                var prototypeResult = FormatGermanBaseName(prototype.ID, data.Name, data,
+                    gender, grammaticalCase, declension, number);
+                return new LocValueString(hasCount
+                    ? count.ToString(CultureInfo.GetCultureInfo(Culture)) + " " + prototypeResult
+                    : prototypeResult);
             }
 
             if (args.Args[0].Value is not EntityUid entity ||
@@ -617,6 +649,8 @@ namespace Content.Shared.Localizations
                 if (IsGermanProperName(data))
                     return new LocValueString(displayName);
                 nounNumber = data.Attributes.GetValueOrDefault("number", "singular").ToLowerInvariant();
+                if (args.Options.TryGetValue("number", out var requestedNumber) && requestedNumber.Value is string numberText)
+                    nounNumber = numberText.ToLowerInvariant();
                 declension = NormalizeGermanDeclension(declension, nounNumber);
                 var gender = ((LocValueString) FormatGermanGender(args)).Value.ToLowerInvariant();
                 baseName = FormatGermanBaseName(entityPrototype.ID, baseName, data,
@@ -648,6 +682,29 @@ namespace Content.Shared.Localizations
         {
             if (baseName != data.Name || IsGermanProperName(data))
                 return baseName;
+
+            var storedNumber = data.Attributes.GetValueOrDefault("number", "singular").ToLowerInvariant();
+            if (number == "plural" && storedNumber != "plural")
+            {
+                // Full forms take precedence; nouns with adjectives can instead
+                // reuse the existing adjective inflection with a plural noun.
+                if (TryGetGermanNameAttribute(prototypeId, data.Name, $"plural-{grammaticalCase}", out var pluralCase))
+                    return pluralCase;
+                if (TryGetGermanNameAttribute(prototypeId, data.Name, "name-adjective", out var pluralStem) &&
+                    TryGetGermanNameAttribute(prototypeId, data.Name, "name-noun", out var singularNoun) &&
+                    TryGetGermanNameAttribute(prototypeId, data.Name, "name-noun-plural", out var pluralNoun) &&
+                    string.Equals(baseName,
+                        InflectGermanAdjective(pluralStem, gender, "strong", "nominative", storedNumber) + " " + singularNoun,
+                        StringComparison.OrdinalIgnoreCase))
+                {
+                    if (TryGetGermanNameAttribute(prototypeId, data.Name, $"name-noun-plural-{grammaticalCase}", out var nounCase))
+                        pluralNoun = nounCase;
+                    return InflectGermanAdjective(pluralStem, gender, declension, grammaticalCase, "plural") + " " + pluralNoun;
+                }
+                return TryGetGermanNameAttribute(prototypeId, data.Name, "plural", out var plural)
+                    ? plural
+                    : baseName;
+            }
 
             if (TryGetGermanNameAttribute(prototypeId, data.Name, "name-adjective", out var stem) &&
                 TryGetGermanNameAttribute(prototypeId, data.Name, "name-noun", out var noun) &&
