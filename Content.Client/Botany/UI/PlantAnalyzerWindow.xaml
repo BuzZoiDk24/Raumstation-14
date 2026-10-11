@@ -4,7 +4,7 @@
                       xmlns:botany="clr-namespace:Content.Client.Botany.UI"
                       xmlns:atmos="clr-namespace:Content.Client.Atmos.UI"
                       Resizable="False"
-                      MinWidth="750"
+                      MinWidth="850"
                       MinHeight="500">
     <BoxContainer Orientation="Vertical"
                   MinWidth="600"
@@ -17,8 +17,7 @@
 
             <PanelContainer StyleClasses="PanelInsetDark">
                 <BoxContainer Orientation="Vertical"
-                              MinWidth="250"
-                              MaxWidth="250"
+                              MinWidth="320"
                               VerticalExpand="True"
                               HorizontalExpand="True"
                               Margin="6"
@@ -36,12 +35,13 @@
                     <PanelContainer StyleClasses="BackgroundPanel"
                                     HorizontalExpand="True">
                         <BoxContainer Orientation="Vertical"
-                                      Margin="0 8">
+                                      Margin="0 8 0 28">
                             <Label Text="{Loc 'botany-ui-section-traits'}"
                                    StyleClasses="LabelKeyText"
                                    Name="TraitsHeading" />
                             <GridContainer Name="Traits"
                                            Columns="3"
+                                           HSeparationOverride="6"
                                            HorizontalExpand="True">
                                 <Label Text="{Loc 'botany-ui-age'}"
                                        Margin="0 0 8 0" />
@@ -101,7 +101,8 @@
                             <Label Text="{Loc 'botany-ui-section-warnings'}"
                                    StyleClasses="LabelKeyText" />
                             <BoxContainer Name="Warnings"
-                                          Orientation="Vertical" />
+                                          Orientation="Vertical"
+                                          MaxWidth="360" />
                         </BoxContainer>
                     </PanelContainer>
                 </BoxContainer>
@@ -224,14 +225,14 @@
                                StyleClasses="LabelKeyText"
                                Name="MutationsHeading"
                                Margin="0 0 0 2" />
-                        <GridContainer Columns="3"
-                                       HorizontalExpand="True"
-                                       VerticalExpand="True">
-                            <BoxContainer HorizontalExpand="True">
-                                   <BoxContainer Name="Mutations"
-                                                 Orientation="Vertical"
-                                                 MaxWidth="300" />
-                            </BoxContainer>
+                        <BoxContainer Orientation="Horizontal"
+                                      HorizontalExpand="True"
+                                      VerticalExpand="True">
+                            <BoxContainer Name="Mutations"
+                                          Orientation="Vertical"
+                                          HorizontalExpand="True"
+                                          MinWidth="180"
+                                          MaxWidth="300" />
                             <PanelContainer StyleClasses="LowDivider"
                                             VerticalExpand="True"
                                             SetWidth="2"
@@ -247,7 +248,7 @@
                                 <Label Name="MutationMod"
                                        StyleClasses="LabelWeak" />
                             </GridContainer>
-                        </GridContainer>
+                        </BoxContainer>
                     </BoxContainer>
                 </PanelContainer>
             </BoxContainer>

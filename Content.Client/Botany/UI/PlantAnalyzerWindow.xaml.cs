@@ -276,14 +276,20 @@ public sealed partial class PlantAnalyzerWindow : FancyWindow
         foreach (var line in lines.SelectMany(x => x.Split('\n')).Where(x => !string.IsNullOrEmpty(x)))
         {
             any = true;
-            var label = new RichTextLabel { Margin = new Thickness(4, 1) };
-            label.SetMessage(
-                FormattedMessage.FromMarkupPermissive($"[bullet/][font size=11]{line}[/font]"),
-                tagsAllowed: null);
-            container.AddChild(label);
+            container.AddChild(BotanyTextList.CreateRow(line));
         }
 
         if (!any)
-            container.AddChild(new Label { Text = Loc.GetString(emptyLoc), StyleClasses = { StyleClass.LabelWeak } });
+        {
+            var message = new FormattedMessage();
+            message.AddText(Loc.GetString(emptyLoc));
+            var emptyLabel = new RichTextLabel
+            {
+                HorizontalExpand = true,
+                StyleClasses = { StyleClass.LabelWeak }
+            };
+            emptyLabel.SetMessage(message);
+            container.AddChild(emptyLabel);
+        }
     }
 }

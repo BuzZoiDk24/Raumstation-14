@@ -48,7 +48,11 @@ public sealed partial class PlantTrayWindow : FancyWindow
         if (_plantTraySystem.TryGetPlant(tray.AsNullable(), out var plant)
             && _entityManager.TryGetComponent<PlantDataComponent>(plant.Value, out var data))
         {
-            status = Loc.GetString("botany-ui-tray-plant", ("plant", Loc.GetString(data.Name)));
+            // The localized crop name may be plural even though there is one plant.
+            // Keep this grammar in the locale, with a safe singular default for others.
+            Loc.TryGetString("botany-ui-plant-number", out var plantNumber, ("plantId", data.Name.ToString()));
+            status = Loc.GetString("botany-ui-tray-plant", ("plant", Loc.GetString(data.Name)),
+                ("plantNumber", plantNumber ?? "singular"));
         }
 
         Status.SetMessage(FormattedMessage.FromMarkupPermissive(status));
@@ -96,10 +100,7 @@ public sealed partial class PlantTrayWindow : FancyWindow
         {
             foreach (var warning in trayWarnings.Split('\n'))
             {
-                var label = new RichTextLabel { Margin = new Thickness(4, 1) };
-                label.SetMessage(FormattedMessage.FromMarkupPermissive($"[bullet/][font size=11]{warning}[/font]"),
-                    tagsAllowed: null);
-                Warnings.AddChild(label);
+                Warnings.AddChild(BotanyTextList.CreateRow(warning));
             }
         }
     }

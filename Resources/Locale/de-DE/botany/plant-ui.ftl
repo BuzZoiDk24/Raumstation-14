@@ -34,7 +34,10 @@ botany-ui-reagents-none = Keine Chemikalien nachgewiesen.
 
 botany-ui-section-tray = Zustand
 botany-ui-tray-empty = Die Pflanzschale ist leer.
-botany-ui-tray-plant = In der Pflanzschale wächst [color=limegreen]{$plant}[/color].
+botany-ui-tray-plant = In der Pflanzschale { $plantNumber ->
+    [plural] wachsen
+   *[singular] wächst
+} [color=limegreen]{$plant}[/color].
 
 botany-ui-section-conditions = Benötigte Bedingungen
 botany-ui-condition-range = {$minimum} - {$maximum} {$unit}
