@@ -1,5 +1,5 @@
-advertisement-engidrobe-1 = Guaranteed to protect your feet from industrial accidents!
-advertisement-engidrobe-2 = Afraid of radiation? Then wear yellow!
-advertisement-engidrobe-3 = We got hats that protect your noggin!
-advertisement-engidrobe-4 = Not enough people wear safety equipment nowadays!
-advertisement-engidrobe-5 = Get your safety equipment today!
+advertisement-engidrobe-1 = Schützt deine Füße garantiert vor Arbeitsunfällen!
+advertisement-engidrobe-2 = Angst vor Strahlung? Dann trag Gelb!
+advertisement-engidrobe-3 = Unsere Helme schützen deine Birne!
+advertisement-engidrobe-4 = Heutzutage tragen viel zu wenige Leute Schutzausrüstung!
+advertisement-engidrobe-5 = Hol dir noch heute deine Schutzausrüstung!
