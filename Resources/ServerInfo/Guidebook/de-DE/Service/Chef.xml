@@ -52,7 +52,7 @@ Setze einen Becher in die Mühle ein, gib Weizen dazu und mahle ihn!
 Frag in der Botanik nach den Zutaten, die du brauchst. Wenn kein Botaniker da ist, musst du womöglich selbst etwas anbauen.
 <Box>
 <GuideEntityEmbed Entity="SignHydro1" Caption=" "/>
-<GuideEntityEmbed Entity="hydroponicsTray"/>
+<GuideEntityEmbed Entity="HydroponicsTray"/>
 <GuideEntityEmbed Entity="WheatBushel"/>
 </Box>
 ## Milch gewinnen:

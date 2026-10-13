@@ -1228,3 +1228,9 @@ ent-ComplexXenoArtifact = Artefakt
     .gender = neuter
     .name-genitive = Artefakts
     .desc = Ein seltsames Artefakt aus unbekannter Zeit. Das könnte interessant werden.
+
+ent-SyndicateIDCardAdaptivePassenger = { ent-SyndicateIDCardAdaptive }
+    .desc = { ent-SyndicateIDCardAdaptive.desc }
+    .suffix = Anpassbar, Passagiersymbol
+    .gender = feminine
+    .number = singular

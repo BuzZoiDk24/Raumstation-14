@@ -34,3 +34,9 @@ ent-Welder = Schweißgerät
     .name-genitive = Schweißgeräts
     .gender = neuter
     .desc = Schmilzt alles, solange genug Brennstoff da ist. Vergiss den Augenschutz nicht!
+
+ent-PaperWrittenSyndicateInstructions = Einsatzhandbuch
+    .desc = Ein kurzes Handbuch mit den wichtigsten Anweisungen für deinen neuesten Einsatz. Nach dem Lesen vernichten.
+    .gender = neuter
+    .number = singular
+    .name-genitive = Einsatzhandbuchs

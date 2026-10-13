@@ -135,3 +135,8 @@ ent-ClothingUniformJumpskirtVirtualForeigner = Kleid der ausländischen Sängeri
     .gender = neuter
     .number = singular
     .name-genitive = Kleids der ausländischen Sängerin
+
+ent-ClothingUniformJumpskirtTramDriver = Tramfahrer-Rockuniform
+    .desc = Perfekt gebügelt, für gut vorbereitete Profis.
+    .gender = feminine
+    .number = singular

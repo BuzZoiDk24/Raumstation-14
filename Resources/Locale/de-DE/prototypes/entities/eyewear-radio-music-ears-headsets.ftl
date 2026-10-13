@@ -107,3 +107,10 @@ ent-ClothingHeadsetNinja = Grünes Headset
     .name-adjective = grün
     .name-noun = Headset
     .name-noun-genitive = Headsets
+
+ent-ClothingHeadsetSyndicateCovert = { ent-ClothingHeadsetGrey }
+    .desc = { ent-ClothingHeadsetGrey.desc }
+    .suffix = Syndikat
+    .gender = neuter
+    .number = singular
+    .name-genitive = Passagier-Headsets

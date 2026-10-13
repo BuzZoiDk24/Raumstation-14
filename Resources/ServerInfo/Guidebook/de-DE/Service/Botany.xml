@@ -11,7 +11,7 @@ Mit verschiedenen Werkzeugen hältst du deine Pflanzen gesund und bringst sie zu
 
 ## Hydroponikbecken
 <Box>
-<GuideEntityEmbed Entity="hydroponicsTray"/>
+<GuideEntityEmbed Entity="HydroponicsTray"/>
 </Box>
 Im Hydroponikbecken wachsen Pflanzen mithilfe von Wasser. Fülle es zuerst mit Wasser und setze dann Samen ein.
 Farbe und Position der Kontrollleuchten zeigen dir, was gerade nötig ist:

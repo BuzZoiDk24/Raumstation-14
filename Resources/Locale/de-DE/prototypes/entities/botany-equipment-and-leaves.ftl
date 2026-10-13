@@ -127,11 +127,11 @@ ent-GroundTobacco = Gemahlener Tabak
     .name-noun-genitive = Tabaks
     .desc = Gemahlener Tabak. Perfekt für selbst gedrehte Zigaretten.
 
-ent-hydroponicsTray = Pflanzschale
+ent-HydroponicsTray = Pflanzschale
     .gender = feminine
     .desc = Ein Pflanzbeet nach interstellarem Standard, das schnelles Wachstum und gezielte Pflanzenzucht ermöglicht. Denk nur... an das Weltraumunkraut.
 
-ent-hydroponicsSoil = Pflanzerde
+ent-HydroponicsSoil = Pflanzerde
     .gender = feminine
     .desc = Eine Mischung aus organischem Material und Mineralien, in der deine Pflanzen im Weltraum wachsen können. Scheint trocken zu sein.
 

@@ -463,3 +463,10 @@ ent-ChameleonAgentPDA = { ent-ChameleonPDA }
     .number = singular
     .name-genitive = Passagier-PDAs
     .suffix = Chamäleon, Agentenausweis
+
+ent-SyndiCovertPDA = { ent-PassengerPDA }
+    .desc = { ent-PassengerPDA.desc }
+    .suffix = Anpassbar
+    .gender = masculine
+    .number = singular
+    .name-genitive = Passagier-PDAs
