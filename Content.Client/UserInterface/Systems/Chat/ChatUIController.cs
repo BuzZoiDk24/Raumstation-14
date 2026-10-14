@@ -846,7 +846,7 @@ public sealed partial class ChatUIController : UIController
             {
                 foreach (var codeword in data.Codewords)
                 {
-                    msg.WrappedMessage = SharedChatSystem.InjectTagAroundString(msg, codeword, "color", data.Color.ToHex());
+                    msg.WrappedMessage = SharedChatSystem.InjectTagAroundString(msg, codeword, "color", data.Color.ToHex(), wholeWord: true);
                 }
             }
         }

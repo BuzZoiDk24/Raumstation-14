@@ -324,13 +324,27 @@ public abstract partial class SharedChatSystem : EntitySystem
     /// <summary>
     /// Injects a tag around all found instances of a specific string in a ChatMessage.
     /// Excludes strings inside other tags and brackets.
+    /// Set wholeWord for literal complete-word matching, such as codewords.
     /// </summary>
-    public static string InjectTagAroundString(ChatMessage message, string targetString, string tag, string? tagParameter)
+    public static string InjectTagAroundString(ChatMessage message, string targetString, string tag, string? tagParameter, bool wholeWord = false)
     {
         var rawmsg = message.WrappedMessage;
+        if (wholeWord && string.IsNullOrEmpty(targetString))
+            return rawmsg;
+
+        // Codewords are literal complete words. Unicode letters, marks and
+        // numbers cannot extend them; punctuation may stand directly beside them.
+        // Swiss spelling uses ss for sharp s. Add alternatives only where the
+        // actual codeword contains sharp s; ordinary ss must not accept misspellings.
+        var escapedCodeword = wholeWord
+            ? Regex.Escape(targetString).Replace("ẞ", "ß").Replace("ß", "(?:ß|ẞ|ss)")
+            : string.Empty;
+        var targetPattern = wholeWord
+            ? @"(?<![\p{L}\p{M}\p{N}_])(" + escapedCodeword + @")(?![\p{L}\p{M}\p{N}_])"
+            : "(" + targetString + ")";
         // TODO: Figure out if there's any way we can cache this, and if not then rewrite this to not use regex.
 #pragma warning disable RA0026
-        rawmsg = Regex.Replace(rawmsg, "(?i)(" + targetString + ")(?-i)(?![^[]*])", $"[{tag}={tagParameter}]$1[/{tag}]");
+        rawmsg = Regex.Replace(rawmsg, "(?i)" + targetPattern + "(?-i)(?![^[]*])", $"[{tag}={tagParameter}]$1[/{tag}]");
 #pragma warning restore RA0026
         return rawmsg;
     }
