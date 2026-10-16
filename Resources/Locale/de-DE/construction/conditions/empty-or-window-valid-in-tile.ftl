@@ -1,1 +1,1 @@
-construction-guide-condition-empty-or-window-valid-in-tile = You must place this on a valid tile.
+construction-guide-condition-empty-or-window-valid-in-tile = Du musst es auf einem geeigneten Feld platzieren.

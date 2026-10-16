@@ -1,5 +1,5 @@
-construction-recipe-crate-freezer = crate freezer
-construction-recipe-big-box = large cardboard box
-construction-recipe-box-cardboard = cardboard box
-construction-recipe-box-cardboard-small = small cardboard box
-construction-recipe-box-tote = circuit tote
+construction-recipe-crate-freezer = Gefrierkiste
+construction-recipe-big-box = Großer Pappkarton
+construction-recipe-box-cardboard = Pappkarton
+construction-recipe-box-cardboard-small = Kleiner Pappkarton
+construction-recipe-box-tote = Platinenbehälter

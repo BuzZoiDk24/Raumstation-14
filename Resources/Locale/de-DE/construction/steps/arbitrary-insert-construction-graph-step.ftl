@@ -1,12 +1,12 @@
 # Shown when examining an in-construction object
-construction-insert-arbitrary-entity = Next, insert {$stepName}.
+construction-insert-arbitrary-entity = Setze als Nächstes „{$stepName}“ ein.
 
-construction-insert-info-examine-name-instrument-brass = brass instrument
-construction-insert-info-examine-name-instrument-keyed = keyed instrument
-construction-insert-info-examine-name-instrument-percussion = percussion instrument
-construction-insert-info-examine-name-instrument-string = string intrument
-construction-insert-info-examine-name-instrument-woodwind = woodwind instrument
-construction-insert-info-examine-name-knife = knife
-construction-insert-info-examine-name-utensil = utensil
-construction-insert-info-examine-name-laser-cannon = high power laser weapon
-construction-insert-info-examine-name-power-cell = power cell
+construction-insert-info-examine-name-instrument-brass = Blechblasinstrument
+construction-insert-info-examine-name-instrument-keyed = Tasteninstrument
+construction-insert-info-examine-name-instrument-percussion = Schlaginstrument
+construction-insert-info-examine-name-instrument-string = Saiteninstrument
+construction-insert-info-examine-name-instrument-woodwind = Holzblasinstrument
+construction-insert-info-examine-name-knife = Messer
+construction-insert-info-examine-name-utensil = Besteck
+construction-insert-info-examine-name-laser-cannon = Hochleistungslaserwaffe
+construction-insert-info-examine-name-power-cell = Energiezelle

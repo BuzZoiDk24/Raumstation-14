@@ -1,5 +1,5 @@
-anchorable-anchored = Anchored
-anchorable-unanchored = Unanchored
-anchorable-occupied = Tile occupied
+anchorable-anchored = Verankert
+anchorable-unanchored = Verankerung gelöst
+anchorable-occupied = Feld belegt
 
-anchorable-fail-not-on-station = This can only be anchored on a station!
+anchorable-fail-not-on-station = Das lässt sich nur auf einer Station verankern!

@@ -1,4 +1,4 @@
-construction-examine-condition-entity-anchored = First, anchor it.
-construction-examine-condition-entity-unanchored = First, unanchor it.
-construction-step-condition-entity-anchored = It must be anchored.
-construction-step-condition-entity-unanchored = It must be unanchored.
+construction-examine-condition-entity-anchored = Verankere es zuerst.
+construction-examine-condition-entity-unanchored = Löse zuerst die Verankerung.
+construction-step-condition-entity-anchored = Es muss verankert sein.
+construction-step-condition-entity-unanchored = Es darf nicht verankert sein.

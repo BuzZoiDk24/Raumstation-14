@@ -1,4 +1,4 @@
-construction-examine-condition-all-wires-cut = All of its wires must be cut.
-construction-examine-condition-all-wires-intact = All of its wires must be intact.
-construction-guide-condition-all-wires-cut = All of its wires must be cut.
-construction-guide-condition-all-wires-intact = All of its wires must be intact.
+construction-examine-condition-all-wires-cut = Alle Drähte müssen durchtrennt sein.
+construction-examine-condition-all-wires-intact = Alle Drähte müssen intakt sein.
+construction-guide-condition-all-wires-cut = Alle Drähte müssen durchtrennt sein.
+construction-guide-condition-all-wires-intact = Alle Drähte müssen intakt sein.
