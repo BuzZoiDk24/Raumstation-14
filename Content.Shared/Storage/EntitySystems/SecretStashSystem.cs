@@ -131,7 +131,7 @@ public sealed partial class SecretStashSystem : EntitySystem
             _whitelistSystem.IsWhitelistPass(entity.Comp.Blacklist, itemToHideUid))
         {
             var msg = Loc.GetString("comp-secret-stash-action-hide-item-too-big",
-                ("item", itemToHideUid), ("stashname", GetStashName(entity)));
+                ("item", itemToHideUid), ("stashname", GetStashName(entity)), ("stash", entity.Owner));
             _popupSystem.PopupEntity(msg, entity, userUid);
             return false;
         }
@@ -142,7 +142,7 @@ public sealed partial class SecretStashSystem : EntitySystem
 
         // all done, show success message
         var successMsg = Loc.GetString("comp-secret-stash-action-hide-success",
-            ("item", itemToHideUid), ("stashname", GetStashName(entity)));
+            ("item", itemToHideUid), ("stashname", GetStashName(entity)), ("stash", entity.Owner));
         _popupSystem.PopupEntity(successMsg, entity, userUid);
         return true;
     }
@@ -170,7 +170,7 @@ public sealed partial class SecretStashSystem : EntitySystem
 
         // show success message
         var successMsg = Loc.GetString("comp-secret-stash-action-get-item-found-something",
-            ("stashname", GetStashName(entity)));
+            ("stashname", GetStashName(entity)), ("stash", entity.Owner));
         _popupSystem.PopupEntity(successMsg, entity, userUid);
 
         return true;
@@ -196,11 +196,11 @@ public sealed partial class SecretStashSystem : EntitySystem
                 if (HasItemInside(entity))
                 {
                     itemVerb.Disabled = true;
-                    itemVerb.Message = Loc.GetString("comp-secret-stash-verb-insert-message-item-already-inside", ("stashname", stashName));
+                    itemVerb.Message = Loc.GetString("comp-secret-stash-verb-insert-message-item-already-inside", ("stashname", stashName), ("stash", entity.Owner));
                 }
                 else
                 {
-                    itemVerb.Message = Loc.GetString("comp-secret-stash-verb-insert-message-no-item", ("item", item), ("stashname", stashName));
+                    itemVerb.Message = Loc.GetString("comp-secret-stash-verb-insert-message-no-item", ("item", item), ("stashname", stashName), ("stash", entity.Owner));
                 }
 
                 itemVerb.Act = () => TryStashItem(entity, user, item.Value);
@@ -208,11 +208,11 @@ public sealed partial class SecretStashSystem : EntitySystem
             else
             {
                 itemVerb.Text = Loc.GetString("comp-secret-stash-verb-take-out-item");
-                itemVerb.Message = Loc.GetString("comp-secret-stash-verb-take-out-message-something", ("stashname", stashName));
+                itemVerb.Message = Loc.GetString("comp-secret-stash-verb-take-out-message-something", ("stashname", stashName), ("stash", entity.Owner));
                 if (!HasItemInside(entity))
                 {
                     itemVerb.Disabled = true;
-                    itemVerb.Message = Loc.GetString("comp-secret-stash-verb-take-out-message-nothing", ("stashname", stashName));
+                    itemVerb.Message = Loc.GetString("comp-secret-stash-verb-take-out-message-nothing", ("stashname", stashName), ("stash", entity.Owner));
                 }
 
                 itemVerb.Act = () => TryGetItem(entity, user);
@@ -256,7 +256,7 @@ public sealed partial class SecretStashSystem : EntitySystem
         var storedInside = _containerSystem.EmptyContainer(entity.Comp.ItemContainer, true, cords);
         if (storedInside != null && storedInside.Count >= 1)
         {
-            var popup = Loc.GetString("comp-secret-stash-on-destroyed-popup", ("stashname", GetStashName(entity)));
+            var popup = Loc.GetString("comp-secret-stash-on-destroyed-popup", ("stashname", GetStashName(entity)), ("stash", entity.Owner));
             _popupSystem.PopupEntity(popup, storedInside[0], PopupType.MediumCaution);
         }
     }

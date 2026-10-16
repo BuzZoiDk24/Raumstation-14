@@ -1,4 +1,4 @@
-delivery-penalty-default-reason = WARNING
-delivery-penalty-default-account-name = UNKNOWN ACCOUNT
+delivery-penalty-default-reason = WARNUNG
+delivery-penalty-default-account-name = UNBEKANNTES KONTO
 
-delivery-penalty-message = {$reason}! INVOKING A PENALTY OF {$spesos} SPESOS ON {$account}!
+delivery-penalty-message = {$reason}! DAS KONTO {$account} WIRD MIT EINER STRAFE VON {$spesos} SPESOS BELASTET!

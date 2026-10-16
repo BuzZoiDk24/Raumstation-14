@@ -1,7 +1,16 @@
-buckle-component-no-hands-message = You don't have hands!
-buckle-component-already-buckled-message = You are already buckled in!
-buckle-component-other-already-buckled-message = {$owner} is already buckled in!
-buckle-component-cannot-buckle-message = You can't buckle yourself there!
-buckle-component-other-cannot-buckle-message = You can't buckle {$owner} there!
-buckle-component-cannot-fit-message = You can't fit there!
-buckle-component-other-cannot-fit-message = {$owner} can't fit there!
+buckle-component-no-hands-message = Du hast keine Hände!
+buckle-component-already-buckled-message = Du bist bereits angeschnallt!
+buckle-component-other-already-buckled-message = { PROPER($owner) ->
+    [true] { $owner }
+   *[false] { CAPITALIZE(DE-ARTICLE($owner, "nominative")) } { DE-NAME($owner, "nominative", "weak") }
+    } ist bereits angeschnallt!
+buckle-component-cannot-buckle-message = Hier kannst du dich nicht anschnallen!
+buckle-component-other-cannot-buckle-message = Hier kannst du { PROPER($owner) ->
+    [true] { $owner }
+   *[false] { DE-ARTICLE($owner, "accusative") } { DE-NAME($owner, "accusative", "weak") }
+    } nicht anschnallen!
+buckle-component-cannot-fit-message = Du passt da nicht hinein!
+buckle-component-other-cannot-fit-message = { PROPER($owner) ->
+    [true] { $owner }
+   *[false] { CAPITALIZE(DE-ARTICLE($owner, "nominative")) } { DE-NAME($owner, "nominative", "weak") }
+    } passt da nicht hinein!

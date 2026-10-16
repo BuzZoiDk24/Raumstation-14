@@ -1,23 +1,56 @@
 ### Locale for wielding items; i.e. two-handing them
 
-wieldable-verb-text-wield = Wield
-wieldable-verb-text-unwield = Unwield
+wieldable-verb-text-wield = Beidhändig halten
+wieldable-verb-text-unwield = Einhändig halten
 
-wieldable-component-successful-wield = You wield { THE($item) }.
-wieldable-component-failed-wield = You unwield { THE($item) }.
-wieldable-component-successful-wield-other = { CAPITALIZE(THE($user)) } wields { THE($item) }.
-wieldable-component-failed-wield-other = { CAPITALIZE(THE($user)) } unwields { THE($item) }.
-wieldable-component-blocked-wield = { CAPITALIZE(THE($blocker)) } blocks you from wielding { THE($item) }.
+wieldable-component-successful-wield = Du hältst { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } jetzt mit beiden Händen.
+wieldable-component-failed-wield = Du hältst { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } wieder mit einer Hand.
+wieldable-component-successful-wield-other = { PROPER($user) ->
+    [true] { $user }
+   *[false] { CAPITALIZE(DE-ARTICLE($user, "nominative")) } { DE-NAME($user, "nominative", "weak") }
+    } hält { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } jetzt mit beiden Händen.
+wieldable-component-failed-wield-other = { PROPER($user) ->
+    [true] { $user }
+   *[false] { CAPITALIZE(DE-ARTICLE($user, "nominative")) } { DE-NAME($user, "nominative", "weak") }
+    } hält { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } wieder mit einer Hand.
+wieldable-component-blocked-wield = { PROPER($blocker) ->
+    [true] { $blocker }
+   *[false] { CAPITALIZE(DE-ARTICLE($blocker, "nominative")) } { DE-NAME($blocker, "nominative", "weak") }
+    } hindert dich daran, { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } beidhändig zu halten.
 
-wieldable-component-no-hands = You don't have enough hands!
-wieldable-component-not-enough-free-hands = {$number ->
-    [one] You need a free hand to wield { THE($item) }.
-    *[other] You need { $number } free hands to wield { THE($item) }.
-}
-wieldable-component-not-in-hands = { CAPITALIZE(THE($item)) } isn't in your hands!
+wieldable-component-no-hands = Du hast nicht genug Hände!
+wieldable-component-not-enough-free-hands = { $number ->
+    [one] Du brauchst eine freie Hand, um
+   *[other] Du brauchst {$number} freie Hände, um
+    } { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } beidhändig zu halten.
+wieldable-component-not-in-hands = Du hältst { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } nicht in der Hand!
 
-wieldable-component-requires = { CAPITALIZE(THE($item))} must be wielded!
+wieldable-component-requires = Du musst { PROPER($item) ->
+    [true] { $item }
+   *[false] { DE-ARTICLE($item, "accusative") } { DE-NAME($item, "accusative", "weak") }
+    } beidhändig halten!
 
-gunwieldbonus-component-examine = This weapon has improved accuracy when wielded.
+gunwieldbonus-component-examine = Diese Waffe ist genauer, wenn du sie beidhändig hältst.
 
-gunrequireswield-component-examine = This weapon can only be fired when wielded.
+gunrequireswield-component-examine = Diese Waffe lässt sich nur beidhändig abfeuern.

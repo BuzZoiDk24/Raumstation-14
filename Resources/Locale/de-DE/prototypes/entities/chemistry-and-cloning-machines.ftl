@@ -15,3 +15,19 @@ ent-MedicalScanner = Medizinscanner
 ent-ComputerCloningConsole = Klonkonsole
     .gender = feminine
     .desc = Das Herzstück der Klonanlage, der größten Errungenschaft der Medizin. Hat jede Menge Anschlüsse und Kabel.
+
+ent-Morgue = Leichenfach
+    .desc = Hier werden Leichen gelagert, bis jemand sie abholt. Mit einem hochmodernen Warnsystem für vorschnelle Todeserklärungen!
+    .gender = neuter
+    .number = singular
+    .name-genitive = Leichenfachs
+    .plural = Leichenfächer
+    .plural-dative = Leichenfächern
+
+ent-Crematorium = Krematorium
+    .desc = Ein Verbrennungsofen für Menschen. Auch für Grillabende gut geeignet.
+    .gender = neuter
+    .number = singular
+    .name-genitive = Krematoriums
+    .plural = Krematorien
+    .plural-dative = Krematorien

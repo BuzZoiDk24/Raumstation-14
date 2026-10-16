@@ -1,5 +1,5 @@
-voice-trigger-lock-verb-record = Record lock phrase
-voice-trigger-lock-verb-message = Locking the item will disable features that reveal its true nature!
+voice-trigger-lock-verb-record = Kennwort aufnehmen
+voice-trigger-lock-verb-message = Durch das Sperren werden Funktionen deaktiviert, die den wahren Zweck des Gegenstands verraten!
 
-voice-trigger-lock-on-uninitialized = The display is blank
-voice-trigger-lock-on-examine = The display shows the passphrase: "{$keyphrase}"
+voice-trigger-lock-on-uninitialized = Die Anzeige ist leer
+voice-trigger-lock-on-examine = Die Anzeige zeigt das Kennwort „{$keyphrase}“

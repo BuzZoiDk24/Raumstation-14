@@ -3,6 +3,7 @@ using Content.Shared.Shuttles.Components;
 using Content.Shared.Examine;
 using Content.Shared.FingerprintReader;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction.Events;
 using Content.Shared.NameModifier.EntitySystems;
@@ -31,6 +32,7 @@ public abstract partial class SharedDeliverySystem : EntitySystem
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private SharedHandsSystem _hands = default!;
     [Dependency] private NameModifierSystem _nameModifier = default!;
+    [Dependency] private HumanoidProfileSystem _humanoidProfiles = default!;
 
     private static readonly ProtoId<TagPrototype> TrashTag = "Trash";
     private static readonly ProtoId<TagPrototype> RecyclableTag = "Recyclable";
@@ -184,8 +186,9 @@ public abstract partial class SharedDeliverySystem : EntitySystem
             GrantSpesoReward(ent.AsNullable());
 
         if (!force)
-            _popup.PopupEntity(Loc.GetString("delivery-unlocked-self", ("delivery", deliveryName)),
-                Loc.GetString("delivery-unlocked-others", ("delivery", deliveryName), ("recipient", Identity.Entity(user, EntityManager)), ("possadj", user)),
+            _popup.PopupEntity(Loc.GetString("delivery-unlocked-self", ("delivery", deliveryName), ("deliveryEntity", ent.Owner)),
+                Loc.GetString("delivery-unlocked-others", ("delivery", deliveryName), ("deliveryEntity", ent.Owner), ("recipient", Identity.Entity(user, EntityManager)), ("possadj", user),
+                    ("bodySex", _humanoidProfiles.GetBodySex(user)?.ToString().ToLowerInvariant() ?? "unsexed")),
                 user, user);
 
         return true;
@@ -213,8 +216,8 @@ public abstract partial class SharedDeliverySystem : EntitySystem
         DirtyField(ent.Owner, ent.Comp, nameof(DeliveryComponent.IsOpened));
 
         if (!force)
-            _popup.PopupEntity(Loc.GetString("delivery-opened-self", ("delivery", deliveryName)),
-                Loc.GetString("delivery-opened-others", ("delivery", deliveryName), ("recipient", Identity.Entity(user, EntityManager)), ("possadj", user)),
+            _popup.PopupEntity(Loc.GetString("delivery-opened-self", ("delivery", deliveryName), ("deliveryEntity", ent.Owner)),
+                Loc.GetString("delivery-opened-others", ("delivery", deliveryName), ("deliveryEntity", ent.Owner), ("recipient", Identity.Entity(user, EntityManager)), ("possadj", user)),
                 user, user);
 
         if (!_container.TryGetContainer(ent, ent.Comp.Container, out var container))

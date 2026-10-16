@@ -68,3 +68,26 @@ ent-ComputerSalvageJobBoard = Bergungsauftragskonsole
 ent-ComputerPalletConsole = Verkaufskonsole
     .gender = feminine
     .desc = Damit lassen sich Waren auf Frachtpaletten verkaufen.
+
+ent-MailBag = Posttasche
+    .desc = Eine Tasche, um Post auf der Station auszutragen. Aus gegerbtem Weltraumbärenfell gefertigt.
+    .gender = feminine
+    .number = singular
+    .plural = Posttaschen
+    .plural-dative = Posttaschen
+
+ent-MailCart = Postwagen
+    .desc = Für eine stilvolle und effiziente Paketzustellung.
+    .gender = masculine
+    .number = singular
+    .name-genitive = Postwagens
+    .plural = Postwagen
+    .plural-dative = Postwagen
+
+ent-CargoMailTeleporter = Postteleporter
+    .desc = Teleportiert regelmäßig Post herbei, die auf der Station zugestellt werden soll.
+    .gender = masculine
+    .number = singular
+    .name-genitive = Postteleporters
+    .plural = Postteleporter
+    .plural-dative = Postteleportern

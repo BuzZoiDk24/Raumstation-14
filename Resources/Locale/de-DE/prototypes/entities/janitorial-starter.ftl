@@ -139,3 +139,12 @@ ent-RagItem = Feuchter Lappen
     .name-noun-genitive = Lappens
     .name-noun-plural = Lappen
     .name-noun-plural-dative = Lappen
+
+ent-GoldenPlunger = Goldene Saugglocke
+    .desc = Eine Saugglocke mit einer dünnen Goldschicht auf dem Kunststoffsauger. Ein Zeichen der Anerkennung für langjährige Dienste. Wird immer noch zum Befreien verstopfter Abflüsse verwendet.
+    .gender = feminine
+    .number = singular
+    .name-adjective = golden
+    .name-noun = Saugglocke
+    .name-noun-plural = Saugglocken
+    .name-noun-plural-dative = Saugglocken

@@ -1,2 +1,2 @@
-take-item-verb-text = Take {$subject}
-place-item-verb-text = Place {$subject}
+take-item-verb-text = {$subject} herausnehmen
+place-item-verb-text = {$subject} einsetzen

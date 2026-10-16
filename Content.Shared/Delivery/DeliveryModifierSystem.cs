@@ -86,11 +86,11 @@ public sealed partial class DeliveryModifierSystem : EntitySystem
         var timeLeft = ent.Comp.DeliverUntilTime - _timing.CurTime;
 
         if (ent.Comp.Delivered)
-            args.PushMarkup(Loc.GetString("delivery-priority-delivered-examine", ("type", trueName)));
+            args.PushMarkup(Loc.GetString("delivery-priority-delivered-examine", ("type", trueName), ("deliveryEntity", ent.Owner)));
         else if (_timing.CurTime < ent.Comp.DeliverUntilTime)
-            args.PushMarkup(Loc.GetString("delivery-priority-examine", ("type", trueName), ("time", timeLeft.ToString("mm\\:ss"))));
+            args.PushMarkup(Loc.GetString("delivery-priority-examine", ("type", trueName), ("deliveryEntity", ent.Owner), ("time", timeLeft.ToString("mm\\:ss"))));
         else
-            args.PushMarkup(Loc.GetString("delivery-priority-expired-examine", ("type", trueName)));
+            args.PushMarkup(Loc.GetString("delivery-priority-expired-examine", ("type", trueName), ("deliveryEntity", ent.Owner)));
     }
 
     private void OnGetPriorityMultiplier(Entity<DeliveryPriorityComponent> ent, ref GetDeliveryMultiplierEvent args)
@@ -120,9 +120,9 @@ public sealed partial class DeliveryModifierSystem : EntitySystem
         var trueName = _nameModifier.GetBaseName(ent.Owner);
 
         if (ent.Comp.Broken)
-            args.PushMarkup(Loc.GetString("delivery-fragile-broken-examine", ("type", trueName)));
+            args.PushMarkup(Loc.GetString("delivery-fragile-broken-examine", ("type", trueName), ("deliveryEntity", ent.Owner)));
         else
-            args.PushMarkup(Loc.GetString("delivery-fragile-examine", ("type", trueName)));
+            args.PushMarkup(Loc.GetString("delivery-fragile-examine", ("type", trueName), ("deliveryEntity", ent.Owner)));
     }
 
     private void OnGetFragileMultiplier(Entity<DeliveryFragileComponent> ent, ref GetDeliveryMultiplierEvent args)
@@ -155,9 +155,9 @@ public sealed partial class DeliveryModifierSystem : EntitySystem
         var isPrimed = HasComp<PrimedDeliveryBombComponent>(ent);
 
         if (isPrimed)
-            args.PushMarkup(Loc.GetString("delivery-bomb-primed-examine", ("type", trueName)));
+            args.PushMarkup(Loc.GetString("delivery-bomb-primed-examine", ("type", trueName), ("deliveryEntity", ent.Owner)));
         else
-            args.PushMarkup(Loc.GetString("delivery-bomb-examine", ("type", trueName)));
+            args.PushMarkup(Loc.GetString("delivery-bomb-examine", ("type", trueName), ("deliveryEntity", ent.Owner)));
     }
 
     private void OnGetExplosiveMultiplier(Entity<DeliveryBombComponent> ent, ref GetDeliveryMultiplierEvent args)

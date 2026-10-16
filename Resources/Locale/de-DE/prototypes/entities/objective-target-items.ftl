@@ -947,11 +947,17 @@ ent-PackageDelivery = Paket
     .gender = neuter
     .name-genitive = Pakets
     .desc = { "" }
+    .number = singular
+    .plural = Pakete
+    .plural-dative = Paketen
 
 ent-LetterDelivery = Brief
     .gender = masculine
     .name-genitive = Briefs
     .desc = { "" }
+    .number = singular
+    .plural = Briefe
+    .plural-dative = Briefen
 
 # MedicalTechFabCircuitboard
 
