@@ -43,6 +43,12 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
         {
             HandleFilter();
         };
+
+        HomeButton.OnPressed += _ =>
+        {
+            if (Tree.SelectedItem?.Metadata is GuideEntry entry)
+                ShowGuide(entry);
+        };
     }
 
     public void HandleClick(string link)
@@ -103,7 +109,6 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
 
             var isRulesEntry = entry.RuleEntry;
             ReturnContainer.Visible = isRulesEntry;
-            HomeButton.OnPressed += _ => ShowGuide(entry);
         }
         else
             ClearSelectedGuide();
