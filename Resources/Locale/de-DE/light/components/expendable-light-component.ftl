@@ -1,2 +1,2 @@
-expendable-light-start-verb = Start Light
-expendable-light-spent-prefix = spent {$baseName}
+expendable-light-start-verb = Licht aktivieren
+expendable-light-spent-prefix = {$baseName} (verbraucht)

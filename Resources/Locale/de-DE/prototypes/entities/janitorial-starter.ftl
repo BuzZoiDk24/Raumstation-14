@@ -85,3 +85,57 @@ ent-Mousetrap = Mausefalle
 ent-BoxLightMixed = Leuchtmittelbox
     .gender = feminine
     .desc = Enthält verschiedene Leuchtmittel für kaputte Lampen.
+
+ent-Plunger = Saugglocke
+    .desc = Eine Saugglocke aus rotem Kunststoff mit einem Holzgriff. Befreit verstopfte Abflüsse.
+    .gender = feminine
+    .number = singular
+    .plural = Saugglocken
+    .plural-dative = Saugglocken
+
+ent-SprayBottle = Sprühflasche
+    .desc = Eine Sprühflasche mit abschraubbarem Sprühkopf.
+    .suffix = Leer
+    .gender = feminine
+    .number = singular
+    .plural = Sprühflaschen
+    .plural-dative = Sprühflaschen
+
+ent-SprayBottleWater = { ent-SprayBottle }
+    .desc = { ent-SprayBottle.desc }
+    .suffix = Gefüllt
+    .gender = feminine
+    .number = singular
+    .plural = Sprühflaschen
+    .plural-dative = Sprühflaschen
+
+ent-MegaSprayBottle = Riesige Sprühflasche
+    .desc = Eine riesige Sprühflasche mit unübertroffener Reinigungskraft.
+    .suffix = Leer
+    .gender = feminine
+    .number = singular
+    .name-adjective = riesig
+    .name-noun = Sprühflasche
+    .name-noun-plural = Sprühflaschen
+    .name-noun-plural-dative = Sprühflaschen
+
+ent-MegaSprayBottleSpaceCleaner = Großes Reinigungsspray
+    .desc = Schaumfreier Universalreiniger der Marke BLAM! Jetzt in einer größeren Packung für die richtig großen Blutlachen!
+    .suffix = Universalreiniger
+    .gender = neuter
+    .number = singular
+    .name-adjective = groß
+    .name-noun = Reinigungsspray
+    .name-noun-genitive = Reinigungssprays
+    .name-noun-plural = Reinigungssprays
+    .name-noun-plural-dative = Reinigungssprays
+
+ent-RagItem = Feuchter Lappen
+    .desc = Wohl dazu da, um Sauereien aufzuwischen.
+    .gender = masculine
+    .number = singular
+    .name-adjective = feucht
+    .name-noun = Lappen
+    .name-noun-genitive = Lappens
+    .name-noun-plural = Lappen
+    .name-noun-plural-dative = Lappen

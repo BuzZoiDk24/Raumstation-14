@@ -40,3 +40,47 @@ ent-PaperWrittenSyndicateInstructions = Einsatzhandbuch
     .gender = neuter
     .number = singular
     .name-genitive = Einsatzhandbuchs
+
+ent-SprayPainterRecharging = Farbsprühgerät
+    .desc = Ein Farbsprühgerät zum Lackieren von Luftschleusen, Rohren und anderen Gegenständen.
+    .suffix = Adminspielzeug
+    .gender = neuter
+    .number = singular
+    .name-genitive = Farbsprühgeräts
+    .plural = Farbsprühgeräte
+    .plural-dative = Farbsprühgeräten
+
+ent-SprayPainter = { ent-SprayPainterRecharging }
+    .desc = { ent-SprayPainterRecharging.desc }
+    .gender = neuter
+    .number = singular
+    .name-genitive = Farbsprühgeräts
+    .plural = Farbsprühgeräte
+    .plural-dative = Farbsprühgeräten
+
+ent-SprayPainterBorg = Experimentelles Farbsprühgerät
+    .desc = Ein experimentelles Farbsprühgerät, das selbstständig unbegrenzt Druckfarbe nachbilden kann.
+    .suffix = Cyborg
+    .gender = neuter
+    .number = singular
+    .name-adjective = experimentell
+    .name-noun = Farbsprühgerät
+    .name-noun-genitive = Farbsprühgeräts
+    .name-noun-plural = Farbsprühgeräte
+    .name-noun-plural-dative = Farbsprühgeräten
+
+ent-SprayPainterEmpty = { ent-SprayPainter }
+    .desc = { ent-SprayPainter.desc }
+    .suffix = Leer
+    .gender = neuter
+    .number = singular
+    .name-genitive = Farbsprühgeräts
+    .plural = Farbsprühgeräte
+    .plural-dative = Farbsprühgeräten
+
+ent-SprayPainterAmmo = Farbkartusche
+    .desc = Eine Kartusche mit stark komprimierter Farbe, wie sie häufig in Farbsprühgeräten verwendet wird.
+    .gender = feminine
+    .number = singular
+    .plural = Farbkartuschen
+    .plural-dative = Farbkartuschen

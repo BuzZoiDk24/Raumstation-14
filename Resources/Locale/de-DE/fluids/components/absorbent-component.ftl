@@ -1,9 +1,30 @@
-mopping-system-target-container-empty = { CAPITALIZE(THE($target)) } is empty!
-mopping-system-target-container-empty-water = { CAPITALIZE(THE($target)) } has no water!
-mopping-system-puddle-space = { CAPITALIZE(THE($used)) } is full of water.
-mopping-system-puddle-already-mopped = { CAPITALIZE(THE($target)) } is already mopped.
-mopping-system-no-water = { CAPITALIZE(THE($used)) } has no water!
-mopping-system-no-hands = You have no hands!
+mopping-system-target-container-empty = { PROPER($target) ->
+    [true] { $target }
+   *[false] { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") }
+    } ist leer!
+mopping-system-target-container-empty-water = { PROPER($target) ->
+    [true] { $target }
+   *[false] { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") }
+    } enthält kein Wasser!
+mopping-system-puddle-space = { PROPER($used) ->
+    [true] { $used }
+   *[false] { CAPITALIZE(DE-ARTICLE($used, "nominative")) } { DE-NAME($used, "nominative", "weak") }
+    } ist mit Wasser vollgesogen.
+mopping-system-puddle-already-mopped = { PROPER($target) ->
+    [true] { $target }
+   *[false] { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") }
+    } wurde bereits gewischt.
+mopping-system-no-water = { PROPER($used) ->
+    [true] { $used }
+   *[false] { CAPITALIZE(DE-ARTICLE($used, "nominative")) } { DE-NAME($used, "nominative", "weak") }
+    } enthält kein Wasser!
+mopping-system-no-hands = Du hast keine Hände!
 
-mopping-system-full = { CAPITALIZE(THE($used)) } is full!
-mopping-system-empty = { CAPITALIZE(THE($used)) } is empty!
+mopping-system-full = { PROPER($used) ->
+    [true] { $used }
+   *[false] { CAPITALIZE(DE-ARTICLE($used, "nominative")) } { DE-NAME($used, "nominative", "weak") }
+    } ist voll!
+mopping-system-empty = { PROPER($used) ->
+    [true] { $used }
+   *[false] { CAPITALIZE(DE-ARTICLE($used, "nominative")) } { DE-NAME($used, "nominative", "weak") }
+    } ist leer!
