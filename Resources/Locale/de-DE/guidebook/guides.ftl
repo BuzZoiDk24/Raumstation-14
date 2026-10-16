@@ -93,6 +93,7 @@ guide-entry-defusal = Große Bomben entschärfen
 guide-entry-criminal-records = Strafregister
 guide-entry-command = Stationsleitung
 guide-entry-service = Stationsservice
+guide-entry-civilian = Zivilpersonal
 
 guide-entry-newplayer = Neu hier? Fang hier an!
 guide-entry-charactercreation = Charaktererstellung

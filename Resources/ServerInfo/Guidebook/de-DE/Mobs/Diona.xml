@@ -5,34 +5,43 @@
     <GuideEntityEmbed Entity="MobDiona" Caption=""/>
   </Box>
 
-  They can't wear shoes, but are not slowed by Kudzu.
-  They get hungry and thirsty slower.
-  Their "blood" is tree sap and can't be metabolised from Iron.
-  Being plants, Weed Killer poisons them, while Robust Harvest heals them (but not without risk when overused!)
+  ## Allgemeines
 
-  They take [color=#1e90ff]30% less Blunt damage and 20% less Slash damage[/color];
-  but [color=#ffa500]50% more Heat damage, 20% more Shock damage, and they can easily
-  catch on fire when receiving enough Heat damage from *any* source.[/color]
+  Diona haben große, kompakte Körper. Beim Ziehen von Gegenständen werden sie deshalb weniger verlangsamt. Werden sie selbst gezogen, bremsen sie die andere Person dafür stärker aus.
 
-  ## Make Like A Tree And Leave
+  Ihr pflanzenähnlicher Stoffwechsel lässt sie [color=lightgreen]langsamer hungrig[/color], aber [color=palevioletred]schneller durstig[/color] werden als andere Spezies.
+
+  Statt Blut besitzen sie Pflanzensaft, der beim Verstoffwechseln von Eisen erneuert wird. Für andere Spezies ist dieser Saft leicht nahrhaft, auch wenn es meist nicht gern gesehen wird, das Blut der Kollegen zu trinken.
+
+  Sie verstoffwechseln Reagenzien mit einem einzigen Organ. Pro Stoffwechselstufe, also Verdauung, Blutkreislauf und Abbauprodukte, können sie bis zu sechs Reagenzien verarbeiten.
+
+  Sie erleiden [color=lightgreen]30 % weniger stumpfen Schaden[/color] und [color=lightgreen]20 % weniger Schnittschaden[/color], aber [color=palevioletred]50 % mehr Hitzeschaden[/color] und [color=palevioletred]20 % mehr Stromschaden[/color]. Ihre rindenartige Haut kann [color=palevioletred]leicht Feuer fangen[/color], sobald sie genug Hitzeschaden aus [italic]beliebiger[/italic] Quelle erleidet.
+
+  Beim Ersticken [color=lightgreen]halten sie doppelt so lange durch[/color].
+
+  ## Verwurzeln
+
+  Diona bewegen sich auf einem dichten Wurzelgeflecht fort. Deshalb können sie [color=palevioletred][italic]keinerlei[/italic] Schuhe tragen[/color], sich mit ihren Wurzeln aber fest am Boden verankern.
+
+  Verwurzelt bewegen sich Diona [color=palevioletred]20 % langsamer[/color]. Dafür können sie sich auch in der Schwerelosigkeit frei fortbewegen, statt unbeholfen umherzutreiben. Außerdem nehmen sie dabei selbstständig Reagenzien aus Pfützen auf, in denen sie stehen. Bei Flüssigkeiten, die man besser nicht trinken sollte, kann das gefährlich werden!
+
+  ## Pflanzenmittel
   <Box>
     <GuideEntityEmbed Entity="FloraTree" Caption=""/>
   </Box>
-  Being exposed to too much Robust Harvest will cause a Diona to grow out of control, turning into an immobile tree (dropping all their equipment).
-  Cutting down the tree will "restore" the Diona to their mobile state.
 
-  ## Diona Nymphs
+  Diona können dieselben Lebensmittel verdauen wie die meisten anderen Spezies. Zusätzlich wirken verschiedene Pflanzenmittel auf sie. Dünger [color=lightgreen]stillt ihren Hunger[/color], während Pestizide sie [color=palevioletred]vergiften[/color]!
+
+  Robust Harvest, ein besonders wirksamer Dünger, [color=lightgreen]heilt ihre Verletzungen[/color]. Bei einer Überdosis [color=palevioletred]wachsen sie jedoch unkontrolliert[/color] und verwandeln sich in einen unbeweglichen Baum, wobei sie ihre gesamte Ausrüstung fallen lassen. Wird der Baum gefällt, nimmt der Diona wieder seine gewöhnliche, bewegliche Gestalt an.
+
+  ## Nymphen
   <Box>
     <GuideEntityEmbed Entity="MobDionaNymph" Caption=""/>
     <GuideEntityEmbed Entity="MobDionaNymph" Caption=""/>
     <GuideEntityEmbed Entity="MobDionaNymph" Caption=""/>
   </Box>
-  After death, a Diona can voluntarily destroy their own body, releasing their "internal organs" as three Nymphs,
-  with the player taking control of the Brain Nymph.
-  It can talk but has no hands or inventory, and can't do much.
+  Nach dem Tod kann ein Diona seinen Körper freiwillig auflösen und seine inneren Organe als drei „Nymphen“ freisetzen. Der Spieler übernimmt dabei die Nymphe mit dem Gehirn. Sie kann sprechen, besitzt aber weder Hände noch ein Inventar.
 
-  After 10 minutes, a Nymph can reform into a whole Diona. This will be a new randomised body with a random name,
-  and there will be little to no evidence beyond their word about who they were before.
-
+  Nach 10 Minuten kann diese Nymphe wieder zu einem vollständigen Diona heranwachsen. Der neue Körper hat einen anderen Namen, ein anderes Aussehen, neue Fingerabdrücke und sogar neue DNA. Es gibt also kaum eindeutige Beweise dafür, wer der Diona zuvor war.
 
 </Document>

@@ -1,16 +1,23 @@
 <Document>
-  # Arachnids
+  # Spinnenwesen
 
   <Box>
     <GuideEntityEmbed Entity="MobArachnid" Caption=""/>
   </Box>
 
-  They have two additional Pocket slots in their inventory. They can eat raw meat without any ill effects, but some foods like chocolate and onion poisons them.
-  They suffocate 50% faster, and their Blue Blood can't be metabolised from Iron, being based on Copper instead.
+  ## Allgemeines
 
-  Their unarmed attacks deal Piercing damage instead of Blunt.
+  Spinnenwesen können kleine Gegenstände in ihrem Gespinst verstauen. Dadurch stehen ihnen praktisch [color=lightgreen]zwei zusätzliche Taschen[/color] zur Verfügung.
 
-  ## Sericulture
+  Ihre kräftigen Fangzähne verursachen bei unbewaffneten Angriffen Stichschaden.
+
+  Ihr tierähnlicher Verdauungsapparat kann [color=lightgreen]rohes Fleisch und Blut[/color] ohne schädliche Folgen verarbeiten. Allicin aus Knoblauch und Zwiebeln sowie Theobromin aus koffeinhaltigen Getränken und Schokolade [color=palevioletred]vergiften[/color] sie jedoch.
+
+  Ihr blaues Blut basiert auf Kupfer und wird beim Verstoffwechseln von Kupfer statt Eisen erneuert.
+
+  Sie [color=palevioletred]ersticken 50 % schneller[/color] und [color=palevioletred]erholen sich von Erstickungsschäden nur halb so schnell[/color].
+
+  ## Seidenherstellung
 
   <Box>
     <GuideEntityEmbed Entity="MaterialWebSilk" Caption=""/>
@@ -19,7 +26,6 @@
     <GuideEntityEmbed Entity="WallWeb" Caption=""/>
   </Box>
 
-  Arachnids can create Websilk at the cost of getting more hungry. They (and only they) can craft bundles of websilk into various items from clothing and shields to entire walls.
-
+  Spinnenwesen können nach Bedarf Seide herstellen, werden dabei aber hungriger. Aus der Seide lassen sich Kleidung, Möbel und sogar ganze Wände fertigen.
 
 </Document>

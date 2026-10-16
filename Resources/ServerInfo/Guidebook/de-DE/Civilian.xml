@@ -1,0 +1,31 @@
+<Document>
+  # Zivilpersonal
+
+  Besatzungsmitglieder ohne festen Beruf gehören zu dieser inoffiziellen „Abteilung“. Anders als die übrige Besatzung hat das Zivilpersonal [color=cyan]keine festgelegten Aufgaben.[/color] Im Allgemeinen kannst du deine Zeit auf der Station also nach Belieben verbringen, solange du den anderen das Leben nicht schwer machst.
+
+  ## Personal
+  Zum [color=#7f7f7f]Zivilpersonal[/color] gehören vor allem Passagiere, aber auch Besucher der Station. Eine eigene Abteilungsleitung gibt es nicht. Trotzdem wird erwartet, dass du die Anweisungen der Stationsleitung befolgst.
+
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurinePassenger" Caption="Passagier"/>
+  </Box>
+
+  ## Zeitvertreib
+
+  Ohne feste Aufgaben weiß mancher Passagier zunächst wenig mit sich anzufangen. Hier sind ein paar Vorschläge gegen die Langeweile.
+
+  [bullet/]Erkunde die Wartungsschächte der Station.
+
+  [bullet/]Komme in der Bar mit anderen ins Gespräch.
+
+  [bullet/]Übernimm kleinere Arbeiten für andere Abteilungen.
+
+  [bullet/]Renoviere die öffentlichen Bereiche der Station.
+
+  [bullet/]Bitte die Versorgung, Spielzeug für dich zu bestellen.
+
+  [bullet/]Sieh dir an, was der Clown oder der Mime diesmal wieder anstellt.
+
+  Wenn alles nichts hilft, kannst du immer noch ein Mitglied der Stationsleitung ansprechen und nach einer richtigen Arbeit fragen.
+
+</Document>

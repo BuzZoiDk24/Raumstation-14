@@ -1,30 +1,29 @@
 ﻿<Document>
-  # The Wizard
+  # Der Magier
 
   <Box>
-    [color=#457573][italic]IT'S WIZARD TIME MOTHERF-...[italic][/color]
+    [color=#999999][italic]JETZT WIRD GEZAUBERT, IHR ARSCHL-...[/italic][/color]
   </Box>
   <Box>
     <GuideEntityEmbed Entity="ToyFigurineWizard" Caption=""/>
   </Box>
-  Wizards are a force of chaos and unpredictability. You never know what one is going to do next.
-  Generally sent by the [color=#40E0D0]Space Wizards Federation[/color] or some schmuck turned into one by rolling a nat 20 on a cursed die.
-  And since a Wizard is highly unpredictable, one may show up when you least expect it!
+  Magier stehen für Chaos und Unberechenbarkeit. Meist werden sie von der [color=#FF00FF]Space Wizards Federation[/color] geschickt. Man weiß nie, wann einer auftaucht oder was er vorhat!
+  Magier tun im Allgemeinen, was ihnen gefällt. Abgesehen davon, auf der Station Chaos zu stiften, haben sie [bold]keine festen Ziele[/bold]. Wie dieses Chaos aussieht, entscheidest du. Vielleicht verdampfst du den Clown für einen schlechten Witz, stiehlst Wertgegenstände, nur um zu beweisen, dass du es kannst, verwandelst den Kapitän in einen Affen oder wirfst wahllos Feuerbälle auf Leute.
 
-  ## The Grimoire
+  ## Das Zauberbuch
   <Box>
-    <GuideEntityEmbed Entity="WizardsGrimoire" Caption="Wizards Grimoire"/>
+    <GuideEntityEmbed Entity="WizardsGrimoire" Caption="Zauberbuch des Magiers"/>
   </Box>
 
-  [bold]By wizard law of eld your Grimoire is bound to you.[/bold] This means you cannot share your Grimoire with anyone else. The spells and equipment inside are for you and you alone.
-  The Wizard's Grimoire is used to get all sorts of magical spells, equipment, and creatures. What's available to you is [italic]extremely powerful[/italic] so you only have 10 [color=#FF0000]W[/color][color=#FFA500]i[/color][color=#FFFF00]z[/color][color=#00FF00]€[/color][color=#0000FF]o[/color][color=#4B0082]i[/color][color=#8F00FF]n[/color]™ to spend on them.
-  Your only limit, other than the price, is your creativity. Try to find some combinations!
+  [bold]Nach uraltem Magiergesetz ist dein Zauberbuch an dich gebunden.[/bold] Du kannst es also mit niemandem teilen. Die enthaltenen Zauber und Ausrüstungsgegenstände sind nur für dich bestimmt.
+  Im Zauberbuch erhältst du verschiedenste Zauber, Ausrüstung und Kreaturen. Das Angebot ist [italic]äußerst mächtig[/italic], deshalb stehen dir dafür nur 10 [color=#FF0000]W[/color][color=#FFA500]i[/color][color=#FFFF00]z[/color][color=#00FF00]€[/color][color=#0000FF]o[/color][color=#4B0082]i[/color][color=#8F00FF]n[/color]™ zur Verfügung.
+  Abgesehen vom Preis setzt dir nur deine Fantasie Grenzen. Probiere verschiedene Kombinationen aus!
 
   <Box>
-    <GuideEntityEmbed Entity="PonderingOrbWizard" Caption="The Pondering Orb"/>
+    <GuideEntityEmbed Entity="PonderingOrbWizard" Caption="Kugel der Betrachtung"/>
   </Box>
 
-  If you ever find yourself wanting to ponder, look no further! The [bold]Pondering Orb[/bold] allows the Wizard to tap into the Station's camera network to spy on others unsuspectingly.
-  Could be useful if you're trying to plan something out or stay one step ahead of [color=red]Security[/color].
+  Möchtest du etwas genauer betrachten? Dann greif zur [bold]Kugel der Betrachtung[/bold]! Mit ihr kann der Magier das Kameranetz der Station anzapfen und andere unbemerkt beobachten.
+  Praktisch, um etwas zu planen oder dem [color=red]Sicherheitsdienst[/color] einen Schritt voraus zu bleiben.
 
 </Document>

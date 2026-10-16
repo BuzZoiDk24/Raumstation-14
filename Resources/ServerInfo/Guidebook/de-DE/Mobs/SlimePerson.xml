@@ -1,24 +1,24 @@
 <Document>
-  # Slime People
+  # Schleimwesen
 
   <Box>
     <GuideEntityEmbed Entity="MobSlimePerson" Caption=""/>
   </Box>
 
-  They breathe nitrogen instead of oxygen, which is abundant in the station air, but harder to find compressed into gas tanks. They take significant damage if they are sprayed or splashed with water, but can
-  (and like other species, need to) drink it safely to stay hydrated.
-  They exhale nitrous oxide and are unaffected by it.
-  Their body can process 6 reagents at the same time instead of just 2.
+  ## Allgemeines
 
-  Slimepeople have an [bold]internal 2x3 storage inventory[/bold] inside of their slime membrane. Anyone can see what's inside and take it out of you without asking,
-  so be careful.
+  Schleimwesen atmen Stickstoff statt Sauerstoff. Eingeatmeter Sauerstoff schadet ihnen allerdings nicht. Sie atmen Lachgas aus und sind gegen dessen Wirkung beim Einatmen immun.
 
-  Slimepeople have roughly [color=#1e90ff]double[/color] regeneration compared to other humanoids and can regenerate from far greater wounds up to [color=#1e90ff]triple[/color] compared to others.
+  In ihrer Schleimhaut befindet sich ein [color=lightgreen]inneres Inventar mit 2x3 Feldern[/color]. Dadurch können sie etwas mehr tragen als andere Spezies. Allerdings kann [italic]jeder[/italic] ungefragt hineingreifen.
 
-  Their slime "blood" can not be regenerated from Iron. Slime Blood is technically a source of
-  moderately filling food for other species, although drinking the blood of your coworkers is usually frowned upon.
-  They suffocate 80% slower, but take pressure damage 9% faster. This makes them by far the species most capable to survive in hard vacuum. For a while.
+  Statt Blut besitzen sie Schleim, der beim Verstoffwechseln von Eisen oder beim Trinken von Schleim erneuert wird. Für andere Spezies ist Schleim mäßig nahrhaft, auch wenn es meist nicht gern gesehen wird, das Blut der Kollegen zu trinken.
 
-  They take [color=#1e90ff]40% less Blunt damage[/color], but [color=#ffa500]50% more Cold damage, 20% more Slash damage and 20% more Piercing damage[/color].
+  Sie verstoffwechseln Reagenzien mit einem einzigen Organ. Pro Stoffwechselstufe, also Verdauung, Blutkreislauf und Abbauprodukte, können sie bis zu sechs Reagenzien verarbeiten.
+
+  Sie erleiden [color=lightgreen]40 % weniger stumpfen Schaden[/color] und [color=lightgreen]20 % weniger Giftschaden[/color], aber [color=palevioletred]50 % mehr Kälteschaden[/color], [color=palevioletred]20 % mehr Schnittschaden[/color] und [color=palevioletred]20 % mehr Stichschaden[/color]. Von Hitzeschäden erholen sie sich auf natürliche Weise [color=lightgreen]doppelt so schnell[/color] wie die meisten anderen Spezies. Medizinische Behandlungen wirken dadurch allerdings nicht schneller.
+
+  Sie [color=lightgreen]ersticken fünfmal langsamer[/color], erleiden aber [color=palevioletred]9 % schneller Druckschaden[/color]. Dadurch halten sie es von allen Spezies mit Abstand am längsten ungeschützt im Vakuum aus.
+
+  Berührt Wasser oder Wasserdampf ihre äußere Haut, erleiden sie [color=palevioletred]leichten Hitzeschaden[/color]. Wasser trinken können sie trotzdem ohne schädliche Folgen.
 
 </Document>

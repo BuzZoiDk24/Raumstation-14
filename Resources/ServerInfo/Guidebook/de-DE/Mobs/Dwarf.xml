@@ -1,11 +1,16 @@
 <Document>
-  # Dwarves
+  # Zwerge
 
   <Box>
     <GuideEntityEmbed Entity="MobDwarf" Caption=""/>
   </Box>
 
-  Dwarves are similar to humans in most respect, but tolerate alcohol better and are healed by it.
+  ## Allgemeines
 
+  Zwerge sind kleiner als die meisten anderen Spezies. Beim Ziehen von Gegenständen werden sie deshalb stärker verlangsamt. Werden sie selbst gezogen, bremsen sie die andere Person dafür weniger aus.
+
+  Ihr robuster Verdauungsapparat verträgt Alkohol besser. Durch Trinken können sie sogar [color=lightgreen]leichte Verletzungen heilen[/color].
+
+  Sie essen gern und können bis zu fünf Reagenzien gleichzeitig verdauen, während die meisten anderen Spezies nur bis zu drei verarbeiten können.
 
 </Document>

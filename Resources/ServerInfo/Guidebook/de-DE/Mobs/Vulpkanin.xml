@@ -5,12 +5,20 @@
     <GuideEntityEmbed Entity="MobVulpkanin" Caption=""/>
   </Box>
 
-  Vulpkanin, due to their dense fur, [color=#1e90ff]prefer colder temperatures[/color] and [color=#ffa500]heat up faster.[/color]
-  Their agile (but clumsy) legs allow them to leap short distances, be careful not to bump into anything!
+  ## Allgemeines
 
-  Their diet allows them to safely eat raw meat but they get poisoned by theobromine.
+  Die scharfen Krallen der Vulpkanin verursachen bei unbewaffneten Angriffen Schnittschaden.
 
-  Their weirdly shaped muzzle leads to difficulties drinking, making them sometimes spill small amounts of whatever they drank onto the ground.
+  Ihr tierähnlicher Verdauungsapparat kann [color=lightgreen]rohes Fleisch und Blut[/color] ohne schädliche Folgen verarbeiten. Allicin aus Knoblauch und Zwiebeln sowie Theobromin aus koffeinhaltigen Getränken und Schokolade [color=palevioletred]vergiften[/color] sie jedoch.
 
-  They take [color=#1e90ff]15% less Cold damage[/color] but [color=#ffa500]15% more Heat damage.[/color].
+  Wegen ihrer Schnauzenform verschütten sie beim Trinken gelegentlich etwas Flüssigkeit.
+
+  Sie erleiden [color=lightgreen]15 % weniger Kälteschaden[/color], aber [color=palevioletred]15 % mehr Hitzeschaden[/color]. Ihr dichtes Fell lässt sie etwas kühlere Temperaturen als Menschen bevorzugen und macht sie [color=palevioletred]äußerst anfällig für Feuer[/color].
+
+  ## Springen
+
+  Ihre Zehengängerbeine ermöglichen Vulpkanin [color=lightgreen]beeindruckend weite Sprünge[/color]. Damit können sie Gefahren am Boden wie bodenlose Abgründe überwinden. Ein Sprung verschafft ihnen auch einen kurzen Geschwindigkeitsvorteil, wenn sie fliehen oder jemanden verfolgen.
+
+  Achte darauf, während des Sprungs nirgendwo anzustoßen. Sonst [color=palevioletred]gehst du zu Boden[/color] und lässt fallen, was du in den Händen hältst!
+
 </Document>

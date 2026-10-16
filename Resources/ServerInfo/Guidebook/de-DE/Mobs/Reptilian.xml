@@ -1,16 +1,18 @@
 <Document>
-  # Reptilians
+  # Reptilienwesen
 
   <Box>
     <GuideEntityEmbed Entity="AppearanceReptilian" Caption=""/>
   </Box>
 
-  They can ONLY eat fruits and meat, but can eat raw meat and drink blood without any ill effects.
-  They prefer a somewhat higher temperature range than humans.
-  They can drag objects with their tail, keeping both their hands free.
+  ## Allgemeines
 
-  Their unarmed claw attacks deal Slash damage instead of Blunt.
+  Reptilienwesen können [color=lightgreen]Gegenstände mit ihrem Schwanz ziehen[/color]. Dabei bleiben beide Hände frei.
 
-  They take [color=#ffa500]30% more Cold damage.[/color]
+  Ihre scharfen Krallen verursachen bei unbewaffneten Angriffen Schnittschaden.
+
+  Ihr Verdauungsapparat [color=palevioletred]verarbeitet ausschließlich Früchte und Fleisch[/color]. Auch [color=lightgreen]rohes Fleisch und Blut[/color] können sie ohne schädliche Folgen verdauen. Allicin aus Knoblauch und Zwiebeln sowie Theobromin aus koffeinhaltigen Getränken und Schokolade [color=palevioletred]vergiften[/color] sie jedoch.
+
+  Sie erleiden [color=palevioletred]30 % mehr Kälteschaden[/color] und bevorzugen etwas wärmere Temperaturen als Menschen.
 
 </Document>
