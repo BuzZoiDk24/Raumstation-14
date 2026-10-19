@@ -450,3 +450,5 @@ ui-options-admin-strip-overlay-setting = Show strip overlay by default
 
 ui-options-chat-preview = Chat-Vorschaublasen beim Tippen anzeigen
 ui-options-preview-bubble-background-opacity = Deckkraft des Hintergrunds der Vorschaublasen
+
+ui-options-hud-theme-trasen = Trasen-Knox

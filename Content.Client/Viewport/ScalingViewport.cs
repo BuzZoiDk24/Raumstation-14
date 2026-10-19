@@ -185,11 +185,7 @@ namespace Content.Client.Viewport
 
             var drawBox = GetDrawBox();
             var drawBoxGlobal = drawBox.Translated(GlobalPixelPosition);
-            // Screen overlays reset the drawing transform. Keep the control's
-            // transform so that its texture is drawn inside the UI viewport.
-            var controlTransform = handle.DrawingHandleScreen.GetTransform();
             _viewport.RenderScreenOverlaysBelow(handle, this, drawBoxGlobal);
-            handle.DrawingHandleScreen.SetTransform(controlTransform);
 
             ApplySharpnessShader(handle);
 
@@ -199,7 +195,6 @@ namespace Content.Client.Viewport
                 handle.DrawingHandleScreen.UseShader(null);
 
             _viewport.RenderScreenOverlaysAbove(handle, this, drawBoxGlobal);
-            handle.DrawingHandleScreen.SetTransform(controlTransform);
         }
 
         private void ApplySharpnessShader(IRenderHandle handle)

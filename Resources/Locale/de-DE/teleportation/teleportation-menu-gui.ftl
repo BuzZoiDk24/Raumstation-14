@@ -4,4 +4,4 @@ teleportation-menu-destination-obstructed = Du hast nicht das Gefühl, irgendwoh
 
 ## Wizard
 teleportation-scroll-window-title = Teleportationsschriftrolle
-teleportation-scroll-speech-wizard = EY TCHEL TORT TU {$location}
+teleportation-scroll-speech-wizard = EY TCHEL TORT TU {$location}!!

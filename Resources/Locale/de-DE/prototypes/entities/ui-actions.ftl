@@ -12,3 +12,6 @@ ent-ActionCombatModeToggleOff = [color=red]Kampfmodus[/color]
 
 ent-ActionToggleInternals = Internes Atemsystem umschalten
     .desc = Atme aus dem ausgerüsteten Gastank. Erfordert außerdem eine ausgerüstete Atemmaske.
+
+ent-ActionOpenVendingMachineInterface = Bedienoberfläche umschalten
+    .desc = Wähle kostenlose Geschenke aus deinem Warenbestand aus!

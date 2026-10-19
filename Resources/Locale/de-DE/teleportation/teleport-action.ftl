@@ -1,2 +1,1 @@
-teleport-action-popup-cant-see = Du kannst das Ziel nicht sehen.
 teleport-action-popup-blocked = Am Ziel ist kein Platz.

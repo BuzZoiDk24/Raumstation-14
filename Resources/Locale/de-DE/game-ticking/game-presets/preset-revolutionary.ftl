@@ -1,7 +1,7 @@
 ## Rev Head
 
 roles-antag-rev-head-name = Head Revolutionary
-roles-antag-rev-head-objective = Your objective is to take over the station by converting people to your cause and eliminating all members of Command.
+roles-antag-rev-head-objective = Übernimm die Kontrolle über die Station, indem du andere für deine Sache gewinnst und alle Mitglieder der Stationsleitung ausschaltest.
 
 head-rev-role-greeting =
     You are a head revolutionary. You are tasked with removing all of Command from power through death, restraint, or conversion.
@@ -17,7 +17,7 @@ head-rev-break-mindshield = The mindshield implant was destroyed!
 ## Rev
 
 roles-antag-rev-name = Revolutionary
-roles-antag-rev-objective = Your objective is to ensure the safety and follow the orders of the head revolutionaries, and to help them take over the station by eliminating all members of Command.
+roles-antag-rev-objective = Schütze die Revolutionsführer und befolge ihre Anweisungen, um ihnen bei der Übernahme der Station zu helfen.
 
 rev-break-control = {$name} has remembered their true allegiance!
 

@@ -103,3 +103,5 @@ chat-emote-name-caw = Krächzen
 
 chat-emote-msg-hiss = faucht!
 chat-emote-msg-caw = krächzt.
+
+chat-emote-msg-deathgasp-kobold = stößt ein schwaches Fiepen aus, bricht zusammen und bewegt sich nicht mehr...

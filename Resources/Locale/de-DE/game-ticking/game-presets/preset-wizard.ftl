@@ -32,19 +32,19 @@ survivor-round-end-alive-on-shuttle-count =
 
 ## Wizard
 
-objective-issuer-swf = [color=turquoise]The Space Wizards Federation[/color]
+objective-issuer-swf = [color=turquoise]Die Space Wizards Federation[/color]
 
-wizard-title = Wizard
-wizard-description = There's a Wizard on the station! You never know what they might do.
+wizard-title = Magier
+wizard-description = Ein Magier ist auf der Station! Man weiß nie, was er als Nächstes vorhat.
 
-roles-antag-wizard-name = Wizard
-roles-antag-wizard-objective = Teach them a lesson they'll never forget.
+roles-antag-wizard-name = Magier
+roles-antag-wizard-objective = Nutze deine Beherrschung der arkanen Künste, um Chaos und Zwietracht zu säen.
 
 wizard-role-greeting =
-    It's wizard time, fireball!
-    There's been tensions between the Space Wizards Federation and NanoTrasen. You've been selected by the Space Wizards Federation to pay a visit to the station and "remind them" why spellcasters are not to be trifled with.
-    Cause mayhem and destruction! What you do is up to you, but remember that the Space Wizards want you to make it out alive.
+    Jetzt wird gezaubert!
+    Die Spannungen zwischen der Space Wizards Federation und NanoTrasen nehmen zu. Du wurdest ausgewählt, einer Raumstation von NanoTrasen einen Besuch abzustatten und sie daran zu „erinnern“, warum man sich mit Magiern besser nicht anlegt.
+    Stifte Chaos und Verwüstung! Wie du dabei vorgehst, bleibt dir überlassen. Denk aber daran, dass deine Vorgesetzten wollen, dass du lebend zurückkehrst.
 
-wizard-round-end-name = wizard
+wizard-round-end-name = Magier
 
 ## TODO: Wizard Apprentice (Coming sometime post-wizard release)

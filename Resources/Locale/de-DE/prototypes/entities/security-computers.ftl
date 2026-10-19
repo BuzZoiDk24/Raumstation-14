@@ -39,3 +39,17 @@ ent-BrigTimer = Arrestzellen-Timer
     .name-genitive = Arrestzellen-Timers
     .gender = masculine
     .desc = Ein Timer für die Arrestzellen.
+
+ent-WallmountTelescreen = Kameramonitor
+    .name-genitive = Kameramonitors
+    .gender = masculine
+    .plural = Kameramonitore
+    .plural-dative = Kameramonitoren
+    .desc = Ein an der Wand montierter Monitor für Überwachungskameras. Du beobachtest sie. Vielleicht.
+
+ent-WallmountTelescreenFrame = Kameramonitorrahmen
+    .name-genitive = Kameramonitorrahmens
+    .gender = masculine
+    .plural = Kameramonitorrahmen
+    .plural-dative = Kameramonitorrahmen
+    .desc = Ein Rahmen für einen an der Wand montierten Kameramonitor.
