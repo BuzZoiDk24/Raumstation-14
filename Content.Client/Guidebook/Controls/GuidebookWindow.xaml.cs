@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Numerics;
 using Content.Client.UserInterface.ControlExtensions;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Controls.FancyTree;
@@ -19,6 +20,8 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
     [Dependency] private DocumentParsingManager _parsingMan = default!;
 
     private Dictionary<ProtoId<GuideEntryPrototype>, GuideEntry> _entries = [];
+
+    private readonly Dictionary<ProtoId<GuideEntryPrototype>, (string Search, Vector2 Scroll)> _guideStates = [];
 
     private readonly ISawmill _sawmill;
 
@@ -131,6 +134,7 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
 
     public void ClearSelectedGuide()
     {
+        SaveGuideState();
         Placeholder.Visible = true;
         EntryContainer.Visible = false;
         SearchContainer.Visible = false;
@@ -141,6 +145,7 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
 
     private void ShowGuide(GuideEntry entry)
     {
+        SaveGuideState();
         Scroll.SetScrollValue(default);
         Placeholder.Visible = false;
         EntryContainer.Visible = true;
@@ -175,6 +180,32 @@ public sealed partial class GuidebookWindow : FancyWindow, ILinkClickHandler, IA
         }
 
         RepopulateTableOfContents();
+        RestoreGuideState(entry);
+    }
+
+    private void SaveGuideState()
+    {
+        if (Selected is { } selected)
+            _guideStates[selected] = (SearchBar.Text, Scroll.GetScrollValue());
+    }
+
+    private void RestoreGuideState(GuideEntry entry)
+    {
+        if (!_guideStates.TryGetValue(entry.Id, out var state))
+            return;
+
+        if (entry.FilterEnabled)
+        {
+            SearchBar.Text = state.Search;
+            HandleFilter();
+        }
+
+        // The scroll range still belongs to the previous guide until the new content has been laid out, which
+        // normally only happens at the end of the frame. Lay it out now so the restored position is already in
+        // place when the guide is first drawn instead of flashing the top of it for a frame.
+        Scroll.Measure(Scroll.Size);
+        Scroll.Arrange(UIBox2.FromDimensions(Scroll.Position, Scroll.Size));
+        Scroll.SetScrollValue(state.Scroll);
     }
 
     private int? HeadingDepth(Label control)
