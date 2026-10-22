@@ -47,7 +47,7 @@ contraband-examine-text-Magical =
     }
 
 contraband-examine-text-avoid-carrying-around = [color=red][italic]Das solltest du ohne guten Grund besser nicht offen mit dir führen.[/italic][/color]
-contraband-examine-text-in-the-clear = [color=green][italic]Das solltest du offen mit dir führen dürfen.[/italic][/color]
+contraband-examine-text-in-the-clear = [color=green][italic]Es sollte kein Problem sein, das offen mit dir herumzutragen.[/italic][/color]
 
 contraband-examinable-verb-text = Besitzberechtigung
 contraband-examinable-verb-message = Prüfe, ob du diesen Gegenstand mitführen darfst.
