@@ -32,7 +32,7 @@ id-card-access-level-bar = Bar
 id-card-access-level-kitchen = Küche
 id-card-access-level-hydroponics = Hydroponik
 id-card-access-level-service = Stationsservice
-id-card-access-level-janitor = Reinigung
+id-card-access-level-janitor = Hausmeister
 id-card-access-level-theatre = Theater
 id-card-access-level-chapel = Kapelle
 id-card-access-level-lawyer = Anwalt
@@ -41,12 +41,12 @@ id-card-access-level-maintenance = Wartung
 
 id-card-access-level-external = Außenbereich
 
-id-card-access-level-nuclear-operative = Nuklear-Operative
+id-card-access-level-nuclear-operative = Nuklearagent
 id-card-access-level-syndicate-agent = Syndikatsagent
 
 id-card-access-level-central-command = Zentralkommando
 
-id-card-access-level-wizard = Zauberer
+id-card-access-level-wizard = Magier
 
 id-card-access-level-station-ai = Stations-KI
 id-card-access-level-borg = Cyborg
