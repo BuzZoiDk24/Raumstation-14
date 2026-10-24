@@ -36,10 +36,10 @@ public sealed class GermanNumberFormatTest : GameTest
             ("value", value), ("decimals", decimals)), Is.EqualTo(expected)));
     }
 
-    [TestCase(0, "Reset Sentence (0% served)")]
-    [TestCase(10, "Reset Sentence (10% served)")]
-    [TestCase(50, "Reset Sentence (50% served)")]
-    [TestCase(90, "Reset Sentence (90% served)")]
+    [TestCase(0, "Haftzeit zurücksetzen (0 % verbüßt)")]
+    [TestCase(10, "Haftzeit zurücksetzen (10 % verbüßt)")]
+    [TestCase(50, "Haftzeit zurücksetzen (50 % verbüßt)")]
+    [TestCase(90, "Haftzeit zurücksetzen (90 % verbüßt)")]
     public async Task PrisonLockerDisplay(double percent, string expected)
     {
         await WithGermanCulture(loc => Assert.That(loc.GetString("genpop-locker-action-reset-sentence",
