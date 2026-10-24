@@ -141,3 +141,12 @@ ent-ClothingHeadHatCatEarsValid = { ent-ClothingHeadHatCatEars }
     .number = plural
     .name-dative = Katzenohren
     .suffix = Freiwild, NICHT AUF KARTEN PLATZIEREN
+
+
+ent-HolywaterDropletHat = Weihwassertropfen
+    .desc = Macht achtäugige Freunde achtmal göttlicher!
+    .gender = masculine
+    .number = singular
+    .name-genitive = Weihwassertropfens
+    .plural = Weihwassertropfen
+    .plural-dative = Weihwassertropfen

@@ -9,3 +9,7 @@ guidebook-error-message = Fehlermeldung
 
 guidebook-monkey-unspin = Drehenden Affen anhalten
 guidebook-monkey-disco = Disco-Affe
+guidebook-history-back = ◀
+guidebook-history-back-tooltip = Zurück
+guidebook-history-forward = ▶
+guidebook-history-forward-tooltip = Vorwärts

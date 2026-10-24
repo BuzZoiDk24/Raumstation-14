@@ -188,11 +188,13 @@ ent-ClothingOuterWinterWardenUnarmored = Wintermantel des Wachleiters
     .number = singular
     .name-genitive = Wintermantels des Wachleiters
 
-ent-ClothingOuterWinterSyndieCap = Syndikats-Wintermantel
+ent-ClothingOuterWinterSyndieCap = Festlicher Syndikats-Wintermantel
     .desc = Der Syndikats-Wintermantel besteht aus widerstandsfähigem Stoff mit vergoldeten Mustern und grober Wolle.
     .gender = masculine
     .number = singular
-    .name-genitive = Syndikats-Wintermantels
+    .name-adjective = festlich
+    .name-noun = Syndikats-Wintermantel
+    .name-noun-genitive = Syndikats-Wintermantels
 
 ent-ClothingOuterWinterSyndieCapArmored = Gepanzerter Syndikats-Wintermantel
     .desc = Der gepanzerte Syndikats-Wintermantel besteht aus widerstandsfähigem Stoff mit vergoldeten Mustern und grober Wolle.
