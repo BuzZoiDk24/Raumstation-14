@@ -77,6 +77,7 @@ spray-painter-style-airlockstandard-medical = Medizin
 spray-painter-style-airlockstandard-salvage = Bergung
 spray-painter-style-airlockstandard-science = Forschung
 spray-painter-style-airlockstandard-security = Sicherheitsdienst
+spray-painter-style-airlockstandard-service = Service
 spray-painter-style-airlockstandard-virology = Virologie
 
 spray-painter-style-airlockglass-atmospherics = Atmosphärentechnik

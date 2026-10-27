@@ -54,3 +54,8 @@ gun-speedloader-empty = Der Schnelllader ist leer
 # GunSpreadModifier
 examine-gun-spread-modifier-reduction = Die Streuung wurde um [color=yellow]{$percentage} %[/color] verringert.
 examine-gun-spread-modifier-increase = Die Streuung wurde um [color=yellow]{$percentage} %[/color] erhöht.
+gun-access-locked = Die Bedienung { DE-ARTICLE($target, "genitive") } { DE-NAME($target, "genitive", "weak") } ist gesperrt!
+gun-toggle-on = { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") } schaltet sich ein.
+gun-toggle-off = { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") } schaltet sich aus.
+gun-not-anchored = { CAPITALIZE(DE-ARTICLE($target, "nominative")) } { DE-NAME($target, "nominative", "weak") } ist nicht am Boden verankert!
+gun-network-ammo-examine = Der ausgewählte Projektiltyp ist [color=yellow]{$ammo}[/color].
