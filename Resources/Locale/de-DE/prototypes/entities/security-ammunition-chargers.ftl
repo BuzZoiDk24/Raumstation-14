@@ -85,6 +85,22 @@ ent-MagazinePistolSubMachineGunTopMountedEmpty = WT550-Magazin (.35 Auto, univer
     .gender = neuter
     .desc = Ein ungewöhnliches Magazin für 30 Patronen, das oben in die WT550 eingesetzt wird.
 
+ent-MagazineShotgunUranium = Trommelmagazin (.50, Uranschrot)
+    .desc = Ein großes Trommelmagazin für automatische Schrotflinten in Militärausführung. Für Uranschrotpatronen vorgesehen.
+    .gender = neuter
+    .number = singular
+    .name-genitive = Trommelmagazins (.50, Uranschrot)
+    .plural = Trommelmagazine (.50, Uranschrot)
+    .plural-dative = Trommelmagazinen (.50, Uranschrot)
+
+ent-MagazineShotgunTranquilizer = Trommelmagazin (.50, Betäubungsmunition)
+    .desc = Ein großes Trommelmagazin für automatische Schrotflinten in Militärausführung. Für Betäubungspatronen mit einem starken Beruhigungsmittel vorgesehen.
+    .gender = neuter
+    .number = singular
+    .name-genitive = Trommelmagazins (.50, Betäubungsmunition)
+    .plural = Trommelmagazine (.50, Betäubungsmunition)
+    .plural-dative = Trommelmagazinen (.50, Betäubungsmunition)
+
 ent-CartridgePistol = Patrone (.35 Auto)
     .gender = feminine
     .desc = Eines der beliebtesten Kaliber für Pistolen und Maschinenpistolen. Konventionelle Projektilmunition für die meisten Einsatzsituationen.
