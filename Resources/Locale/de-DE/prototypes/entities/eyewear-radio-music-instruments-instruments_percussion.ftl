@@ -3,32 +3,44 @@ ent-GlockenspielInstrument = Glockenspiel
     .gender = neuter
     .number = singular
     .name-genitive = Glockenspiels
+    .plural = Glockenspiele
+    .plural-dative = Glockenspielen
 
 ent-MusicBoxInstrument = Spieluhr
     .desc = Wenn du darauf spielst, fühlst du dich vor gruseligen Animatronics sicher.
     .gender = feminine
     .number = singular
+    .plural = Spieluhren
+    .plural-dative = Spieluhren
 
 ent-XylophoneInstrument = Xylophon
     .desc = Ein regenbogenfarbenes Glockenspiel.
     .gender = neuter
     .number = singular
     .name-genitive = Xylophons
+    .plural = Xylophone
+    .plural-dative = Xylophonen
 
 ent-MicrophoneInstrument = Mikrofon
     .desc = Perfekt, um dir die Seele aus dem Leib zu singen.
     .gender = neuter
     .number = singular
     .name-genitive = Mikrofons
+    .plural = Mikrofone
+    .plural-dative = Mikrofonen
 
 ent-WoodblockInstrument = Holzblock
     .desc = Wenn du ihm lange genug zuhörst, hämmert er sich in deinen Kopf.
     .gender = masculine
     .number = singular
     .name-genitive = Holzblocks
+    .plural = Holzblöcke
+    .plural-dative = Holzblöcken
 
 ent-ReverseCymbalsInstrument = Rückwärtsbecken
     .desc = Ich glaube, du hast sie falsch herum?
     .gender = neuter
     .number = plural
     .name-dative = Rückwärtsbecken
+    .plural = Rückwärtsbecken
+    .plural-dative = Rückwärtsbecken
