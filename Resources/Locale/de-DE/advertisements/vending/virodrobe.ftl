@@ -1,3 +1,3 @@
-advertisement-virodrobe-1 = Viruses getting you down? Then upgrade to sterilized clothing today!
-advertisement-virodrobe-2 = Feeling ill? These outfits will help restrict the spread of that nasty disease... I think.
-advertisement-virodrobe-3 = Protects you against all nasty diseases!
+advertisement-virodrobe-1 = Viren machen dir das Leben schwer? Dann hol dir noch heute sterilisierte Kleidung!
+advertisement-virodrobe-2 = Fühlst du dich krank? Diese Outfits helfen, die Ausbreitung dieser fiesen Krankheit einzudämmen... glaube ich.
+advertisement-virodrobe-3 = Schützt dich vor allen fiesen Krankheiten!
