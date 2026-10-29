@@ -1,0 +1,19 @@
+ent-BorgSprayBottle = Interne Sprühdüse
+    .desc = Ein Druckbehälter zum Versprühen von Chemikalien, direkt in einen Hausmeister-Cyborg eingebaut. Meist mit Weltraumreiniger gegen hartnäckige Verschmutzungen gefüllt.
+    .gender = feminine
+    .number = singular
+    .name-adjective = intern
+    .name-noun = Sprühdüse
+    .name-noun-plural = Sprühdüsen
+    .name-noun-plural-dative = Sprühdüsen
+    .suffix = Gefüllt
+
+ent-BorgMegaSprayBottle = Verbesserte interne Sprühdüse
+    .desc = Eine verbesserte Version der integrierten Sprühflasche eines Hausmeister-Cyborgs. Dieses Modell kann Weltraumreiniger aus der Luftfeuchtigkeit herstellen.
+    .gender = feminine
+    .number = singular
+    .name-adjective = verbessert, intern
+    .name-noun = Sprühdüse
+    .name-noun-plural = Sprühdüsen
+    .name-noun-plural-dative = Sprühdüsen
+    .suffix = Gefüllt

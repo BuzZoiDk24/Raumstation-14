@@ -1,0 +1,42 @@
+ent-BriefcaseBrown = Brauner Aktenkoffer
+    .desc = Nützlich, um Gegenstände in der Hand zu tragen.
+    .gender = masculine
+    .number = singular
+    .name-adjective = braun
+    .name-noun = Aktenkoffer
+    .name-noun-genitive = Aktenkoffers
+    .name-noun-plural = Aktenkoffer
+    .name-noun-plural-dative = Aktenkoffern
+
+ent-BriefcaseSyndie = { ent-BriefcaseBrown }
+    .desc = { ent-BriefcaseBrown.desc }
+    .gender = masculine
+    .number = singular
+    .name-adjective = braun
+    .name-noun = Aktenkoffer
+    .name-noun-genitive = Aktenkoffers
+    .name-noun-plural = Aktenkoffer
+    .name-noun-plural-dative = Aktenkoffern
+    .suffix = Syndikat, leer
+
+ent-BriefcaseWeapon = Gesicherter Waffenkoffer
+    .desc = Nützlich für angehende Söldner, ob sie für ein Unternehmen, eine Nation oder sonst jemanden kämpfen. Oder einfach ein wirklich großes Omelett machen.
+    .gender = masculine
+    .number = singular
+    .name-adjective = gesichert
+    .name-noun = Waffenkoffer
+    .name-noun-genitive = Waffenkoffers
+    .name-noun-plural = Waffenkoffer
+    .name-noun-plural-dative = Waffenkoffern
+    .suffix = Waffe, leer
+
+ent-BriefcaseWeaponSmall = { ent-BriefcaseWeapon }
+    .desc = { ent-BriefcaseWeapon.desc }
+    .gender = masculine
+    .number = singular
+    .name-adjective = gesichert
+    .name-noun = Waffenkoffer
+    .name-noun-genitive = Waffenkoffers
+    .name-noun-plural = Waffenkoffer
+    .name-noun-plural-dative = Waffenkoffern
+    .suffix = Waffe, klein, leer
