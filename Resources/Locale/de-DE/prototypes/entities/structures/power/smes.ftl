@@ -1,0 +1,39 @@
+ent-SMESBasic = SMES-Speicher
+    .desc = Ein supraleitender magnetischer Energiespeicher mit hoher Kapazität.
+    .gender = masculine
+    .number = singular
+    .name-genitive = SMES-Speichers
+    .plural = SMES-Speicher
+    .plural-dative = SMES-Speichern
+    .suffix = Standard, 8 MJ
+
+ent-SMESBasicEmpty = { ent-SMESBasic }
+    .desc = { ent-SMESBasic.desc }
+    .gender = masculine
+    .number = singular
+    .name-genitive = SMES-Speichers
+    .plural = SMES-Speicher
+    .plural-dative = SMES-Speichern
+    .suffix = Leer
+
+ent-SMESAdvanced = Erweiterter SMES-Speicher
+    .desc = Ein supraleitender magnetischer Energiespeicher mit noch höherer Kapazität.
+    .gender = masculine
+    .number = singular
+    .name-adjective = erweitert
+    .name-noun = SMES-Speicher
+    .name-noun-genitive = SMES-Speichers
+    .name-noun-plural = SMES-Speicher
+    .name-noun-plural-dative = SMES-Speichern
+    .suffix = Erweitert, 16 MJ
+
+ent-SMESAdvancedEmpty = { ent-SMESAdvanced }
+    .desc = { ent-SMESAdvanced.desc }
+    .gender = masculine
+    .number = singular
+    .name-adjective = erweitert
+    .name-noun = SMES-Speicher
+    .name-noun-genitive = SMES-Speichers
+    .name-noun-plural = SMES-Speicher
+    .name-noun-plural-dative = SMES-Speichern
+    .suffix = Leer

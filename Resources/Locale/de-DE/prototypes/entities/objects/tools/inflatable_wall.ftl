@@ -1,0 +1,49 @@
+ent-InflatableWallStack = Aufblasbare Barriere
+    .desc = Eine zusammengefaltete Membran, die sich beim Aktivieren rasch zu einer großen würfelförmigen Struktur aufbläst.
+    .gender = feminine
+    .number = singular
+    .name-adjective = aufblasbar
+    .name-noun = Barriere
+    .name-noun-plural = Barrieren
+    .name-noun-plural-dative = Barrieren
+    .suffix = Voll
+
+ent-InflatableWallStack1 = { ent-InflatableWallStack }
+    .desc = { ent-InflatableWallStack.desc }
+    .gender = feminine
+    .number = singular
+    .name-adjective = aufblasbar
+    .name-noun = Barriere
+    .name-noun-plural = Barrieren
+    .name-noun-plural-dative = Barrieren
+    .suffix = 1
+
+ent-InflatableWallStack5 = { ent-InflatableWallStack }
+    .desc = { ent-InflatableWallStack.desc }
+    .gender = feminine
+    .number = singular
+    .name-adjective = aufblasbar
+    .name-noun = Barriere
+    .name-noun-plural = Barrieren
+    .name-noun-plural-dative = Barrieren
+    .suffix = 5
+
+ent-InflatableDoorStack = Aufblasbare Tür
+    .desc = Eine zusammengefaltete Membran, die sich beim Aktivieren rasch zu einer großen würfelförmigen Struktur aufbläst.
+    .gender = feminine
+    .number = singular
+    .name-adjective = aufblasbar
+    .name-noun = Tür
+    .name-noun-plural = Türen
+    .name-noun-plural-dative = Türen
+    .suffix = Voll
+
+ent-InflatableDoorStack1 = { ent-InflatableDoorStack }
+    .desc = { ent-InflatableDoorStack.desc }
+    .gender = feminine
+    .number = singular
+    .name-adjective = aufblasbar
+    .name-noun = Tür
+    .name-noun-plural = Türen
+    .name-noun-plural-dative = Türen
+    .suffix = 1
