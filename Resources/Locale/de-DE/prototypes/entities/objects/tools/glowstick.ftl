@@ -1,0 +1,49 @@
+ent-GlowstickRed = Roter Leuchtstab
+    .desc = Nützlich auf Raves und in Notfällen.
+    .gender = masculine
+    .number = singular
+    .name-adjective = rot
+    .name-noun = Leuchtstab
+    .name-noun-genitive = Leuchtstabs
+    .name-noun-plural = Leuchtstäbe
+    .name-noun-plural-dative = Leuchtstäben
+
+ent-GlowstickPurple = Violetter Leuchtstab
+    .desc = Nützlich auf Raves und in Notfällen.
+    .gender = masculine
+    .number = singular
+    .name-adjective = violett
+    .name-noun = Leuchtstab
+    .name-noun-genitive = Leuchtstabs
+    .name-noun-plural = Leuchtstäbe
+    .name-noun-plural-dative = Leuchtstäben
+
+ent-GlowstickYellow = Gelber Leuchtstab
+    .desc = Nützlich auf Raves und in Notfällen.
+    .gender = masculine
+    .number = singular
+    .name-adjective = gelb
+    .name-noun = Leuchtstab
+    .name-noun-genitive = Leuchtstabs
+    .name-noun-plural = Leuchtstäbe
+    .name-noun-plural-dative = Leuchtstäben
+
+ent-GlowstickBlue = Blauer Leuchtstab
+    .desc = Nützlich auf Raves und in Notfällen.
+    .gender = masculine
+    .number = singular
+    .name-adjective = blau
+    .name-noun = Leuchtstab
+    .name-noun-genitive = Leuchtstabs
+    .name-noun-plural = Leuchtstäbe
+    .name-noun-plural-dative = Leuchtstäben
+
+ent-GlowstickGreen = Grüner Leuchtstab
+    .desc = Nützlich auf Raves und in Notfällen.
+    .gender = masculine
+    .number = singular
+    .name-adjective = grün
+    .name-noun = Leuchtstab
+    .name-noun-genitive = Leuchtstabs
+    .name-noun-plural = Leuchtstäbe
+    .name-noun-plural-dative = Leuchtstäben

@@ -1,0 +1,31 @@
+ent-HandHeldMassScanner = Tragbarer Massenscanner
+    .desc = Ein Massenscanner für unterwegs.
+    .gender = masculine
+    .number = singular
+    .name-adjective = tragbar
+    .name-noun = Massenscanner
+    .name-noun-genitive = Massenscanners
+    .name-noun-plural = Massenscanner
+    .name-noun-plural-dative = Massenscannern
+
+ent-HandHeldMassScannerEmpty = { ent-HandHeldMassScanner }
+    .desc = { ent-HandHeldMassScanner.desc }
+    .gender = masculine
+    .number = singular
+    .name-adjective = tragbar
+    .name-noun = Massenscanner
+    .name-noun-genitive = Massenscanners
+    .name-noun-plural = Massenscanner
+    .name-noun-plural-dative = Massenscannern
+    .suffix = Leer
+
+ent-HandHeldMassScannerBorg = { ent-HandHeldMassScanner }
+    .desc = { ent-HandHeldMassScanner.desc }
+    .gender = masculine
+    .number = singular
+    .name-adjective = tragbar
+    .name-noun = Massenscanner
+    .name-noun-genitive = Massenscanners
+    .name-noun-plural = Massenscanner
+    .name-noun-plural-dative = Massenscannern
+    .suffix = Cyborg

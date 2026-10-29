@@ -1,0 +1,9 @@
+ent-BorgBucket = Interner Tank
+    .desc = Der Flüssigkeitsbehälter eines Cyborgs. Fasst doppelt so viel wie ein gewöhnlicher Eimer.
+    .gender = masculine
+    .number = singular
+    .name-adjective = intern
+    .name-noun = Tank
+    .name-noun-genitive = Tanks
+    .name-noun-plural = Tanks
+    .name-noun-plural-dative = Tanks
