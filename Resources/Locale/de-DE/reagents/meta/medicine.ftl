@@ -109,3 +109,6 @@ reagent-name-apotheosotic-enzymes = Apotheosotische Enzyme
 reagent-desc-apotheosotic-enzymes = Ein aggressiver, kränklich weißer Extrakt. Er kann jede Wunde schließen, geht bei seinen „Reparaturen“ aber wahllos vor und greift sogar das Erbgut des Körpers an.
 reagent-name-apotheosotic-extract = Apotheosotischer Extrakt
 reagent-desc-apotheosotic-extract = Ein klumpiges Pulver, das aus apotheosotischen Enzymen synthetisiert wird. Äußerst nützlich zur Herstellung fortschrittlicher Medikamente.
+
+reagent-name-ignisol = Ignisol
+reagent-desc-ignisol = Ein flüchtiger medizinischer Extrakt, der Erfrierungen behandelt, indem er die Körpertemperatur rasch erhöht. Leicht entzündlich und kann bei Überdosierung zu Überhitzung führen.

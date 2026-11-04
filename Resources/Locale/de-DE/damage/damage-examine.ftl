@@ -11,3 +11,5 @@ damage-examine = Verursacht folgenden Schaden:
 damage-examine-type = Verursacht folgenden Schaden durch [color=cyan]{$type}[/color]:
 damage-value = - [color=red]{$amount}[/color] Einheiten durch [color=yellow]{$type}[/color].
 damage-none = Verursacht keinen Schaden.
+
+damage-value-stamina = - [color=red]{$amount}[/color] Einheiten [color=cyan]Ausdauerschaden[/color].

@@ -186,3 +186,10 @@ ent-MedkitCombatFilled = Kampfsanitätsset
     .name-genitive = Kampfsanitätssets
     .gender = neuter
     .desc = Für die richtig großen Kaliber unter uns.
+
+ent-DragonTailCompress = Drachenschwanzkompresse
+    .desc = Eine lindernde Salbe aus Drachenschwanzpflanzen. Zur Behandlung von Hitze- und Kälteverbrennungen.
+    .gender = feminine
+    .number = singular
+    .plural = Drachenschwanzkompressen
+    .plural-dative = Drachenschwanzkompressen

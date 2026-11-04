@@ -287,3 +287,17 @@ ent-AnomalyBerrySeeds = Samenpackung (Anomaliebeeren)
 ent-BloonionSeeds = Samenpackung (Ballonzwiebeln)
     .gender = feminine
     .desc = { "" }
+
+ent-AloeIgnisSeeds = Samenpackung (Feueraloe)
+    .desc = { "" }
+    .gender = feminine
+    .number = singular
+    .plural = Samenpackungen (Feueraloe)
+    .plural-dative = Samenpackungen (Feueraloe)
+
+ent-DragonTailSeeds = Samenpackung (Drachenschwanz)
+    .desc = { "" }
+    .gender = feminine
+    .number = singular
+    .plural = Samenpackungen (Drachenschwanz)
+    .plural-dative = Samenpackungen (Drachenschwanz)
