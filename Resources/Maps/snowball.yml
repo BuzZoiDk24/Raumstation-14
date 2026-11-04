@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 09/22/2026 17:17:10
-  entityCount: 19008
+  entityCount: 19010
 maps:
 - 1793
 grids:
@@ -4493,9 +4493,11 @@ entities:
       pos: 99.5,87.5
     - type: DeviceLinkSource
       linkedPorts:
-        7816:
+        19009:
         - - DoorStatus
-          - DoorBolt
+          - InputA
+        - - DockStatus
+          - InputB
     - type: DeviceLinkSink
       invokeCounter: 1
   - uid: 7883
@@ -4506,9 +4508,11 @@ entities:
       pos: 99.5,89.5
     - type: DeviceLinkSource
       linkedPorts:
-        7817:
+        19010:
         - - DoorStatus
-          - DoorBolt
+          - InputA
+        - - DockStatus
+          - InputB
     - type: DeviceLinkSink
       invokeCounter: 1
 - proto: AirlockExternalGlassShuttleEmergencyLocked
@@ -90843,6 +90847,34 @@ entities:
           - DoorBolt
     - type: Physics
       canCollide: False
+      bodyType: Static
+  - uid: 19009
+    components:
+    - type: Transform
+      parent: 1
+      pos: 93.5,87.5
+      anchored: true
+    - type: DeviceLinkSource
+      linkedPorts:
+        7816:
+        - - Output
+          - DoorBolt
+    - type: Physics
+      canCollide: false
+      bodyType: Static
+  - uid: 19010
+    components:
+    - type: Transform
+      parent: 1
+      pos: 93.5,89.5
+      anchored: true
+    - type: DeviceLinkSource
+      linkedPorts:
+        7817:
+        - - Output
+          - DoorBolt
+    - type: Physics
+      canCollide: false
       bodyType: Static
 - proto: LootSpawnerIndustrial
   entities:
