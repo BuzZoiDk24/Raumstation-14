@@ -10,6 +10,7 @@ using Content.Shared.Maps;
 using Content.Shared.Power.EntitySystems;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests.Tests.Shuttle;
 
@@ -19,6 +20,7 @@ namespace Content.IntegrationTests.Tests.Shuttle;
 /// </summary>
 public sealed class SnowballCargoDockingTest : GameTest
 {
+    private static readonly ProtoId<GameMapPrototype> SnowballMap = "Snowball";
     private const string DoorStatusPort = "DoorStatus";
     private const string DockStatusPort = "DockStatus";
 
@@ -39,7 +41,7 @@ public sealed class SnowballCargoDockingTest : GameTest
 
         await server.WaitAssertion(() =>
         {
-            var map = server.ProtoMan.Index<GameMapPrototype>("Snowball");
+            var map = server.ProtoMan.Index(SnowballMap);
             var options = DeserializationOptions.Default with { InitializeMaps = true };
             stationGrid = server.System<ServerGameTicker>().LoadGameMap(map, out _, options).Single();
 
