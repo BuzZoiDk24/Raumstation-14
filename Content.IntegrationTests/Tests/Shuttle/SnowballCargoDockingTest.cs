@@ -20,7 +20,6 @@ namespace Content.IntegrationTests.Tests.Shuttle;
 /// </summary>
 public sealed class SnowballCargoDockingTest : GameTest
 {
-    private static readonly ProtoId<GameMapPrototype> SnowballMap = "Snowball";
     private const string DoorStatusPort = "DoorStatus";
     private const string DockStatusPort = "DockStatus";
 
@@ -41,7 +40,8 @@ public sealed class SnowballCargoDockingTest : GameTest
 
         await server.WaitAssertion(() =>
         {
-            var map = server.ProtoMan.Index(SnowballMap);
+            ProtoId<GameMapPrototype> mapId = "Snowball";
+            var map = server.ProtoMan.Index(mapId);
             var options = DeserializationOptions.Default with { InitializeMaps = true };
             stationGrid = server.System<ServerGameTicker>().LoadGameMap(map, out _, options).Single();
 
