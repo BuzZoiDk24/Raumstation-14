@@ -278,3 +278,5 @@ stack-exo-corner-nw-floor = Exodermis-Eckfliese Nordwest
 stack-exo-corner-se-floor = Exodermis-Eckfliese Südost
 stack-exo-corner-sw-floor = Exodermis-Eckfliese Südwest
 stack-exo-borg-floor = Mechadermis-Bodenfliese
+
+stack-dragon-tail-compress = Drachenschwanzkompresse

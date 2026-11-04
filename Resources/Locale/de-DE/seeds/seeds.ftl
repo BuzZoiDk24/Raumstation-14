@@ -73,3 +73,6 @@ seeds-capfruit-name = Knallfrucht
 seeds-cherry-name = Kirschen
 seeds-anomaly-berry-name = Anomaliebeeren
 seeds-bloonion-name = Ballonzwiebeln
+
+seeds-aloe-ignis-name = Feueraloe
+seeds-dragontail-name = Drachenschwanz

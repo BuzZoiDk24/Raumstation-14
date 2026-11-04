@@ -169,3 +169,6 @@ food-sequence-taco-gen = taco with {$content}
 # SKEWER
 
 food-sequence-skewer-gen = {$content} kebab
+
+food-sequence-content-aloe-ignis = Feueraloe
+food-sequence-burger-content-aloe-ignis = Feueraloe

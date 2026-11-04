@@ -352,3 +352,18 @@ ent-FoodAnomalyBerry = Anomaliebeere
 ent-FoodBloonion = Ballonzwiebel
     .gender = feminine
     .desc = Eine seltsame schwebende Zwiebel... Kein Grund zum Weinen.
+
+ent-FoodAloeIgnis = Feueraloe
+    .desc = Eine feurige Pflanze mit wohltuenden Eigenschaften. Schon ihre Berührung wärmt dich.
+    .gender = feminine
+    .number = singular
+    .plural = Feueraloen
+    .plural-dative = Feueraloen
+
+ent-FoodDragonTail = Drachenschwanzstängel
+    .desc = Ein langer, gewundener Stängel, der in sanftem Smaragdgrün leuchtet. Er lässt sich zu einer Kompresse verarbeiten, die Verbrennungen lindert.
+    .gender = masculine
+    .number = singular
+    .name-genitive = Drachenschwanzstängels
+    .plural = Drachenschwanzstängel
+    .plural-dative = Drachenschwanzstängeln

@@ -389,3 +389,18 @@ ent-BloonionPlants = Ballonzwiebelpflanze
     .gender = feminine
     .number = singular
     .desc = { "" }
+
+ent-AloeIgnisPlants = Feueraloe
+    .desc = { "" }
+    .gender = feminine
+    .number = singular
+    .plural = Feueraloen
+    .plural-dative = Feueraloen
+
+ent-DragonTailPlants = Drachenschwanz
+    .desc = { "" }
+    .gender = masculine
+    .number = singular
+    .name-genitive = Drachenschwanzes
+    .plural = Drachenschwänze
+    .plural-dative = Drachenschwänzen
