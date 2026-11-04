@@ -90850,6 +90850,7 @@ entities:
       bodyType: Static
   - uid: 19009
     components:
+    - type: SubFloorHide
     - type: Transform
       parent: 1
       pos: 93.5,87.5
@@ -90864,6 +90865,7 @@ entities:
       bodyType: Static
   - uid: 19010
     components:
+    - type: SubFloorHide
     - type: Transform
       parent: 1
       pos: 93.5,89.5
