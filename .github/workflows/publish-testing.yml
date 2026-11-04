@@ -6,11 +6,11 @@ concurrency:
 
 on:
   workflow_dispatch:
+  schedule:
+  - cron: '0 10 * * *'
 
 jobs:
   build:
-    # Testveröffentlichungen werden in diesem Fork nicht verwendet.
-    if: ${{ false }}
     runs-on: ubuntu-latest
 
     steps:
