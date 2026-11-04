@@ -4622,6 +4622,8 @@ entities:
         18244:
         - - DoorStatus
           - InputA
+        - - DockStatus
+          - InputB
   - uid: 18238
     components:
     - type: MetaData
@@ -4634,6 +4636,8 @@ entities:
         18245:
         - - DoorStatus
           - InputA
+        - - DockStatus
+          - InputB
 - proto: AirlockFreezerLocked
   entities:
   - uid: 12224
