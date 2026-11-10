@@ -1,19 +1,19 @@
 # Uplink
 store-category-debug = debug category
 store-category-debug2 = debug category 2
-store-category-weapons = Weaponry
-store-category-ammo = Ammo
-store-category-explosives = Explosives
-store-category-chemicals = Chemicals
-store-category-deception = Deception
-store-category-disruption = Disruption
-store-category-implants = Implants
-store-category-allies = Allies
-store-category-job = Job
-store-category-wearables = Wearables
-store-category-pointless = Pointless
-store-category-objective = Objective
-store-discounted-items = Discounts
+store-category-weapons = Waffen
+store-category-ammo = Munition
+store-category-explosives = Sprengstoffe
+store-category-chemicals = Chemikalien
+store-category-deception = Täuschung
+store-category-disruption = Sabotage
+store-category-implants = Implantate
+store-category-allies = Verbündete
+store-category-job = Berufsspezifische Ausrüstung
+store-category-wearables = Kleidung und Ausrüstung
+store-category-pointless = Spielereien
+store-category-objective = Auftragsausrüstung
+store-discounted-items = Angebote
 
 # Revenant
 store-category-abilities = Abilities
