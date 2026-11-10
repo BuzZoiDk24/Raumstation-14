@@ -166,6 +166,9 @@ namespace Content.Client.Viewport
 
             DebugTools.AssertNotNull(_viewport);
 
+            var screenHandle = handle.DrawingHandleScreen;
+            var controlTransform = screenHandle.GetTransform();
+
             _viewport!.Render();
 
             if (_queuedScreenshots.Count != 0)
@@ -187,14 +190,17 @@ namespace Content.Client.Viewport
             var drawBoxGlobal = drawBox.Translated(GlobalPixelPosition);
             _viewport.RenderScreenOverlaysBelow(handle, this, drawBoxGlobal);
 
+            // Screen overlays reset the drawing transform, so restore the control's position.
+            screenHandle.SetTransform(controlTransform);
             ApplySharpnessShader(handle);
 
-            handle.DrawingHandleScreen.DrawTextureRect(_viewport.RenderTarget.Texture, drawBox);
+            screenHandle.DrawTextureRect(_viewport.RenderTarget.Texture, drawBox);
 
             if (_sharpnessStrength > 0)
                 handle.DrawingHandleScreen.UseShader(null);
 
             _viewport.RenderScreenOverlaysAbove(handle, this, drawBoxGlobal);
+            screenHandle.SetTransform(controlTransform);
         }
 
         private void ApplySharpnessShader(IRenderHandle handle)
