@@ -16,6 +16,12 @@ public sealed partial class FrontalLispSystem : RelayAccentSystem<FrontalLispCom
     private static readonly Regex GermanLowerS = new(@"(?<![sSßẞ])(?<![cC][hH])[sß]+(?![sSßẞ]|[cC][hH])");
     private static readonly Regex GermanUpperS = new(@"(?<![sSßẞ])(?<![cC][hH])[Sẞ]+(?![sSßẞ]|[cC][hH])");
 
+    protected override Type[] AccentAfter =>
+    [
+        typeof(GermanAccentSystem), typeof(SouthernAccentSystem), typeof(AustrianAccentSystem),
+        typeof(ScottishAccentSystem), typeof(FrenchAccentSystem), typeof(SpanishAccentSystem),
+    ];
+
     public override string Accentuate(string message, Entity<FrontalLispComponent>? ent = null)
     {
         if (string.IsNullOrWhiteSpace(message))

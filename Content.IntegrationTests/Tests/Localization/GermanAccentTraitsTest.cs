@@ -31,23 +31,30 @@ public sealed class GermanAccentTraitsTest : GameTest
             fourRandomProb: 0
             threeRandomProb: 0
             cutRandomProb: 0
+
+        - type: entity
+          id: GermanFrenchLispSpeaker
+          components:
+          - type: FrenchAccent
+          - type: FrontalLisp
         """;
 
-    [Test]
-    public async Task SwissDialectRunsBeforeStuttering()
+    [TestCase("GermanSwissStutterSpeaker", "Ich bin bereit.", "Ich-ch b-bi p-par-rat-t.")]
+    [TestCase("GermanFrenchLispSpeaker", "Ich sehe nichts.", "Isch thehe nischtth.")]
+    public async Task DialectRunsBeforeSpeechImpairment(string prototype, string input, string expected)
     {
         await Pair.Server.WaitAssertion(() =>
         {
             var entities = Pair.Server.EntMan;
             var loc = Pair.Server.ResolveDependency<ILocalizationManager>();
             var previous = loc.DefaultCulture;
-            var speaker = entities.SpawnEntity("GermanSwissStutterSpeaker", MapCoordinates.Nullspace);
+            var speaker = entities.SpawnEntity(prototype, MapCoordinates.Nullspace);
             try
             {
                 loc.SetCulture(CultureInfo.GetCultureInfo("de-DE"));
-                var ev = new AccentGetEvent(speaker, "Ich bin bereit.");
+                var ev = new AccentGetEvent(speaker, input);
                 entities.EventBus.RaiseLocalEvent(speaker, ref ev);
-                Assert.That(ev.Message, Is.EqualTo("Ich-ch b-bi p-par-rat-t."));
+                Assert.That(ev.Message, Is.EqualTo(expected));
             }
             finally
             {
