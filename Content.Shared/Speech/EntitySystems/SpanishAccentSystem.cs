@@ -72,6 +72,12 @@ public sealed partial class SpanishAccentSystem : RelayAccentSystem<SpanishAccen
             else
             {
                 var start = s.Length - s.TrimStart().Length;
+                if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de")
+                {
+                    // Put opening Spanish punctuation inside surrounding quotation marks.
+                    while (start < s.Length && (char.IsWhiteSpace(s[start]) || "\"„“«»".Contains(s[start])))
+                        start++;
+                }
                 // Whole-message translations can already contain Spanish punctuation.
                 if (Loc.DefaultCulture?.TwoLetterISOLanguageName == "de"
                     && s.Substring(start).StartsWith(toInsert.ToString(), StringComparison.Ordinal))
