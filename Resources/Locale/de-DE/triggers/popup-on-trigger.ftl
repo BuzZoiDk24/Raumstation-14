@@ -1,7 +1,7 @@
 ### Locales for PopupOnTrigger
 
-popup-on-trigger-use = You use { THE($entity) }.
-popup-on-trigger-use-other = { CAPITALIZE(THE($user)) } uses { THE($entity) }.
+popup-on-trigger-use = Du benutzt { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") }.
+popup-on-trigger-use-other = {$user} benutzt { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") }.
 
-popup-on-trigger-activate = You activate { THE($entity) }.
-popup-on-trigger-activate-other = { CAPITALIZE(THE($user)) } activates { THE($entity) }.
+popup-on-trigger-activate = Du aktivierst { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") }.
+popup-on-trigger-activate-other = {$user} aktiviert { DE-ARTICLE($entity, "accusative") } { DE-NAME($entity, "accusative", "weak") }.

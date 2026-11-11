@@ -1,4 +1,4 @@
-chameleon-projector-inside-container = There's no room to scan that!
-chameleon-projector-invalid = You can't disguise as that!
-chameleon-projector-success = Projected new disguise.
-chameleon-projector-set-disguise = Set Disguise
+chameleon-projector-inside-container = Hier ist nicht genug Platz, um das zu scannen!
+chameleon-projector-invalid = Als das kannst du dich nicht tarnen!
+chameleon-projector-success = Neue Tarnung projiziert.
+chameleon-projector-set-disguise = Tarnung festlegen

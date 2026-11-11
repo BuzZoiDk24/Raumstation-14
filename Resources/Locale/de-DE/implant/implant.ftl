@@ -1,28 +1,28 @@
 ## Implanter Attempt Messages
 
-implanter-component-implanting-target = {CAPITALIZE(THE({$user}))} is trying to implant you with something!
-implanter-component-draw-target = {CAPITALIZE(THE({$user}))} is trying to extract something from you!
-implanter-component-implant-failed = The {$implant} cannot be given to {$target}!
-implanter-draw-failed-permanent = The {$implant} in {$target} is fused with { OBJECT($target) } and cannot be removed!
-implanter-draw-failed = You tried to remove an implant but found nothing.
-implanter-draw-failed-catastrophically = The implanter finds nothing and catastrophically fails, shunting genetic material into {$user}'s hand!
-implanter-component-implant-already = {CAPITALIZE(THE({$target}))} already has the {$implant}!
+implanter-component-implanting-target = {$user} versucht, dir etwas zu implantieren!
+implanter-component-draw-target = {$user} versucht, dir etwas zu entnehmen!
+implanter-component-implant-failed = Das Implantat „{$implant}“ kann {$target} nicht eingesetzt werden!
+implanter-draw-failed-permanent = Das Implantat „{$implant}“ ist mit dem Körper von {$target} verwachsen und kann nicht entfernt werden!
+implanter-draw-failed = Du hast versucht, ein Implantat zu entfernen, aber nichts gefunden.
+implanter-draw-failed-catastrophically = Der Implanter findet nichts und versagt auf katastrophale Weise: Er schleudert genetisches Material in die Hand von {$user}!
+implanter-component-implant-already = {$target} trägt bereits das Implantat „{$implant}“!
 
 ## UI
-implanter-set-draw-verb = Set Implant Draw
-implanter-set-draw-window = Set Implant Draw
-implanter-set-draw-info = Select the implant type this implanter should remove:
-implanter-set-draw-type = Implant type:
+implanter-set-draw-verb = Implantat zur Entnahme auswählen
+implanter-set-draw-window = Implantat zur Entnahme auswählen
+implanter-set-draw-info = Wähle den Implantattyp aus, den dieser Implanter entfernen soll:
+implanter-set-draw-type = Implantattyp:
 
-implanter-draw-text = Draw
-implanter-inject-text = Inject
+implanter-draw-text = Entnehmen
+implanter-inject-text = Einsetzen
 
-implanter-empty-text = Empty
+implanter-empty-text = Leer
 
 implanter-label-inject = [color=green]{$implantName}[/color]
-    Mode: [color=white]{$modeString}[/color]
+    Modus: [color=white]{$modeString}[/color]
 
 implanter-label-draw = [color=red]{$implantName}[/color]
-    Mode: [color=white]{$modeString}[/color]
+    Modus: [color=white]{$modeString}[/color]
 
 implanter-contained-implant-text = [color=green]{$desc}[/color]

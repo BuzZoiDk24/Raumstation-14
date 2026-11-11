@@ -1,2 +1,2 @@
-hot-potato-passed = {$from} passed hot potato to {$to}!
-hot-potato-failed = Can't pass the potato to {$to}!
+hot-potato-passed = {$from} hat die heiße Kartoffel an {$to} weitergegeben!
+hot-potato-failed = Du kannst die Kartoffel nicht an {$to} weitergeben!
