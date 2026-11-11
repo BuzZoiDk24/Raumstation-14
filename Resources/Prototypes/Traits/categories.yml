@@ -10,3 +10,8 @@
 - type: traitCategory
   id: Quirks
   name: trait-category-quirks
+
+- type: traitCategory
+  id: DialectTraits
+  name: trait-category-dialects
+  maxTraitPoints: 1

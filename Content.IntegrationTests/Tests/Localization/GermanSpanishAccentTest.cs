@@ -82,6 +82,9 @@ public sealed class GermanSpanishAccentTest : GameTest
     [TestCase("Mein Kumpel kommt.", "Mi amigo kommt.")]
     [TestCase("Meine Freunde kommen.", "Mis amigos kommen.")]
     [TestCase("Meine Freundinnen kommen.", "Mis amigas kommen.")]
+    [TestCase("„Wirklich?“", "„¿En serio?“")]
+    [TestCase("„Hilfe!“", "„¡Ayuda!“")]
+    [TestCase("Keine Ahnung. Hör auf!", "Ni idea. ¡Basta!")]
     public async Task GermanSpeechRemainsReadable(string input, string expected)
     {
         await WithCulture("de-DE", system =>

@@ -16,6 +16,13 @@ public sealed partial class SlurredSystem : RelayAccentSystem<SlurredAccentCompo
     [Dependency] private StatusEffectsSystem _status = default!;
     [Dependency] private IGameTiming _timing = default!;
 
+    // Apply vocabulary and dialect rules before phonetic distortions hide their source words.
+    protected override Type[] AccentAfter =>
+    [
+        typeof(GermanAccentSystem), typeof(SouthernAccentSystem), typeof(AustrianAccentSystem),
+        typeof(ScottishAccentSystem), typeof(FrenchAccentSystem), typeof(SpanishAccentSystem),
+    ];
+
     public override string Accentuate(string message, Entity<SlurredAccentComponent>? ent = null)
     {
         if (ent == null)

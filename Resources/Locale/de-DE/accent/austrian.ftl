@@ -3,15 +3,15 @@ trait-austrian-desc = Du sprichst mit einer österreichischen Sprechweise. Servu
 
 accent-austrian-german-1 = servus
     .source = Hallo|Hi|Hey
-    .scope = whole
+    .scope = greeting
 
 accent-austrian-german-2 = grüß Gott
     .source = Guten Tag|Guten Morgen|Guten Abend|Grüß dich|Grüss dich
-    .scope = whole
+    .scope = greeting
 
 accent-austrian-german-3 = baba
     .source = Tschüss|Tschüs|Ciao|Bis bald|Auf Wiedersehen
-    .scope = whole
+    .scope = greeting
 
 accent-austrian-german-4 = Mahlzeit
     .source = Guten Appetit

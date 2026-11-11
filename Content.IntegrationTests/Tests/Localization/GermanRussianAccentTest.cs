@@ -53,6 +53,9 @@ public sealed class GermanRussianAccentTest : GameTest
     [TestCase("H2O APE NT-123.", "H2O APE NT-123.")]
     [TestCase("", "")]
     [TestCase("   ", "   ")]
+    [TestCase("Hallo, Peter! Danke!", "Privet, Peter! Spasibo!")]
+    [TestCase("Das ist kaputt. Ich bin bereit.", "Das kaputt. Ich bereit.")]
+    [TestCase("Das ist kaputt, aber reparierbar.", "Das ist kaputt, aber reparierbar.")]
     public async Task GermanSpeechRemainsReadable(string input, string expected)
     {
         await WithCulture("de-DE", system =>

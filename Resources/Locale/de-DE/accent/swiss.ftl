@@ -2,23 +2,23 @@
 
 accent-swiss-german-1 = grüezi
     .source = Hallo|Guten Tag
-    .scope = whole
+    .scope = greeting
 
 accent-swiss-german-2 = hoi
     .source = Hi|Hey
-    .scope = whole
+    .scope = greeting
 
 accent-swiss-german-3 = guete Morge
     .source = Guten Morgen
-    .scope = whole
+    .scope = greeting
 
 accent-swiss-german-4 = guete Abig
     .source = Guten Abend
-    .scope = whole
+    .scope = greeting
 
 accent-swiss-german-5 = uf Wiederluege
     .source = Auf Wiedersehen
-    .scope = whole
+    .scope = greeting
 
 accent-swiss-german-6 = merci
     .source = Danke|Dankeschön|Danke schön
@@ -311,3 +311,51 @@ accent-swiss-german-77 = Wegglis
 accent-swiss-german-78 = Chäs
     .source = Käse|Käses
     .scope = words
+
+accent-swiss-german-79 = Wo bisch
+    .source = Wo bist du
+    .scope = whole
+
+accent-swiss-german-80 = ich bi da
+    .source = Ich bin hier
+    .scope = whole
+
+accent-swiss-german-81 = ich bi underwägs
+    .source = Ich bin unterwegs
+    .scope = whole
+
+accent-swiss-german-82 = ich chum grad
+    .source = Ich komme gleich
+    .scope = whole
+
+accent-swiss-german-83 = ich bruuche Hilf
+    .source = Ich brauche Hilfe
+    .scope = whole
+
+accent-swiss-german-84 = ich bruuche en Arzt
+    .source = Ich brauche einen Arzt
+    .scope = whole
+
+accent-swiss-german-85 = chum mit
+    .source = Komm mit
+    .scope = whole
+
+accent-swiss-german-86 = chum da ane
+    .source = Komm hierher|Komm her
+    .scope = whole
+
+accent-swiss-german-87 = wart churz
+    .source = Warte kurz
+    .scope = whole
+
+accent-swiss-german-88 = mach d Tür uf
+    .source = Mach die Tür auf
+    .scope = whole
+
+accent-swiss-german-89 = d Tür isch zue
+    .source = Die Tür ist zu
+    .scope = whole
+
+accent-swiss-german-90 = was isch passiert
+    .source = Was ist passiert
+    .scope = whole

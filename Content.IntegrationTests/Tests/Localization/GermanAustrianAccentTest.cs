@@ -39,7 +39,7 @@ public sealed class GermanAustrianAccentTest : GameTest
     [TestCase("Ich gebe die Zahl ein.", "I gebe die Zahl ein.")]
     [TestCase("Nichtschwimmer", "Nichtschwimmer")]
     [TestCase("Sie sagt: Hallo.", "Sie sagt: Hallo.")]
-    [TestCase("Hallo. Ich habe nichts.", "Hallo. I hab nix.")]
+    [TestCase("Hallo. Ich habe nichts.", "Servus. I hab nix.")]
     [TestCase("", "")]
     [TestCase("   ", "   ")]
     [TestCase("Ich scherze nur.", "I scherze nur.")]
@@ -54,6 +54,10 @@ public sealed class GermanAustrianAccentTest : GameTest
     [TestCase("Scherzen ist nicht verboten.", "Scherzen is ned verboten.")]
     [TestCase("WIR SCHERZEN NUR.", "WIR SCHERZEN NUR.")]
     [TestCase("DIE SCHERZE WAREN GUT.", "DIE SCHMÄHS WAREN GUT.")]
+    [TestCase("Hallo, Peter!", "Servus, Peter!")]
+    [TestCase("„Hallo!“", "„Servus!“")]
+    [TestCase("Hallo! Keine Ahnung.", "Servus! Keine Ahnung.")]
+    [TestCase("Alles klar. Ich habe nichts.", "Passt scho. I hab nix.")]
     public async Task GermanSpeechRemainsReadable(string input, string expected)
     {
         await WithCulture("de-DE", system =>

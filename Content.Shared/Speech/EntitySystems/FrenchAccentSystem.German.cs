@@ -12,6 +12,14 @@ public sealed partial class FrenchAccentSystem
     private static readonly Regex GermanWordStartingH = new(@"(?<![\w’'])h\p{L}+(?![\w’'])",
         RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
 
+    private static readonly HashSet<string> GermanSilentHWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "Hand", "Hände", "Händen", "hält", "halten", "halte", "hältst", "haltet",
+        "Hammer", "Hämmer", "Hämmern", "Hunger", "hungrig", "Hilfe", "hilf", "hilft",
+        "helfen", "helfe", "helft", "hoffe", "hoffen", "hoffst", "hofft", "Hoffnung",
+        "hör", "höre", "hörte", "hörten", "Haus", "Häuser", "Häusern", "heute", "hierher",
+    };
+
     private string AccentuateGerman(string message, IRobustRandom random)
     {
         if (_germanFrenchRules == null)
@@ -25,9 +33,11 @@ public sealed partial class FrenchAccentSystem
                     continue;
                 var alternatives = string.Join("|", Loc.GetString(key + ".source")
                     .Split('|').Select(Regex.Escape));
-                var whole = scope == "whole";
-                var pattern = whole
-                    ? $@"^(\s*)(?:{alternatives})(?=[.!?]*\s*$)"
+                var whole = scope is "whole" or "greeting";
+                var pattern = scope == "greeting"
+                    ? GermanAccentRules.SentenceStartPattern(alternatives)
+                    : whole
+                    ? GermanAccentRules.SentencePattern(alternatives)
                     : $@"(?<![\w’'])(?:{alternatives})(?![\w’'])";
                 var rule = (new Regex(pattern, RegexOptions.IgnoreCase | RegexOptions.CultureInvariant),
                     Loc.GetString(key).Split('|'));
@@ -52,14 +62,14 @@ public sealed partial class FrenchAccentSystem
                     replacement = string.Concat(match.Groups[1].Value, replacement);
                 message = message.Remove(match.Index, match.Length).Insert(match.Index, replacement);
                 masked = masked.Remove(match.Index, match.Length)
-                    .Insert(match.Index, new string('_', replacement.Length));
+                    .Insert(match.Index, GermanAccentRules.Mask(replacement));
             }
         }
 
         foreach (Match match in GermanWordStartingH.Matches(masked).Cast<Match>().Reverse())
         {
-            // Keep abbreviations such as HUD and HPLC intact.
-            if (match.Value.Length <= 4 && !match.Value.Any(char.IsLower))
+            // Unknown words may be personal names or technical identifiers.
+            if (!GermanSilentHWords.Contains(match.Value))
                 continue;
             var replacement = FormatGermanFrenchCase(string.Concat("’", match.Value.Substring(1)),
                 match.Value, IsFrenchGermanSentenceStart(message, match.Index));
