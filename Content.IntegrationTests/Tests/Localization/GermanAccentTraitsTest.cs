@@ -17,6 +17,8 @@ namespace Content.IntegrationTests.Tests.Localization;
 [TestFixture]
 public sealed class GermanAccentTraitsTest : GameTest
 {
+    private static readonly ProtoId<ReplacementAccentPrototype> LiarAccent = "liar";
+
     [Test]
     public async Task OnlyOneDialectButSpeechTraitsRemainCombinable()
     {
@@ -54,7 +56,7 @@ public sealed class GermanAccentTraitsTest : GameTest
             var systems = Pair.Server.ResolveDependency<IEntitySystemManager>();
             var loc = Pair.Server.ResolveDependency<ILocalizationManager>();
             var previousCulture = loc.DefaultCulture;
-            var liar = Pair.Server.ProtoMan.Index<ReplacementAccentPrototype>("liar");
+            var liar = Pair.Server.ProtoMan.Index(LiarAccent);
             var previousChance = liar.ReplacementChance;
             var speaker = entities.SpawnEntity(null, MapCoordinates.Nullspace);
             try
