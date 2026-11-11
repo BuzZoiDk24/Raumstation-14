@@ -310,7 +310,7 @@ ent-BriefcaseWeaponHushpupFilled = Gesicherter Hushpup-Koffer
     .suffix = Waffe, klein, leer
 
 ent-BruteAutoInjector = Verletzungs-Autoinjektor
-    .desc = Ein nicht nachfüllbarer Einweg-Medipen mit Polypryrylium und Tranexamsäure zur schnellen und einfachen Behandlung gewöhnlicher körperlicher Verletzungen. Häufig als Gefechtsmedizin verwendet.
+    .desc = Ein nicht nachfüllbarer Einweg-Medipen mit Polypyrylium und Tranexamsäure zur schnellen und einfachen Behandlung gewöhnlicher körperlicher Verletzungen. Häufig als Gefechtsmedizin verwendet.
     .gender = masculine
     .number = singular
     .name-genitive = Verletzungs-Autoinjektors
