@@ -41,6 +41,17 @@ public sealed partial class ReplacementAccentSystem : RelayAccentSystem<Replacem
         ProtoMan.PrototypesReloaded -= OnPrototypesReloaded;
     }
 
+    protected override void OnAccent(Entity<ReplacementAccentComponent> ent, ref AccentGetEvent args)
+    {
+        // A selected character trait owns its effect. Do not repeat it through a
+        // species accent, legacy component or an equipped accent-granting item.
+        if ((ent.Comp.Accent == "scottish" && HasComp<ScottishAccentComponent>(args.Entity))
+            || (ent.Comp.Accent == "liar" && HasComp<LiarAccentComponent>(args.Entity)))
+            return;
+
+        base.OnAccent(ent, ref args);
+    }
+
     public override string Accentuate(string message, Entity<ReplacementAccentComponent>? ent = null)
     {
         if (ent == null)

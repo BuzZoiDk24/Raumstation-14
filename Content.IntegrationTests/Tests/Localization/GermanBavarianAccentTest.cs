@@ -45,6 +45,8 @@ public sealed class GermanBavarianAccentTest : GameTest
     [TestCase("Sigma Zeta APE H2O Station Scanner.", "Sigma Zeta APE H2O Station Scanner.")]
     [TestCase("", "")]
     [TestCase("   ", "   ")]
+    [TestCase("Hallo, Peter! Wir sind hier.", "Servus, Peter! Mia san hier.")]
+    [TestCase("Keine Ahnung. Beeil dich!", "Koane Ahnung. Mach hi!")]
     public async Task GermanSpeechRemainsReadable(string input, string expected)
     {
         await WithCulture("de-DE", system =>

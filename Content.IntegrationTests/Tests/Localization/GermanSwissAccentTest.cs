@@ -161,6 +161,23 @@ public sealed class GermanSwissAccentTest : GameTest
     [TestCase("So ein Käse!", "So ein Chäs!")]
     [TestCase("KÄSE!", "CHÄS!")]
     [TestCase("Käsekuchen", "Käsekuchen")]
+    [TestCase("Hallo, Peter!", "Grüezi, Peter!")]
+    [TestCase("Hallo Peter!", "Grüezi Peter!")]
+    [TestCase("„Hallo!“", "„Grüezi!“")]
+    [TestCase("Ich bin bereit. Los geht’s!", "Ich bi parat. Uf gaht’s!")]
+    [TestCase("Wirklich? Ich bin bereit.", "Würkli? Ich bi parat.")]
+    [TestCase("Hallo. Danke!", "Grüezi. Merci!")]
+    [TestCase("Hallo! Ich habe nichts gesehen.", "Grüezi! Ich ha nüt gseh.")]
+    [TestCase("Wo bist du? Ich bin hier.", "Wo bisch? Ich bi da.")]
+    [TestCase("Ich brauche einen Arzt!", "Ich bruuche en Arzt!")]
+    [TestCase("Ich brauche Hilfe. Warte kurz!", "Ich bruuche Hilf. Wart churz!")]
+    [TestCase("Ich bin unterwegs. Ich komme gleich.", "Ich bi underwägs. Ich chum grad.")]
+    [TestCase("Komm mit! Komm hierher!", "Chum mit! Chum da ane!")]
+    [TestCase("Mach die Tür auf! Die Tür ist zu.", "Mach d Tür uf! D Tür isch zue.")]
+    [TestCase("Was ist passiert?", "Was isch passiert?")]
+    [TestCase("Keine Ahnung, frag den Kapitän.", "Keine Ahnung, frag den Kapitän.")]
+    [TestCase("Ich bin bereit, aber warte noch.", "Ich bin bereit, aber warte noch.")]
+    [TestCase("Halloelektronik", "Halloelektronik")]
     public async Task GermanSpeechRemainsReadable(string input, string expected)
     {
         await WithCulture("de-DE", system =>

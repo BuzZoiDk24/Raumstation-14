@@ -22,11 +22,13 @@ public sealed partial class ReplacementAccentSystem
                     continue;
                 var sources = Loc.GetString(key + ".source").Split('|');
                 var alternatives = string.Join("|", sources.Select(Regex.Escape));
-                var whole = scope == "whole";
-                var pattern = whole
-                    ? $@"^(\s*)(?:{alternatives})(?=[.!?]*\s*$)"
+                var whole = scope is "whole" or "greeting";
+                var pattern = scope == "greeting"
+                    ? GermanAccentRules.SentenceStartPattern(alternatives)
+                    : whole
+                    ? GermanAccentRules.SentencePattern(alternatives)
                     : scope == "start"
-                        ? $@"^(\s*)(?:{alternatives})(?![\w’'])"
+                        ? GermanAccentRules.SentenceStartPattern(alternatives)
                         : $@"(?<![\w’'])(?:{alternatives})(?![\w’'])";
                 rules.Add((new Regex(pattern, RegexOptions.IgnoreCase | RegexOptions.CultureInvariant),
                     Loc.GetString(key).Split('|'), whole, sources.Max(source => source.Length)));
@@ -49,7 +51,7 @@ public sealed partial class ReplacementAccentSystem
                     replacement = string.Concat(match.Groups[1].Value, replacement);
                 message = message.Remove(match.Index, match.Length).Insert(match.Index, replacement);
                 masked = masked.Remove(match.Index, match.Length)
-                    .Insert(match.Index, new string('_', replacement.Length));
+                    .Insert(match.Index, GermanAccentRules.Mask(replacement));
             }
         }
 

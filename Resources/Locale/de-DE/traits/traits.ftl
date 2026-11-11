@@ -68,3 +68,5 @@ trait-impaired-mobility-desc = Ohne eine Gehhilfe fällt dir das Gehen schwer.
 
 trait-blink-dyspraxia-name = Blinzelstörung
 trait-blink-dyspraxia-desc = Deine Augenlider sind nicht richtig aufeinander abgestimmt. Du musst bewusst blinzeln, und manchmal wollen deine Augen einfach nicht im gleichen Takt mitmachen.
+
+trait-category-dialects = Dialekt

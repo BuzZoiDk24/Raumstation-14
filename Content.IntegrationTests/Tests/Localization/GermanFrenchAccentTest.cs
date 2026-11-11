@@ -112,6 +112,10 @@ public sealed class GermanFrenchAccentTest : GameTest
     [TestCase("Meine Freundin kommt.", "Meine Freundin kommt.")]
     [TestCase("Mein Kumpel kommt.", "Mon pote kommt.|Mon ami kommt.")]
     [TestCase("Meine Freundinnen kommen.", "Mes amies kommen.")]
+    [TestCase("Hans und Hannah sind hier.", "Hans und Hannah sind ’ier.")]
+    [TestCase("HERMES HUD HPLC H2O.", "HERMES HUD HPLC H2O.")]
+    [TestCase("Hilfe! Hans braucht Hilfe.", "Au secours! Hans braucht ’Ilfe.")]
+    [TestCase("Keine Ahnung. Hör auf!", "Aucune idée. Arrête!")]
     public async Task GermanSpeechRemainsReadable(string input, string expected)
     {
         await WithCulture("de-DE", system =>

@@ -38,6 +38,8 @@ public sealed class GermanBerlinAccentTest : GameTest
     [TestCase("Mein Freund und meine Freundin.", "Mein Freund und meine Freundin.")]
     [TestCase("", "")]
     [TestCase("   ", "   ")]
+    [TestCase("Hallo, Peter! Ich habe nichts gesehen.", "Tach, Peter! Ick hab nüscht jesehn.|Na, Peter! Ick hab nüscht jesehn.")]
+    [TestCase("Keine Ahnung. Hör auf!", "Keene Ahnung. Hör uff!")]
     public async Task GermanSpeechRemainsReadable(string input, string expected)
     {
         await WithCulture("de-DE", system =>

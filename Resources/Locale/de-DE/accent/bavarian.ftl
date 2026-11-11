@@ -2,23 +2,23 @@
 
 accent-bavarian-german-1 = servus
     .source = Hallo|Hi|Hey|Tschüss|Tschau
-    .scope = whole
+    .scope = greeting
 
 accent-bavarian-german-2 = grüß Gott
     .source = Guten Tag
-    .scope = whole
+    .scope = greeting
 
 accent-bavarian-german-3 = guadn Morgn
     .source = Guten Morgen
-    .scope = whole
+    .scope = greeting
 
 accent-bavarian-german-4 = guadn Abnd
     .source = Guten Abend
-    .scope = whole
+    .scope = greeting
 
 accent-bavarian-german-5 = pfiat di
     .source = Auf Wiedersehen
-    .scope = whole
+    .scope = greeting
 
 accent-bavarian-german-6 = dankschee
     .source = Danke|Dankeschön|Danke schön
