@@ -1,2 +1,2 @@
-emag-success = The device zaps something in {THE($target)}.
-emag-no-charges = No charges left!
+emag-success = Das Gerät lässt in { DE-ARTICLE($target, "dative") } { DE-NAME($target, "dative", "weak") } etwas knistern.
+emag-no-charges = Keine Ladungen mehr!

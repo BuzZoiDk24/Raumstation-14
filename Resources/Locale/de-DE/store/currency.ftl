@@ -1,8 +1,8 @@
-store-currency-inserted = {CAPITALIZE(THE($used))} is inserted into {THE($target)}.
-store-currency-war-boost-given = { CAPITALIZE($target) } starts buzzing
-store-currency-inserted-implant = {CAPITALIZE(THE($used))} is inserted into your implant.
+store-currency-inserted = { CAPITALIZE(DE-ARTICLE($used, "nominative")) } { DE-NAME($used, "nominative", "weak") } wurde in { DE-ARTICLE($target, "accusative") } { DE-NAME($target, "accusative", "weak") } eingesetzt.
+store-currency-war-boost-given = {$target} beginnt zu summen.
+store-currency-inserted-implant = { CAPITALIZE(DE-ARTICLE($used, "nominative")) } { DE-NAME($used, "nominative", "weak") } wurde in dein Implantat eingesetzt.
 
-store-currency-free = Free
+store-currency-free = Kostenlos
 store-currency-display-debugdollar = {$amount ->
     [one] Debug Dollar
     *[other] Debug Dollars

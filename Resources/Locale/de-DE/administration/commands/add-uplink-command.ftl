@@ -1,10 +1,10 @@
-cmd-adduplink-desc = Creates uplink on selected item and link it to users account
-cmd-adduplink-help = Usage: adduplink [username] [item-id] [discountEnabled]
+cmd-adduplink-desc = Erstellt einen Uplink auf dem ausgewählten Gegenstand und verknüpft ihn mit dem Benutzerkonto
+cmd-adduplink-help = Verwendung: adduplink [username] [item-id] [discountEnabled]
 
-add-uplink-command-completion-1 = Username (defaults to self)
-add-uplink-command-completion-2 = Uplink uid (default to PDA)
-add-uplink-command-completion-3 = Is uplink discount enabled
-add-uplink-command-error-1 = Selected player doesn't control any entity
-add-uplink-command-error-2 = Failed to add uplink to the player
-add-uplink-command-success-pda = Uplink added to player PDA with code {$code}
-add-uplink-command-success-implant = Uplink added to player as an implant
+add-uplink-command-completion-1 = Benutzername (standardmäßig du selbst)
+add-uplink-command-completion-2 = Uplink-Entitäts-ID (standardmäßig der PDA)
+add-uplink-command-completion-3 = Uplink-Rabatte aktivieren
+add-uplink-command-error-1 = Der ausgewählte Spieler steuert keine Entität
+add-uplink-command-error-2 = Dem Spieler konnte kein Uplink hinzugefügt werden
+add-uplink-command-success-pda = Dem PDA des Spielers wurde ein Uplink mit dem Code {$code} hinzugefügt
+add-uplink-command-success-implant = Dem Spieler wurde ein Uplink als Implantat eingesetzt
