@@ -1,5 +1,6 @@
 using System.Globalization;
 using Content.IntegrationTests.Fixtures;
+using Content.IntegrationTests.Fixtures.Attributes;
 using Content.Server.Cloning;
 using Content.Shared.Preferences;
 using Content.Shared.Speech;
@@ -18,6 +19,44 @@ namespace Content.IntegrationTests.Tests.Localization;
 public sealed class GermanAccentTraitsTest : GameTest
 {
     private static readonly ProtoId<ReplacementAccentPrototype> LiarAccent = "liar";
+
+    [TestPrototypes]
+    private const string Prototypes = """
+        - type: entity
+          id: GermanSwissStutterSpeaker
+          components:
+          - type: GermanAccent
+          - type: StutteringAccent
+            matchRandomProb: 1
+            fourRandomProb: 0
+            threeRandomProb: 0
+            cutRandomProb: 0
+        """;
+
+    [Test]
+    public async Task SwissDialectRunsBeforeStuttering()
+    {
+        await Pair.Server.WaitAssertion(() =>
+        {
+            var entities = Pair.Server.EntMan;
+            var loc = Pair.Server.ResolveDependency<ILocalizationManager>();
+            var previous = loc.DefaultCulture;
+            var speaker = entities.SpawnEntity("GermanSwissStutterSpeaker", MapCoordinates.Nullspace);
+            try
+            {
+                loc.SetCulture(CultureInfo.GetCultureInfo("de-DE"));
+                var ev = new AccentGetEvent(speaker, "Ich bin bereit.");
+                entities.EventBus.RaiseLocalEvent(speaker, ref ev);
+                Assert.That(ev.Message, Is.EqualTo("Ich-ch b-bi p-par-rat-t."));
+            }
+            finally
+            {
+                entities.DeleteEntity(speaker);
+                if (previous != null)
+                    loc.SetCulture(previous);
+            }
+        });
+    }
 
     [Test]
     public async Task OnlyOneDialectButSpeechTraitsRemainCombinable()

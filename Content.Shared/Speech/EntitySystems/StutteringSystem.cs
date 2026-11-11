@@ -21,6 +21,13 @@ public sealed partial class StutteringSystem : RelayAccentSystem<StutteringAccen
     private static readonly Regex Stutter = new("[b-df-hj-np-tv-wxyz]",
         RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
+    // Apply vocabulary and dialect rules before phonetic distortions hide their source words.
+    protected override Type[] AccentAfter =>
+    [
+        typeof(GermanAccentSystem), typeof(SouthernAccentSystem), typeof(AustrianAccentSystem),
+        typeof(ScottishAccentSystem), typeof(FrenchAccentSystem), typeof(SpanishAccentSystem),
+    ];
+
     public override string Accentuate(string message, Entity<StutteringAccentComponent>? ent = null)
     {
         if (ent == null)
