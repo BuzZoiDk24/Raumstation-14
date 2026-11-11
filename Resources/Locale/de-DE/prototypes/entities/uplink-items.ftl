@@ -2706,3 +2706,24 @@ ent-Telecrystal5 = { ent-Telecrystal }
     .plural = Telekristalle
     .plural-dative = Telekristallen
     .suffix = 5 TC
+
+ent-WeaponTurretSyndicateDisposable = Ballistisches Einweggeschütz
+    .desc = Ein automatisches Maschinengewehrgeschütz.
+    .gender = neuter
+    .number = singular
+    .name-adjective = ballistisch
+    .name-noun = Einweggeschütz
+    .name-noun-genitive = Einweggeschützes
+    .name-noun-plural = Einweggeschütze
+    .name-noun-plural-dative = Einweggeschützen
+    .suffix = Syndikat, Einweg
+
+ent-BrokenEnergyShield = Defekter Energieschild
+    .desc = Im Inneren ist etwas durchgebrannt. Der Schild funktioniert nicht mehr.
+    .gender = masculine
+    .number = singular
+    .name-adjective = defekt
+    .name-noun = Energieschild
+    .name-noun-genitive = Energieschilds
+    .name-noun-plural = Energieschilde
+    .name-noun-plural-dative = Energieschilden
