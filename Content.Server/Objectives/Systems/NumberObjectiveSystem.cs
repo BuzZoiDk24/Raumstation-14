@@ -1,5 +1,6 @@
 using Content.Server.Objectives.Components;
 using Content.Shared.Objectives.Components;
+using Content.Shared.Roles.Jobs;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Random;
 
@@ -11,6 +12,7 @@ namespace Content.Server.Objectives.Systems;
 public sealed partial class NumberObjectiveSystem : EntitySystem
 {
     [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private SharedJobSystem _jobs = default!;
     [Dependency] private MetaDataSystem _metaData = default!;
 
     public override void Initialize()
@@ -23,6 +25,15 @@ public sealed partial class NumberObjectiveSystem : EntitySystem
 
     private void OnAssigned(EntityUid uid, NumberObjectiveComponent comp, ref ObjectiveAssignedEvent args)
     {
+        if (comp.JobTargets.Count > 0
+            && _jobs.MindTryGetJobId(args.MindId, out var job)
+            && job.HasValue
+            && comp.JobTargets.TryGetValue(job.Value, out var target))
+        {
+            comp.Target = target;
+            return;
+        }
+
         comp.Target = _random.Next(comp.Min, comp.Max + 1);
     }
 
