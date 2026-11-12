@@ -1,10 +1,12 @@
 using Content.Server.Objectives.Systems;
+using Content.Shared.Roles;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Objectives.Components;
 
 /// <summary>
 /// Objective has a target number of something.
-/// When the objective is assigned it randomly picks this target from a minimum to a maximum.
+/// Assignment uses a fixed job override when configured, otherwise rolls between the minimum and maximum.
 /// </summary>
 [RegisterComponent, Access(typeof(NumberObjectiveSystem))]
 public sealed partial class NumberObjectiveComponent : Component
@@ -26,6 +28,13 @@ public sealed partial class NumberObjectiveComponent : Component
     /// </summary>
     [DataField(required: true)]
     public int Max;
+
+    /// <summary>
+    /// Optional fixed target counts for the assignee's actual job at assignment.
+    /// Jobs without an override retain the normal Min/Max roll.
+    /// </summary>
+    [DataField]
+    public Dictionary<ProtoId<JobPrototype>, int> JobTargets = new();
 
     /// <summary>
     /// Optional title locale id, passed "count" with <see cref="Target"/>.
