@@ -6,6 +6,7 @@ using Content.Server.Objectives;
 using Content.Server.Objectives.Systems;
 using Content.Shared.Anomaly.Components;
 using Content.Shared.Mind;
+using Content.Shared.Mind.Components;
 using Content.Shared.Objectives.Components;
 using Content.Shared.Roles;
 using Robust.Shared.GameObjects;
