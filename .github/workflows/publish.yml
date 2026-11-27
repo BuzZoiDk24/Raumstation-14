@@ -44,7 +44,7 @@ jobs:
         fi
 
     - name: .NET-Abhängigkeiten laden
-      run: dotnet restore
+      run: dotnet restore Content.Packaging/Content.Packaging.csproj
 
     - name: Packaging-Werkzeug bauen
       run: dotnet build Content.Packaging --configuration Release --no-restore /m

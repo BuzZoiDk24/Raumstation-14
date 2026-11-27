@@ -208,3 +208,4 @@ guide-entry-rules-ban-durations = Dauer von Sperren
 
 guide-entry-writing = Schreiben
 guide-entry-glossary = Begriffserklärungen
+guide-entry-plants = Pflanzen

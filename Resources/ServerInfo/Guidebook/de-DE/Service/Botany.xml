@@ -6,6 +6,17 @@ Als Botaniker sorgst du dafür, dass genug Nahrung wächst, damit der Koch nicht
 Verschaffe dir zuerst einen Überblick über die Maschinen, mit denen du arbeiten wirst. Sprich dich mit dem Koch ab, ob er bestimmte Pflanzen braucht. Falls nicht, baue Weizen, Bananen und alles an, worauf du sonst noch Lust hast. Du kannst auch Pflanzen für die Chemie in der Krankenstation, den Barkeeper oder den Verkauf durch die Versorgung anbauen.
 
 
+# Pflanzen
+<Box>
+<GuideEntityEmbed Entity="WheatSeeds"/>
+<GuideEntityEmbed Entity="VendingMachineSeeds"/>
+<GuideEntityEmbed Entity="CrateHydroponicsSeedsExotic"/>
+</Box>
+Samen für gewöhnliche Pflanzen bekommst du am Automaten deiner Abteilung. Für exotischere Samen musst du möglicherweise die Versorgung um Hilfe bitten.
+Manche Pflanzen lassen sich nur durch die Mutation anderer Pflanzen gewinnen!
+
+Siehe dazu die [textlink="Pflanzenübersicht" link="Plants"].
+
 # Werkzeuge
 Mit verschiedenen Werkzeugen hältst du deine Pflanzen gesund und bringst sie zum Wachsen. Den größten Teil deiner Zeit als Botaniker verbringst du am Hydroponikbecken.
 
