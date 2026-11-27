@@ -21,17 +21,48 @@ jobs:
           fetch-depth: 0
 
       - name: Check changed files
-        shell: pwsh
+        shell: python
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          $changedFiles = @(git diff --name-only "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}")
+          import os
+          import subprocess
+          import sys
 
-          if ($changedFiles.Count -eq 1 -and $changedFiles[0] -eq "RobustToolbox") {
-            Write-Host "Only RobustToolbox was changed; allowing standalone submodule update."
-            exit 0
-          }
+          def git(*args):
+              return subprocess.check_output(["git", *args], text=True).strip()
 
-          Write-Host "RobustToolbox was updated alongside other files:"
-          foreach ($file in $changedFiles) {
-            Write-Host " - $file"
-          }
-          exit 1
+          def ancestor(older, newer):
+              return subprocess.run(["git", "merge-base", "--is-ancestor", older, newer]).returncode == 0
+
+          base = os.environ["PR_BASE_SHA"]
+          head = os.environ["PR_HEAD_SHA"]
+          changed = git("diff", "--name-only", base, head).splitlines()
+          if "RobustToolbox" not in changed or changed == ["RobustToolbox"]:
+              print("No combined submodule update; allowing.")
+              sys.exit(0)
+
+          # Fork syncs need the upstream content and its matching engine together.
+          # Accept only an actual merge of new, verified upstream history with
+          # the fork base in its first-parent ancestry and the exact upstream engine.
+          if os.environ["GITHUB_REPOSITORY"] != "space-wizards/space-station-14":
+              git("fetch", "--no-tags", "--filter=blob:none",
+                  "https://github.com/space-wizards/space-station-14.git", "master")
+              upstream = git("rev-parse", "FETCH_HEAD")
+              engine = git("rev-parse", f"{head}:RobustToolbox")
+              merges = git("rev-list", "--first-parent", "--merges", f"{base}..{head}").splitlines()
+              for merge in merges:
+                  parents = git("show", "-s", "--format=%P", merge).split()
+                  if len(parents) != 2:
+                      continue
+                  first, imported = parents
+                  if (ancestor(base, first) and ancestor(imported, upstream)
+                          and not ancestor(imported, base)
+                          and git("rev-parse", f"{imported}:RobustToolbox") == engine):
+                      print("Verified Wizden sync with matching engine; allowing combined update.")
+                      sys.exit(0)
+
+          print("RobustToolbox was updated alongside other files without a verified upstream sync:")
+          print("\n".join(f" - {path}" for path in changed))
+          sys.exit(1)
