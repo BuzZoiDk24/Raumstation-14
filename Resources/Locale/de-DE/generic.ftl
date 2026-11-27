@@ -4,8 +4,9 @@ generic-not-available-shorthand = N/A
 generic-article-a = a
 generic-article-an = an
 
-generic-and = and
-generic-or = or
+generic-and = und
+generic-or = oder
+generic-and-or = und/oder
 
 generic-unknown = unknown
 generic-unknown-title = Unbekannt

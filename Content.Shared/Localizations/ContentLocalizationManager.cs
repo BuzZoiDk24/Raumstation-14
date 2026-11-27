@@ -222,6 +222,21 @@ namespace Content.Shared.Localizations
         }
 
         /// <summary>
+        /// Formats alternatives using the current localization's "and/or" conjunction and punctuation.
+        /// </summary>
+        public static string FormatListToAndOr(List<string> list)
+        {
+            return list.Count switch
+            {
+                <= 0 => string.Empty,
+                1 => list[0],
+                2 => Loc.GetString("zzzz-fmt-list-and-or-pair", ("first", list[0]), ("last", list[1])),
+                _ => Loc.GetString("zzzz-fmt-list-and-or-many",
+                    ("items", string.Join(", ", list.GetRange(0, list.Count - 1))), ("last", list[^1]))
+            };
+        }
+
+        /// <summary>
         /// Formats a direction struct as a human-readable string.
         /// </summary>
         public static string FormatDirection(Direction dir)

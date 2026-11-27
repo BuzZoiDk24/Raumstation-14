@@ -99,3 +99,11 @@ reagent-desc-mopwata = Schmutziges, abgestandenes Wischwasser.
 
 reagent-name-orange-lime-soda = Zitrusstreit
 reagent-desc-orange-lime-soda = Die Limonade soll nach Orange schmecken! Nein, nach Zitrone und Limette!
+reagent-name-shake-blue = blauer Milchshake
+reagent-desc-shakeblue = Ein Milchshake, aber blau.
+reagent-name-shake-meat = Fleischshake
+reagent-desc-shakemeat = Ein Milchshake aus zerkleinerten Stücken eines einst lebenden Wesens.
+reagent-name-shake-robo = Roboshake
+reagent-desc-shakerobo = Ein Roboter wurde zu feinem Staub zermahlen und in Milch, Zucker und Sahne ertränkt.
+reagent-name-shake-white = weißer Shake
+reagent-desc-shakewhite = Dieser Shake ist weiß, nicht Vanille.
